@@ -16,6 +16,7 @@ Before we got into something real, let's consider this README as a TODO list / r
 
 - [ ] Prettier
 - [ ] swiftformat
+- [ ] EditorConfig (& a CLI for linting from shell/CI)
 
 ## Linting
 
@@ -24,11 +25,12 @@ Before we got into something real, let's consider this README as a TODO list / r
 - [ ] ESLint
 - [ ] Tslint
 - [ ] stylelint
+- [ ] Remark
+- [ ] Something for YAML
 
 ## Static type checking
 
-> Fewer bugs in run-time, better developer experience, better onboarding of developers and
-> easier to debug. For larger projects it's essential. But definitely worth it even for smaller ones.
+> Fewer bugs in run-time, better developer experience, better onboarding of developers and easier to debug. For larger projects it's essential. But definitely worth it even for smaller ones.
 > TODO: add a link to an article describing which one is better and why
 
 - [ ] TypeScript
