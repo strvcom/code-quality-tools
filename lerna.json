@@ -1,0 +1,16 @@
+{
+  "lerna": "3.0.0",
+  "loglevel": "success",
+  "packages": [
+    "packages/*"
+  ],
+  "command": {
+    "publish": {
+      "ignoreChanges": [
+        "test/**",
+        "package-lock.json"
+      ]
+    }
+  },
+  "version": "independent"
+}

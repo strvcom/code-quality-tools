@@ -1,0 +1,24 @@
+# editorconfig.org
+
+root = true
+
+[{*, .*}]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+max_line_length = 100
+
+[{makefile,Makefile,**.mk}]
+indent_style = tab
+
+[package-lock.json]
+indent_style = tab
+
+[{**.md,**.json}]
+max_line_length = off
+
+[COMMIT_EDITMSG]
+max_line_length = 70
