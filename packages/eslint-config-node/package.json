@@ -17,7 +17,7 @@
     "Danny Kijkov <daniel.kijkov@strv.com>"
   ],
   "dependencies": {
-    "@strv/eslint-config-base": "0.1.0"
+    "@strv/eslint-config-base": "^0.1.0"
   },
   "license": "MIT",
   "repository": "strvcom/code-quality-tools",
