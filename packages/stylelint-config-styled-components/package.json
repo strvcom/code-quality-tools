@@ -6,10 +6,8 @@
     "strv",
     "react",
     "stylelint",
+    "styled-components",
     "config"
-  ],
-  "files": [
-    "index.js"
   ],
   "author": "Pavel Prichodko <prichodko.p@gmail.com>",
   "contributors": [

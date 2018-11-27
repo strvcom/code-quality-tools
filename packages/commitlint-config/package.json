@@ -4,15 +4,14 @@
   "description": "STRV's ESLint config for commitlint",
   "keywords": [
     "strv",
-    "commitlint-config",
     "commitlint",
     "config"
   ],
-  "files": [
-    "index.js"
-  ],
   "author": "Pavel Prichodko <prichodko.p@gmail.com>",
-  "homepage": "https://github.com/strvcom/code-quality-tools/tree/master/packages/commitlint-config#readme",
+  "contributors": [
+    "Robert Rossmann <rr.rossmann@me.com>",
+    "Danny Kijkov <daniel.kijkov@strv.com>"
+  ],
   "license": "MIT",
   "repository": "strvcom/code-quality-tools",
   "bugs": {

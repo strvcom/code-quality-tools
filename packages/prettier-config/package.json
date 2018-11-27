@@ -7,9 +7,6 @@
     "prettier",
     "config"
   ],
-  "files": [
-    "index.js"
-  ],
   "author": "Pavel Prichodko <prichodko.p@gmail.com>",
   "contributors": [
     "Robert Rossmann <rr.rossmann@me.com>",
