@@ -11,15 +11,13 @@
     "Danny Kijkov <daniel.kijkov@strv.com>"
   ],
   "peerDependencies": {
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.9.0",
-    "eslint-plugin-jsx-a11y": "^6.1.2",
-    "eslint-plugin-react": "^7.11.1"
+    "eslint": "^5.3.0"
   },
   "dependencies": {
     "@strv/eslint-config-base": "^1.1.1",
     "eslint-plugin-jsx-a11y": "^6.1.2",
-    "eslint-plugin-react": "^7.11.1"
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-react-hooks": "^1.5.1"
   },
   "engines": {
     "node": ">=6"
@@ -32,9 +30,6 @@
   ],
   "license": "BSD-3-Clause",
   "main": "index.js",
-  "peerDependencies": {
-    "eslint": "^5.3.0"
-  },
   "publishConfig": {
     "access": "public"
   },
