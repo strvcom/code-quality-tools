@@ -10,16 +10,17 @@
 
 // These rules represent coding style targeted for React components.
 module.exports = {
-
-  plugins: [
-    'react',
-  ],
+  plugins: ['react'],
 
   rules: {
     // Enforce consistent usage of destructuring assignment of props, state, and context
-    'react/destructuring-assignment': ['warn', 'always', {
-      ignoreClassFields: true,
-    }],
+    'react/destructuring-assignment': [
+      'warn',
+      'always',
+      {
+        ignoreClassFields: true,
+      },
+    ],
 
     // Validate closing bracket location in JSX
     // This rule checks all JSX multiline elements and verifies the location of the closing bracket.
@@ -29,10 +30,13 @@ module.exports = {
     'react/jsx-curly-brace-presence': ['warn', 'never'],
 
     // Disallow spaces inside of curly braces in JSX attributes
-    'react/jsx-curly-spacing': ['warn', {
-      when: 'never',
-      allowMultiline: true,
-    }],
+    'react/jsx-curly-spacing': [
+      'warn',
+      {
+        when: 'never',
+        allowMultiline: true,
+      },
+    ],
 
     // Enforce or disallow spaces around equal signs in JSX attributes
     // This rule will enforce consistency of spacing around equal signs in JSX attributes, by
@@ -49,17 +53,23 @@ module.exports = {
     'react/jsx-indent-props': ['warn', 2],
 
     // Validate JSX maximum depth
-    'react/jsx-max-depth': ['warn', {
-      max: 4,
-    }],
+    'react/jsx-max-depth': [
+      'warn',
+      {
+        max: 4,
+      },
+    ],
 
     // Enforce PascalCase for user-defined JSX components
     // Enforces coding style that user-defined JSX components are defined and referenced in
     // PascalCase.
-    'react/jsx-pascal-case': ['warn', {
-      allowAllCaps: true,
-      ignore: [],
-    }],
+    'react/jsx-pascal-case': [
+      'warn',
+      {
+        allowAllCaps: true,
+        ignore: [],
+      },
+    ],
 
     // Disallow multiple spaces between inline JSX props
     // Enforces that there is exactly one space between all attributes and after tag name and the
@@ -72,9 +82,12 @@ module.exports = {
 
     // Enforce one JSX element per line
     // This option limits every line in JSX to one expression each.
-    'react/jsx-one-expression-per-line': ['warn', {
-      allow: 'single-child',
-    }],
+    'react/jsx-one-expression-per-line': [
+      'warn',
+      {
+        allow: 'single-child',
+      },
+    ],
 
     // Prevent extra closing tags for components without children
     'react/self-closing-comp': 'warn',
@@ -82,16 +95,19 @@ module.exports = {
     // Enforce component methods order
     // When creating React components it is more convenient to always follow the same organisation
     // for methods order to helps you to easily find lifecyle methods, event handlers, etc.
-    'react/sort-comp': ['warn', {
-      order: [
-        'static-methods',
-        'lifecycle',
-        '/^on.+$/',
-        '/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/',
-        'everything-else',
-        '/^render.+$/',
-        'render',
-      ],
-    }],
+    'react/sort-comp': [
+      'warn',
+      {
+        order: [
+          'static-methods',
+          'lifecycle',
+          '/^on.+$/',
+          '/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/',
+          'everything-else',
+          '/^render.+$/',
+          'render',
+        ],
+      },
+    ],
   },
 }
