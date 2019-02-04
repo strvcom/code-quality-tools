@@ -1,0 +1,24 @@
+{
+  "name": "@strv/eslint-config-node",
+  "version": "0.1.0",
+  "description": "STRV's ESLint config for Node.js projects",
+  "keywords": [
+    "strv",
+    "node",
+    "eslint",
+    "config"
+  ],
+  "author": "Pavel Prichodko <prichodko.p@gmail.com>",
+  "contributors": [
+    "Robert Rossmann <rr.rossmann@me.com>",
+    "Danny Kijkov <daniel.kijkov@strv.com>"
+  ],
+  "dependencies": {
+    "@strv/eslint-config-base": "^0.1.0"
+  },
+  "license": "MIT",
+  "repository": "strvcom/code-quality-tools",
+  "bugs": {
+    "url": "https://github.com/strvcom/code-quality-tools/issues"
+  }
+}

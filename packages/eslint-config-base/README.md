@@ -1,0 +1,1 @@
+# `@strv/eslint-config-base`

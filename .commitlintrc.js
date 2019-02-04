@@ -7,7 +7,12 @@ module.exports = {
 
   rules: {
     'scope-enum': [1, 'always', [
-      // List of packages in the monorepo should be added here.
+      "commitlint-config",
+      "eslint-config-base",
+      "eslint-config-node",
+      "eslint-config-react",
+      "prettier-config",
+      "stylelint-config-styled-components"
     ]],
 
     'body-leading-blank': [2, 'always'],
