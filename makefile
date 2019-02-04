@@ -16,16 +16,6 @@ GITFILES := $(patsubst utils/githooks/%, .git/hooks/%, $(wildcard utils/githooks
 all: install githooks
 
 
-# GENERIC TARGETS
-
-node_modules: package.json
-	npm install $(NPM_FLAGS) && lerna bootstrap && touch node_modules
-
-# Default target for all possible git hooks
-.git/hooks/%: utils/githooks/%
-	cp $< $@
-
-
 # TASK DEFINITIONS
 
 githooks: $(GITFILES)
@@ -50,6 +40,17 @@ clean:
 
 pristine: clean
 	rm -rf node_modules packages/*/node_modules
+
+
+# GENERIC TARGETS
+
+node_modules: package.json
+	npm install $(NPM_FLAGS) && lerna bootstrap && touch node_modules
+
+# Default target for all possible git hooks
+.git/hooks/%: utils/githooks/%
+	cp $< $@
+
 
 # Use this prerequisite to force the target to never be treated as "up to date"
 .PHONY: force
