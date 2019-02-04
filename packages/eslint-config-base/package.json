@@ -10,6 +10,12 @@
     "Robert Rossmann <rr.rossmann@me.com>",
     "Danny Kijkov <daniel.kijkov@strv.com>"
   ],
+  "dependencies": {
+    "eslint-plugin-import": "^2.14.0"
+  },
+  "engines": {
+    "node": ">=6"
+  },
   "keywords": [
     "config",
     "eslint",
@@ -17,6 +23,12 @@
   ],
   "license": "MIT",
   "main": "index.js",
+  "peerDependencies": {
+    "eslint": "^5.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/strvcom/code-quality-tools.git"
