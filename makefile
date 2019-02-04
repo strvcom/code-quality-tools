@@ -4,21 +4,22 @@ export PATH := bin/:node_modules/.bin/:$(PATH)
 export NODE_OPTIONS := --trace-deprecation
 
 # Modify these variables in local.mk to add flags to the commands, ie.
-# F_NPM += --prefer-offline
-F_NPM :=
-F_ESLINT :=
-F_REMARK :=
+# NPM_FLAGS += --prefer-offline
+NPM_FLAGS :=
+ESLINT_FLAGS :=
+REMARK_FLAGS :=
 
+# Git hooks to be installed into the project workspace
 GITFILES := $(patsubst utils/githooks/%, .git/hooks/%, $(wildcard utils/githooks/*))
 
-# Do this when make is invoked without targets
+# Since this is the first target, Make will do this when make is invoked without arguments
 all: install githooks
 
 
 # GENERIC TARGETS
 
 node_modules: package.json
-	npm install $(F_NPM) && lerna bootstrap && touch node_modules
+	npm install $(NPM_FLAGS) && lerna bootstrap && touch node_modules
 
 # Default target for all possible git hooks
 .git/hooks/%: utils/githooks/%
@@ -32,8 +33,8 @@ githooks: $(GITFILES)
 install: node_modules $(GITFILES)
 
 lint: force install
-	eslint --cache --report-unused-disable-directives $(F_ESLINT) .
-	remark --quiet $(F_REMARK) .
+	eslint --cache --report-unused-disable-directives $(ESLINT_FLAGS) .
+	remark --quiet $(REMARK_FLAGS) .
 
 outdated:
 	npm outdated || true
@@ -50,6 +51,10 @@ clean:
 pristine: clean
 	rm -rf node_modules packages/*/node_modules
 
+# Use this prerequisite to force the target to never be treated as "up to date"
 .PHONY: force
 
+	# If this file exists, load it and add it to this makefile.
+	# Useful for defining per-developer variables or make targets. This file should not be under
+	# version control. ⚠️
 -include local.mk
