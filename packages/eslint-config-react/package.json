@@ -1,14 +1,11 @@
 {
   "name": "@strv/eslint-config-react",
-  "version": "0.1.0",
   "description": "STRV's ESLint config for React projects",
-  "keywords": [
-    "strv",
-    "react",
-    "eslint",
-    "config"
-  ],
+  "version": "0.1.0",
   "author": "Pavel Prichodko <prichodko.p@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/strvcom/code-quality-tools/issues"
+  },
   "contributors": [
     "Robert Rossmann <rr.rossmann@me.com>",
     "Danny Kijkov <daniel.kijkov@strv.com>"
@@ -16,9 +13,15 @@
   "dependencies": {
     "@strv/eslint-config-base": "^0.1.0"
   },
+  "keywords": [
+    "config",
+    "eslint",
+    "react",
+    "strv"
+  ],
   "license": "MIT",
-  "repository": "strvcom/code-quality-tools",
-  "bugs": {
-    "url": "https://github.com/strvcom/code-quality-tools/issues"
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/strvcom/code-quality-tools.git"
   }
 }

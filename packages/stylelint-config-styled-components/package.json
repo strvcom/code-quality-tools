@@ -1,15 +1,11 @@
 {
   "name": "@strv/stylelint-config-styled-components",
-  "version": "0.1.0",
   "description": "STRV's ESLint config for stylelint with styled-components",
-  "keywords": [
-    "strv",
-    "react",
-    "stylelint",
-    "styled-components",
-    "config"
-  ],
+  "version": "0.1.0",
   "author": "Pavel Prichodko <prichodko.p@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/strvcom/code-quality-tools/issues"
+  },
   "contributors": [
     "Robert Rossmann <rr.rossmann@me.com>",
     "Danny Kijkov <daniel.kijkov@strv.com>"
@@ -19,9 +15,16 @@
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-processor-styled-components": "^1.5.0"
   },
+  "keywords": [
+    "config",
+    "react",
+    "strv",
+    "styled-components",
+    "stylelint"
+  ],
   "license": "MIT",
-  "repository": "strvcom/code-quality-tools",
-  "bugs": {
-    "url": "https://github.com/strvcom/code-quality-tools/issues"
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/strvcom/code-quality-tools.git"
   }
 }
