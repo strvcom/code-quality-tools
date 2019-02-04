@@ -2,16 +2,16 @@
 node_modules
 
 # Local configuration
-.env
-.bashrc
-.npmrc
-local.mk
+/.env
+/.bashrc
+/.npmrc
+/local.mk
 
 # Generated files
-.nvmrc
-docs
-coverage
-gh-pages
+/.nvmrc
+/docs
+/coverage
+/gh-pages
 
 # Garbage
 *.lerna_backup
