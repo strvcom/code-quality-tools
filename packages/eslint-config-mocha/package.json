@@ -1,0 +1,38 @@
+{
+  "name": "@strv/eslint-config-mocha",
+  "description": "STRV's ESLint config for projects using Mocha as test runner",
+  "version": "0.1.0",
+  "author": "Robert Rossmann <rr.rossmann@me.com>",
+  "bugs": {
+    "url": "https://github.com/strvcom/code-quality-tools/issues"
+  },
+  "contributors": [
+    "Pavel Prichodko <prichodko.p@gmail.com>",
+    "Danny Kijkov <daniel.kijkov@strv.com>"
+  ],
+  "dependencies": {
+    "@strv/eslint-config-base": "^0.1.0",
+    "eslint-plugin-mocha": "^5.2.0"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "keywords": [
+    "config",
+    "eslint",
+    "mocha",
+    "strv"
+  ],
+  "license": "BSD-3-Clause",
+  "main": "index.js",
+  "peerDependencies": {
+    "eslint": "^5.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/strvcom/code-quality-tools.git"
+  }
+}
