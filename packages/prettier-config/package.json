@@ -16,6 +16,9 @@
     "strv"
   ],
   "license": "BSD-3-Clause",
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/strvcom/code-quality-tools.git"
