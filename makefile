@@ -47,7 +47,7 @@ version:
 # GENERIC TARGETS
 
 node_modules: package.json
-	npm install $(NPM_FLAGS) && lerna bootstrap && touch node_modules
+	npm ci $(NPM_FLAGS) && lerna bootstrap && touch node_modules
 
 # Default target for all possible git hooks
 .git/hooks/%: utils/githooks/%
