@@ -27,7 +27,7 @@ module.exports = {
     '@strv/eslint-config-node/v10',
     '@strv/eslint-config-node/optional',
     '@strv/eslint-config-typescript',
-    '@strv/eslint-config-styleguide',
+    '@strv/eslint-config-typescript/style',
   ],
 }
 ```
@@ -37,3 +37,9 @@ To actually lint .ts files, you must pass the `--ext` flag to ESLint:
 ```sh
 eslint --ext ts --no-unused-disable-directives .
 ```
+
+## Coding styles
+
+### `@strv/eslint-config-typescript/style`
+
+This ruleset includes rules which deal with how the code looks like and not how it works. It helps keeping the code clean and consistent. 🎨
