@@ -10,6 +10,8 @@
 
 module.exports = {
 
+  extends: '@strv/eslint-plugin-base',
+
   settings: {
     // Correctly recognise .ts and .d.ts files when checking import paths against the filesystem
     'import/resolver': {
