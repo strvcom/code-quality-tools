@@ -10,7 +10,7 @@
 
 module.exports = {
 
-  extends: '@strv/eslint-config-base',
+  extends: require.resolve('@strv/eslint-config-base'),
 
   env: {
     es6: true,

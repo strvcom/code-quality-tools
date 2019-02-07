@@ -10,5 +10,5 @@
 
 module.exports = {
 
-  extends: '@strv/eslint-config-base/style',
+  extends: require.resolve('@strv/eslint-config-base/style'),
 }

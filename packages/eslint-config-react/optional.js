@@ -10,7 +10,7 @@
 
 module.exports = {
 
-  extends: '@strv/eslint-config-base/optional',
+  extends: require.resolve('@strv/eslint-config-base/optional'),
 
   rules: {
     // Disallow Use of Alert
