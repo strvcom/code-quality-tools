@@ -11,7 +11,8 @@
 module.exports = {
 
   extends: [
-    '@commitlint/config-conventional',
+    './index.js',
+    '@commitlint/config-lerna-scopes',
   ],
 
   rules: {

@@ -10,12 +10,21 @@
     "Robert Rossmann <rr.rossmann@me.com>",
     "Danny Kijkov <daniel.kijkov@strv.com>"
   ],
+  "dependencies": {
+    "@commitlint/config-conventional": "^7.5.0",
+    "@commitlint/config-lerna-scopes": "^7.5.0"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=6"
+  },
   "keywords": [
     "commitlint",
     "config",
     "strv"
   ],
   "license": "BSD-3-Clause",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/strvcom/code-quality-tools.git"
