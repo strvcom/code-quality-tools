@@ -3,10 +3,9 @@
 module.exports = {
 
   extends: [
-    '@strv/javascript/environments/nodejs/v10',
-    '@strv/javascript/environments/nodejs/optional',
-    '@strv/javascript/environments/mocha/recommended',
-    '@strv/javascript/coding-styles/recommended',
+    './packages/eslint-config-node/v10.js',
+    './packages/eslint-config-node/optional.js',
+    './packages/eslint-config-node/style.js',
   ],
 
   rules: {
