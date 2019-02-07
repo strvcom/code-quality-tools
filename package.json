@@ -12,7 +12,6 @@
   "dependencies": {},
   "devDependencies": {
     "@commitlint/cli": "^7.0.0",
-    "@commitlint/config-conventional": "^7.0.0",
     "@strv/eslint-config-javascript": "^9.0.0",
     "eslint": "^5.8.0",
     "lerna": "^3.1.0",

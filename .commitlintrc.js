@@ -2,7 +2,7 @@
 
 module.exports = {
   extends: [
-    '@commitlint/config-conventional',
+    './packages/commitlint-config'
   ],
 
   rules: {
