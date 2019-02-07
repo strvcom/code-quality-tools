@@ -14,8 +14,4 @@ module.exports = {
     './index.js',
     '@commitlint/config-lerna-scopes',
   ],
-
-  rules: {
-    'body-leading-blank': [2, 'always'],
-  },
 }
