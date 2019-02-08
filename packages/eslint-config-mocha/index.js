@@ -13,7 +13,7 @@ const globs = require('@strv/eslint-config-base/globs')
 module.exports = {
 
   overrides: [{
-    files: globs.test,
+    files: globs.tests,
 
     plugins: [
       'mocha',
