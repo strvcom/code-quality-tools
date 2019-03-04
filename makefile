@@ -3,6 +3,10 @@ SHELL := sh
 export PATH := bin/:node_modules/.bin/:$(PATH)
 export NODE_OPTIONS := --trace-deprecation
 
+# On CI servers, use the `npm ci` installer to avoid introducing changes to the package-lock.json
+# On developer machines, prefer the generally more flexible `npm install`. 💪
+NPM_I := $(if $(CI), ci, install)
+
 # Modify these variables in local.mk to add flags to the commands, ie.
 # NPM_FLAGS += --prefer-offline
 NPM_FLAGS :=
@@ -47,7 +51,7 @@ version:
 # GENERIC TARGETS
 
 node_modules: package.json
-	npm ci $(NPM_FLAGS) && lerna bootstrap && touch node_modules
+	npm $(NPM_I) $(NPM_FLAGS) && lerna bootstrap && touch node_modules
 
 # Default target for all possible git hooks
 .git/hooks/%: utils/githooks/%
