@@ -14,6 +14,10 @@
 |Prettier|[@strv/prettier-config](packages/prettier-config)|[![@strv/prettier-config][pr-badge]][pr-npm]|Configuration for Prettier|
 |Stylelint|[@strv/stylelint-config-styled-components](packages/stylelint-config-styled-components)|[![@strv/stylelint-config-styled-components][sl-badge]][sl-npm]|Configuration for Stylelint|
 
+## Documentation
+
+Documentation for some packages is still being worked on. Check the [documentation](documentation) directory for more info.
+
 ## License
 
 See the [LICENSE](LICENSE) file for information.
