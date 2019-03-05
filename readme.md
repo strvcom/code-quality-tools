@@ -5,7 +5,7 @@
 ## Available configurations
 
 |Tool|Package|Version|Description|
-|-|-|-|
+|-|-|-|-|
 |Commitlint|[@strv/commitlint-config](packages/commitlint-config)|[![@strv/commitlint-config][cl-badge]][cl-npm]|Configuration for Commitlint|
 |ESLint|[@strv/eslint-config-node](packages/eslint-config-node)|[![@strv/eslint-config-node][ec-node-badge]][ec-node-npm]|ESlint ruleset for Node.js projects|
 |ESLint|[@strv/eslint-config-react](packages/eslint-config-react)|[![@strv/eslint-config-react][ec-react-badge]][ec-react-npm]|ESlint ruleset for React projects|
