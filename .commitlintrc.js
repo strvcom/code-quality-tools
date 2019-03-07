@@ -7,14 +7,12 @@ module.exports = {
 
   rules: {
     'scope-enum': [1, 'always', [
-      'commitlint-config',
-      'eslint-config-base',
-      'eslint-config-node',
-      'eslint-config-react',
-      'prettier-config',
-      'stylelint-config-styled-components',
+      'commitlint',
+      'eslint-base',
+      'eslint-node',
+      'eslint-react',
+      'prettier',
+      'stylelint',
     ]],
-
-    'body-leading-blank': [2, 'always'],
   },
 }
