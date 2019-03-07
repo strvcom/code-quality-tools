@@ -1,0 +1,30 @@
+{
+  "name": "@strv/remark-config",
+  "description": "STRV's config for Remark",
+  "version": "0.1.0",
+  "author": "Robert Rossmann <rr.rossmann@me.com",
+  "bugs": {
+    "url": "https://github.com/strvcom/code-quality-tools/issues"
+  },
+  "contributors": [],
+  "dependencies": {},
+  "engines": {
+    "node": ">=6"
+  },
+  "keywords": [
+    "config",
+    "lint",
+    "markdown",
+    "remark",
+    "strv"
+  ],
+  "license": "BSD-3-Clause",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/strvcom/code-quality-tools.git"
+  }
+}

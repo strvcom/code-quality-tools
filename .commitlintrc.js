@@ -12,6 +12,7 @@ module.exports = {
       'eslint-node',
       'eslint-react',
       'prettier',
+      'remark',
       'stylelint',
     ]],
   },
