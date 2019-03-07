@@ -550,6 +550,11 @@ module.exports = {
     // to. Additionally, the with statement cannot be used in strict mode.
     'no-with': 'error',
 
+    // Suggest using named capture group in regular expression
+    // This rule is aimed at using named capture groups instead of numbered capture groups in
+    // regular expressions.
+    'prefer-named-capture-group': 'warn',
+
     // Require using Error objects as Promise rejection reasons
     // It is considered good practice to only instances of the built-in Error object for
     // user-defined errors in Promises. Error objects automatically store a stack trace, which can
