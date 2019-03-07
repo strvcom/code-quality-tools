@@ -1,4 +1,4 @@
-# @strvcom/eslint-config-typescript
+# @strv/eslint-config-typescript
 
 > 🔥 Experimental. Please report bugs, conflicts and other compatibility problems 🙏.
 
@@ -43,3 +43,7 @@ eslint --ext ts --no-unused-disable-directives .
 ### `@strv/eslint-config-typescript/style`
 
 This ruleset includes rules which deal with how the code looks like and not how it works. It helps keeping the code clean and consistent. 🎨
+
+## License
+
+See the [LICENSE](LICENSE) file for information.

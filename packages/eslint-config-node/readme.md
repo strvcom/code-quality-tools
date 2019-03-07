@@ -1,4 +1,4 @@
-# @strvcom/eslint-config-node
+# @strv/eslint-config-node
 
 > STRV's ESLint config for Node.js projects
 
@@ -27,3 +27,7 @@ Use this ruleset in conjunction with any of the above version-specific rulesets.
 ### `@strv/eslint-config-node/style`
 
 This ruleset includes rules which deal with how the code looks like and not how it works. It helps keeping the code clean and consistent. 🎨
+
+## License
+
+See the [LICENSE](LICENSE) file for information.

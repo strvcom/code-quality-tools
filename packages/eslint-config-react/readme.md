@@ -1,4 +1,4 @@
-# @strvcom/eslint-config-react
+# @strv/eslint-config-react
 
 > STRV's ESLint config for React projects
 
@@ -29,5 +29,9 @@ Use this ruleset to enable the [`a11y`][a11y-repo] rules which provide checks fo
 ### `@strv/eslint-config-react/style`
 
 This ruleset includes rules which deal with how the code looks like and not how it works. It helps keeping the code clean and consistent. 🎨
+
+## License
+
+See the [LICENSE](LICENSE) file for information.
 
 [a11y-repo]: https://github.com/evcohen/eslint-plugin-jsx-a11y
