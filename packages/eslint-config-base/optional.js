@@ -71,12 +71,12 @@ module.exports = {
     'import/no-duplicates': 'warn',
   },
 
-  overrides: {
+  overrides: [{
     files: globs.tests,
 
     rules: {
       // Do not require function names in test files
       'func-names': 'off',
     },
-  },
+  }],
 }
