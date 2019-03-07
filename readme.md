@@ -12,6 +12,7 @@
 |ESLint|[@strv/eslint-config-typescript](packages/eslint-config-typescript)|[![@strv/eslint-config-typescript][ec-typescript-badge]][ec-typescript-npm]|ESlint ruleset for TypeScript projects|
 |ESLint|[@strv/eslint-config-mocha](packages/eslint-config-mocha)|[![@strv/eslint-config-mocha][ec-mocha-badge]][ec-mocha-npm]|ESlint ruleset for Mocha test files|
 |Prettier|[@strv/prettier-config](packages/prettier-config)|[![@strv/prettier-config][pr-badge]][pr-npm]|Configuration for Prettier|
+|Remark-CLI|[@strv/remark-config](packages/remark-config)|[![@strv/remark-config][rm-badge]][rm-npm]|Configuration for Remark-CLI|
 |Stylelint|[@strv/stylelint-config-styled-components](packages/stylelint-config-styled-components)|[![@strv/stylelint-config-styled-components][sl-badge]][sl-npm]|Configuration for Stylelint|
 
 ## Documentation
@@ -36,3 +37,5 @@ See the [LICENSE](LICENSE) file for information.
 [pr-badge]: https://img.shields.io/npm/v/@strv/prettier-config.svg?style=flat-square
 [sl-badge]: https://img.shields.io/npm/v/@strv/stylelint-config-styled-components.svg?style=flat-square
 [sl-npm]: https://npmjs.org/package/@strv/stylelint-config-styled-components
+[rm-badge]: https://img.shields.io/npm/v/@strv/remark-config.svg?style=flat-square
+[rm-npm]: https://npmjs.org/package/@strv/remark-config
