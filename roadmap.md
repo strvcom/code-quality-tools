@@ -18,16 +18,9 @@ Before we implement this we should consider how we will distribute non-npm packa
 
 We should be able to create a default template but since EditorConfig does not support any kind of module system it will probably be difficult to distribute this as a package and we will likely have to resort to just copying a pre-made file into projects via the aforementioned CLI tool.
 
-### Remark
-
-Keeping Markdown documents consistent could improve raw _.md_ files' readability and compatibility with various Markdown renderers.
-
-Let's use [remark-cli][remark-home].
-
 ### Stylelint
 
 Linting CSS/Less is important! Let's lint them using [stylelint][stylelint-home].
 
 [yeoman-home]: https://yeoman.io
-[remark-home]: https://remark.js.org
 [stylelint-home]: https://stylelint.io
