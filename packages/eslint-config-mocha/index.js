@@ -40,6 +40,12 @@ module.exports = {
       // This rule enforces having a limited amount of top-level suites in a file.
       'mocha/max-top-level-suites': ['warn', { limit: 1 }],
 
+      // Disallow async functions passed to describe
+      // This rule disallows the use of an async function with describe. It usually indicates a
+      // copy/paste error or that you're trying to use describe for setup code, which should happen
+      // in before or beforeEach.
+      'no-async-describe': 'warn',
+
       // Disallow exclusive tests
       // This rule reminds you to remove .only from your tests by raising a warning whenever you are
       // using the exclusivity feature.
