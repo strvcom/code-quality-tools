@@ -4,10 +4,6 @@
 
 ## Usage
 
-### Installing
-
-Run:
-
 ```bash
 # Yarn:
 yarn add --dev @strv/prettier-config
@@ -16,7 +12,7 @@ yarn add --dev @strv/prettier-config
 npm install --save-dev @strv/prettier-config
 ```
 
-And reference it in your `package.json` file:
+And reference it in your _package.json_ file:
 
 ```js
 {
@@ -25,11 +21,11 @@ And reference it in your `package.json` file:
 }
 ```
 
-_Note: If you are using `prettier` < v1.17 check [this note](#prettier-117)._
+_Note: If you are using `prettier` < v1.17 check [this note](#Prettier-version)._
 
-### <a id="extending"></a> Extending
+## Extending
 
-To extend the current options you will need to create a `.prettierrc.js` and add the following:
+To extend the current options you will need to create a _.prettierrc.js_ and add the following:
 
 ```js
 module.exports = {
@@ -42,9 +38,9 @@ module.exports = {
 
 ## Notes
 
-### <a id="prettier-117"></a> Prettier < v1.17.x
+### Prettier version
 
-Versions of `prettier` prior to v1.17 did not feature the possibility to use a shared config via `package.json`. The way to do it is similar to when [extending](#extending), except that you can just export the config directly:
+Versions of `prettier` prior to v1.17 did not feature the possibility to use a shared config via _package.json_. The way to do it is similar to when [extending](#Extending), except that you can just export the config directly:
 
 ```js
 // .prettierrc.js

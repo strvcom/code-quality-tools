@@ -4,6 +4,6 @@
 
 > Documentation specific to the ESLint config packages.
 
-## [Prettier](/prettier)
+## [Prettier](prettier)
 
 > Documentation specific to the Prettier config package.
