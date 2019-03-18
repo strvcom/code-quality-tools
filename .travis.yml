@@ -12,6 +12,7 @@ install:
   - make
 
 script:
+  - npx @commitlint/travis-cli
   - make lint
 
 env:
