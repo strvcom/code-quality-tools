@@ -1,0 +1,38 @@
+{
+  "name": "eslint-config-react-native",
+  "description": "STRV's ESLint config for React Native projects",
+  "version": "0.1.0",
+  "author": "André Nanninga <andre@nannin.ga>",
+  "bugs": {
+    "url": "https://github.com/strvcom/code-quality-tools/issues"
+  },
+  "contributors": [
+    "Robert Rossmann <rr.rossmann@me.com>"
+  ],
+  "dependencies": {
+    "@strv/eslint-config-base": "^1.1.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "keywords": [
+    "config",
+    "eslint",
+    "react-native",
+    "strv"
+  ],
+  "license": "BSD-3-Clause",
+  "main": "index.js",
+  "peerDependencies": {
+    "eslint": "^5.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/strvcom/code-quality-tools.git"
+  }
+}
