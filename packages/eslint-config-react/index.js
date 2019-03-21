@@ -49,11 +49,6 @@ module.exports = {
     // Enforce the closing tag location for multiline JSX elements
     'react/jsx-closing-tag-location': ['warn'],
 
-    // Restrict file extensions that may contain JSX
-    'react/jsx-filename-extension': ['warn', {
-      extensions: ['.js', '.jsx'],
-    }],
-
     // Detect missing key prop
     // Warn if an element that likely requires a key prop--namely, one present in an array literal
     // or an arrow function expression.
