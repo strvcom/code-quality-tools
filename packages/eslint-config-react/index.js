@@ -38,6 +38,7 @@ module.exports = {
     },
   },
 
+  /* eslint-disable max-len */
   rules: {
     // Enforces consistent naming for boolean props
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/boolean-prop-naming.md
@@ -75,7 +76,8 @@ module.exports = {
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-array-index-key.md
     'react/no-array-index-key': 'warn',
 
-    // This rule helps prevent problems caused by using children and the dangerouslySetInnerHTML prop at the same time
+    // This rule helps prevent problems caused by using children and the dangerouslySetInnerHTML
+    // prop at the same time
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-danger-with-children.md
     'react/no-danger-with-children': 'error',
 
@@ -89,15 +91,18 @@ module.exports = {
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-deprecated.md
     'react/no-deprecated': 'warn',
 
-    // NEVER mutate this.state directly, as calling setState() afterwards may replace the mutation you made. Treat this.state as if it were immutable
+    // NEVER mutate this.state directly, as calling setState() afterwards may replace the mutation
+    //  you made. Treat this.state as if it were immutable
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-direct-mutation-state.md
     'react/no-direct-mutation-state': 'error',
 
-    // Facebook will eventually deprecate findDOMNode as it blocks certain improvements in React in the future. Use callback refs instead
+    // Facebook will eventually deprecate findDOMNode as it blocks certain improvements in React in
+    // the future. Use callback refs instead
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-find-dom-node.md
     'react/no-find-dom-node': 'error',
 
-    // isMounted is an anti-pattern, is not available when using ES6 classes, and it is on its way to being officially deprecated
+    // isMounted is an anti-pattern, is not available when using ES6 classes, and it is on its
+    // way to being officially deprecated
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-is-mounted.md
     'react/no-is-mounted': 'error',
 
@@ -122,7 +127,8 @@ module.exports = {
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-typos.md
     'react/no-typos': 'error',
 
-    // Currently, two ways are supported by React to refer to components. The first way, providing a string identifier, is now considered legacy in the official documentation
+    // Currently, two ways are supported by React to refer to components. The first way, providing
+    // a string identifier, is now considered legacy in the official documentation
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-string-refs.md
     'react/no-string-refs': 'error',
 
@@ -130,15 +136,18 @@ module.exports = {
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-this-in-sfc.md
     'react/no-this-in-sfc': 'error',
 
-    // Rule prevents characters that you may have meant as JSX escape characters from being accidentally injected as a text node in JSX statements
+    // Rule prevents characters that you may have meant as JSX escape characters from being
+    // accidentally injected as a text node in JSX statements
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unescaped-entities.md
     'react/no-unescaped-entities': ['error'],
 
-    // In JSX all DOM properties and attributes should be camelCased to be consistent with standard JavaScript style
+    // In JSX all DOM properties and attributes should be camelCased to be consistent with standard
+    // JavaScript style
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unknown-property.md
     'react/no-unknown-property': ['error'],
 
-    // Certain legacy lifecycle methods are unsafe for use in async React applications and cause warnings in strict mode
+    // Certain legacy lifecycle methods are unsafe for use in async React applications
+    // and cause warnings in strict mode
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unsafe.md
     'react/no-unsafe': ['warn', { checkAliases: true }],
 
@@ -149,6 +158,10 @@ module.exports = {
     // Warns you if you have defined a property on the state, but it is not being used anywhere
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unused-state.md
     'react/no-unused-state': 'warn',
+
+    // Prevent usage of setState in componentWillUpdate
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-will-update-set-state.md
+    'react/no-will-update-set-state': ['error'],
 
     // PropTypes improve the reusability of your component by validating the received data
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prop-types.md
@@ -182,15 +195,20 @@ module.exports = {
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-handler-names.md
     'react/jsx-handler-names': ['warn'],
 
-    // Warn if an element that likely requires a key prop--namely, one present in an array literal or an arrow function expression
+    // Warn if an element that likely requires a key prop--namely, one present in an array literal
+    //  or an arrow function expression
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-key.md
     'react/jsx-key': 'warn',
 
-    // A bind call or arrow function in a JSX prop will create a brand new function on every single render. This is bad for performance, as it may cause unnecessary re-renders if a brand new function is passed as a prop to a component that uses reference equality check on the prop to determine if it should update
+    // A bind call or arrow function in a JSX prop will create a brand new function on every single
+    //  render. This is bad for performance, as it may cause unnecessary re-renders if a brand new
+    // function is passed as a prop to a component that uses reference equality check on the prop
+    // to determine if it should update
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-bind.md
     'react/jsx-no-bind': ['warn', { allowArrowFunctions: true }],
 
-    // This rule prevents comment strings (e.g. beginning with // or /*) from being accidentally injected as a text node in JSX statements
+    // This rule prevents comment strings (e.g. beginning with // or /*) from being accidentally
+    // injected as a text node in JSX statements
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-comment-textnodes.md
     'react/jsx-no-comment-textnodes': 'warn',
 
@@ -198,15 +216,20 @@ module.exports = {
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-duplicate-props.md
     'react/jsx-no-duplicate-props': ['warn', { ignoreCase: true }],
 
-    // When creating a JSX element that has an a tag, it is often desired to have the link open in a new tab using the target='_blank' attribute. Using this attribute unaccompanied by rel='noreferrer noopener', however, is a severe security vulnerability (see here for more details) This rules requires that you accompany target='_blank' attributes with rel='noreferrer noopener'
+    // When creating a JSX element that has an a tag, it is often desired to have the link open
+    // in a new tab using the target='_blank' attribute. Using this attribute unaccompanied by
+    // rel='noreferrer noopener', however, is a severe security vulnerability. This rules requires
+    //  that you accompany target='_blank' attributes with rel='noreferrer noopener'
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-target-blank.md
     'react/jsx-no-target-blank': ['warn', { enforceDynamicLinks: 'always' }],
 
-    // This rule helps locate potential ReferenceErrors resulting from misspellings or missing components
+    // This rule helps locate potential ReferenceErrors resulting from misspellings
+    //  or missing components
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-undef.md
     'react/jsx-no-undef': 'error',
 
-    // This rule allows you to enforce curly braces or disallow unnecessary curly braces in JSX props and/or children
+    // This rule allows you to enforce curly braces or disallow unnecessary curly braces
+    //  in JSX props and/or children
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-curly-brace-presence.md
     'react/jsx-curly-brace-presence': ['warn', 'never'],
 
@@ -214,7 +237,8 @@ module.exports = {
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-fragments.md
     'react/jsx-fragments': 'warn',
 
-    // Enforces coding style that user-defined JSX components are defined and referenced in PascalCase
+    // Enforces coding style that user-defined JSX components are defined andreferenced in
+    // PascalCase
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-pascal-case.md
     'react/jsx-pascal-case': [
       'error',
@@ -224,7 +248,8 @@ module.exports = {
       },
     ],
 
-    // JSX expands to a call to React.createElement, a file which includes React but only uses JSX should consider the React variable as used
+    // JSX expands to a call to React.createElement, a file which includes React but only uses
+    //  JSX should consider the React variable as used
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-uses-react.md
     'react/jsx-uses-react': 'error',
 
@@ -240,7 +265,8 @@ module.exports = {
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/accessible-emoji.md
     'jsx-a11y/accessible-emoji': 'warn',
 
-    // Enforce that all elements that require alternative text have meaningful information to relay back to the end user
+    // Enforce that all elements that require alternative text have meaningful information
+    // to relay back to the end user
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/alt-text.md
     'jsx-a11y/alt-text': 'warn',
 
@@ -273,7 +299,8 @@ module.exports = {
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/aria-role.md
     'jsx-a11y/aria-role': 'warn',
 
-    // Enforce that elements that do not support ARIA roles, states, and properties do not have those attributes
+    // Enforce that elements that do not support ARIA roles, states, and properties do not have
+    // those attributes
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/aria-unsupported-elements.md
     'jsx-a11y/aria-unsupported-elements': 'warn',
 
@@ -289,11 +316,15 @@ module.exports = {
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/img-redundant-alt.md
     'jsx-a11y/img-redundant-alt': 'warn',
 
-    // Enforce no accessKey prop on element. Access keys are HTML attributes that allow web developers to assign keyboard shortcuts to elements. Inconsistencies between keyboard shortcuts and keyboard commands used by screenreader and keyboard only users create accessibility complications so to avoid complications, access keys should not be used
+    // Enforce no accessKey prop on element. Access keys are HTML attributes that allow web
+    // developers to assign keyboard shortcuts to elements. Inconsistencies between keyboard
+    // shortcuts and keyboard commands used by screenreader and keyboard only users create
+    // accessibility complications so to avoid complications, access keys should not be used
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-access-key.md
     'jsx-a11y/no-access-key': 'warn',
 
-    // Enforces that no distracting elements are used. Elements that can be visually distracting can cause accessibility issues with visually impaired users
+    // Enforces that no distracting elements are used. Elements that can be visually distracting
+    // can cause accessibility issues with visually impaired users
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-distracting-elements.md
     'jsx-a11y/no-distracting-elements': 'warn',
 
@@ -309,7 +340,8 @@ module.exports = {
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/role-has-required-aria-props.md
     'jsx-a11y/role-has-required-aria-props': 'warn',
 
-    // Enforce that elements with explicit or implicit roles defined contain only aria-* properties supported by that role
+    // Enforce that elements with explicit or implicit roles defined contain only aria-*
+    // properties supported by that role
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/role-supports-aria-props.md
     'jsx-a11y/role-supports-aria-props': 'warn',
 
