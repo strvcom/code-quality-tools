@@ -9,7 +9,6 @@ node_modules
 
 # Generated files
 /.nvmrc
-/docs
 /coverage
 /gh-pages
 
