@@ -17,7 +17,7 @@ module.exports = {
 
   rules: {
     // Enforce consistent usage of destructuring assignment of props, state, and context
-    'react/destructuring-assignment': ['warn', {
+    'react/destructuring-assignment': ['warn', 'always', {
       ignoreClassFields: true,
     }],
 
