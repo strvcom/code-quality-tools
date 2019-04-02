@@ -72,6 +72,13 @@ module.exports = {
       allowAtRootLevel: true,
     }],
 
+    // Disallow Shadowing
+    // This rule aims to eliminate shadowed variable declarations.
+    'no-shadow': ['error', {
+      builtinGlobals: true,
+      hoist: 'functions',
+    }],
+
     // Disallow unsupported ECMAScript features on the specified version
     // This rule reports unsupported ECMAScript built-in variables on the configured Node.js version
     // as lint errors. This rule reads the engines field of package.json to detect which Node.js
