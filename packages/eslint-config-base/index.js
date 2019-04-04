@@ -442,6 +442,7 @@ module.exports = {
     'no-shadow': ['error', {
       builtinGlobals: true,
       hoist: 'functions',
+      allow: ['name'],
     }],
 
     // Disallow Undeclared Variables
