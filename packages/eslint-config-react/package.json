@@ -10,9 +10,6 @@
     "Robert Rossmann <rr.rossmann@me.com>",
     "Danny Kijkov <daniel.kijkov@strv.com>"
   ],
-  "peerDependencies": {
-    "eslint": "^5.3.0"
-  },
   "dependencies": {
     "@strv/eslint-config-base": "^1.1.1",
     "eslint-plugin-jsx-a11y": "^6.1.2",
@@ -22,6 +19,7 @@
   "engines": {
     "node": ">=6"
   },
+  "homepage": "https://github.com/strvcom/code-quality-tools/tree/master/packages/eslint-config-react",
   "keywords": [
     "config",
     "eslint",
@@ -30,6 +28,9 @@
   ],
   "license": "BSD-3-Clause",
   "main": "index.js",
+  "peerDependencies": {
+    "eslint": "^5.3.0"
+  },
   "publishConfig": {
     "access": "public"
   },
