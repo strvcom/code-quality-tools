@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.3](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-node@1.0.2...@strv/eslint-config-node@1.0.3) (2019-04-05)
+
+
+### Bug Fixes
+
+* **eslint-node:** do not suggest using named capture groups on Node < 10 ([f10acfc](https://github.com/strvcom/code-quality-tools/commit/f10acfc))
+
+
+
+
+
 ## [1.0.2](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-node@1.0.1...@strv/eslint-config-node@1.0.2) (2019-04-05)
 
 **Note:** Version bump only for package @strv/eslint-config-node
