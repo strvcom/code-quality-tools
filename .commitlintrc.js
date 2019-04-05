@@ -9,6 +9,7 @@ module.exports = {
     'scope-enum': [1, 'always', [
       'commitlint',
       'eslint-base',
+      'eslint-mocha',
       'eslint-node',
       'eslint-react',
       'prettier',
