@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-mocha@1.1.0...@strv/eslint-config-mocha@1.1.1) (2019-04-05)
+
+
+### Bug Fixes
+
+* **eslint-mocha:** use correct rule name for no-async-describe 🤦‍♂️ ([bd5a4e3](https://github.com/strvcom/code-quality-tools/commit/bd5a4e3))
+
+
+
+
+
 # [1.1.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-mocha@1.0.0...@strv/eslint-config-mocha@1.1.0) (2019-03-07)
 
 

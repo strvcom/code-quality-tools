@@ -1,7 +1,7 @@
 {
   "name": "@strv/eslint-config-react",
   "description": "STRV's ESLint config for React projects",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Pavel Prichodko <prichodko.p@gmail.com>",
   "bugs": {
     "url": "https://github.com/strvcom/code-quality-tools/issues"
@@ -11,7 +11,7 @@
     "Danny Kijkov <daniel.kijkov@strv.com>"
   ],
   "dependencies": {
-    "@strv/eslint-config-base": "^1.1.0",
+    "@strv/eslint-config-base": "^1.1.1",
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-react": "^7.11.1"
   },

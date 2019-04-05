@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.2](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-react@1.0.1...@strv/eslint-config-react@1.0.2) (2019-04-05)
+
+
+### Bug Fixes
+
+* drop react/jsx-filename-extension rule 🔥 ([e99c967](https://github.com/strvcom/code-quality-tools/commit/e99c967)), closes [#13](https://github.com/strvcom/code-quality-tools/issues/13)
+* faulty config in eslint-config-react/style ([c7011ea](https://github.com/strvcom/code-quality-tools/commit/c7011ea))
+
+
+
+
+
 ## [1.0.1](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-react@1.0.0...@strv/eslint-config-react@1.0.1) (2019-03-07)
 
 **Note:** Version bump only for package @strv/eslint-config-react
