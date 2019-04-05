@@ -15,4 +15,13 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2018,
   },
+
+  rules: {
+    // Suggest using named capture group in regular expression
+    // This rule is aimed at using named capture groups instead of numbered capture groups in
+    // regular expressions.
+    // @TODO(semver-major): Remove this override once we drop support for Node 8
+    // This rule is already enabled in the base ruleset
+    'prefer-named-capture-group': 'warn',
+  },
 }
