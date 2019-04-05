@@ -44,7 +44,7 @@ module.exports = {
       // This rule disallows the use of an async function with describe. It usually indicates a
       // copy/paste error or that you're trying to use describe for setup code, which should happen
       // in before or beforeEach.
-      'no-async-describe': 'warn',
+      'mocha/no-async-describe': 'warn',
 
       // Disallow exclusive tests
       // This rule reminds you to remove .only from your tests by raising a warning whenever you are
