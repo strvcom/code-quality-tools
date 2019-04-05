@@ -9,7 +9,6 @@
 'use strict'
 
 module.exports = {
-  root: true,
   extends: ['@strv/eslint-config-base'],
 
   parser: 'babel-eslint',
@@ -18,10 +17,7 @@ module.exports = {
 
   env: {
     browser: true,
-    commonjs: true,
     es6: true,
-    jest: true,
-    node: true,
   },
 
   parserOptions: {
