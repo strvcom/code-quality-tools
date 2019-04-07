@@ -304,9 +304,19 @@ module.exports = {
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/aria-unsupported-elements.md
     'jsx-a11y/aria-unsupported-elements': 'warn',
 
+    // Enforce onClick is accompanied by at least one of the following: onKeyUp, onKeyDown,
+    // onKeyPress. Coding for the keyboard is important for users with physical disabilities who
+    // cannot use a mouse, AT compatibility, and screenreader users
+    // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/click-events-have-key-events.md
+    'jsx-a11y/click-events-have-key-events': 'warn',
+
     // Enforce heading (h1, h2, etc) elements contain accessible content
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/heading-has-content.md
     'jsx-a11y/heading-has-content': 'warn',
+
+    // Enforce <html> element has lang prop
+    // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/html-has-lang.md
+    'jsx-a11y/html-has-lang': 'warn',
 
     // <iframe> elements must have a unique title property to indicate its content to the user
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/iframe-has-title.md
@@ -316,17 +326,91 @@ module.exports = {
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/img-redundant-alt.md
     'jsx-a11y/img-redundant-alt': 'warn',
 
-    // Enforce no accessKey prop on element. Access keys are HTML attributes that allow web
-    // developers to assign keyboard shortcuts to elements. Inconsistencies between keyboard
-    // shortcuts and keyboard commands used by screenreader and keyboard only users create
-    // accessibility complications so to avoid complications, access keys should not be used
+    // Elements with an interactive role and interaction handlers (mouse or key press) must be
+    // focusable
+    // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/interactive-supports-focus.md
+    'jsx-a11y/interactive-supports-focus': [
+      'warn',
+      {
+        tabbable: ['button', 'checkbox', 'link', 'searchbox', 'spinbutton', 'switch', 'textbox'],
+      },
+    ],
+
+    // Enforce that a label tag has a text label and an associated control
+    // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/label-has-associated-control.md
+    'jsx-a11y/label-has-associated-control': 'warn',
+
+    // Enforce lang attribute has a valid value
+    // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/lang.md
+    'jsx-a11y/lang': 'warn',
+
+    // Enforce that onMouseOver/onMouseOut are accompanied by onFocus/onBlur for keyboard-only users
+    // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/mouse-events-have-key-events.md
+    'jsx-a11y/mouse-events-have-key-events': 'warn',
+
+    // Enforce that the accessKey prop is not used on any element to avoid complications with keyboard commands used by a screenreader
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-access-key.md
     'jsx-a11y/no-access-key': 'warn',
+
+    // Enforce that autoFocus prop is not used on elements. Autofocusing elements can cause
+    // usability issues for sighted and non-sighted users, alike
+    // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-autofocus.md
+    'jsx-a11y/no-autofocus': 'warn',
 
     // Enforces that no distracting elements are used. Elements that can be visually distracting
     // can cause accessibility issues with visually impaired users
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-distracting-elements.md
     'jsx-a11y/no-distracting-elements': 'warn',
+
+    // Interactive elements should not be assigned non-interactive roles
+    // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-interactive-element-to-noninteractive-role.md
+    'jsx-a11y/no-interactive-element-to-noninteractive-role': [
+      'warn',
+      {
+        tr: ['none', 'presentation'],
+      },
+    ],
+
+    // Non-interactive elements should not be assigned mouse or keyboard event listeners
+    // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-noninteractive-element-interactions.md
+    'jsx-a11y/no-noninteractive-element-interactions': [
+      'warn',
+      {
+        handlers: ['onClick', 'onMouseDown', 'onMouseUp', 'onKeyPress', 'onKeyDown', 'onKeyUp'],
+      },
+    ],
+
+    // Non-interactive elements should not be assigned interactive roles
+    // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-noninteractive-element-to-interactive-role.md
+    'jsx-a11y/no-noninteractive-element-to-interactive-role': [
+      'warn',
+      {
+        ul: ['listbox', 'menu', 'menubar', 'radiogroup', 'tablist', 'tree', 'treegrid'],
+        ol: ['listbox', 'menu', 'menubar', 'radiogroup', 'tablist', 'tree', 'treegrid'],
+        li: ['menuitem', 'option', 'row', 'tab', 'treeitem'],
+        table: ['grid'],
+        td: ['gridcell'],
+      },
+    ],
+
+    // tabIndex should only be declared on interactive elements
+    // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-noninteractive-tabindex.md
+    'jsx-a11y/no-noninteractive-tabindex': [
+      'warn',
+      {
+        tags: [],
+        roles: ['tabpanel'],
+      },
+    ],
+
+    // Enforce that non-interactive, visible elements (such as <div>) that have click handlers use the role attribute
+    // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-static-element-interactions.md
+    'jsx-a11y/no-static-element-interactions': [
+      'warn',
+      {
+        handlers: ['onClick', 'onMouseDown', 'onMouseUp', 'onKeyPress', 'onKeyDown', 'onKeyUp'],
+      },
+    ],
 
     // Enforce usage of onBlur over onChange on select menus for accessibility
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-onchange.md
@@ -348,5 +432,9 @@ module.exports = {
     // The scope scope should be used only on <th> elements
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/scope.md
     'jsx-a11y/scope': 'warn',
+
+    // Enforce tabIndex value is not greater than zero
+    // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/tabindex-no-positive.md
+    'jsx-a11y/tabindex-no-positive': 'warn',
   },
 }
