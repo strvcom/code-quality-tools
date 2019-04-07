@@ -9,7 +9,7 @@
 'use strict'
 
 module.exports = {
-  extends: ['@strv/eslint-config-base'],
+  extends: require.resolve('@strv/eslint-config-base'),
 
   parser: 'babel-eslint',
 
@@ -182,6 +182,10 @@ module.exports = {
     // Enforce component methods order (fixable)
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/sort-comp.md
     'react/sort-comp': ['warn'],
+
+    // Enforce the state initialization style to be with a class property
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/state-in-constructor.md
+    'react/state-in-constructor': ['never', 'warn'],
 
     // Enforce style prop value being an object
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/style-prop-object.md
