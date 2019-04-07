@@ -10,6 +10,8 @@
 
 // These rules represent coding style targeted for React components.
 module.exports = {
+  extends: require.resolve('@strv/eslint-config-base/style'),
+
   plugins: ['react'],
 
   rules: {
@@ -101,7 +103,7 @@ module.exports = {
         order: [
           'static-methods',
           'lifecycle',
-          '/^on.+$/',
+          '/^handle.+$/',
           '/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/',
           'everything-else',
           '/^render.+$/',
