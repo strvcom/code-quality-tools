@@ -1,8 +1,8 @@
 {
-  "name": "eslint-config-react-native",
+  "name": "@strv/eslint-config-react-native",
   "description": "STRV's ESLint config for React Native projects",
   "version": "0.1.0",
-  "author": "André Nanninga <andre@nannin.ga>",
+  "author": "André Nanninga <andre.nanninga@strv.com>",
   "bugs": {
     "url": "https://github.com/strvcom/code-quality-tools/issues"
   },
