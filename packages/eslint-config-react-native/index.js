@@ -16,7 +16,10 @@ module.exports = {
     'react-native/react-native': true,
   },
 
-  plugins: ['react', 'react-native', 'react-native-a11y'],
+  plugins: [
+    'react-native',
+    'react-native-a11y',
+  ],
 
   rules: {
     // Detect StyleSheet rules which are not used in your React components.
