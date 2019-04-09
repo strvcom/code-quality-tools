@@ -12,8 +12,8 @@ Suitable for linting TypeScript source files.
 
 In addition to using this ruleset, you should also choose one base ruleset depending on your target platform:
 
-- `@strv/eslint-config-node/v10`
-- `@strv/eslint-config-react/v16`
+- [`@strv/eslint-config-node`][eslint-config-node]
+- [`@strv/eslint-config-react`][eslint-config-react]
 
 A full configuration for a TypeScript on Node.js project:
 
@@ -47,3 +47,6 @@ This ruleset includes rules which deal with how the code looks like and not how 
 ## License
 
 See the [LICENSE](LICENSE) file for information.
+
+[eslint-config-node]: https://www.npmjs.com/package/@strv/eslint-config-node
+[eslint-config-react]: https://www.npmjs.com/package/@strv/eslint-config-react
