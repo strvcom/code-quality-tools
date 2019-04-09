@@ -16,14 +16,6 @@ module.exports = {
     'react-native/react-native': true,
   },
 
-  parserOptions: {
-    sourceType: 'module',
-    ecmaVersion: 2017,
-    ecmaFeatures: {
-      jsx: true,
-    },
-  },
-
   plugins: ['react', 'react-native', 'react-native-a11y'],
 
   rules: {
