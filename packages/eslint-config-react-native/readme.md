@@ -28,15 +28,15 @@ A full configuration for a React Native project:
 
 ```js
 // .eslintrc.js
-"use strict";
+'use strict'
 
 module.exports = {
   extends: [
-    "@strv/eslint-config-react-native",
-    "@strv/eslint-config-react-native/optional",
-    "@strv/eslint-config-react-native/style"
-  ]
-};
+    '@strv/react-native',
+    '@strv/react-native/optional',
+    '@strv/react-native/style',
+  ],
+}
 ```
 
 ## License

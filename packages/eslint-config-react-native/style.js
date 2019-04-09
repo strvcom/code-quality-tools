@@ -6,8 +6,9 @@
  * @license     http://choosealicense.com/licenses/bsd-3-clause  BSD-3-Clause License
  */
 
-"use strict";
+'use strict'
 
 module.exports = {
-  extends: require.resolve("@strv/eslint-config-react/style")
-};
+
+  extends: require.resolve('@strv/eslint-config-react/style'),
+}
