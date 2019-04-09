@@ -11,6 +11,7 @@ module.exports = {
       'eslint-base',
       'eslint-node',
       'eslint-react',
+      'eslint-react-native',
       'prettier',
       'remark',
       'stylelint',
