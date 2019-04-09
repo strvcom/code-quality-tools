@@ -39,7 +39,7 @@ unlock: pristine
 	touch package.json
 
 clean:
-	rm -rf {.nyc_output,coverage,docs}
+	rm -rf {.nyc_output,coverage}
 	find . -name '*.log' -print -delete
 
 pristine: clean
