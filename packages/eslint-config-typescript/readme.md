@@ -15,6 +15,20 @@ In addition to using this ruleset, you should also choose one base ruleset depen
 - [`@strv/eslint-config-node`][eslint-config-node]
 - [`@strv/eslint-config-react`][eslint-config-react]
 
+## Optional configurations
+
+### `@strv/eslint-config-node/optional`
+
+Use this ruleset in conjunction with any of the above version-specific rulesets. Provides additional insights into potential inconsistencies in the project.
+
+> For new projects, it is recommended to enable this ruleset. For existing projects, it is only recommended for the brave.
+
+## Coding styles
+
+### `@strv/eslint-config-typescript/style`
+
+This ruleset includes rules which deal with how the code looks like and not how it works. It helps keeping the code clean and consistent. 🎨
+
 A full configuration for a TypeScript on Node.js project:
 
 ```js
@@ -37,12 +51,6 @@ To actually lint .ts files, you must pass the `--ext` flag to ESLint:
 ```sh
 eslint --ext ts --no-unused-disable-directives .
 ```
-
-## Coding styles
-
-### `@strv/eslint-config-typescript/style`
-
-This ruleset includes rules which deal with how the code looks like and not how it works. It helps keeping the code clean and consistent. 🎨
 
 ## License
 
