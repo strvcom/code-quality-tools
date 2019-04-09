@@ -12,6 +12,7 @@ module.exports = {
       'eslint-mocha',
       'eslint-node',
       'eslint-react',
+      'eslint-react-native',
       'prettier',
       'remark',
       'stylelint',

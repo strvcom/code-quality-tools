@@ -9,6 +9,7 @@
 |Commitlint|[@strv/commitlint-config](packages/commitlint-config)|[![@strv/commitlint-config][cl-badge]][cl-npm]|Configuration for Commitlint|
 |ESLint|[@strv/eslint-config-node](packages/eslint-config-node)|[![@strv/eslint-config-node][ec-node-badge]][ec-node-npm]|ESlint ruleset for Node.js projects|
 |ESLint|[@strv/eslint-config-react](packages/eslint-config-react)|[![@strv/eslint-config-react][ec-react-badge]][ec-react-npm]|ESlint ruleset for React projects|
+|ESLint|[@strv/eslint-config-react-native](packages/eslint-config-react-native)|[![@strv/eslint-config-react-native][ec-react-native-badge]][ec-react-native-npm]|ESlint ruleset for React-Native projects|
 |ESLint|[@strv/eslint-config-typescript](packages/eslint-config-typescript)|[![@strv/eslint-config-typescript][ec-typescript-badge]][ec-typescript-npm]|ESlint ruleset for TypeScript projects|
 |ESLint|[@strv/eslint-config-mocha](packages/eslint-config-mocha)|[![@strv/eslint-config-mocha][ec-mocha-badge]][ec-mocha-npm]|ESlint ruleset for Mocha test files|
 |Prettier|[@strv/prettier-config](packages/prettier-config)|[![@strv/prettier-config][pr-badge]][pr-npm]|Configuration for Prettier|
@@ -29,6 +30,8 @@ See the [LICENSE](LICENSE) file for information.
 [ec-mocha-badge]: https://img.shields.io/npm/v/@strv/eslint-config-mocha.svg?style=flat-square
 [ec-react-npm]: https://npmjs.org/package/@strv/eslint-config-react
 [ec-react-badge]: https://img.shields.io/npm/v/@strv/eslint-config-react.svg?style=flat-square
+[ec-react-native-npm]: https://npmjs.org/package/@strv/eslint-config-react-native
+[ec-react-native-badge]: https://img.shields.io/npm/v/@strv/eslint-config-react-native.svg?style=flat-square
 [ec-typescript-npm]: https://npmjs.org/package/@strv/eslint-config-typescript
 [ec-typescript-badge]: https://img.shields.io/npm/v/@strv/eslint-config-typescript.svg?style=flat-square
 [cl-npm]: https://npmjs.org/package/@strv/commitlint-config
