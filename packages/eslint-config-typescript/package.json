@@ -12,8 +12,8 @@
   ],
   "dependencies": {
     "@strv/eslint-config-base": "^1.1.2",
-    "eslint-plugin-jsx-a11y": "^6.1.2",
-    "eslint-plugin-react": "^7.11.1"
+    "@typescript-eslint/eslint-plugin": "^1.6.0",
+    "@typescript-eslint/parser": "^1.6.0"
   },
   "engines": {
     "node": ">=6"
