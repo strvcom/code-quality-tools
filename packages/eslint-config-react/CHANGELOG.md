@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-react@2.0.0...@strv/eslint-config-react@2.0.1) (2019-04-16)
+
+
+### Bug Fixes
+
+* **eslint-react:** use correct rule name for jsx-a11y/no-onchange 🤦‍♂️ ([47bfb8c](https://github.com/strvcom/code-quality-tools/commit/47bfb8c))
+
+
+
+
+
 # [2.0.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-react@1.0.2...@strv/eslint-config-react@2.0.0) (2019-04-09)
 
 
