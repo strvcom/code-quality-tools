@@ -418,7 +418,7 @@ module.exports = {
 
     // Enforce usage of onBlur over onChange on select menus for accessibility
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-onchange.md
-    'jsx-a11y/no-onchange:': 'warn',
+    'jsx-a11y/no-onchange': 'warn',
 
     // Enforce explicit role property is not the same as implicit/default role property on element
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-redundant-roles.md
