@@ -139,7 +139,7 @@ module.exports = {
     // This rule only has an effect when the no-unused-vars core rule is enabled. It ensures that
     // TypeScript-specific constructs, such as implemented interfaces, are not erroneously flagged
     // as unused.
-    '@typescript-eslint/no-unused-vars': 'error',
+    '@typescript-eslint/no-unused-vars': ['error', { 'ignoreRestSiblings': true }],
 
     // Disallow the use of variables before they are defined
     // This rule will warn when it encounters a reference to an identifier that has not yet been
