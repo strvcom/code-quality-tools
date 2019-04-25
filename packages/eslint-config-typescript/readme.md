@@ -52,6 +52,20 @@ To actually lint .ts files, you must pass the `--ext` flag to ESLint:
 eslint --ext ts --no-unused-disable-directives .
 ```
 
+## VSCode integration
+
+The [vscode-eslint](https://github.com/Microsoft/vscode-eslint) plugin for integrating ESLint into VSCode does not automatically parse TypeScript files. To do so, you must inform ESLint to enable on TypeScript files by adding this configuration to your settings (File > Preferences > Settings):
+
+```
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    { "language": "typescript", "autoFix": true },
+    { "language": "typescriptreact", "autoFix": true }
+  ]
+```
+> Notice we are adding `javascriptreact` and `typescriptreact` above. It won't harm adding those, but you can always omit this languages if not using them.
+
 ## License
 
 See the [LICENSE](LICENSE) file for information.
