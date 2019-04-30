@@ -28,6 +28,7 @@
   "homepage": "https://github.com/strvcom/code-quality-tools",
   "keywords": [],
   "license": "BSD-3-Clause",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "git://github.com/strvcom/code-quality-tools.git"
