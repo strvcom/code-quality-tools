@@ -51,6 +51,10 @@ module.exports = {
     // blows up anyway during compilation when it encouters an undefined variable.
     'no-undef': 'off',
 
+    // Disabled because it conflicts with typescript/no-unused-vars and does not support
+    // typescript specific declarations properly.
+    'no-unused-vars': 'off',
+    
     // Require that member overloads be consecutive
     // Grouping overloaded members together can improve readability of the code.
     '@typescript-eslint/adjacent-overload-signatures': 'warn',
@@ -135,10 +139,9 @@ module.exports = {
     // Triple-slash reference directive comments should not be used anymore. Use import instead.
     '@typescript-eslint/no-triple-slash-reference': 'error',
 
-    // Prevent TypeScript-specific constructs from being erroneously flagged as unused
-    // This rule only has an effect when the no-unused-vars core rule is enabled. It ensures that
-    // TypeScript-specific constructs, such as implemented interfaces, are not erroneously flagged
-    // as unused.
+    // Variables that are declared and not used anywhere in the code are most likely an error due
+    // to incomplete refactoring. Such variables take up space in the code and can lead to
+    // confusion by readers.
     '@typescript-eslint/no-unused-vars': 'error',
 
     // Disallow the use of variables before they are defined
