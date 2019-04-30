@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-node@1.0.4...@strv/eslint-config-node@1.1.0) (2019-04-30)
+
+
+### Features
+
+* improve handling of extensions across all ESLint configs ([08aa00a](https://github.com/strvcom/code-quality-tools/commit/08aa00a)), closes [#19](https://github.com/strvcom/code-quality-tools/issues/19)
+
+
+
+
+
 ## [1.0.4](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-node@1.0.3...@strv/eslint-config-node@1.0.4) (2019-04-09)
 
 **Note:** Version bump only for package @strv/eslint-config-node

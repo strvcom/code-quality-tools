@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-react@2.0.1...@strv/eslint-config-react@2.1.0) (2019-04-30)
+
+
+### Features
+
+* improve handling of extensions across all ESLint configs ([08aa00a](https://github.com/strvcom/code-quality-tools/commit/08aa00a)), closes [#19](https://github.com/strvcom/code-quality-tools/issues/19)
+
+
+
+
+
 ## [2.0.1](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-react@2.0.0...@strv/eslint-config-react@2.0.1) (2019-04-16)
 
 
