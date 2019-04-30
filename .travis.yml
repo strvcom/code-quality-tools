@@ -3,7 +3,7 @@ sudo: false
 dist: trusty
 language: node_js
 node_js:
-  - '11'
+  - '12'
 
 before_install:
   - touch package.json
@@ -32,4 +32,4 @@ deploy:
     repo: strvcom/code-quality-tools
     all_branches: true
     condition: $TRAVIS_BRANCH =~ ^release\/.{1,}$
-    node: '11'
+    node: '12'

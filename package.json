@@ -22,7 +22,7 @@
     "remark-preset-lint-recommended": "^3.0.2"
   },
   "engines": {
-    "node": "^10.0.0",
+    "node": "^10 || ^12",
     "npm": "^6.0.0"
   },
   "homepage": "https://github.com/strvcom/code-quality-tools",
