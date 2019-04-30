@@ -8,6 +8,8 @@
 
 'use strict'
 
+const base = require('@strv/eslint-config-base')
+
 module.exports = {
   extends: require.resolve('@strv/eslint-config-base'),
 
@@ -31,6 +33,15 @@ module.exports = {
   settings: {
     react: {
       version: 'detect',
+    },
+
+    'import/resolver': {
+      node: {
+        extensions: [
+          '.jsx',
+          ...base.settings['import/resolver'].node.extensions,
+        ],
+      },
     },
   },
 

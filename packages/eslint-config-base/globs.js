@@ -25,6 +25,8 @@ module.exports = {
   javascripts: [
     '*.js',
     '.*.js',
+    '*.cjs',
+    '.*.cjs',
   ],
 
   esmodules: [

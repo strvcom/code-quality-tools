@@ -8,6 +8,8 @@
 
 'use strict'
 
+const base = require('@strv/eslint-config-base')
+
 module.exports = {
 
   extends: require.resolve('@strv/eslint-config-base'),
@@ -18,10 +20,9 @@ module.exports = {
       node: {
         extensions: [
           '.ts',
+          '.tsx',
           '.d.ts',
-          '.mjs',
-          '.js',
-          '.json',
+          ...base.settings['import/resolver'].node.extensions,
         ],
       },
     },
@@ -54,7 +55,7 @@ module.exports = {
     // Disabled because it conflicts with typescript/no-unused-vars and does not support
     // typescript specific declarations properly.
     'no-unused-vars': 'off',
-    
+
     // Require that member overloads be consecutive
     // Grouping overloaded members together can improve readability of the code.
     '@typescript-eslint/adjacent-overload-signatures': 'warn',

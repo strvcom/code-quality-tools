@@ -8,6 +8,7 @@
 
 'use strict'
 
+const base = require('@strv/eslint-config-base')
 const globs = require('@strv/eslint-config-base/globs')
 
 module.exports = {
@@ -26,6 +27,17 @@ module.exports = {
   plugins: [
     'node',
   ],
+
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: [
+          ...base.settings['import/resolver'].node.extensions,
+          '.node',
+        ],
+      },
+    },
+  },
 
   rules: {
     // Enforce `require()` on the top-level module scope
