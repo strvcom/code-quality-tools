@@ -1,7 +1,7 @@
 {
   "name": "@strv/eslint-config-react",
   "description": "STRV's ESLint config for React projects",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "author": "Pavel Prichodko <prichodko.p@gmail.com>",
   "bugs": {
     "url": "https://github.com/strvcom/code-quality-tools/issues"
