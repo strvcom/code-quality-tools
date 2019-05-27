@@ -56,7 +56,7 @@ eslint --ext ts --no-unused-disable-directives .
 
 The [vscode-eslint](https://github.com/Microsoft/vscode-eslint) plugin for integrating ESLint into VSCode does not automatically parse TypeScript files. To do so, you must inform ESLint to enable on TypeScript files by adding this configuration to your settings (File > Preferences > Settings):
 
-```
+```json
   "eslint.validate": [
     "javascript",
     "javascriptreact",
