@@ -196,7 +196,7 @@ module.exports = {
 
     // Enforce the state initialization style to be with a class property
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/state-in-constructor.md
-    'react/state-in-constructor': ['never', 'warn'],
+    'react/state-in-constructor': ['warn', 'never'],
 
     // Enforce style prop value being an object
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/style-prop-object.md
