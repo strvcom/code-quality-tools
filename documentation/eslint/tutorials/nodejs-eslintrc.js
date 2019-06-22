@@ -4,9 +4,9 @@
 // directory, or a subdirectory if your project consists of both node.js and browser code.
 module.exports = {
   extends: [
-    '@strv/node/v10',
+    '@strv/node/v12',
     '@strv/node/optional',
-    '@strv/mocha/recommended',
     '@strv/node/style',
+    '@strv/mocha',
   ],
 }
