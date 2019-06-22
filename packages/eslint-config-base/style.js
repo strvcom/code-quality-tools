@@ -595,7 +595,9 @@ module.exports = {
     'import/group-exports': 'warn',
 
     // Ensure that there are no useless path segments in import statement path
-    'import/no-useless-path-segments': 'warn',
+    'import/no-useless-path-segments': ['warn', {
+      noUselessIndex: true,
+    }],
 
     // Enforce a convention in the order of require() / import statements
     'import/order': 'warn',
