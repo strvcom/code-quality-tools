@@ -77,11 +77,6 @@ module.exports = {
     // This rule aims to make code more readable and explicit about who can use which properties.
     '@typescript-eslint/explicit-member-accessibility': 'warn',
 
-    // Require that interface names be prefixed with I
-    // It can be hard to differentiate between classes and interfaces. Prefixing interfaces with "I"
-    // can help telling them apart at a glance.
-    '@typescript-eslint/interface-name-prefix': ['warn', 'always'],
-
     // Require a specific member delimiter style for interfaces and type literals
     // This rule aims to standardise the way interface and type literal members are delimited.
     '@typescript-eslint/member-delimiter-style': ['warn', {
