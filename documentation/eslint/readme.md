@@ -13,8 +13,7 @@
 
 #### For [React][react-docs]
 
-- @strv/react/v16
-- @strv/react/v15
+- @strv/react
 - @strv/react/optional
 - @strv/react/style
 
