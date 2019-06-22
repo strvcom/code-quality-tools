@@ -16,7 +16,7 @@
     "@typescript-eslint/parser": "^1.6.0"
   },
   "engines": {
-    "node": ">=6"
+    "node": ">=10"
   },
   "keywords": [
     "config",

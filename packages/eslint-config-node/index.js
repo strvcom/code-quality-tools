@@ -84,12 +84,6 @@ module.exports = {
       allowAtRootLevel: true,
     }],
 
-    // Suggest using named capture group in regular expression
-    // This rule is aimed at using named capture groups instead of numbered capture groups in
-    // regular expressions.
-    // @TODO(semver-major): Re-enable once we drop support for Node 8
-    'prefer-named-capture-group': 'off',
-
     // Disallow unsupported ECMAScript features on the specified version
     // This rule reports unsupported ECMAScript built-in variables on the configured Node.js version
     // as lint errors. This rule reads the engines field of package.json to detect which Node.js
