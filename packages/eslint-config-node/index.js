@@ -141,5 +141,14 @@ module.exports = {
     env: {
       es6: true,
     },
+
+    rules: {
+      // Report modules without any exports & individual exports not being statically imported or
+      // requireed from other modules in the same project
+      'import/no-unused-modules': ['warn', {
+        missingExports: true,
+        unusedExports: true,
+      }],
+    },
   }],
 }
