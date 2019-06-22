@@ -22,8 +22,6 @@ module.exports = {
         extensions: [
           '.mjs',
           '.cjs',
-          // @TODO(semver:major): Remove .es
-          '.es',
           '.js',
           '.json',
           '.node',
