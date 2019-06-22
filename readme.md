@@ -1,6 +1,10 @@
-# STRV - Code Quality Tools
+# Code Quality Tools
 
-> A monorepo containing shareable configurations for various coding-style/best practices/lint tools to make the configurations consistent across projects and provide easy setup mechanism. ❤️
+[![Build Status][travis-badge]][travis-url]
+
+> Built with ❤️ at [STRV][strv-home]
+
+This monorepo contains shareable configurations for various coding-style/best practices/lint tools to make the configurations consistent across projects and provide easy setup mechanism. ❤️
 
 ## Available configurations
 
@@ -24,6 +28,9 @@ Documentation for some packages is still being worked on. Check the [documentati
 
 See the [LICENSE](LICENSE) file for information.
 
+[strv-home]: https://www.strv.com
+[travis-badge]: https://travis-ci.com/strvcom/code-quality-tools.svg
+[travis-url]: https://travis-ci.com/strvcom/code-quality-tools
 [ec-node-npm]: https://npmjs.org/package/@strv/eslint-config-node
 [ec-node-badge]: https://img.shields.io/npm/v/@strv/eslint-config-node.svg?style=flat-square
 [ec-mocha-npm]: https://npmjs.org/package/@strv/eslint-config-mocha
