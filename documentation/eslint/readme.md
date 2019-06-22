@@ -6,8 +6,8 @@
 
 #### For [Node.js][nodejs-docs]
 
+- @strv/node/v12
 - @strv/node/v10
-- @strv/node/v8
 - @strv/node/optional
 - @strv/node/style
 

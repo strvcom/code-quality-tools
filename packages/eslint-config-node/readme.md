@@ -6,13 +6,13 @@ These configuration files are suitable to lint code which will run on Node.js.
 
 ## Configurations
 
-### `@strv/eslint-config-node/v8`
-
-Suitable for projects running on Node.js v8.
-
 ### `@strv/eslint-config-node/v10`
 
 Suitable for projects running on Node.js v10.
+
+### `@strv/eslint-config-node/v12`
+
+Suitable for projects running on Node.js v12.
 
 ## Optional configurations
 
