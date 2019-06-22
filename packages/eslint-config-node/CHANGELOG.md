@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-node@1.1.0...@strv/eslint-config-node@2.0.0) (2019-06-22)
+
+
+### Features
+
+* add @strv/node/v12 configuration ([0b26500](https://github.com/strvcom/code-quality-tools/commit/0b26500))
+* drop support for Node.js 6 & 8 ([4add1ff](https://github.com/strvcom/code-quality-tools/commit/4add1ff))
+* enable import/no-unused-modules rule for .mjs files ([b251cc8](https://github.com/strvcom/code-quality-tools/commit/b251cc8))
+* explicitly mark configs as ESLint v6 compatible 🎉 ([017d975](https://github.com/strvcom/code-quality-tools/commit/017d975))
+* upgrade eslint-plugin-node ([fe8d558](https://github.com/strvcom/code-quality-tools/commit/fe8d558))
+
+
+### BREAKING CHANGES
+
+* From now on, all ESLint plugins will only work on projects running Node.js 10 and above and the linter itself must be run using Node.js 10 and above.
+
+
+
+
+
 # [1.1.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-node@1.0.4...@strv/eslint-config-node@1.1.0) (2019-04-30)
 
 

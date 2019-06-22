@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-typescript@1.1.1...@strv/eslint-config-typescript@2.0.0) (2019-06-22)
+
+
+### Features
+
+* drop support for Node.js 6 & 8 ([4add1ff](https://github.com/strvcom/code-quality-tools/commit/4add1ff))
+* explicitly mark configs as ESLint v6 compatible 🎉 ([017d975](https://github.com/strvcom/code-quality-tools/commit/017d975))
+* remove interface name prefix rule from typescript ([49221f7](https://github.com/strvcom/code-quality-tools/commit/49221f7)), closes [#25](https://github.com/strvcom/code-quality-tools/issues/25)
+
+
+### BREAKING CHANGES
+
+* From now on, all ESLint plugins will only work on projects running Node.js 10 and above and the linter itself must be run using Node.js 10 and above.
+
+
+
+
+
 ## [1.1.1](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-typescript@1.1.0...@strv/eslint-config-typescript@1.1.1) (2019-05-27)
 
 **Note:** Version bump only for package @strv/eslint-config-typescript

@@ -3,6 +3,32 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-base@1.2.0...@strv/eslint-config-base@2.0.0) (2019-06-22)
+
+
+### chore
+
+* remove .es extension from recognised module extensions ([b160a65](https://github.com/strvcom/code-quality-tools/commit/b160a65))
+
+
+### Features
+
+* drop support for Node.js 6 & 8 ([4add1ff](https://github.com/strvcom/code-quality-tools/commit/4add1ff))
+* enable import/no-useless-path-segments' noUselessIndex option ([dc4741f](https://github.com/strvcom/code-quality-tools/commit/dc4741f))
+* explicitly mark configs as ESLint v6 compatible 🎉 ([017d975](https://github.com/strvcom/code-quality-tools/commit/017d975))
+
+
+### BREAKING CHANGES
+
+* Some rules will no longer recognise extension-less module imports pointing to files ending with .es extension.
+
+.es was originally used as an extension with ES Modules support but the official extension for that is now .mjs. Rename your .es files to .mjs to restore any lost functionality.
+* From now on, all ESLint plugins will only work on projects running Node.js 10 and above and the linter itself must be run using Node.js 10 and above.
+
+
+
+
+
 # [1.2.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-base@1.1.2...@strv/eslint-config-base@1.2.0) (2019-04-30)
 
 
