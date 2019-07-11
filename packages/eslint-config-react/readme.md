@@ -20,6 +20,46 @@ Use this ruleset in conjunction with the above ruleset. Provides additional insi
 
 This ruleset includes rules which deal with how the code looks like and not how it works. It helps keeping the code clean and consistent. 🎨
 
+## STRV Config
+
+package.json
+
+```json
+{
+  "eslintConfig": {
+    "extends": [
+      "@strv/eslint-config-react",
+      "@strv/eslint-config-react/optional",
+      "@strv/eslint-config-react/style"
+    ]
+  }
+}
+```
+
+.eslintrc or .eslintrc.json
+
+```json
+{
+  "extends": [
+    "@strv/eslint-config-react",
+    "@strv/eslint-config-react/optional",
+    "@strv/eslint-config-react/style"
+  ]
+}
+```
+
+.eslintrc.js
+
+```js
+module.exports = {
+  extends: [
+    '@strv/eslint-config-react',
+    '@strv/eslint-config-react/optional',
+    '@strv/eslint-config-react/style'
+  ]
+}
+```
+
 ## License
 
 See the [LICENSE](LICENSE) file for information.
