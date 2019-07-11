@@ -28,6 +28,46 @@ Use this ruleset in conjunction with any of the above version-specific rulesets.
 
 This ruleset includes rules which deal with how the code looks like and not how it works. It helps keeping the code clean and consistent. 🎨
 
+## STRV Config
+
+package.json
+
+```json
+{
+  "eslintConfig": {
+    "extends": [
+      "@strv/eslint-config-node/<v10 or v12>",
+      "@strv/eslint-config-node/optional",
+      "@strv/eslint-config-node/style"
+    ]
+  }
+}
+```
+
+.eslintrc or .eslintrc.json
+
+```json
+{
+  "extends": [
+    "@strv/eslint-config-node/<v10 or v12>",
+    "@strv/eslint-config-node/optional",
+    "@strv/eslint-config-node/style"
+  ]
+}
+```
+
+.eslintrc.js
+
+```js
+module.exports = {
+  extends: [
+    '@strv/eslint-config-node/<v10 or v12>',
+    '@strv/eslint-config-node/optional',
+    '@strv/eslint-config-node/style'
+  ]
+}
+```
+
 ## License
 
 See the [LICENSE](LICENSE) file for information.
