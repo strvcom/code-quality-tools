@@ -1,6 +1,6 @@
 {
-  "name": "@strv/textlint-config",
-  "description": "STRV's config for textlint",
+  "name": "@strv/textlint-rule-preset-strv",
+  "description": "STRV's rule preset for textlint",
   "version": "1.0.0",
   "author": "Korneliusz Dubieniecki <lekterable@gmail.com>",
   "bugs": {
@@ -20,6 +20,7 @@
   "keywords": [
     "config",
     "textlint",
+    "textlintrule",
     "strv"
   ],
   "license": "BSD-3-Clause",

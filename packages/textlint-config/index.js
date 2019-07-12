@@ -2,6 +2,14 @@
 
 module.exports = {
   rules: {
+    terminology: require('textlint-rule-terminology'),
+    'stop-words': require('textlint-rule-stop-words'),
+    'common-misspellings': require('textlint-rule-common-misspellings'),
+    'write-good': require('textlint-rule-write-good'),
+    'title-case': require('textlint-rule-title-case'),
+    apostrophe: require('textlint-rule-apostrophe')
+  },
+  rulesConfig: {
     terminology: {
       defaultTerms: false,
       skip: ['Blockquote', 'Header', 'Link', 'Emphasis', 'Strong'],
@@ -77,8 +85,5 @@ module.exports = {
       exclusions: ['documentation.js', 'gh-lint', 'lint-staged', 'npm', 'webpack', 'size-limit']
     },
     apostrophe: true
-  },
-  filters: {
-    comments: true
   }
 }
