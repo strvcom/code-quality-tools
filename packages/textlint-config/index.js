@@ -37,6 +37,16 @@ module.exports = {
         'styled-components',
         'react-router',
         'ECMAScript',
+        'Amazon',
+        'Facebook',
+        'AWS',
+        'Heroku',
+        'Netlify',
+        'STRV',
+        'InVision',
+        'Google',
+        'GitHub',
+        'Microsoft',
 
         // Words and phrases
         'ID', // http://stackoverflow.com/questions/1151338/id-or-id-on-user-interface
