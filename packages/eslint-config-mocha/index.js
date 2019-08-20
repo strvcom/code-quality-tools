@@ -77,6 +77,10 @@ module.exports = {
       // function calls and use of the dot operator (due to getters and setters) directly in
       // describe blocks.
       'mocha/no-setup-in-describe': 'warn',
+
+      // Do not require test files to have exports or to be imported from somewhere inside the
+      // project. Test files are usually sourced by Mocha directly.
+      'import/no-unused-modules': 'off',
     },
   }],
 }
