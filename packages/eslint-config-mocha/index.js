@@ -72,6 +72,12 @@ module.exports = {
       // developers to remove this source of confusion.
       'mocha/no-return-and-callback': 'error',
 
+      // Disallow returning from an async test or hook
+      // Mocha's tests or hooks (like before) may be asynchronous by returning a Promise. When such
+      // a Promise-returning function is defined using an ES7 async function it can be confusing
+      // when combined with an explicit return of a Promise, as it's mixing the two styles.
+      'no-return-from-async': 'warn',
+
       // Disallow setup in describe blocks
       // Any setup directly in a describe is run before all tests execute. This rule reports all
       // function calls and use of the dot operator (due to getters and setters) directly in
