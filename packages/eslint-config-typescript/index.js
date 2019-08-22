@@ -25,6 +25,8 @@ module.exports = {
           ...base.settings['import/resolver'].node.extensions,
         ],
       },
+      // Correctly recognise paths defined in tsconfig.json for package aliases
+      typescript: {},
     },
   },
 
