@@ -126,7 +126,10 @@ module.exports = {
       sourceType: 'script',
     },
   }, {
-    files: globs.esmodules,
+    files: [
+      ...globs.esmodules,
+      ...globs.typescripts,
+    ],
 
     parserOptions: {
       sourceType: 'module',
@@ -138,7 +141,7 @@ module.exports = {
 
     rules: {
       // Report modules without any exports & individual exports not being statically imported or
-      // requireed from other modules in the same project
+      // required from other modules in the same project
       'import/no-unused-modules': ['warn', {
         missingExports: true,
         unusedExports: true,

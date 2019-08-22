@@ -33,4 +33,11 @@ module.exports = {
     '*.mjs',
     '.*.mjs',
   ],
+
+  typescripts: [
+    '*.ts',
+    '.*.ts',
+    '*.tsx',
+    '.*.tsx',
+  ],
 }
