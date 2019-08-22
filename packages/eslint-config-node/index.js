@@ -140,6 +140,11 @@ module.exports = {
     },
 
     rules: {
+      // Allow ES Modules to be used in these source files
+      'node/no-unsupported-features/es-syntax': ['error', {
+        ignores: ['modules'],
+      }],
+
       // Report modules without any exports & individual exports not being statically imported or
       // required from other modules in the same project
       'import/no-unused-modules': ['warn', {
