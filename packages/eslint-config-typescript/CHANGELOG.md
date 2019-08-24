@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-typescript@2.0.0...@strv/eslint-config-typescript@2.1.0) (2019-08-24)
+
+
+### Features
+
+* **eslint-typescript:** correctly recognise paths in tsconfig.json ([49e7ec4](https://github.com/strvcom/code-quality-tools/commit/49e7ec4))
+* revisit TypeScript ruleset, upgrade to v2 ([86fadc6](https://github.com/strvcom/code-quality-tools/commit/86fadc6))
+
+
+
+
+
 # [2.0.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-typescript@1.1.1...@strv/eslint-config-typescript@2.0.0) (2019-06-22)
 
 

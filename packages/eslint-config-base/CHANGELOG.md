@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-base@2.0.0...@strv/eslint-config-base@2.1.0) (2019-08-24)
+
+
+### Bug Fixes
+
+* **eslint-base:** upgrade eslint-plugin-import to 2.18.0 ([e181987](https://github.com/strvcom/code-quality-tools/commit/e181987))
+
+
+### Features
+
+* enable no-unused-modules for TypeScript files ([93c2437](https://github.com/strvcom/code-quality-tools/commit/93c2437))
+
+
+
+
+
 # [2.0.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-base@1.2.0...@strv/eslint-config-base@2.0.0) (2019-06-22)
 
 

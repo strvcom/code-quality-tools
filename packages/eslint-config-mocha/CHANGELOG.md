@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-mocha@2.0.0...@strv/eslint-config-mocha@2.1.0) (2019-08-24)
+
+
+### Bug Fixes
+
+* **eslint-mocha:** disable import/no-unused-modules rule for tests ([73185a6](https://github.com/strvcom/code-quality-tools/commit/73185a6))
+
+
+### Features
+
+* **eslint-mocha:** enable no-return-from-async rule ([0b442a6](https://github.com/strvcom/code-quality-tools/commit/0b442a6))
+
+
+
+
+
 # [2.0.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-mocha@1.1.3...@strv/eslint-config-mocha@2.0.0) (2019-06-22)
 
 

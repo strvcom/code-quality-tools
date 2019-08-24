@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-node@2.0.0...@strv/eslint-config-node@2.1.0) (2019-08-24)
+
+
+### Bug Fixes
+
+* **eslint-node:** allow ES modules syntax in .mjs, .ts files ([5188695](https://github.com/strvcom/code-quality-tools/commit/5188695))
+
+
+### Features
+
+* enable no-unused-modules for TypeScript files ([93c2437](https://github.com/strvcom/code-quality-tools/commit/93c2437))
+* **eslint-node:** upgrade eslint-plugin-node to 9.1 ([e1542be](https://github.com/strvcom/code-quality-tools/commit/e1542be))
+
+
+
+
+
 # [2.0.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-node@1.1.0...@strv/eslint-config-node@2.0.0) (2019-06-22)
 
 

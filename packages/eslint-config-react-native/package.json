@@ -1,7 +1,7 @@
 {
   "name": "@strv/eslint-config-react-native",
   "description": "STRV's ESLint config for React Native projects",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "author": "André Nanninga <andre.nanninga@strv.com>",
   "bugs": {
     "url": "https://github.com/strvcom/code-quality-tools/issues"
@@ -10,7 +10,7 @@
     "Robert Rossmann <rr.rossmann@me.com>"
   ],
   "dependencies": {
-    "@strv/eslint-config-react": "^3.0.0",
+    "@strv/eslint-config-react": "^3.0.1",
     "eslint-plugin-react-native": "^3.7.0",
     "eslint-plugin-react-native-a11y": "^1.2.0"
   },

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-react-native@2.0.0...@strv/eslint-config-react-native@2.1.0) (2019-08-24)
+
+
+### Features
+
+* **eslint-react:** upgrade eslint-plugin-react-native to 3.7 ([369108f](https://github.com/strvcom/code-quality-tools/commit/369108f))
+
+
+
+
+
 # [2.0.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-react-native@1.0.3...@strv/eslint-config-react-native@2.0.0) (2019-06-22)
 
 

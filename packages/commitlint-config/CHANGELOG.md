@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/strvcom/code-quality-tools/compare/@strv/commitlint-config@1.0.1...@strv/commitlint-config@1.1.0) (2019-08-24)
+
+
+### Features
+
+* **commitlint:** upgrade commitlint rulesets ([5359478](https://github.com/strvcom/code-quality-tools/commit/5359478))
+
+
+
+
+
 ## [1.0.1](https://github.com/strvcom/code-quality-tools/compare/@strv/commitlint-config@1.0.0...@strv/commitlint-config@1.0.1) (2019-04-05)
 
 **Note:** Version bump only for package @strv/commitlint-config
