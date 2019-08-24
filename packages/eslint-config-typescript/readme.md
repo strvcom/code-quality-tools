@@ -4,6 +4,16 @@
 
 These configuration files are suitable to lint TypeScript code.
 
+## Setup
+
+To lint TypeScript files using ESLint and this ruleset you must
+
+1. Install ESLint & this ruleset
+1. Tell the TypeScript parser where your _tsconfig.json_ file is (not doing so will cause some TS-syntax-specific rules to not work at all)
+1. Extend one or more of the included rulesets
+
+See the example _.eslintrc.js_ file below for more details and make sure you read the [Parser's docs][ts-parser-configuration] about its settings.
+
 ## Configurations
 
 ### `@strv/eslint-config-typescript`
@@ -43,6 +53,12 @@ module.exports = {
     '@strv/eslint-config-typescript',
     '@strv/eslint-config-typescript/style',
   ],
+
+  parserOptions: {
+    // The project field is required in order for some TS-syntax-specific rules to function at all
+    // @see https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser#configuration
+    project: './tsconfig.json',
+  },
 }
 ```
 
@@ -64,7 +80,7 @@ The [vscode-eslint](https://github.com/Microsoft/vscode-eslint) plugin for integ
     { "language": "typescriptreact", "autoFix": true }
   ]
 ```
-> Notice we are adding `javascriptreact` and `typescriptreact` above. It won't harm adding those, but you can always omit this languages if not using them.
+> Notice we are adding `javascriptreact` and `typescriptreact` above. It won't harm adding those, but you can always omit these languages if not using them.
 
 ## License
 
@@ -72,3 +88,4 @@ See the [LICENSE](LICENSE) file for information.
 
 [eslint-config-node]: https://www.npmjs.com/package/@strv/eslint-config-node
 [eslint-config-react]: https://www.npmjs.com/package/@strv/eslint-config-react
+[ts-parser-configuration]: https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser#configuration

@@ -12,8 +12,9 @@
   ],
   "dependencies": {
     "@strv/eslint-config-base": "^2.0.0",
-    "@typescript-eslint/eslint-plugin": "^1.6.0",
-    "@typescript-eslint/parser": "^1.6.0"
+    "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "@typescript-eslint/parser": "^2.0.0",
+    "eslint-import-resolver-typescript": "^1.1.1"
   },
   "engines": {
     "node": ">=10"
@@ -21,7 +22,7 @@
   "keywords": [
     "config",
     "eslint",
-    "react",
+    "typescript",
     "strv"
   ],
   "license": "BSD-3-Clause",
