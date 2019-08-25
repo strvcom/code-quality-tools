@@ -21,7 +21,9 @@
   // Enable ESLint and its auto-fixer
   "eslint.enable": true,
   "eslint.autoFixOnSave": true,
+  "eslint.lintTask.enable": true,
+  "eslint.lintTask.options": "--report-unused-disable-directives .",
   "eslint.options": {
-    "reportUnusedDisableDirectives": true
+    "reportUnusedDisableDirectives": true,
   }
 }
