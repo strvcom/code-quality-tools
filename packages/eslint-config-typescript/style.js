@@ -101,10 +101,11 @@ module.exports = {
     // with a specific string.
     '@typescript-eslint/prefer-string-starts-ends-with': 'warn',
 
+    // @TODO: Re-enable once the @eslint-typescript/eslint-plugin is updated to a newer version
     // Enforce the consistent use of either backticks, double, or single quotes
     // This rule extends the base eslint/quotes rule. It supports all options and features of the
     // base rule.
-    '@typescript-eslint/quotes': style.rules.quotes,
+    // '@typescript-eslint/quotes': style.rules.quotes,
 
     // Enforce or Disallow Semicolons
     // This rule is aimed at ensuring consistent use of semicolons.
