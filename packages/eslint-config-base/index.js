@@ -222,13 +222,6 @@ module.exports = {
     // class, it will match to either ❇ (U+2747) or VARIATION SELECTOR-16 (U+FE0F) rather than ❇️.
     'no-misleading-character-class': 'error',
 
-    // Disallow unnecessary `return await`
-    // Inside an async function, return await is useless. Since the return value of an async
-    // function is always wrapped in Promise.resolve, return await doesn’t actually do anything
-    // except add extra time before the overarching Promise resolves or rejects. This pattern is
-    // almost certainly due to programmer ignorance of the return semantics of async functions.
-    'no-return-await': 'warn',
-
     // Disallow Initializing to undefined
     // In JavaScript, a variable that is declared and not initialized to any value automatically
     // gets the value of undefined.
