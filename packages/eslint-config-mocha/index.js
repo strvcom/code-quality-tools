@@ -24,6 +24,11 @@ module.exports = {
     },
 
     rules: {
+      // Enforce a maximum number of classes per file
+      // When testing it is often practical to define a dummy/test class in each test case or test
+      // suite. This rule makes it quite difficult -> turn it off!
+      'max-classes-per-file': 'off',
+
       // Set Maximum Depth of Nested Callbacks
       // This rule is aimed at increasing code clarity by discouraging deeply nesting callbacks.
       // Allow some extra nesting for Mocha tests, due to Mocha's test coding patterns encouraging
