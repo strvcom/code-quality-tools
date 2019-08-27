@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.2](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-react@3.0.1...@strv/eslint-config-react@3.0.2) (2019-08-27)
+
+**Note:** Version bump only for package @strv/eslint-config-react
+
+
+
+
+
 ## [3.0.1](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-react@3.0.0...@strv/eslint-config-react@3.0.1) (2019-08-24)
 
 **Note:** Version bump only for package @strv/eslint-config-react

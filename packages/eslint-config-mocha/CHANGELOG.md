@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.1](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-mocha@2.1.0...@strv/eslint-config-mocha@2.1.1) (2019-08-27)
+
+
+### Bug Fixes
+
+* **eslint-mocha:** disable max-classes-per-file for test files ([a932365](https://github.com/strvcom/code-quality-tools/commit/a932365))
+* **eslint-mocha:** use correct reference for mocha/no-return-from-async ([35a0aff](https://github.com/strvcom/code-quality-tools/commit/35a0aff))
+
+
+
+
+
 # [2.1.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-mocha@2.0.0...@strv/eslint-config-mocha@2.1.0) (2019-08-24)
 
 
