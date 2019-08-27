@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.1](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-typescript@2.1.0...@strv/eslint-config-typescript@2.1.1) (2019-08-27)
+
+
+### Bug Fixes
+
+* **eslint-typescript:** disable quotes rule (not yet released) ([3b58c95](https://github.com/strvcom/code-quality-tools/commit/3b58c95))
+
+
+
+
+
 # [2.1.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-typescript@2.0.0...@strv/eslint-config-typescript@2.1.0) (2019-08-24)
 
 
