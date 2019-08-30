@@ -20,45 +20,53 @@ Use this ruleset in conjunction with the above ruleset. Provides additional insi
 
 This ruleset includes rules which deal with how the code looks like and not how it works. It helps keeping the code clean and consistent. 🎨
 
-## STRV Config
-
-package.json
-
-```json
-{
-  "eslintConfig": {
-    "extends": [
-      "@strv/eslint-config-react",
-      "@strv/eslint-config-react/optional",
-      "@strv/eslint-config-react/style"
-    ]
-  }
-}
-```
-
-.eslintrc or .eslintrc.json
-
-```json
-{
-  "extends": [
-    "@strv/eslint-config-react",
-    "@strv/eslint-config-react/optional",
-    "@strv/eslint-config-react/style"
-  ]
-}
-```
+## Recommended ESLint config
 
 .eslintrc.js
 
 ```js
 module.exports = {
   extends: [
-    '@strv/eslint-config-react',
-    '@strv/eslint-config-react/optional',
-    '@strv/eslint-config-react/style'
+    '@strv/react',
+    '@strv/react/optional',
+    '@strv/react/style',
+  ],
+}
+```
+
+<!-- markdownlint-disable MD033 -->
+
+<details>
+<summary>.eslintrc or .eslintrc.json</summary>
+
+```json
+{
+  "extends": [
+    "@strv/react",
+    "@strv/react/optional",
+    "@strv/react/style"
   ]
 }
 ```
+
+</details>
+
+<details>
+<summary>package.json</summary>
+
+```json
+{
+  "eslintConfig": {
+    "extends": [
+      "@strv/react",
+      "@strv/react/optional",
+      "@strv/react/style"
+    ]
+  }
+}
+```
+
+</details>
 
 ## License
 

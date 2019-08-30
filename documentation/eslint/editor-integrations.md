@@ -7,6 +7,35 @@ To make the whole developer experience more pleasant and convenient, it is impor
 
 Letting your editor fix some issues will increase your productivity and code quality dramatically.
 
+## Visual Studio Code
+
+Install the following packages:
+
+- [eslint][vscode-eslint]
+
+Put the following configuration options into your _settings.json_ file:
+
+- `"eslint.autoFixOnSave": true`
+
+## WebStorm
+
+WebStorm has built-in support for ESLint issue reporting. Auto fixing is only supported in versions 2016.3 and newer.
+
+To enable ESLint reporter, [follow the guide][webstorm-eslint] on WebStorm's support page.
+To use the new autofix feature, [read their blog post][webstorm-eslint-autofix] on the topic.
+
+To use autofix on save feature:
+
+1. Go to `Preferences` -> `Tools` -> `File watchers`
+1. Click the `Add` (+) button and choose custom template
+1. Name it for example `eslint`
+1. Set file type to `javascript`
+1. Program will be your path to eslint binary for example `/Users/[yourusername]/git/[yourproject]/node_modules/.bin/eslint`
+1. Arguments `--fix $FilePath$`
+1. Working directory `$ProjectFileDir$`
+1. Show console `never` (if you don't want to see the console when `--fix` command finds errors)
+1. Check `Trigger watcher regardless of syntax errors` and uncheck `Immediate file synchronization`
+
 ## Atom
 
 Install the following packages:
@@ -24,16 +53,6 @@ For the _linter-eslint_ package, these settings are recommended:
 - [x] Disable when no eslintrc file in PATH
 - [x] Fix errors on save
 - [x] Ignore fixable rules while typing
-
-## Visual Studio Code
-
-Install the following packages:
-
-- [eslint][vscode-eslint]
-
-Put the following configuration options into your _settings.json_ file:
-
-- `"eslint.autoFixOnSave": true`
 
 ## Sublime Text
 
@@ -65,25 +84,6 @@ Enable autofix on save (`Preferences` -> `Package Settings` -> `ESLint Formatter
   "format_on_save": true
 }
 ```
-
-## WebStorm
-
-WebStorm has built-in support for ESLint issue reporting. Auto fixing is only supported in versions 2016.3 and newer.
-
-To enable ESLint reporter, [follow the guide][webstorm-eslint] on WebStorm's support page.
-To use the new autofix feature, [read their blog post][webstorm-eslint-autofix] on the topic.
-
-To use autofix on save feature:
-
-1. Go to `Preferences` -> `Tools` -> `File watchers`
-1. Click the `Add` (+) button and choose custom template
-1. Name it for example `eslint`
-1. Set file type to `javascript`
-1. Program will be your path to eslint binary for example `/Users/[yourusername]/git/[yourproject]/node_modules/.bin/eslint`
-1. Arguments `--fix $FilePath$`
-1. Working directory `$ProjectFileDir$`
-1. Show console `never` (if you don't want to see the console when `--fix` command finds errors)
-1. Check `Trigger watcher regardless of syntax errors` and uncheck `Immediate file synchronization`
 
 [atom-linter]: https://atom.io/packages/linter
 [atom-linter-eslint]: https://atom.io/packages/linter-eslint

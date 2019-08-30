@@ -28,45 +28,56 @@ Use this ruleset in conjunction with any of the above version-specific rulesets.
 
 This ruleset includes rules which deal with how the code looks like and not how it works. It helps keeping the code clean and consistent. 🎨
 
-## STRV Config
-
-package.json
-
-```json
-{
-  "eslintConfig": {
-    "extends": [
-      "@strv/eslint-config-node/<v10 or v12>",
-      "@strv/eslint-config-node/optional",
-      "@strv/eslint-config-node/style"
-    ]
-  }
-}
-```
-
-.eslintrc or .eslintrc.json
-
-```json
-{
-  "extends": [
-    "@strv/eslint-config-node/<v10 or v12>",
-    "@strv/eslint-config-node/optional",
-    "@strv/eslint-config-node/style"
-  ]
-}
-```
+## Recommended ESLint config
 
 .eslintrc.js
 
 ```js
 module.exports = {
   extends: [
-    '@strv/eslint-config-node/<v10 or v12>',
-    '@strv/eslint-config-node/optional',
-    '@strv/eslint-config-node/style'
+    '@strv/node/<v10 or v12>',
+    '@strv/node/optional',
+    '@strv/node/style',
+    '@strv/mocha',
+  ],
+}
+```
+
+<!-- markdownlint-disable MD033 -->
+
+<details>
+<summary>.eslintrc or .eslintrc.json</summary>
+
+```json
+{
+  "extends": [
+    "@strv/node/<v10 or v12>",
+    "@strv/node/optional",
+    "@strv/node/style",
+    "@strv/mocha"
   ]
 }
 ```
+
+</details>
+
+<details>
+<summary>package.json</summary>
+
+```json
+{
+  "eslintConfig": {
+    "extends": [
+      "@strv/node/<v10 or v12>",
+      "@strv/node/optional",
+      "@strv/node/style",
+      "@strv/mocha"
+    ]
+  }
+}
+```
+
+</details>
 
 ## License
 
