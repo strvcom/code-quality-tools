@@ -65,7 +65,7 @@ module.exports = {
 To actually lint .ts files, you must pass the `--ext` flag to ESLint:
 
 ```sh
-eslint --ext ts --no-unused-disable-directives .
+eslint --ext ts --report-unused-disable-directives .
 ```
 
 ## VSCode integration
