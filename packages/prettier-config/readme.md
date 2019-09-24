@@ -4,7 +4,7 @@
 
 ## Usage
 
-```bash
+```sh
 # Yarn:
 yarn add --dev @strv/prettier-config
 
@@ -20,9 +20,8 @@ module.exports = require('@strv/prettier-config')
 
 Or you can of course choose your preffered way of using configs:
 
-<!-- markdownlint-disable MD033 -->
 <details>
-<summary>package.json</summary>
+<summary><i>package.json</i></summary>
 
 ```json
 {
@@ -33,7 +32,7 @@ Or you can of course choose your preffered way of using configs:
 
 </details>
 <details>
-<summary>.prettierrc or .prettierrc.json</summary>
+<summary><i>.prettierrc</i> or <i>.prettierrc.json</i></summary>
 
 ```json
 {
@@ -42,7 +41,6 @@ Or you can of course choose your preffered way of using configs:
 ```
 
 </details>
-<!-- markdownlint-enable MD033 -->
 
 _Note: If you are using `prettier` < v1.17 check [this note](#Prettier-version)._
 

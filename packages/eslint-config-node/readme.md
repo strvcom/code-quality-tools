@@ -30,9 +30,11 @@ This ruleset includes rules which deal with how the code looks like and not how 
 
 ## Recommended ESLint config
 
-.eslintrc.js
-
 ```js
+// .eslintrc.js
+
+'use strict'
+
 module.exports = {
   extends: [
     '@strv/node/<v10 or v12>',
@@ -43,41 +45,30 @@ module.exports = {
 }
 ```
 
-<!-- markdownlint-disable MD033 -->
+It is also recommended that you lint the whole project folder (ie. `npx eslint .`) instead of just
+some folders (ie. `npx eslint src test`) and create an _.eslintignore_ file excluding any unwanted
+lint folders. Doing so will allow new directories to be created without worrying about having to update your
+tools to lint the new directory.
 
-<details>
-<summary>.eslintrc or .eslintrc.json</summary>
+```ini
+# .eslintignore
 
-```json
-{
-  "extends": [
-    "@strv/node/<v10 or v12>",
-    "@strv/node/optional",
-    "@strv/node/style",
-    "@strv/mocha"
-  ]
-}
+node_modules
+
+# NOTE:
+# The following directives are only relevant when linting the whole
+# project directory, ie. running `eslint .` ⚠️
+
+# If you compile JavaScript into some output folder, exclude it here
+dist
+
+# Highly recommended to re-include JavaScript dotfiles to lint them
+# (This will cause .eslintrc.js to be linted by ESLint 🤘)
+!.*.js
+
+# Some tools use this pattern for their configuration files. Lint them!
+!*.config.js
 ```
-
-</details>
-
-<details>
-<summary>package.json</summary>
-
-```json
-{
-  "eslintConfig": {
-    "extends": [
-      "@strv/node/<v10 or v12>",
-      "@strv/node/optional",
-      "@strv/node/style",
-      "@strv/mocha"
-    ]
-  }
-}
-```
-
-</details>
 
 ## License
 

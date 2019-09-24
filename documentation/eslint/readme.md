@@ -73,7 +73,7 @@ When configuring ESLint, please keep the following in mind:
 
 ## Migration Guide
 
-If you were using `@strv/eslint-config-javascript` and now you are willing to upgrade, please follow the [Migration Guide](migration.md)
+If you were using `@strv/eslint-config-javascript` and now you are willing to upgrade, please follow the [Migration Guide](migration.md).
 
 [nodejs-docs]: ../../packages/eslint-config-node
 [react-docs]: ../../packages/eslint-config-react

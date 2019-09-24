@@ -16,9 +16,11 @@ npm install --save-dev @strv/stylelint-config
 
 ## Recommended stylelint config
 
-.stylelintrc.js
-
 ```js
+// .stylelintrc.js
+
+'use strict'
+
 module.exports = {
   extends: [
     '@strv/stylelint-config-styled-components',
@@ -27,10 +29,8 @@ module.exports = {
 }
 ```
 
-<!-- markdownlint-disable MD033 -->
-
 <details>
-<summary>.stylelintrc or .stylelintrc.json</summary>
+<summary><i>.stylelintrc</i> or <i>.stylelintrc.json</i></summary>
 
 ```json
 {
@@ -44,7 +44,7 @@ module.exports = {
 </details>
 
 <details>
-<summary>package.json</summary>
+<summary><i>package.json</i></summary>
 
 ```json
 {
