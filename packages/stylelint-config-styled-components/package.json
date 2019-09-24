@@ -24,8 +24,7 @@
   ],
   "license": "BSD-3-Clause",
   "peerDependencies": {
-    "stylelint": "^10.0.1",
-    "prettier": "^1.0.0"
+    "stylelint": "^10.0.1"
   },
   "publishConfig": {
     "access": "public"
