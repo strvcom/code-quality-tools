@@ -1,0 +1,38 @@
+---
+name: Lint
+on:
+  - push
+  - pull_request
+
+jobs:
+  eslint:
+    runs-on: ubuntu-18.04
+
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: Install dependencies
+        run: make install
+        env:
+          CI: true
+      - name: ESLint
+        uses: gimenete/eslint-action@1.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  remark:
+    runs-on: ubuntu-18.04
+
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: Install dependencies
+        run: make install
+        env:
+          CI: true
+      - name: Remarklint
+        run: npx remark .
