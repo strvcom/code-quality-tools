@@ -45,6 +45,40 @@ module.exports = {
 }
 ```
 
+<details>
+<summary><i>.eslintrc</i> or <i>.eslintrc.json</i></summary>
+
+```json
+{
+  "extends": [
+    "@strv/node/<v10 or v12>",
+    "@strv/node/optional",
+    "@strv/node/style",
+    "@strv/mocha"
+  ]
+}
+```
+
+</details>
+
+<details>
+<summary><i>package.json</i></summary>
+
+```json
+{
+  "eslintConfig": {
+    "extends": [
+      "@strv/node/<v10 or v12>",
+      "@strv/node/optional",
+      "@strv/node/style",
+      "@strv/mocha"
+    ]
+  }
+}
+```
+
+</details>
+
 It is also recommended that you lint the whole project folder (ie. `npx eslint .`) instead of just
 some folders (ie. `npx eslint src test`) and create an _.eslintignore_ file excluding any unwanted
 lint folders. Doing so will allow new directories to be created without worrying about having to update your
