@@ -28,6 +28,82 @@ Use this ruleset in conjunction with any of the above version-specific rulesets.
 
 This ruleset includes rules which deal with how the code looks like and not how it works. It helps keeping the code clean and consistent. 🎨
 
+## Recommended ESLint config
+
+```js
+// .eslintrc.js
+
+'use strict'
+
+module.exports = {
+  extends: [
+    '@strv/node/<v10 or v12>',
+    '@strv/node/optional',
+    '@strv/node/style',
+    '@strv/mocha',
+  ],
+}
+```
+
+<details>
+<summary><i>.eslintrc</i> or <i>.eslintrc.json</i></summary>
+
+```json
+{
+  "extends": [
+    "@strv/node/<v10 or v12>",
+    "@strv/node/optional",
+    "@strv/node/style",
+    "@strv/mocha"
+  ]
+}
+```
+
+</details>
+
+<details>
+<summary><i>package.json</i></summary>
+
+```json
+{
+  "eslintConfig": {
+    "extends": [
+      "@strv/node/<v10 or v12>",
+      "@strv/node/optional",
+      "@strv/node/style",
+      "@strv/mocha"
+    ]
+  }
+}
+```
+
+</details>
+
+It is also recommended that you lint the whole project folder (ie. `npx eslint .`) instead of just
+some folders (ie. `npx eslint src test`) and create an _.eslintignore_ file excluding any unwanted
+lint folders. Doing so will allow new directories to be created without worrying about having to update your
+tools to lint the new directory.
+
+```ini
+# .eslintignore
+
+node_modules
+
+# NOTE:
+# The following directives are only relevant when linting the whole
+# project directory, ie. running `eslint .` ⚠️
+
+# If you compile JavaScript into some output folder, exclude it here
+dist
+
+# Highly recommended to re-include JavaScript dotfiles to lint them
+# (This will cause .eslintrc.js to be linted by ESLint 🤘)
+!.*.js
+
+# Some tools use this pattern for their configuration files. Lint them!
+!*.config.js
+```
+
 ## License
 
 See the [LICENSE](LICENSE) file for information.
