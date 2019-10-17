@@ -7,7 +7,8 @@
     "url": "https://github.com/strvcom/code-quality-tools/issues"
   },
   "contributors": [
-    "Danny Kijkov <daniel.kijkov@strv.com>"
+    "Danny Kijkov <daniel.kijkov@strv.com>",
+    "Korneliusz Dubieniecki <lekterable@gmail.com>"
   ],
   "dependencies": {},
   "devDependencies": {
