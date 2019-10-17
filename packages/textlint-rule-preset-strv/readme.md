@@ -4,25 +4,35 @@
 
 Textlint doesn't support ["extends" convention](https://github.com/textlint/textlint/issues/210), thus we created [rule-preset](https://textlint.github.io/docs/rule-preset.html), which is a collection of rules and rulesConfig.
 
-## STRV Config
+## Usage
 
-.textlintrc or .textlintrc.json
+```sh
+# Yarn:
+yarn add --dev @strv/textlint-rule-preset-strv
 
-```json
-{
-  "rules": {
-    "@strv/textlint-rule-preset-strv": true
-  }
-}
+# npm:
+npm install --save-dev @strv/textlint-rule-preset-strv
 ```
 
-.textlintrc.js
+## Recommended textlint config
+
+`.textlintrc.js`
 
 ```js
 module.exports = {
   rules: {
     '@strv/textlint-rule-preset-strv': true,
   },
+}
+```
+
+`.textlintrc` or `.textlintrc.json`
+
+```json
+{
+  "rules": {
+    "@strv/textlint-rule-preset-strv": true
+  }
 }
 ```
 
