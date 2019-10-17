@@ -1,6 +1,8 @@
-# @strv/textlint-config
+# @strv/textlint-rule-preset-strv
 
 > STRV's config for [textlint][textlint-home]
+
+Textlint doesn't support ["extends" convention](https://github.com/textlint/textlint/issues/210), thus we created [rule-preset](https://textlint.github.io/docs/rule-preset.html), which is a collection of rules and rulesConfig.
 
 ## STRV Config
 
@@ -19,8 +21,8 @@
 ```js
 module.exports = {
   rules: {
-    '@strv/textlint-rule-preset-strv': true
-  }
+    '@strv/textlint-rule-preset-strv': true,
+  },
 }
 ```
 
