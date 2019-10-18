@@ -17,6 +17,7 @@ module.exports = {
       'prettier',
       'remark',
       'stylelint',
+      'textlint',
     ]],
   },
 }

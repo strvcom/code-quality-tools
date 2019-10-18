@@ -1,0 +1,43 @@
+{
+  "name": "@strv/textlint-rule-preset-strv",
+  "description": "STRV's rule preset for textlint",
+  "version": "1.0.0",
+  "author": "Korneliusz Dubieniecki <lekterable@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/strvcom/code-quality-tools/issues"
+  },
+  "contributors": [
+    "Danny Kijkov <daniel.kijkov@strv.com>",
+    "Robert Rossmann <rr.rossmann@me.com>"
+  ],
+  "dependencies": {
+    "textlint-filter-rule-comments": "^1.2.2",
+    "textlint-rule-apostrophe": "^1.0.0",
+    "textlint-rule-common-misspellings": "^1.0.1",
+    "textlint-rule-stop-words": "^1.0.13",
+    "textlint-rule-terminology": "^1.1.30",
+    "textlint-rule-title-case": "^1.0.0",
+    "textlint-rule-write-good": "^1.6.2"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "keywords": [
+    "config",
+    "strv",
+    "textlint",
+    "textlintrule"
+  ],
+  "license": "BSD-3-Clause",
+  "main": "index.js",
+  "peerDependencies": {
+    "textlint": "^11.2.5"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/strvcom/code-quality-tools.git"
+  }
+}
