@@ -1,14 +1,22 @@
 'use strict'
 
+const terminology = require('textlint-rule-terminology')
+const stopwords = require('textlint-rule-stop-words')
+const misspellings = require('textlint-rule-common-misspellings')
+const writegood = require('textlint-rule-write-good')
+const titlecase = require('textlint-rule-title-case')
+const apostrophe = require('textlint-rule-apostrophe')
+
 module.exports = {
   rules: {
-    terminology: require('textlint-rule-terminology'),
-    'stop-words': require('textlint-rule-stop-words'),
-    'common-misspellings': require('textlint-rule-common-misspellings'),
-    'write-good': require('textlint-rule-write-good'),
-    'title-case': require('textlint-rule-title-case'),
-    apostrophe: require('textlint-rule-apostrophe')
+    terminology,
+    'stop-words': stopwords,
+    'common-misspellings': misspellings,
+    'write-good': writegood,
+    'title-case': titlecase,
+    apostrophe,
   },
+
   rulesConfig: {
     terminology: {
       defaultTerms: false,
@@ -26,7 +34,8 @@ module.exports = {
         'TypeScript',
         'UglifyJS',
         ['JSDocs?', 'JSDoc'],
-        ['Node[ .]js', 'Node'], // Official is Node.js, but it’s way too complicated
+        // Official is Node.js, but it’s way too complicated
+        ['Node[ .]js', 'Node'],
         ['React[ .]js', 'React'],
         ['StackOverflow', 'Stack Overflow'],
         ['HTTP[ /]2(?:\\.0)?', 'HTTP/2'],
@@ -49,7 +58,9 @@ module.exports = {
         'Microsoft',
 
         // Words and phrases
-        'ID', // http://stackoverflow.com/questions/1151338/id-or-id-on-user-interface
+
+        // http://stackoverflow.com/questions/1151338/id-or-id-on-user-interface
+        'ID',
         ["id['’]?s", 'IDs'],
         ['back[- ]end(\\w*)', 'backend$1'],
         ['front[- ]end(\\w*)', 'frontend$1'],
@@ -79,9 +90,9 @@ module.exports = {
 
         // Starts from a lower case letter in the middle of a sentence
         ['(\\w+[^.?!]\\)? )internet', '$1internet'],
-        ['(\\w+[^.?!]\\)? )stylelint', '$1stylelint']
+        ['(\\w+[^.?!]\\)? )stylelint', '$1stylelint'],
         // ["(\\w+[^.?!]\\)? )webpack", "$1webpack"]
-      ]
+      ],
     },
     'stop-words': true,
     'common-misspellings': true,
@@ -89,11 +100,11 @@ module.exports = {
       adverb: false,
       passive: false,
       tooWordy: false,
-      weasel: false
+      weasel: false,
     },
     'title-case': {
-      exclusions: ['documentation.js', 'gh-lint', 'lint-staged', 'npm', 'webpack', 'size-limit']
+      exclusions: ['documentation.js', 'gh-lint', 'lint-staged', 'npm', 'webpack', 'size-limit'],
     },
-    apostrophe: true
-  }
+    apostrophe: true,
+  },
 }

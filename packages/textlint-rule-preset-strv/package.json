@@ -6,7 +6,10 @@
   "bugs": {
     "url": "https://github.com/strvcom/code-quality-tools/issues"
   },
-  "contributors": [],
+  "contributors": [
+    "Danny Kijkov <daniel.kijkov@strv.com>",
+    "Robert Rossmann <rr.rossmann@me.com>"
+  ],
   "dependencies": {
     "textlint-filter-rule-comments": "^1.2.2",
     "textlint-rule-apostrophe": "^1.0.0",
@@ -16,16 +19,20 @@
     "textlint-rule-title-case": "^1.0.0",
     "textlint-rule-write-good": "^1.6.2"
   },
-  "peerDependencies": {
-    "textlint": "^11.2.5"
+  "engines": {
+    "node": ">=10"
   },
   "keywords": [
     "config",
+    "strv",
     "textlint",
-    "textlintrule",
-    "strv"
+    "textlintrule"
   ],
   "license": "BSD-3-Clause",
+  "main": "index.js",
+  "peerDependencies": {
+    "textlint": "^11.2.5"
+  },
   "publishConfig": {
     "access": "public"
   },

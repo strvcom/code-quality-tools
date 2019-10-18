@@ -7,18 +7,16 @@ Textlint doesn't support ["extends" convention](https://github.com/textlint/text
 ## Usage
 
 ```sh
-# Yarn:
-yarn add --dev @strv/textlint-rule-preset-strv
-
-# npm:
-npm install --save-dev @strv/textlint-rule-preset-strv
+npm i --save-dev @strv/textlint-rule-preset-strv
 ```
 
 ## Recommended textlint config
 
-`.textlintrc.js`
-
 ```js
+// .textlintrc.js
+
+'use strict'
+
 module.exports = {
   rules: {
     '@strv/textlint-rule-preset-strv': true,
@@ -26,7 +24,8 @@ module.exports = {
 }
 ```
 
-`.textlintrc` or `.textlintrc.json`
+<details>
+<summary><i>.textlintrc</i> or <i>.textlintrc.json</i></summary>
 
 ```json
 {
@@ -35,6 +34,8 @@ module.exports = {
   }
 }
 ```
+
+</details>
 
 ## License
 
