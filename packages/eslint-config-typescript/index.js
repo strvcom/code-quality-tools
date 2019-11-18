@@ -67,10 +67,7 @@ module.exports = {
 
     // Requires using either T[] or Array<T> for arrays
     // This rule aims to standardise usage of array types within your codebase.
-    '@typescript-eslint/array-type': ['warn', {
-      default: 'array-simple',
-      readonly: 'array-simple',
-    }],
+    '@typescript-eslint/array-type': ['warn', 'array-simple'],
 
     // Disallows awaiting a value that is not a Promise
     // This rule disallows awaiting a value that is not a "Thenable" (an object which has then
