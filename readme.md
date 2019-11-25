@@ -19,6 +19,7 @@ This monorepo contains shareable configurations for various coding-style/best pr
 |Prettier|[@strv/prettier-config](packages/prettier-config)|[![@strv/prettier-config][pr-badge]][pr-npm]|Configuration for Prettier|
 |Remark-CLI|[@strv/remark-config](packages/remark-config)|[![@strv/remark-config][rm-badge]][rm-npm]|Configuration for Remark-CLI|
 |Stylelint|[@strv/stylelint-config-styled-components](packages/stylelint-config-styled-components)|[![@strv/stylelint-config-styled-components][sl-badge]][sl-npm]|Configuration for Stylelint|
+|Stylelint|[@strv/stylelint-config-styled-components-react-native](packages/stylelint-config-styled-components-react-native)|[![@strv/stylelint-config-styled-components-react-native][sl-badge]][sl-rn-npm]|Configuration for Stylelint|
 |textlint|[@strv/textlint-rule-preset-strv](packages/textlint-rule-preset-strv)|[![@strv/textlint-rule-preset-strv][tl-badge]][tl-npm]|Rule preset for textlint|
 
 ## Documentation
@@ -48,6 +49,7 @@ See the [LICENSE](LICENSE) file for information.
 [pr-badge]: https://img.shields.io/npm/v/@strv/prettier-config.svg?style=flat-square
 [sl-badge]: https://img.shields.io/npm/v/@strv/stylelint-config-styled-components.svg?style=flat-square
 [sl-npm]: https://npmjs.org/package/@strv/stylelint-config-styled-components
+[sl-rn-npm]: https://npmjs.org/package/@strv/stylelint-config-styled-components-react-native
 [rm-badge]: https://img.shields.io/npm/v/@strv/remark-config.svg?style=flat-square
 [rm-npm]: https://npmjs.org/package/@strv/remark-config
 [tl-badge]: https://img.shields.io/npm/v/@strv/textlint-rule-preset-strv.svg?style=flat-square
