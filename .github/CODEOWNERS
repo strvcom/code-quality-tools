@@ -5,7 +5,9 @@
 
 # Packages' owners
 
-/packages/eslint-config-{base,mocha,node}/      @robertrossmann
+/packages/eslint-config-base/                   @robertrossmann
+/packages/eslint-config-node/                   @robertrossmann
+/packages/eslint-config-mocha/                  @robertrossmann
 /packages/eslint-config-react-native/           @robertrossmann @andrenanninga
 /packages/eslint-config-react/                  @dannytce @prichodko
 /packages/prettier-config/                      @dannytce @prichodko
