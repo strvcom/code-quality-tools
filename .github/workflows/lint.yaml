@@ -1,38 +1,21 @@
 ---
-name: Lint
+name: Code Quality Checks
 on:
-  - push
-  - pull_request
+  push:
+    branches:
+      - master
+  pull_request:
 
 jobs:
-  eslint:
+  lint:
     runs-on: ubuntu-18.04
+    env:
+      CI: 'true'
 
     steps:
       - uses: actions/checkout@v1
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-      - name: Install dependencies
-        run: make install
-        env:
-          CI: true
-      - name: ESLint
-        uses: gimenete/eslint-action@1.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-  remark:
-    runs-on: ubuntu-18.04
-
-    steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 12
-      - name: Install dependencies
-        run: make install
-        env:
-          CI: true
-      - name: Remarklint
-        run: npx remark .
+      - run: make install
+      - run: make lint
