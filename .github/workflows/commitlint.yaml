@@ -22,7 +22,7 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const { owner, repo, number } = context.issue
-            const { data: commits } = await octokit.pulls.listCommits({
+            const { data: commits } = await github.pulls.listCommits({
               owner, repo, pull_number: number
             })
             const shas = commits.map(commit => commit.sha)
