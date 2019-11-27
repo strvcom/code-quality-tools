@@ -15,7 +15,7 @@
     "textlint-rule-apostrophe": "^1.0.0",
     "textlint-rule-common-misspellings": "^1.0.1",
     "textlint-rule-stop-words": "^1.0.13",
-    "textlint-rule-terminology": "^1.1.30",
+    "textlint-rule-terminology": "^2.0.1",
     "textlint-rule-title-case": "^1.0.0",
     "textlint-rule-write-good": "^1.6.2"
   },
