@@ -15,7 +15,6 @@ jobs:
         with:
           node-version: 12
       - run: make install
-
       # Determine the commit range to lint using Commitlint
       - uses: actions/github-script@0.3.0
         with:
