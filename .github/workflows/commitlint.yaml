@@ -1,0 +1,31 @@
+---
+name: Commitlint
+on:
+  pull_request:
+
+jobs:
+  commitlint:
+    runs-on: ubuntu-18.04
+    env:
+      CI: 'true'
+
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - run: make install
+
+      # Determine the commit range to lint using Commitlint
+      - uses: actions/github-script@0.3.0
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const { owner, repo, number } = context.issue
+            const { data: commits } = await octokit.pulls.listCommits({
+              owner, repo, pull_number: number
+            })
+            const shas = commits.map(commit => commit.sha)
+            console.log(shas)
+
+            return { shas }
