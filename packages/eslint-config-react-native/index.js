@@ -46,11 +46,15 @@ module.exports = {
     'react-native/no-color-literals': 'warn',
 
     // Detect raw text outside of Text component.
-    // All strings in React NAtive should be wrapped with a Text component. Use `skip` to enable
+    // All strings in React Native should be wrapped with a Text component. Use `skip` to enable
     // text in custom components. Handy for styled-components.
     'react-native/no-raw-text': ['error', {
       skip: [],
     }],
+
+    // No single element style arrays are allowed
+    // These cause unnecessary re-renders as each time the array's identity changes.
+    'react-native/no-single-element-style-arrays': 'warn',
 
     // Enforce that views that have accessible={true}, also have an accessibilityLabel prop.
     // When an element has the accessible={true} property, it is important to set an
