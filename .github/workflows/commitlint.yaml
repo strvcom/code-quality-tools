@@ -1,0 +1,28 @@
+---
+name: Commitlint
+on:
+  push:
+    branches-ignore:
+      - 'master'
+
+jobs:
+  commitlint:
+    runs-on: ubuntu-18.04
+    timeout-minutes: 5
+    env:
+      CI: 'true'
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 50
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+
+      - name: Fetch master
+        run: git fetch --no-tags --depth=50 origin master
+
+      - run: make install
+      - name: Commitlint
+        run: npx commitlint --color --verbose --from $(git merge-base origin/master HEAD)
