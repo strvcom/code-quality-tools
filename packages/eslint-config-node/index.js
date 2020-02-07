@@ -84,6 +84,17 @@ module.exports = {
       allowAtRootLevel: true,
     }],
 
+    // Ensure the Node.js error-first callback pattern is followed
+    // When invoking a callback function which uses the Node.js error-first callback pattern, all of
+    // your errors should either use the Error class or a subclass of it. It is also acceptable to
+    // use undefined or null if there is no error.
+    'node/no-callback-literal': ['warn'],
+
+    // Disallow assignment to exports object
+    // This rule is aimed at disallowing `exports = {}`.
+    // TODO(semver-major): upgrade to error
+    'node/no-exports-assign': 'warn',
+
     // Disallow unsupported ECMAScript features on the specified version
     // This rule reports unsupported ECMAScript built-in variables on the configured Node.js version
     // as lint errors. This rule reads the engines field of package.json to detect which Node.js
