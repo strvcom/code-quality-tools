@@ -15,10 +15,13 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          fetch-depth: 50
+          fetch-depth: 0
       - uses: actions/setup-node@v1
         with:
           node-version: 12
+
+      - name: Fetch tags
+        run: git fetch --tags origin release
 
       - run: make install
 
