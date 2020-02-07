@@ -3,17 +3,6 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-# [2.2.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-react-native@2.1.2...@strv/eslint-config-react-native@2.2.0) (2020-02-07)
-
-
-### Features
-
-* enable react-native/no-single-element-style-arrays rule ([2d761e6](https://github.com/strvcom/code-quality-tools/commit/2d761e6))
-
-
-
-
-
 ## [2.1.2](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-react-native@2.1.1...@strv/eslint-config-react-native@2.1.2) (2019-09-25)
 
 **Note:** Version bump only for package @strv/eslint-config-react-native
