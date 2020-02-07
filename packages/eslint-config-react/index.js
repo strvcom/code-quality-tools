@@ -243,14 +243,25 @@ module.exports = {
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-undef.md
     'react/jsx-no-undef': 'error',
 
+    // Prevent usage of javascript: URLs
+    // In React 16.9 any URLs starting with javascript: scheme log a warning. React considers the
+    // pattern as a dangerous attack surface, see details. In a future major release, React will
+    // throw an error if it encounters a javascript: URL.
+    // TODO(semver-major): upgrade to error
+    'react/jsx-no-script-url': 'warn',
+
     // This rule allows you to enforce curly braces or disallow unnecessary curly braces
     //  in JSX props and/or children
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-curly-brace-presence.md
     'react/jsx-curly-brace-presence': ['warn', 'never'],
-
     // Enforce shorthand or standard form for React fragments
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-fragments.md
     'react/jsx-fragments': 'warn',
+
+    // Disallow unnecessary fragments
+    // A fragment is redundant if it contains only one child, or if it is the child of a html
+    // element, and is not a keyed fragment.
+    'react/jsx-no-useless-fragment': 'warn',
 
     // Enforces coding style that user-defined JSX components are defined andreferenced in
     // PascalCase
@@ -324,6 +335,9 @@ module.exports = {
     // cannot use a mouse, AT compatibility, and screenreader users
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/click-events-have-key-events.md
     'jsx-a11y/click-events-have-key-events': 'warn',
+
+    // Enforce that a control (an interactive element) has a text label
+    'jsx-a11y/control-has-associated-label': 'warn',
 
     // Enforce heading (h1, h2, etc) elements contain accessible content
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/heading-has-content.md

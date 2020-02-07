@@ -31,6 +31,10 @@ module.exports = {
     // Disallow unnecessary curly braces in JSX props and/or children
     'react/jsx-curly-brace-presence': ['warn', 'never'],
 
+    // Enforce linebreaks in curly braces in JSX attributes and expressions
+    // This rule enforces consistent linebreaks inside of curlies of jsx curly expressions.
+    'react/jsx-curly-newline': 'warn',
+
     // Disallow spaces inside of curly braces in JSX attributes
     'react/jsx-curly-spacing': [
       'warn',
@@ -111,5 +115,12 @@ module.exports = {
         ],
       },
     ],
+
+    // Enforce where React component static properties should be positioned
+    // This rule allows you to enforce where childContextTypes, contextTypes, contextType,
+    // defaultProps, displayName, and propTypes are declared in an ES6 class. By default, this rule
+    // will check for and warn about declaring any of the above properties outside of the class
+    // body.
+    'react/static-property-placement': 'warn',
   },
 }
