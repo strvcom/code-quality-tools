@@ -15,7 +15,7 @@ npx lerna version
 
 printf "\n=====>\tPushing...\n"
 
-git push --set-upstream origin release:release
+git push --tags --set-upstream origin release:release
 
 printf "\n=====>\tSwitching back to previous branch...\n"
 
