@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-mocha@2.1.1...@strv/eslint-config-mocha@2.2.0) (2020-02-07)
+
+
+### Features
+
+* **eslint-mocha:** upgrade eslint-plugin-mocha to 6.2 ([55b0aba](https://github.com/strvcom/code-quality-tools/commit/55b0abaf51046eb63b58d1f3cac1643894118f70))
+
+
+
+
+
 ## [2.1.1](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-mocha@2.1.0...@strv/eslint-config-mocha@2.1.1) (2019-08-27)
 
 

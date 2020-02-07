@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-node@2.1.2...@strv/eslint-config-node@2.2.0) (2020-02-07)
+
+
+### Features
+
+* **eslint-node:** upgrade eslint-plugin-node to 11.0 ([e2df5da](https://github.com/strvcom/code-quality-tools/commit/e2df5da8b10871f9931988e865f28997d05d4e74))
+
+
+
+
+
 ## [2.1.2](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-node@2.1.1...@strv/eslint-config-node@2.1.2) (2019-09-25)
 
 **Note:** Version bump only for package @strv/eslint-config-node

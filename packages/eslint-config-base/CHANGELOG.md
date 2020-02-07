@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-base@2.1.1...@strv/eslint-config-base@2.2.0) (2020-02-07)
+
+
+### Features
+
+* **eslint-base:** upgrade eslint-plugin-import to 2.20 ([1f532c2](https://github.com/strvcom/code-quality-tools/commit/1f532c21dca665cee101a91fb53f17be391ee764))
+
+
+
+
+
 ## [2.1.1](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-base@2.1.0...@strv/eslint-config-base@2.1.1) (2019-08-27)
 
 
