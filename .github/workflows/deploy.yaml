@@ -27,6 +27,8 @@ jobs:
 
       - name: Authenticate npm
         run: ./utils/ci/npm-auth.sh
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Release
         run: npx lerna publish from-git --yes
