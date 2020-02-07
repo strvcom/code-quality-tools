@@ -26,9 +26,8 @@ jobs:
         run: ./utils/ci/npm-auth.sh
 
       - name: Release
-        run: npx lerna publish --yes
+        run: npx lerna publish from-git --yes
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Merge release

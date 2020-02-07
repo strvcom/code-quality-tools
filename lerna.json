@@ -11,6 +11,7 @@
         "release"
       ],
       "conventionalCommits": true,
+      "push": false,
       "message": "chore: release",
       "ignoreChanges": [
         "test/**",
