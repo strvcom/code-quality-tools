@@ -6,7 +6,8 @@ head=$(git rev-parse --abbrev-ref HEAD)
 
 printf "\n=====>\tCreating release branch...\n"
 
-git checkout -b release
+git branch --force release
+git checkout release
 
 printf "\n=====>\tCreating release commit...\n"
 
