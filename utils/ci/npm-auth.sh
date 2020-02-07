@@ -1,7 +1,6 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 set -o errexit
-set -o pipefail
 
 # Authorise npm for publishing
 cat <<NPMRC >> ~/.npmrc

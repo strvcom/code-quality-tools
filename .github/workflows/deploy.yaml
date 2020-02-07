@@ -1,0 +1,36 @@
+---
+name: Deploy
+on:
+  push:
+    branches:
+      - release
+
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    timeout-minutes: 10
+    env:
+      CI: 'true'
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 50
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+
+      - run: make install
+
+      - name: Authenticate npm
+        run: ./utils/ci/npm-auth.sh
+
+      - name: Release
+        run: npx lerna publish --yes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Merge release
+        run: ./utils/ci/sync-release.sh
+        if: success()

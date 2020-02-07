@@ -45,8 +45,8 @@ clean:
 pristine: clean
 	rm -rf node_modules packages/*/node_modules
 
-version:
-	lerna version $(LERNA_FLAGS)
+release:
+	@utils/make/release.sh
 
 # GENERIC TARGETS
 

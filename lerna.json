@@ -8,12 +8,10 @@
   "command": {
     "version": {
       "allowBranch": [
-        "release/*"
+        "release"
       ],
       "conventionalCommits": true,
       "message": "chore: release",
-      "signGitCommit": true,
-      "push": false,
       "ignoreChanges": [
         "test/**",
         "package-lock.json"
