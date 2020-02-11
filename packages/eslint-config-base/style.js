@@ -104,6 +104,10 @@ module.exports = {
     // All block statements must be wrapped in curly braces
     curly: ['warn', 'all'],
 
+    // Enforce default parameters to be last
+    // Putting default parameter at last allows function calls to omit optional tail arguments.
+    'default-param-last': 'warn',
+
     // Enforce newline before and after dot
     // This rule aims to enforce newline consistency in member expressions. This rule prevents the
     // use of mixed newlines around the dot in a member expression.
