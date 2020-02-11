@@ -51,6 +51,8 @@ module.exports = {
     // when you can easily infer return values and argument types from the code itself.
     'valid-jsdoc': 'off',
 
+    'no-dupe-class-members': 'off',
+
     // Disabled because it generates false positives with interface declarations and TypeScript
     // blows up anyway during compilation when it encouters an undefined variable.
     'no-undef': 'off',
@@ -79,14 +81,11 @@ module.exports = {
     // to add parenthesis to call a function that returns a Promise.
     '@typescript-eslint/await-thenable': 'warn',
 
-    // Bans “// @ts-ignore” comments from being used
-    // Suppressing Typescript Compiler Errors can be hard to discover.
-    '@typescript-eslint/ban-ts-ignore': 'error',
-
-
-    // Require PascalCased class and interface names
-    // This rule aims to make it easy to differentiate classes from regular variables at a glance.
-    '@typescript-eslint/class-name-casing': 'warn',
+    // Ban `// @ts-<directive>` comments from being used
+    // TypeScript provides several directive comments that can be used to alter how it processes
+    // files. Using these to suppress TypeScript Compiler Errors reduces the effectiveness of
+    // TypeScript overall.
+    '@typescript-eslint/ban-ts-comment': 'warn',
 
     // Require explicit return types on functions and class methods
     // Explicit types for function return values makes it clear to any calling code what type is
@@ -103,6 +102,12 @@ module.exports = {
       accessibility: 'no-public',
     }],
 
+    // Require explicit return and argument types on exported functions' and classes' public class
+    // methods
+    // Explicit types for function return values and arguments makes it clear to any calling code
+    // what is the module boundary's input and output.
+    '@typescript-eslint/explicit-module-boundary-types': 'warn',
+
     // Require a consistent member declaration order
     // A consistent ordering of fields, methods and constructors can make interfaces, type literals,
     // classes and class expressions easier to read, navigate and edit.
@@ -113,6 +118,14 @@ module.exports = {
     // array literal notation because of the single-argument pitfall and because the Array global
     // may be redefined.
     '@typescript-eslint/no-array-constructor': 'error',
+
+    // Disallow duplicate class members
+    '@typescript-eslint/no-dupe-class-members': base.rules['no-dupe-class-members'],
+
+    // Disallow the delete operator with computed key expressions
+    // Using the `delete` operator on keys that aren't runtime constants could be a sign that you're
+    // using the wrong data structures.
+    '@typescript-eslint/no-dynamic-delete': 'warn',
 
     // Disallow the declaration of empty interfaces
     // An empty interface is equivalent to its supertype. If the interface does not implement a
@@ -126,10 +139,16 @@ module.exports = {
     // the type can be easily inferred from its value.
     '@typescript-eslint/no-explicit-any': 'warn',
 
+    // Disallow unnecessary semicolons
+    '@typescript-eslint/no-extra-semi': base.rules['no-extra-semi'],
+
     // Forbids the use of classes as namespaces
     // This rule warns when a class is accidentally used as a namespace.
     '@typescript-eslint/no-extraneous-class': ['warn', {
+      // allow extraneous classes if they only contain a constructor
       allowConstructorOnly: true,
+      // allow extraneous classes if they are have a decorator
+      allowWithDecorator: true,
     }],
 
     // @TODO(semver-major): -> error
@@ -145,6 +164,9 @@ module.exports = {
     // to use for-in loops with array types, it is not common. for-in will iterate over the indices
     // of the array as strings, omitting any "holes" in the array.
     '@typescript-eslint/no-for-in-array': 'warn',
+
+    // Disallow the use of `eval()`-like methods
+    '@typescript-eslint/no-implied-eval': base.rules['no-implied-eval'],
 
     // @TODO(semver-major): -> error
     // Enforce valid definition of new and constructor
@@ -163,6 +185,13 @@ module.exports = {
     // outdated ways to organize TypeScript code. ES2015 module syntax is now preferred
     // (import/export).
     '@typescript-eslint/no-namespace': 'error',
+
+    // TODO(semver-major): -> error
+    // Disallows using a non-null assertion after an optional chain expression
+    // Optional chain expressions are designed to return `undefined` if the optional property is
+    // nullish. Using non-null assertions after an optional chain expression is wrong, and
+    // introduces a serious type safety hole into your code.
+    '@typescript-eslint/no-non-null-asserted-optional-chain': 'warn',
 
     // Disallow non-null assertions using the ! postfix operator
     // Using non-null assertions cancels the benefits of the strict null-checking mode.
@@ -183,6 +212,21 @@ module.exports = {
     '@typescript-eslint/no-this-alias': ['warn', {
       allowDestructuring: true,
     }],
+
+    // TODO(semver-major): -> error
+    // Restrict what can be thrown as an exception
+    // It is considered good practice to only `throw` the `Error` object itself or an object using
+    // the `Error` object as base objects for user-defined exceptions. The fundamental benefit of
+    // `Error` objects is that they automatically keep track of where they were built and
+    // originated.
+    '@typescript-eslint/no-throw-literal': base.rules['no-throw-literal'],
+
+    // Condition expressions must be necessary
+    // Any expression being used as a condition must be able to evaluate as truthy or falsy in order
+    // to be considered "necessary". Conversely, any expression that always evaluates to truthy or
+    // always evaluates to falsy, as determined by the type of the expression, is considered
+    // unnecessary and will be flagged by this rule.
+    '@typescript-eslint/no-unnecessary-condition': 'warn',
 
     // Warns when a namespace qualifier is unnecessary
     // This rule aims to let users know when a namespace or enum qualifier is unnecessary, whether
@@ -255,6 +299,23 @@ module.exports = {
     // @TODO(semver-major): -> error
     // When adding two variables, operands must both be of type number or of type string
     '@typescript-eslint/restrict-plus-operands': 'warn',
+
+    // TODO(semver-major): -> error
+    // Enforce template literal expressions to be of string type
+    '@typescript-eslint/restrict-template-expressions': 'warn',
+
+    // Require returning awaited values in specific contexts
+    // Returning an awaited promise can make sense for better stack trace information as well as for
+    // consistent error handling (returned promises will not be caught in an async function's
+    // try/catch).
+    '@typescript-eslint/return-await': ['warn', 'always'],
+
+    // TODO(semver-major): -> error
+    // Exhaustiveness checking in switch with union type
+    // Union type may have a lot of parts. It's easy to forget to consider all cases in switch. This
+    // rule reminds which parts are missing. If domain of the problem requires to have only a
+    // partial switch, developer may _explicitly_ add a default clause.
+    '@typescript-eslint/switch-exhaustiveness-check': 'warn',
 
     // Enforces unbound methods are called with their expected scope
     // Class functions don't preserve the class scope when passed as standalone variables.

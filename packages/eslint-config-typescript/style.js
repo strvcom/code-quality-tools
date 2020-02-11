@@ -16,15 +16,21 @@ module.exports = {
 
   rules: {
     // Conflicts with typescript
+    'brace-style': 'off',
     camelcase: 'off',
+    'comma-spacing': 'off',
     'func-call-spacing': 'off',
     indent: 'off',
     'no-extra-parens': 'off',
     quotes: 'off',
     semi: 'off',
+    'space-before-function-paren': 'off',
 
-    // Enforce camelCase naming convention
-    '@typescript-eslint/camelcase': style.rules.camelcase,
+    // Enforce consistent brace style for blocks
+    '@typescript-eslint/brace-style': style.rules['brace-style'],
+
+    // Enforces consistent spacing before and after commas
+    '@typescript-eslint/comma-spacing': style.rules['comma-spacing'],
 
     // Enforces consistent usage of type assertions
     // This rule aims to standardise the use of type assertion style across the codebase.
@@ -37,6 +43,10 @@ module.exports = {
     // Interfaces are generally preferred over type literals because interfaces can be implemented,
     // extended and merged.
     '@typescript-eslint/consistent-type-definitions': ['warn', 'interface'],
+
+    // Enforce default parameters to be last
+    // This rule enforces default or optional parameters to be the last of parameters.
+    '@typescript-eslint/default-param-last': style.rules['default-param-last'],
 
     // Require or disallow spacing between function identifiers and their invocations
     // This rule extends the base eslint/func-call-spacing rule. It supports all options and
@@ -58,17 +68,49 @@ module.exports = {
       },
     }],
 
+    // Enforces naming conventions for everything across a codebase
+    '@typescript-eslint/naming-convention': ['warn', [{
+      selector: 'default',
+      format: ['camelCase'],
+    }, {
+      selector: 'variable',
+      format: ['camelCase', 'UPPER_CASE'],
+    }, {
+      selector: 'parameter',
+      format: ['camelCase'],
+    }, {
+      selector: 'memberLike',
+      modifiers: ['private'],
+      format: ['camelCase'],
+    }, {
+      selector: 'typeLike',
+      format: ['PascalCase'],
+    }]],
+
     // disallow unnecessary parentheses
     '@typescript-eslint/no-extra-parens': style.rules['no-extra-parens'],
+
+    // Disallow extra non-null assertion
+    '@typescript-eslint/no-extra-non-null-assertion': 'warn',
 
     // Disallows explicit type declarations for builtin primitive values
     // This rule disallows explicit type declarations on parameters, variables and properties where
     // the type can be easily inferred from its value.
     '@typescript-eslint/no-inferrable-types': 'warn',
 
+    // Flags unnecessary equality comparisons against boolean literals
+    // Comparing boolean values to boolean literals is unnecessary, those comparisons result in the
+    // same booleans. Using the boolean values directly, or via a unary negation (`!value`), is more
+    // concise and clearer.
+    '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'warn',
+
     // Enforces that types will not to be used
     // Warns if an explicitly specified type argument is the default for that type parameter.
     '@typescript-eslint/no-unnecessary-type-arguments': 'warn',
+
+    // Prefer usage of `as const` over literal type
+    // This rule recommends usage of `const` assertion when type primitive value is equal to type.
+    '@typescript-eslint/prefer-as-const': 'warn',
 
     // Use for-of loops instead of standard for loops over arrays
     // This rule recommends a for-of loop when the loop index is only used to read from an array
@@ -84,6 +126,17 @@ module.exports = {
     // This rule is aimed at suggesting includes method if indexOf method was used to check whether
     // an object contains an arbitrary value or not.
     '@typescript-eslint/prefer-includes': 'warn',
+
+    // Enforce the usage of the nullish coalescing operator instead of logical chaining
+    // TypeScript 3.7 added support for the nullish coalescing operator. This operator allows you to
+    // safely cascade a value when dealing with null or undefined.
+    '@typescript-eslint/prefer-nullish-coalescing': 'warn',
+
+    // Prefer using concise optional chain expressions instead of chained logical ands
+    // TypeScript 3.7 added support for the optional chain operator. This operator allows you to
+    // safely access properties and methods on objects when they are potentially `null` or
+    // `undefined`.
+    '@typescript-eslint/prefer-optional-chain': 'warn',
 
     // require never-modified private members be marked as readonly
     // Member variables with the privacy private are never permitted to be modified outside of their
@@ -101,15 +154,17 @@ module.exports = {
     // with a specific string.
     '@typescript-eslint/prefer-string-starts-ends-with': 'warn',
 
-    // @TODO: Re-enable once the @eslint-typescript/eslint-plugin is updated to a newer version
     // Enforce the consistent use of either backticks, double, or single quotes
     // This rule extends the base eslint/quotes rule. It supports all options and features of the
     // base rule.
-    // '@typescript-eslint/quotes': style.rules.quotes,
+    '@typescript-eslint/quotes': style.rules.quotes,
 
     // Enforce or Disallow Semicolons
     // This rule is aimed at ensuring consistent use of semicolons.
     '@typescript-eslint/semi': style.rules.semi,
+
+    // Require or disallow a space before function parenthesis
+    '@typescript-eslint/space-before-function-paren': style.rules['space-before-function-paren'],
 
     // Require consistent spacing around type annotations
     // This rule aims to enforce specific spacing patterns around type annotations and function
