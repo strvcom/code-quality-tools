@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.3.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-base@2.2.0...@strv/eslint-config-base@2.3.0) (2020-02-11)
+
+
+### Features
+
+* **eslint-base:** enable default-param-last rule ([16aaf3d](https://github.com/strvcom/code-quality-tools/commit/16aaf3d7a6b7e0177d7da6a2441a0729d92a0676))
+
+
+
+
+
 # [2.2.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-base@2.1.1...@strv/eslint-config-base@2.2.0) (2020-02-07)
 
 

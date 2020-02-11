@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.1](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-node@2.2.0...@strv/eslint-config-node@2.2.1) (2020-02-11)
+
+**Note:** Version bump only for package @strv/eslint-config-node
+
+
+
+
+
 # [2.2.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-node@2.1.2...@strv/eslint-config-node@2.2.0) (2020-02-07)
 
 
