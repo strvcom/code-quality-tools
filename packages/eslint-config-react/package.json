@@ -12,6 +12,7 @@
   ],
   "dependencies": {
     "@strv/eslint-config-base": "^2.3.0",
+    "babel-eslint": "^10.0.3",
     "eslint-plugin-jsx-a11y": "^6.2.0",
     "eslint-plugin-react": "^7.18.3",
     "eslint-plugin-react-hooks": "^2.3.0"
