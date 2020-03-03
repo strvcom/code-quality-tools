@@ -61,6 +61,8 @@ module.exports = {
     // typescript specific declarations properly.
     'no-unused-vars': 'off',
 
+    'no-unused-expressions': 'off',
+
     'no-useless-constructor': 'off',
 
     // Require that member overloads be consecutive
@@ -244,6 +246,11 @@ module.exports = {
       types: 'never',
       lib: 'never',
     }],
+
+    // Disallow Unused Expressions
+    // This rule aims to eliminate unused expressions which have no effect on the state of the
+    // program.
+    '@typescript-eslint/no-unused-expressions': base.rules['no-unused-expressions'],
 
     // Variables that are declared and not used anywhere in the code are most likely an error due
     // to incomplete refactoring. Such variables take up space in the code and can lead to
