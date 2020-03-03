@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.1](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-typescript@2.2.0...@strv/eslint-config-typescript@2.2.1) (2020-03-03)
+
+
+### Bug Fixes
+
+* **eslint-typescript:** naming-convention options ([b8a1bfd](https://github.com/strvcom/code-quality-tools/commit/b8a1bfd80498a09a03a83ceda88129fd6df23143))
+
+
+
+
+
 # [2.2.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-typescript@2.1.5...@strv/eslint-config-typescript@2.2.0) (2020-02-11)
 
 
