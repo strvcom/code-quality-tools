@@ -69,7 +69,7 @@ module.exports = {
     }],
 
     // Enforces naming conventions for everything across a codebase
-    '@typescript-eslint/naming-convention': ['warn', [{
+    '@typescript-eslint/naming-convention': ['warn', {
       selector: 'default',
       format: ['camelCase'],
     }, {
@@ -85,7 +85,7 @@ module.exports = {
     }, {
       selector: 'typeLike',
       format: ['PascalCase'],
-    }]],
+    }],
 
     // disallow unnecessary parentheses
     '@typescript-eslint/no-extra-parens': style.rules['no-extra-parens'],
