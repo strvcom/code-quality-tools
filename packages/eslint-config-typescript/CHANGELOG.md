@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.3.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-typescript@2.2.1...@strv/eslint-config-typescript@2.3.0) (2020-03-03)
+
+
+### Bug Fixes
+
+* **eslint-typescript:** use TS-aware version of no-unused-expressions ([75b0b36](https://github.com/strvcom/code-quality-tools/commit/75b0b362be1b7f695a16ee439801a74ec3e00e78)), closes [#83](https://github.com/strvcom/code-quality-tools/issues/83)
+
+
+### Features
+
+* **eslint-typescript:** upgrade TS-related plugins, enable new rules ([69830e6](https://github.com/strvcom/code-quality-tools/commit/69830e6fa191a87407daef8c57076eee27e30a6f))
+
+
+
+
+
 ## [2.2.1](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-typescript@2.2.0...@strv/eslint-config-typescript@2.2.1) (2020-03-03)
 
 
