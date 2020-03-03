@@ -12,8 +12,8 @@
   ],
   "dependencies": {
     "@strv/eslint-config-base": "^2.3.0",
-    "@typescript-eslint/eslint-plugin": "^2.19.0",
-    "@typescript-eslint/parser": "^2.19.0",
+    "@typescript-eslint/eslint-plugin": "^2.22.0",
+    "@typescript-eslint/parser": "^2.22.0",
     "eslint-import-resolver-typescript": "^2.0.0"
   },
   "engines": {

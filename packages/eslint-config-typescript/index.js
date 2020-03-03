@@ -121,6 +121,13 @@ module.exports = {
     // may be redefined.
     '@typescript-eslint/no-array-constructor': 'error',
 
+    // Require that .toString() is only called on objects which provide useful information
+    // JavaScript will call toString() on an object when it is converted to a string, such as when +
+    // adding to a string or in ${} template literals. The default Object .toString() returns
+    // "[object Object]", so this rule requires stringified objects define a more useful .toString()
+    // method.
+    '@typescript-eslint/no-base-to-string': 'warn',
+
     // Disallow duplicate class members
     '@typescript-eslint/no-dupe-class-members': base.rules['no-dupe-class-members'],
 
@@ -282,6 +289,13 @@ module.exports = {
     // ES2015 modules, starting with TypeScript v1.5 the keyword namespace is now the preferred way
     // to declare custom TypeScript modules.
     '@typescript-eslint/prefer-namespace-keyword': 'warn',
+
+    // Require that function parameters are typed as readonly
+    // Mutating function arguments can lead to confusing, hard to debug behavior. Whilst it's easy
+    // to implicitly remember to not modify function arguments, explicitly typing arguments as
+    // readonly provides clear contract to consumers. This contract makes it easier for a consumer
+    // to reason about if a function has side-effects.
+    '@typescript-eslint/prefer-readonly-parameter-types': 'warn',
 
     // Functions that return promises must be async
 
