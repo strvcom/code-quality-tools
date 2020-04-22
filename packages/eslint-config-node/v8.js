@@ -11,4 +11,9 @@
 module.exports = {
 
   extends: './index.js',
+
+  rules: {
+    // Named capture groups are supported since Node.js 10
+    'prefer-named-capture-group': 'off',
+  },
 }
