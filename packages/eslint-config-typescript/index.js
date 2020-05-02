@@ -65,6 +65,8 @@ module.exports = {
 
     'no-useless-constructor': 'off',
 
+    'require-await': 'off',
+
     // Require that member overloads be consecutive
     // Grouping overloaded members together can improve readability of the code.
     '@typescript-eslint/adjacent-overload-signatures': 'warn',
