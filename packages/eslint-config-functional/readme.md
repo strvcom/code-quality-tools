@@ -3,7 +3,7 @@
 ## Install
 
 ```bash
-$ npm install @code-quality/eslint-config-functional -D
+$ npm install @strv/eslint-config-functional -D
 ```
 
 ## Usage
@@ -14,7 +14,7 @@ Create a _.eslintrc.js_ file with the following contents:
 module.exports = {
   extends: [
     // ... (base eslint config)
-    '@code-quality/eslint-config-functional',
+    '@strv/eslint-config-functional',
   ],
 }
 ```
