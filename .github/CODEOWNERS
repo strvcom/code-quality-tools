@@ -10,5 +10,6 @@
 /packages/eslint-config-mocha/                  @robertrossmann
 /packages/eslint-config-react-native/           @robertrossmann @andrenanninga
 /packages/eslint-config-react/                  @dannytce @prichodko
+/packages/eslint-config-ramda/                  @developer239
 /packages/prettier-config/                      @dannytce @prichodko
 /packages/stylelint-config-styled-components/   @dannytce @prichodko

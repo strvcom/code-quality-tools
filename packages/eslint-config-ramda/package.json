@@ -1,0 +1,35 @@
+{
+  "name": "@strv/eslint-config-ramda",
+  "description": "STRV's ESLint config for javascript applications that use Ramda.",
+  "version": "1.0.0",
+  "author": "Michal Jarnot <m.jarnot@yahoo.com>",
+  "bugs": {
+    "url": "https://github.com/strvcom/code-quality-tools/issues"
+  },
+  "dependencies": {
+    "eslint-plugin-ramda": "^2.5.1"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "keywords": [
+    "config",
+    "eslint",
+    "node",
+    "strv",
+    "functional",
+    "ramda"
+  ],
+  "license": "BSD-3-Clause",
+  "main": "index.js",
+  "peerDependencies": {
+    "eslint": "^5.3.0 || ^6"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/strvcom/code-quality-tools.git"
+  }
+}
