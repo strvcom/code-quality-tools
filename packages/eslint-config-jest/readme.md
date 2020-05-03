@@ -3,7 +3,7 @@
 ## Install
 
 ```bash
-$ npm install @code-quality/eslint-config-jest -D
+$ npm install @strv/eslint-config-jest -D
 ```
 
 ## Usage
@@ -14,7 +14,7 @@ Create a _.eslintrc.js_ file with the following contents:
 module.exports = {
   extends: [
     // ... (base eslint config)
-    '@code-quality/eslint-config-jest',
+    '@strv/eslint-config-jest',
   ],
 }
 ```
