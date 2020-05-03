@@ -1,5 +1,5 @@
 /**
- * strvcom/eslint-config-jest
+ * strvcom/eslint-config-functional
  *
  * @author      Michal Jarnot <m.jarnot@yahoo.com>
  * @copyright   2020 STRV

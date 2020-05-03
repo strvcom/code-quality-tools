@@ -1,6 +1,6 @@
 {
   "name": "@strv/eslint-config-functional",
-  "description": "STRV's ESLint config for javascript applications that use Jest testing framework.",
+  "description": "STRV's ESLint config enforcing good functional programming practices.",
   "version": "1.0.0",
   "author": "Michal Jarnot <m.jarnot@yahoo.com>",
   "bugs": {
