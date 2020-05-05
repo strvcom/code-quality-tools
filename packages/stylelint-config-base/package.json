@@ -1,0 +1,26 @@
+{
+  "name": "@strv/stylelint-config-base",
+  "description": "STRV's base config for stylelint.",
+  "version": "1.0.0",
+  "author": "Michal Jarnot <m.jarnot@yahoo.com>",
+  "bugs": {
+    "url": "https://github.com/strvcom/code-quality-tools/issues"
+  },
+  "keywords": [
+    "config",
+    "react",
+    "strv",
+    "stylelint"
+  ],
+  "license": "BSD-3-Clause",
+  "peerDependencies": {
+    "stylelint": "^10.0.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/strvcom/code-quality-tools.git"
+  }
+}
