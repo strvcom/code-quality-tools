@@ -465,5 +465,17 @@ module.exports = {
     // Enforce tabIndex value is not greater than zero
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/tabindex-no-positive.md
     'jsx-a11y/tabindex-no-positive': 'warn',
+
+    'react/button-has-type': ['error', { reset: false }],
+
+    'react/no-children-prop': 'error',
+
+    'react/prefer-es6-class': 'error',
+
+    'react/prefer-stateless-function': 'error',
+
+    'react/jsx-boolean-value': ['error', 'never'],
+
+    'react/jsx-child-element-spacing': 'error',
   },
 }

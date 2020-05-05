@@ -122,5 +122,19 @@ module.exports = {
     // will check for and warn about declaring any of the above properties outside of the class
     // body.
     'react/static-property-placement': 'warn',
+
+    'react/sort-prop-types': 'warn',
+
+    'react/jsx-closing-tag-location': 'warn',
+
+    'react/jsx-wrap-multilines': ['warn', {
+      declaration: 'parens-new-line',
+      assignment: 'parens-new-line',
+      return: 'parens-new-line',
+      arrow: 'parens-new-line',
+      condition: 'parens-new-line',
+      logical: 'parens-new-line',
+      prop: 'parens-new-line',
+    }],
   },
 }
