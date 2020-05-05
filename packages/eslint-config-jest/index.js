@@ -9,7 +9,7 @@
 'use strict'
 
 module.exports = {
-  extends: ['plugin:jest-formatting/recommended'],
+  extends: ['plugin:jest-formatting/strict'],
   plugins: ['jest', 'jest-formatting'],
   overrides: [{
     files: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
