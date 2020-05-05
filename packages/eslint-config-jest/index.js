@@ -41,7 +41,7 @@ module.exports = {
     //
 
     'jest/consistent-test-it': 2,
-    'jest/lowercase-name': 2,
+    'jest/lowercase-name': 0,
     'jest/no-hooks': 0,
     'jest/no-large-snapshots': 2,
     'jest/no-test-return-statement': 2,
