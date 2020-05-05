@@ -12,7 +12,8 @@
   ],
   "dependencies": {
     "@strv/eslint-config-base": "^2.3.0",
-    "eslint-plugin-node": "^11.0.0"
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-security-node": "^1.0.12"
   },
   "engines": {
     "node": ">=10"

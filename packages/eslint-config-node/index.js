@@ -26,6 +26,7 @@ module.exports = {
 
   plugins: [
     'node',
+    'security',
   ],
 
   settings: {
@@ -187,4 +188,38 @@ module.exports = {
   // module.exports and exports are the same instance by default. But those come to be different
   // if one of them is modified
   'node/exports-style': 'error',
+
+  // Since Node.js v11.14.0, require("dns").promises API has been stable. Promise API and
+  // async/await syntax will make code more readable than callback API.
+  'node/prefer-promises/dns': 'error',
+
+  // Since Node.js v11.14.0, require("fs").promises API has been stable. Promise API and
+  // async/await syntax will make code more readable than callback API.
+  'node/prefer-promises/fs': 'error',
+
+  'security/detect-buffer-noassert': 'error',
+
+  'security/detect-child-process': 'error',
+
+  'security/detect-disable-mustache-escape': 'error',
+
+  'security/detect-eval-with-expression': 'error',
+
+  'security/detect-new-buffer': 'error',
+
+  'security/detect-no-csrf-before-method-override': 'error',
+
+  'security/detect-non-literal-fs-filename': 'warn',
+
+  'security/detect-non-literal-regexp': 'error',
+
+  'security/detect-non-literal-require': 'warn',
+
+  'security/detect-object-injection': 'warn',
+
+  'security/detect-possible-timing-attacks': 'error',
+
+  'security/detect-pseudoRandomBytes': 'error',
+
+  'security/detect-unsafe-regex': 'error',
 }
