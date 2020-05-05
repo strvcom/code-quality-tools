@@ -476,7 +476,5 @@ module.exports = {
     'react/prefer-stateless-function': 'error',
 
     'react/jsx-boolean-value': ['error', 'never'],
-
-    'react/jsx-child-element-spacing': 'error',
   },
 }

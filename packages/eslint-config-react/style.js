@@ -136,5 +136,7 @@ module.exports = {
       logical: 'parens-new-line',
       prop: 'parens-new-line',
     }],
+
+    'react/jsx-child-element-spacing': 'warn',
   },
 }
