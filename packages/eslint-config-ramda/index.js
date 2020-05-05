@@ -35,6 +35,6 @@ module.exports = {
     'ramda/reject-simplification': 'error',
     'ramda/set-simplification': 'error',
     'ramda/unless-simplification': 'error',
-    'ramda/when-simplification': 'error'
+    'ramda/when-simplification': 'error',
   },
 }
