@@ -1,0 +1,31 @@
+{
+  "name": "@strv/stylelint-config-css-in-js-react-native",
+  "description": "STRV's css-in-js-react-native config for stylelint.",
+  "version": "1.0.0",
+  "author": "Michal Jarnot <m.jarnot@yahoo.com>",
+  "bugs": {
+    "url": "https://github.com/strvcom/code-quality-tools/issues"
+  },
+  "keywords": [
+    "config",
+    "react",
+    "strv",
+    "stylelint",
+    "mobile",
+    "react-native"
+  ],
+  "license": "BSD-3-Clause",
+  "peerDependencies": {
+    "stylelint": "^10.0.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/strvcom/code-quality-tools.git"
+  },
+  "dependencies": {
+    "stylelint-react-native": "^2.2.0"
+  }
+}
