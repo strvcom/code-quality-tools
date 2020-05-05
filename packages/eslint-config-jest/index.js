@@ -22,44 +22,44 @@ module.exports = {
     // Recommended
     //
 
-    'jest/expect-expect': 'error',
-    'jest/no-disabled-tests': 'error',
-    'jest/no-focused-tests': 'error',
-    'jest/no-identical-title': 'error',
-    'jest/no-jasmine-globals': 'error',
-    'jest/no-jest-import': 'error',
+    'jest/expect-expect': 2,
+    'jest/no-disabled-tests': 2,
+    'jest/no-focused-tests': 2,
+    'jest/no-identical-title': 2,
+    'jest/no-jasmine-globals': 2,
+    'jest/no-jest-import': 2,
     'jest/no-mocks-import': 0,
-    'jest/no-test-callback': 'error',
-    'jest/no-test-prefixes': 'error',
-    'jest/valid-describe': 'error',
-    'jest/valid-expect-in-promise': 'error',
-    'jest/valid-expect': 'error',
+    'jest/no-test-callback': 2,
+    'jest/no-test-prefixes': 2,
+    'jest/valid-describe': 2,
+    'jest/valid-expect-in-promise': 2,
+    'jest/valid-expect': 2,
 
     //
     // Optional
     //
 
-    'jest/consistent-test-it': 'error',
-    'jest/lowercase-name': 'error',
+    'jest/consistent-test-it': 2,
+    'jest/lowercase-name': 2,
     'jest/no-hooks': 0,
-    'jest/no-large-snapshots': 'error',
-    'jest/no-test-return-statement': 'error',
+    'jest/no-large-snapshots': 2,
+    'jest/no-test-return-statement': 2,
     'jest/no-truthy-falsy': 0,
     'jest/prefer-called-with': 1,
     'jest/prefer-expect-assertions': 0,
     'jest/prefer-inline-snapshots': 0,
     'jest/prefer-spy-on': 0,
-    'jest/prefer-strict-equal': 'error',
-    'jest/prefer-todo': 'error',
+    'jest/prefer-strict-equal': 2,
+    'jest/prefer-todo': 2,
 
     //
     // Style
     //
 
-    'jest/no-alias-methods': 'error',
-    'jest/prefer-to-be-null': 'error',
-    'jest/prefer-to-be-undefined': 'error',
-    'jest/prefer-to-contain': 'error',
-    'jest/prefer-to-have-length': 'error',
+    'jest/no-alias-methods': 2,
+    'jest/prefer-to-be-null': 2,
+    'jest/prefer-to-be-undefined': 2,
+    'jest/prefer-to-contain': 2,
+    'jest/prefer-to-have-length': 2,
   },
 }
