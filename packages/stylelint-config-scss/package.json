@@ -1,0 +1,31 @@
+{
+  "name": "@strv/stylelint-config-scss",
+  "description": "STRV's SCSS config for stylelint.",
+  "version": "1.0.0",
+  "author": "Michal Jarnot <m.jarnot@yahoo.com>",
+  "bugs": {
+    "url": "https://github.com/strvcom/code-quality-tools/issues"
+  },
+  "keywords": [
+    "config",
+    "react",
+    "strv",
+    "stylelint",
+    "scss"
+  ],
+  "license": "BSD-3-Clause",
+  "peerDependencies": {
+    "stylelint": "^10.0.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/strvcom/code-quality-tools.git"
+  },
+  "dependencies": {
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-scss": "^3.17.1"
+  }
+}
