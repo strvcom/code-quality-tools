@@ -85,7 +85,7 @@ module.exports = {
 
     // Prevent usage of dangerous JSX properties
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-danger.md
-    'react/no-danger': 'warn',
+    'react/no-danger': 'error',
 
     // This rule helps prevent problems caused by using children and the dangerouslySetInnerHTML
     // prop at the same time
@@ -100,7 +100,7 @@ module.exports = {
 
     // Prevent usage of deprecated methods, including component lifecyle methods
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-deprecated.md
-    'react/no-deprecated': 'warn',
+    'react/no-deprecated': 'error',
 
     // NEVER mutate this.state directly, as calling setState() afterwards may replace the mutation
     //  you made. Treat this.state as if it were immutable
@@ -208,12 +208,12 @@ module.exports = {
 
     // Ensures that any component or prop methods used to handle events are correctly prefixed
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-handler-names.md
-    'react/jsx-handler-names': ['warn'],
+    'react/jsx-handler-names': ['error'],
 
     // Warn if an element that likely requires a key prop--namely, one present in an array literal
     //  or an arrow function expression
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-key.md
-    'react/jsx-key': 'warn',
+    'react/jsx-key': 'error',
 
     // A bind call or arrow function in a JSX prop will create a brand new function on every single
     //  render. This is bad for performance, as it may cause unnecessary re-renders if a brand new
@@ -236,7 +236,7 @@ module.exports = {
     // rel='noreferrer noopener', however, is a severe security vulnerability. This rules requires
     //  that you accompany target='_blank' attributes with rel='noreferrer noopener'
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-target-blank.md
-    'react/jsx-no-target-blank': ['warn', { enforceDynamicLinks: 'always' }],
+    'react/jsx-no-target-blank': ['error', { enforceDynamicLinks: 'always' }],
 
     // This rule helps locate potential ReferenceErrors resulting from misspellings
     //  or missing components
@@ -254,14 +254,15 @@ module.exports = {
     //  in JSX props and/or children
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-curly-brace-presence.md
     'react/jsx-curly-brace-presence': ['warn', 'never'],
+
     // Enforce shorthand or standard form for React fragments
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-fragments.md
-    'react/jsx-fragments': 'warn',
+    'react/jsx-fragments': 'error',
 
     // Disallow unnecessary fragments
     // A fragment is redundant if it contains only one child, or if it is the child of a html
     // element, and is not a keyed fragment.
-    'react/jsx-no-useless-fragment': 'warn',
+    'react/jsx-no-useless-fragment': 'error',
 
     // Enforces coding style that user-defined JSX components are defined andreferenced in
     // PascalCase
