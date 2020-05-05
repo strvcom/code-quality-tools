@@ -348,6 +348,6 @@ module.exports = {
     'ban-ts-comment': 'warn',
 
     // Warn when using magic numbers.
-    '@typescript-eslint/no-magic-numbers': ['warn', { 'ignoreEnums': false }],
+    '@typescript-eslint/no-magic-numbers': ['warn', { 'ignoreEnums': true }],
   },
 }
