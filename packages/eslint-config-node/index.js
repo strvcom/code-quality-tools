@@ -164,4 +164,27 @@ module.exports = {
       }],
     },
   }],
+
+  // If an import declaration's source is extraneous (it's not written in package.json),
+  // the program works in local, but will not work after dependencies are re-installed. It
+  // will cause troubles to your team/contributors. This rule disallows import declarations
+  // of extraneous modules.
+  'node/no-extraneous-import': 'error',
+
+  // If a require()'s target is extraneous (it's not written in package.json), the program works
+  // in local, but will not work after dependencies are re-installed. It will cause troubles to
+  // your team/contributors. This rule disallows require() of extraneous modules.
+  'node/no-extraneous-require': 'error',
+
+  // This is similar to no-unpublished-require, but this rule handles import declarations.
+  'node/no-unpublished-import': 'warn',
+
+  // If a require() expression's target is not published, the program works in local, but will'
+  // not work after published to npm. This rule disallows require() expressions of unpublished
+  // files/modules.
+  'node/no-unpublished-require': 'warn',
+
+  // module.exports and exports are the same instance by default. But those come to be different
+  // if one of them is modified
+  'node/exports-style': 'error',
 }
