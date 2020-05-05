@@ -46,7 +46,7 @@ module.exports = {
     'jest/no-large-snapshots': 2,
     'jest/no-test-return-statement': 2,
     'jest/no-truthy-falsy': 0,
-    'jest/prefer-called-with': 1,
+    'jest/prefer-called-with': 2,
     'jest/prefer-expect-assertions': 0,
     'jest/prefer-inline-snapshots': 0,
     'jest/prefer-spy-on': 0,
