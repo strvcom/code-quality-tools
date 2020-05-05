@@ -34,6 +34,7 @@ module.exports = {
     'jest/valid-describe': 2,
     'jest/valid-expect-in-promise': 2,
     'jest/valid-expect': 2,
+    'jest/no-standalone-expect': 2,
 
     //
     // Optional
