@@ -343,5 +343,11 @@ module.exports = {
     // Enforces unbound methods are called with their expected scope
     // Class functions don't preserve the class scope when passed as standalone variables.
     '@typescript-eslint/unbound-method': 'warn',
+
+    // Suppressing TypeScript Compiler Errors can be hard to discover.
+    'ban-ts-comment': 'warn',
+
+    // Warn when using magic numbers.
+    '@typescript-eslint/no-magic-numbers': ['warn', { 'ignoreEnums': false }],
   },
 }
