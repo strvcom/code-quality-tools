@@ -27,7 +27,7 @@ In addition to using this ruleset, you should also choose one base ruleset depen
 
 ## Optional configurations
 
-### `@strv/eslint-config-node/optional`
+### `@strv/eslint-config-typescript/optional`
 
 Use this ruleset in conjunction with any of the above version-specific rulesets. Provides additional insights into potential inconsistencies in the project.
 
