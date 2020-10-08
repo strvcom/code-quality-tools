@@ -35,17 +35,6 @@ module.exports = {
     // This rule enforces usage of return statement in callbacks of array's methods.
     'array-callback-return': 'error',
 
-    // Enforce Return After Callback
-    // This rule is aimed at ensuring that callbacks used outside of the main function block are
-    // always part of or immediately preceding a return statement.
-    'callback-return': ['error', [
-      // The following variables will be considered callbacks. More can be added as necessary.
-      'cb',
-      'callback',
-      'next',
-      'done',
-    ]],
-
     // Enforce for loop update clause moving the counter in the right direction
     // A for loop with a stop condition that can never be reached, such as one with a counter that
     // moves in the wrong direction, will run infinitely. While there are occasions when an infinite
@@ -61,11 +50,6 @@ module.exports = {
     // This rule is aimed at preventing unexpected behavior that could arise from using a for-in
     // loop without filtering the results in the loop.
     'guard-for-in': 'error',
-
-    // Enforce Callback Error Handling
-    // This rule expects that when you're using the callback pattern in node you'll handle the
-    // error. Matches: err, Err, error, someErr, someError, any_error, ...
-    'handle-callback-err': ['error', '^.*(e|E)rr(or)?'],
 
     // Enforce a maximum number of classes per file
     // Files containing multiple classes can often result in a less navigable and poorly structured
@@ -665,7 +649,7 @@ module.exports = {
 
     rules: {
       // Using process.env is encouraged in configuration files
-      'no-process-env': 'off',
+      'node/no-process-env': 'off',
     },
   }],
 }
