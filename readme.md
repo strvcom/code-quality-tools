@@ -16,6 +16,7 @@ This monorepo contains shareable configurations for various coding-style/best pr
 | ESLint     | [@strv/eslint-config-react-native](packages/eslint-config-react-native)                 | [![@strv/eslint-config-react-native][ec-react-native-badge]][ec-react-native-npm] | ESlint ruleset for React-Native projects |
 | ESLint     | [@strv/eslint-config-typescript](packages/eslint-config-typescript)                     | [![@strv/eslint-config-typescript][ec-typescript-badge]][ec-typescript-npm]       | ESlint ruleset for TypeScript projects   |
 | ESLint     | [@strv/eslint-config-mocha](packages/eslint-config-mocha)                               | [![@strv/eslint-config-mocha][ec-mocha-badge]][ec-mocha-npm]                      | ESlint ruleset for Mocha test files      |
+| ESLint     | [@strv/eslint-config-graphql](packages/eslint-config-graphql)                           | [![@strv/eslint-config-graphql][ec-graphql-badge]][ec-graphql-npm]                | ESlint ruleset for GraphQL and Apollo    |
 | Prettier   | [@strv/prettier-config](packages/prettier-config)                                       | [![@strv/prettier-config][pr-badge]][pr-npm]                                      | Configuration for Prettier               |
 | Remark-CLI | [@strv/remark-config](packages/remark-config)                                           | [![@strv/remark-config][rm-badge]][rm-npm]                                        | Configuration for Remark-CLI             |
 | Stylelint  | [@strv/stylelint-config-styled-components](packages/stylelint-config-styled-components) | [![@strv/stylelint-config-styled-components][sl-badge]][sl-npm]                   | Configuration for Stylelint              |
@@ -36,6 +37,8 @@ See the [LICENSE](LICENSE) file for information.
 [ec-node-badge]: https://img.shields.io/npm/v/@strv/eslint-config-node.svg?style=flat-square
 [ec-mocha-npm]: https://npmjs.org/package/@strv/eslint-config-mocha
 [ec-mocha-badge]: https://img.shields.io/npm/v/@strv/eslint-config-mocha.svg?style=flat-square
+[ec-graphql-npm]: https://npmjs.org/package/@strv/eslint-config-graphql
+[ec-graphql-badge]: https://img.shields.io/npm/v/@strv/eslint-config-graphql.svg?style=flat-square
 [ec-react-npm]: https://npmjs.org/package/@strv/eslint-config-react
 [ec-react-badge]: https://img.shields.io/npm/v/@strv/eslint-config-react.svg?style=flat-square
 [ec-react-native-npm]: https://npmjs.org/package/@strv/eslint-config-react-native
