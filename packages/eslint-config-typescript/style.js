@@ -16,21 +16,18 @@ module.exports = {
 
   rules: {
     // Conflicts with typescript
-    'brace-style': 'off',
     camelcase: 'off',
-    'comma-spacing': 'off',
-    'func-call-spacing': 'off',
-    indent: 'off',
-    'no-extra-parens': 'off',
-    quotes: 'off',
-    semi: 'off',
-    'space-before-function-paren': 'off',
 
     // Enforce consistent brace style for blocks
     '@typescript-eslint/brace-style': style.rules['brace-style'],
+    'brace-style': 'off',
+
+    '@typescript-eslint/comma-dangle': style.rules['comma-dangle'],
+    'comma-dangle': 'off',
 
     // Enforces consistent spacing before and after commas
     '@typescript-eslint/comma-spacing': style.rules['comma-spacing'],
+    'comma-spacing': 'off',
 
     // Enforces consistent usage of type assertions
     // This rule aims to standardise the use of type assertion style across the codebase.
@@ -47,15 +44,29 @@ module.exports = {
     // Enforce default parameters to be last
     // This rule enforces default or optional parameters to be the last of parameters.
     '@typescript-eslint/default-param-last': style.rules['default-param-last'],
+    'default-param-last': 'off',
+
+    '@typescript-eslint/dot-notation': style.rules['dot-notation'],
+    'dot-notation': 'off',
 
     // Require or disallow spacing between function identifiers and their invocations
     // This rule extends the base eslint/func-call-spacing rule. It supports all options and
     // features of the base rule. This version adds support for generic type parameters on function
     // calls.
     '@typescript-eslint/func-call-spacing': style.rules['func-call-spacing'],
+    'func-call-spacing': 'off',
 
     // Enforce consistent indentation
     '@typescript-eslint/indent': style.rules.indent,
+    indent: 'off',
+
+    // This rule will enforce consistency of spacing around keywords and keyword-like tokens
+    '@typescript-eslint/keyword-spacing': style.rules['keyword-spacing'],
+    'keyword-spacing': 'off',
+
+    // Require an empty line between class members
+    '@typescript-eslint/lines-between-class-members': style.rules['lines-between-class-members'],
+    'lines-between-class-members': 'off',
 
     // Require a specific member delimiter style for interfaces and type literals
     // This rule aims to standardise the way interface and type literal members are delimited.
@@ -67,6 +78,9 @@ module.exports = {
         delimiter: 'comma',
       },
     }],
+
+    // Enforce using a particular method signature syntax
+    '@typescript-eslint/method-signature-style': ['warn', 'method'],
 
     // Enforces naming conventions for everything across a codebase
     '@typescript-eslint/naming-convention': ['warn', {
@@ -87,8 +101,12 @@ module.exports = {
       format: ['PascalCase'],
     }],
 
+    '@typescript-eslint/no-duplicate-imports': style.rules['no-duplicate-imports'],
+    'no-duplicate-imports': 'off',
+
     // disallow unnecessary parentheses
     '@typescript-eslint/no-extra-parens': style.rules['no-extra-parens'],
+    'no-extra-parens': 'off',
 
     // Disallow extra non-null assertion
     '@typescript-eslint/no-extra-non-null-assertion': 'warn',
@@ -154,17 +172,22 @@ module.exports = {
     // with a specific string.
     '@typescript-eslint/prefer-string-starts-ends-with': 'warn',
 
+    '@typescript-eslint/prefer-ts-expect-error': 'warn',
+
     // Enforce the consistent use of either backticks, double, or single quotes
     // This rule extends the base eslint/quotes rule. It supports all options and features of the
     // base rule.
     '@typescript-eslint/quotes': style.rules.quotes,
+    quotes: 'off',
 
     // Enforce or Disallow Semicolons
     // This rule is aimed at ensuring consistent use of semicolons.
     '@typescript-eslint/semi': style.rules.semi,
+    semi: 'off',
 
     // Require or disallow a space before function parenthesis
     '@typescript-eslint/space-before-function-paren': style.rules['space-before-function-paren'],
+    'space-before-function-paren': 'off',
 
     // Require consistent spacing around type annotations
     // This rule aims to enforce specific spacing patterns around type annotations and function
