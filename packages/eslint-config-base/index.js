@@ -102,6 +102,13 @@ module.exports = {
     // Outside of strict mode duplicate arguments will mask the value of the first argument.
     'no-dupe-args': 'error',
 
+    // Disallow duplicate conditions in if-else-if chains
+    // Two identical test conditions in the same chain are almost always a mistake in the code.
+    // Unless there are side effects in the expressions, a duplicate will evaluate to the same true
+    // or false value as the identical expression earlier in the chain, meaning that its branch can
+    // never execute.
+    'no-dupe-else-if': 'error',
+
     // Disallow Duplicate Keys
     // Creating objects with duplicate keys in objects can cause unexpected behavior in your
     // application.
@@ -163,6 +170,8 @@ module.exports = {
     // This rule aims to eliminate implied eval() through the use of setTimeout(), setInterval() or
     // execScript().
     'no-implied-eval': 'error',
+
+    'no-import-assign': 'warn',
 
     // Declarations in Program or Function Body
     // In JavaScript, prior to ES6, a function declaration is only allowed in the first level of a
@@ -300,6 +309,11 @@ module.exports = {
     // recommended to avoid using them.
     'no-sparse-arrays': 'error',
 
+    // Disallow returning values from setters
+    // While returning a value from a setter does not produce an error, the returned value is being
+    // ignored.
+    'no-setter-return': 'error',
+
     // Disallow template literal placeholder syntax in regular strings
     // This rule aims to warn when a regular string contains what looks like a template literal
     // placeholder.
@@ -336,6 +350,11 @@ module.exports = {
     // This rule is aimed to flag usage of Function.prototype.call() and Function.prototype.apply()
     // that can be replaced with the normal function invocation.
     'no-useless-call': 'error',
+
+    // Disallow unnecessary catch clauses
+    // A catch clause that only rethrows the original error is redundant, and has no effect on the
+    // runtime behavior of the program.
+    'no-useless-catch': 'error',
 
     // Disallow unncessary concatenation of strings
     // This rule aims to flag the concatenation of 2 literals when they could be combined into a
@@ -529,6 +548,9 @@ module.exports = {
       allowTernary: true,
     }],
 
+    // Disallow renaming import, export, and destructured assignments to the same name
+    'no-useless-rename': 'warn',
+
     // No `with` Statements
     // The with statement is potentially problematic because it adds members of an object to the
     // current scope, making it impossible to tell what a variable inside the block actually refers
@@ -551,6 +573,11 @@ module.exports = {
     // This rule is aimed to flag usage of Function.prototype.apply() that can be replaced with the
     // spread operator.
     'prefer-spread': 'warn',
+
+    // Require Radix Parameter
+    // This rule is aimed at preventing the unintended conversion of a string to a number of a
+    // different base than intended.
+    radix: 'warn',
 
     // Disallow async functions which have no await expression
     // Async functions which have no await expression may be the unintentional result of

@@ -162,6 +162,11 @@ module.exports = {
       method: 'before',
     }],
 
+    // Require grouped accessor pairs in object literals and classes
+    // This rule requires grouped definitions of accessor functions for the same property in object
+    // literals, class declarations and class expressions.
+    'grouped-accessor-pairs': ['warn', 'getBeforeSet'],
+
     // Limit minimum and maximum length for identifiers
     // This rule is aimed at increasing code readability and maintainability by enforcing an
     // identifier length convention.
@@ -334,6 +339,10 @@ module.exports = {
     // with a mixture of tabs and spaces.
     'no-mixed-spaces-and-tabs': 'warn',
 
+    // Disallow Use of Chained Assignment Expressions
+    // This rule disallows using multiple assignments within a single statement.
+    'no-multi-assign': 'warn',
+
     // Disallows multiple blank lines
     // Whitespace is useful for separating logical sections of code, but excess whitespace takes up
     // more of the screen.
@@ -489,6 +498,11 @@ module.exports = {
     // Object.assign call is made using a single argument that is an object literal, in this case,
     // the Object.assign call is not needed.
     'prefer-object-spread': 'warn',
+
+    // Disallow use of the RegExp constructor in favor of regular expression literals
+    'prefer-regex-literals': ['warn', {
+      disallowRedundantWrapping: true,
+    }],
 
     // Suggest using template literals instead of string concatenation
     // This rule is aimed to flag usage of + operators with strings.
