@@ -11,11 +11,11 @@
     "Danny Kijkov <daniel.kijkov@strv.com>"
   ],
   "dependencies": {
-    "@commitlint/config-conventional": "^8.1.0",
-    "@commitlint/config-lerna-scopes": "^8.1.0"
+    "@commitlint/config-conventional": "^11.0.0",
+    "@commitlint/config-lerna-scopes": "^11.0.0"
   },
   "engines": {
-    "node": ">=6"
+    "node": ">=10"
   },
   "keywords": [
     "commitlint",
