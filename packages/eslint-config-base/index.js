@@ -552,14 +552,6 @@ module.exports = {
     // spread operator.
     'prefer-spread': 'warn',
 
-    // Disallow assignments that can lead to race conditions due to usage of await or yield
-    // This rule aims to report assignments to variables or properties where all of the following
-    // are true:
-    // - A variable or property is reassigned to a new value which is based on its old value
-    // - A yield or await expression interrupts the assignment after the old value is read, and
-    //   before the new value is set
-    'require-atomic-updates': 'warn',
-
     // Disallow async functions which have no await expression
     // Async functions which have no await expression may be the unintentional result of
     // refactoring.
