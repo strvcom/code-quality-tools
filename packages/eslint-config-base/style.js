@@ -104,6 +104,9 @@ module.exports = {
     // All block statements must be wrapped in curly braces
     curly: ['warn', 'all'],
 
+    // Enforce default clauses in switch statements to be last
+    'default-case-last': 'warn',
+
     // Enforce default parameters to be last
     // Putting default parameter at last allows function calls to omit optional tail arguments.
     'default-param-last': 'warn',

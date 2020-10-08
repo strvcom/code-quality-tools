@@ -211,6 +211,9 @@ module.exports = {
     // gets the value of undefined.
     'no-undef-init': 'error',
 
+    // Disallow loops with a body that allows only one iteration
+    'no-unreachable-loop': 'warn',
+
     // Disallow negating the left operand of relational operators
     // This rule disallows negating the left operand of Relational Operators
     // See MDN: https://goo.gl/nFA3Mk
@@ -230,6 +233,9 @@ module.exports = {
       functions: false,
       classes: false,
     }],
+
+    // Disallow useless backreferences in regular expressions
+    'no-useless-backreference': 'warn',
 
     // Disallow new For Side Effects
     // This rule is aimed at maintaining consistency and convention by disallowing constructor calls
@@ -465,6 +471,11 @@ module.exports = {
     // label.
     'no-labels': 'error',
 
+    // Disallow number literals that lose precision
+    // This rule would disallow the use of number literals that immediately lose precision at
+    // runtime when converted to a JS Number due to 64-bit floating-point rounding.
+    'no-loss-of-precision': 'warn',
+
     // Disallow empty destructuring patterns
     // This rule aims to flag any empty patterns in destructured objects and arrays.
     'no-empty-pattern': 'error',
@@ -497,9 +508,7 @@ module.exports = {
     // Disallow Redeclaring Variables
     // This rule is aimed at eliminating variables that have multiple declarations in the same
     // scope.
-    'no-redeclare': ['error', {
-      builtinGlobals: true,
-    }],
+    'no-redeclare': 'error',
 
     // Disallow Comparisons to Itself
     // This rule aims to highlight a potentially confusing and potentially pointless piece of code.
