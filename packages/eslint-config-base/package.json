@@ -11,7 +11,7 @@
     "Danny Kijkov <daniel.kijkov@strv.com>"
   ],
   "dependencies": {
-    "eslint-plugin-import": "^2.20.0"
+    "eslint-plugin-import": "^2.22.1"
   },
   "engines": {
     "node": ">=10"
