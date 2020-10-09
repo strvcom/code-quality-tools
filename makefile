@@ -48,7 +48,7 @@ pristine: clean
 release:
 	@utils/make/release.sh
 
-prerelease: install lint .ONESHELL
+prerelease: install lint
 	npx lerna version --conventional-prerelease
 	npx lerna publish from-git --pre-dist-tag next
 
@@ -64,6 +64,7 @@ node_modules: package.json
 
 # Use this prerequisite to force the target to never be treated as "up to date"
 .PHONY: force
+.ONESHELL: prerelease
 
 	# If this file exists, load it and add it to this makefile.
 	# Useful for defining per-developer variables or make targets. This file should not be under
