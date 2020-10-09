@@ -68,13 +68,7 @@ module.exports = {
     // This rule enforces consistent use of trailing commas in object and array literals
     // Allow trailing commas for func parameters, array and object literals spread across
     // multiple lines
-    'comma-dangle': ['warn', {
-      arrays: 'always-multiline',
-      objects: 'always-multiline',
-      imports: 'always-multiline',
-      exports: 'always-multiline',
-      functions: 'always-multiline',
-    }],
+    'comma-dangle': ['warn', 'always-multiline'],
 
     // Enforces spacing around commas
     // This rule aims to enforce spacing around a comma.
