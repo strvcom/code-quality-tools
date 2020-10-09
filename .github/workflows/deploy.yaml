@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
     timeout-minutes: 10
     env:
       CI: 'true'
@@ -18,7 +18,7 @@ jobs:
           fetch-depth: 0
       - uses: actions/setup-node@v1
         with:
-          node-version: 12
+          node-version: 14
 
       - name: Fetch tags
         run: git fetch --tags origin release

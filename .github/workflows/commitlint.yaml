@@ -7,7 +7,7 @@ on:
 
 jobs:
   commitlint:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
     timeout-minutes: 5
     env:
       CI: 'true'
@@ -18,7 +18,7 @@ jobs:
           fetch-depth: 50
       - uses: actions/setup-node@v1
         with:
-          node-version: 12
+          node-version: 14
 
       - name: Fetch master
         run: git fetch --no-tags --depth=50 origin master
