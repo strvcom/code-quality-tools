@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0-alpha.3](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-typescript@3.0.0-alpha.2...@strv/eslint-config-typescript@3.0.0-alpha.3) (2020-10-09)
+
+
+### Bug Fixes
+
+* **eslint-typescript:** prefer no-duplicate-imports rule ([6527739](https://github.com/strvcom/code-quality-tools/commit/6527739195ddc07d46da1c4e22866b301bb7cc25))
+
+
+
+
+
 # [3.0.0-alpha.2](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-typescript@3.0.0-alpha.1...@strv/eslint-config-typescript@3.0.0-alpha.2) (2020-10-09)
 
 **Note:** Version bump only for package @strv/eslint-config-typescript

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0-alpha.2](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-base@3.0.0-alpha.1...@strv/eslint-config-base@3.0.0-alpha.2) (2020-10-09)
+
+
+### Bug Fixes
+
+* **eslint-base:** disable redundant `no-duplicate-imports` rule ([018f2e3](https://github.com/strvcom/code-quality-tools/commit/018f2e3d5f7e86f6e06686ba40bdcd1f339945e5))
+
+
+
+
+
 # [3.0.0-alpha.1](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-base@3.0.0-alpha.0...@strv/eslint-config-base@3.0.0-alpha.1) (2020-10-09)
 
 
