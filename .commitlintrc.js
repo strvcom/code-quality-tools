@@ -19,5 +19,7 @@ module.exports = {
       'stylelint',
       'textlint',
     ]],
+
+    'footer-max-line-length': [0],
   },
 }

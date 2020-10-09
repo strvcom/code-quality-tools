@@ -16,5 +16,6 @@ module.exports = {
 
   rules: {
     'body-leading-blank': [2, 'always'],
+    'footer-max-line-length': [0],
   },
 }
