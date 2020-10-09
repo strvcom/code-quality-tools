@@ -3,7 +3,7 @@
 ## Install
 
 ```bash
-$ npm install @strv/eslint-config-graphql -D
+npm install @strv/eslint-config-graphql -D
 ```
 
 ## Usage
@@ -35,4 +35,3 @@ Additionally don't forget to have `.graphqlconfig` file:
 This configuration uses the following plugins:
 
 - [`eslint-plugin-graphql`](https://github.com/apollographql/eslint-plugin-graphql)
-
