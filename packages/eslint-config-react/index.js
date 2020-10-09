@@ -330,6 +330,10 @@ module.exports = {
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/aria-unsupported-elements.md
     'jsx-a11y/aria-unsupported-elements': 'warn',
 
+    // Ensure the autocomplete attribute is correct and suitable for the form field it is used with
+    // https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/autocomplete-valid.md
+    'jsx-a11y/autocomplete-valid': 'warn',
+
     // Enforce onClick is accompanied by at least one of the following: onKeyUp, onKeyDown,
     // onKeyPress. Coding for the keyboard is important for users with physical disabilities who
     // cannot use a mouse, AT compatibility, and screenreader users
