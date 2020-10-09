@@ -69,11 +69,17 @@ module.exports = {
     // accessibilityComponentType props in order to be fully accessible.
     'react-native-a11y/has-accessibility-props': 'error',
 
+    'react-native-a11y/has-accessibility-hint': 'error',
+
+    'react-native-a11y/has-valid-accessibility-actions': 'error',
+
     // Enforce accessibilityComponentType property value is valid.
     // The accessibilityComponentType property is essentially the android version of
     // accessibilityTraits and is used to alert a user, using TalkBack, what kind of element they
     // have selected.
     'react-native-a11y/has-valid-accessibility-component-type': 'error',
+
+    'react-native-a11y/has-valid-accessibility-ignores-invert-colors': 'error',
 
     // Enforce accessibilityLiveRegion prop values must be valid.
     // On android devices, when components dynamically change, we want TalkBack to alert the end
@@ -94,6 +100,8 @@ module.exports = {
     // The accessibilityTraits property is used to tell a person using VoiceOver what kind of
     // element they have selected.
     'react-native-a11y/has-valid-accessibility-traits': 'error',
+
+    'react-native-a11y/has-valid-accessibility-value': 'error',
 
     // Enforce importantForAccessibility property value is valid.
     // If there are two (or more) overlapping UI components with the same parent, default
