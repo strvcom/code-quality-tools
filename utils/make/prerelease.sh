@@ -18,7 +18,7 @@ printf "\n=====>\tSwitching back to previous branch...\n"
 
 git checkout "${head}"
 
-printf "\n=====>\Merging release branch...\n"
+printf "\n=====>\tMerging release branch...\n"
 
 git merge release
 
