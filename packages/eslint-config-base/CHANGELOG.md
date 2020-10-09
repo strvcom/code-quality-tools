@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0-alpha.1](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-base@3.0.0-alpha.0...@strv/eslint-config-base@3.0.0-alpha.1) (2020-10-09)
+
+
+### Bug Fixes
+
+* **eslint-base:** use a more generic config for comma-dangle ([dc44aa4](https://github.com/strvcom/code-quality-tools/commit/dc44aa441ba2dcdd3a34938ac3b0543ffce39d2a))
+
+
+
+
+
 # [3.0.0-alpha.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-base@2.3.0...@strv/eslint-config-base@3.0.0-alpha.0) (2020-10-09)
 
 
