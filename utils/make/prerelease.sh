@@ -24,6 +24,6 @@ git merge release
 
 printf "\n=====>\tPushing...\n"
 
-git push --tags "${head}:${head}"
+git push --tags origin "${head}:${head}"
 
 printf "\n=====>\tReleased 🎉\n"
