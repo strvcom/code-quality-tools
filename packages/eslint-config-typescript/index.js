@@ -95,7 +95,9 @@ module.exports = {
     '@typescript-eslint/consistent-type-definitions': ['warn', 'interface'],
 
     // Enforce consistent usage of type imports
-    '@typescript-eslint/consistent-type-imports': ['warn', 'prefer'],
+    '@typescript-eslint/consistent-type-imports': ['warn', {
+      prefer: 'type-imports',
+    }],
 
     // Require explicit return types on functions and class methods
     // Explicit types for function return values makes it clear to any calling code what type is
