@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0-alpha.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-base@2.3.0...@strv/eslint-config-base@3.0.0-alpha.0) (2020-10-09)
+
+
+### Features
+
+* add several rules to the base ruleset ([471568f](https://github.com/strvcom/code-quality-tools/commit/471568f2fddce960e200a9d6ed796f3f777d2c21))
+* **eslint-base:** disable require-atomic-updates rule ([2ca7bfd](https://github.com/strvcom/code-quality-tools/commit/2ca7bfd7a49d27e20af03ff59cd00374abdb996e))
+* **eslint-base:** upgrade eslint-plugin-import to 2.22 ([b95c1b1](https://github.com/strvcom/code-quality-tools/commit/b95c1b1c49a3b39aa92497627fc5a5fbcc6df56f))
+* **eslint-base:** upgrade to ESLint v7 ([a6b5b16](https://github.com/strvcom/code-quality-tools/commit/a6b5b16859cbd98a7cff38c48dec21e1f5182d85))
+* **eslint-node:** upgrade eslint-plugin-node to v11.1 ([83659cc](https://github.com/strvcom/code-quality-tools/commit/83659cc245220a08fce7d5d27e534c3bacb6dd47))
+
+
+### BREAKING CHANGES
+
+* A few of the new rules are set to `error` level so they might potentially
+cause some code to fail a lint check.
+* **eslint-base:** The minimum supported version of ESLint is now 7.1
+* **eslint-node:** As of ESLint v7, some Node.js-related rules have been deprecated and moved to eslint-plugin-node. This release uses the new rules from the plugin and increases the minimum ESLint version to v7.
+
+
+
+
+
 # [2.3.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-base@2.2.0...@strv/eslint-config-base@2.3.0) (2020-02-11)
 
 

@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0-alpha.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-node@2.2.2...@strv/eslint-config-node@3.0.0-alpha.0) (2020-10-09)
+
+
+### Features
+
+* **eslint-node:** upgrade eslint-plugin-node to v11.1 ([83659cc](https://github.com/strvcom/code-quality-tools/commit/83659cc245220a08fce7d5d27e534c3bacb6dd47))
+
+
+### BREAKING CHANGES
+
+* **eslint-node:** As of ESLint v7, some Node.js-related rules have been deprecated and moved to eslint-plugin-node. This release uses the new rules from the plugin and increases the minimum ESLint version to v7.
+
+
+
+
+
 ## [2.2.2](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-node@2.2.1...@strv/eslint-config-node@2.2.2) (2020-04-22)
 
 

@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0-alpha.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-typescript@2.3.0...@strv/eslint-config-typescript@3.0.0-alpha.0) (2020-10-09)
+
+
+### Bug Fixes
+
+* **eslint-typescript:** avoid duplicate warnings for require-await rule ([d53ef6d](https://github.com/strvcom/code-quality-tools/commit/d53ef6dfd53d7572ea83055e7ff547965cf55f5b))
+
+
+### Features
+
+* **eslint-typescript:** ruleset overhaul 🚀 ([3c53970](https://github.com/strvcom/code-quality-tools/commit/3c5397009d41f22762cc748fdd4bfb86896f05a5))
+
+
+### BREAKING CHANGES
+
+* **eslint-typescript:** The ruleset underwent a complete overhaul - it now requires ESLint v7, includes compatibility with TypeScript v4 and adds several new rules. Some rules have been causing duplicate issues being reported - these have been disabled.
+
+
+
+
+
 # [2.3.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-typescript@2.2.1...@strv/eslint-config-typescript@2.3.0) (2020-03-03)
 
 

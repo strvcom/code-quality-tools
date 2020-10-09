@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0-alpha.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-react-native@2.2.3...@strv/eslint-config-react-native@3.0.0-alpha.0) (2020-10-09)
+
+
+### Features
+
+* **eslint-react-native:** upgrade plugins, ESLint to v7 ([dc78601](https://github.com/strvcom/code-quality-tools/commit/dc78601902765c36cd747732fea765be66d6b5dd))
+
+
+### BREAKING CHANGES
+
+* **eslint-react-native:** This ruleset now requires ESLint v7.
+
+
+
+
+
 ## [2.2.3](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-react-native@2.2.2...@strv/eslint-config-react-native@2.2.3) (2020-04-22)
 
 **Note:** Version bump only for package @strv/eslint-config-react-native

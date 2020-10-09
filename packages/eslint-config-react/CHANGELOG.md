@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0-alpha.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-react@3.1.2...@strv/eslint-config-react@4.0.0-alpha.0) (2020-10-09)
+
+
+### Features
+
+* **eslint-react:** upgrade plugins to latest versions ([169c60a](https://github.com/strvcom/code-quality-tools/commit/169c60a2df63b8bf50cf99a912fd5c3a7488f250))
+
+
+### BREAKING CHANGES
+
+* **eslint-react:** The minimum ESLint version is now v7. Some plugins contain breaking changes as well, please review their changelogs for detailed information.
+
+
+
+
+
 ## [3.1.2](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-react@3.1.1...@strv/eslint-config-react@3.1.2) (2020-04-22)
 
 **Note:** Version bump only for package @strv/eslint-config-react
