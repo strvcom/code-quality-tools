@@ -101,8 +101,11 @@ module.exports = {
       format: ['PascalCase'],
     }],
 
-    '@typescript-eslint/no-duplicate-imports': style.rules['no-duplicate-imports'],
+    '@typescript-eslint/no-duplicate-imports': 'warn',
     'no-duplicate-imports': 'off',
+    // This rule attempts to auto-fix the imports in not-always-compatible way, especially when
+    // using TypeScript's `import type` syntax. ⚠️
+    'import/no-duplicates': 'off',
 
     // disallow unnecessary parentheses
     '@typescript-eslint/no-extra-parens': style.rules['no-extra-parens'],
