@@ -48,6 +48,10 @@ pristine: clean
 release:
 	@utils/make/release.sh
 
+prerelease: install lint .ONESHELL
+	npx lerna version --conventional-prerelease
+	npx lerna publish from-git --pre-dist-tag next
+
 # GENERIC TARGETS
 
 node_modules: package.json
