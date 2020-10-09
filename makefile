@@ -49,8 +49,7 @@ release:
 	@utils/make/release.sh
 
 prerelease: install lint
-	npx lerna version --conventional-prerelease
-	npx lerna publish from-git --pre-dist-tag next
+	@utils/make/prerelease.sh
 
 # GENERIC TARGETS
 
