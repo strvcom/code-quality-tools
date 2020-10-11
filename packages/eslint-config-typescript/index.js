@@ -390,6 +390,8 @@ module.exports = {
       allowNumber: true,
       allowBoolean: true,
       allowNullish: true,
+      // Not allowing any type is a nightmare for legacy codebases where types are unavailable
+      allowAny: true,
     }],
 
     // Require returning awaited values in specific contexts
