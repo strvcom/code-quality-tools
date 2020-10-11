@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0-alpha.4](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-typescript@3.0.0-alpha.3...@strv/eslint-config-typescript@3.0.0-alpha.4) (2020-10-11)
+
+
+### Bug Fixes
+
+* **eslint-typescript:** allow `any` type in template literal expressions ([510053a](https://github.com/strvcom/code-quality-tools/commit/510053a5c316767be2ab32f72b198e114570f5ca))
+
+
+
+
+
 # [3.0.0-alpha.3](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-typescript@3.0.0-alpha.2...@strv/eslint-config-typescript@3.0.0-alpha.3) (2020-10-09)
 
 
