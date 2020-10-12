@@ -14,6 +14,10 @@ Suitable for projects running on Node.js v10.
 
 Suitable for projects running on Node.js v12.
 
+### `@strv/eslint-config-node/v14`
+
+Suitable for projects running on Node.js v14.
+
 ## Optional configurations
 
 ### `@strv/eslint-config-node/optional`
@@ -37,7 +41,7 @@ This ruleset includes rules which deal with how the code looks like and not how 
 
 module.exports = {
   extends: [
-    '@strv/node/<v10 or v12>',
+    '@strv/node/<v10 or v12 or v14>',
     '@strv/node/optional',
     '@strv/node/style',
     '@strv/mocha',
@@ -51,7 +55,7 @@ module.exports = {
 ```json
 {
   "extends": [
-    "@strv/node/<v10 or v12>",
+    "@strv/node/<v10 or v12 or v14>",
     "@strv/node/optional",
     "@strv/node/style",
     "@strv/mocha"
@@ -68,7 +72,7 @@ module.exports = {
 {
   "eslintConfig": {
     "extends": [
-      "@strv/node/<v10 or v12>",
+      "@strv/node/<v10 or v12 or v14>",
       "@strv/node/optional",
       "@strv/node/style",
       "@strv/mocha"
