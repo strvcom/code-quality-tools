@@ -3,6 +3,32 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0-alpha.3](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-node@3.0.0-alpha.2...@strv/eslint-config-node@3.0.0-alpha.3) (2020-10-12)
+
+
+### Bug Fixes
+
+* **eslint-node:** set correct ecmaVersion for v12 ruleset ([afd19d4](https://github.com/strvcom/code-quality-tools/commit/afd19d44174555593e7421b0245dbc2064329263))
+
+
+### chore
+
+* **eslint-node:** delete the Node.js v8 config ([34727da](https://github.com/strvcom/code-quality-tools/commit/34727daf8f3f94105e9d830c5b7fc45e4d5eb5c9))
+
+
+### Features
+
+* **eslint-node:** add Node.js v14 ruleset ([73eb078](https://github.com/strvcom/code-quality-tools/commit/73eb0788c652f68288be73dbc8334a8f6ffeae2c))
+
+
+### BREAKING CHANGES
+
+* **eslint-node:** We no longer offer configuration file for Node.js v8.
+
+
+
+
+
 # [3.0.0-alpha.2](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-node@3.0.0-alpha.1...@strv/eslint-config-node@3.0.0-alpha.2) (2020-10-09)
 
 **Note:** Version bump only for package @strv/eslint-config-node
