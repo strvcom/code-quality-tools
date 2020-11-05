@@ -22,7 +22,7 @@
   "license": "BSD-3-Clause",
   "main": "index.js",
   "peerDependencies": {
-    "eslint": "^5.3.0 || ^6"
+    "eslint": "^7"
   },
   "publishConfig": {
     "access": "public"
