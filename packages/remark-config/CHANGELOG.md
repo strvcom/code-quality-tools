@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-alpha.1](https://github.com/strvcom/code-quality-tools/compare/@strv/remark-config@2.0.0-alpha.0...@strv/remark-config@2.0.0-alpha.1) (2021-02-03)
+
+
+### Features
+
+* **remark:** upgrade deps 💣 ([f912e3c](https://github.com/strvcom/code-quality-tools/commit/f912e3ce5a79f6279521e9ee49984d234e74cbc2))
+
+
+
+
+
 # [2.0.0-alpha.0](https://github.com/strvcom/code-quality-tools/compare/@strv/remark-config@1.0.2...@strv/remark-config@2.0.0-alpha.0) (2020-10-09)
 
 

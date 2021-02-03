@@ -1,7 +1,7 @@
 {
   "name": "@strv/eslint-config-typescript",
   "description": "STRV's ESLint config for TypeScript projects",
-  "version": "3.0.0-alpha.4",
+  "version": "3.0.0-alpha.5",
   "author": "Robert Rossmann <rr.rossmann@me.com>",
   "bugs": {
     "url": "https://github.com/strvcom/code-quality-tools/issues"

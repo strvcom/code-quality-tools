@@ -1,7 +1,7 @@
 {
   "name": "@strv/eslint-config-graphql",
   "description": "STRV's ESLint config for javascript applications that use GraphQL and Apollo client.",
-  "version": "0.1.0-alpha.0",
+  "version": "1.0.0-alpha.0",
   "author": "Michal Jarnot <m.jarnot@yahoo.com>",
   "bugs": {
     "url": "https://github.com/strvcom/code-quality-tools/issues"

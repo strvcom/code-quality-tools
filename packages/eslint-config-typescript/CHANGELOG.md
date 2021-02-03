@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0-alpha.5](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-typescript@3.0.0-alpha.4...@strv/eslint-config-typescript@3.0.0-alpha.5) (2021-02-03)
+
+
+### Features
+
+* **eslint-typescript:** upgrade plugins to latest version ([9f9c9c0](https://github.com/strvcom/code-quality-tools/commit/9f9c9c0c43e205ff219c3b4086071994ccb06cba))
+
+
+
+
+
 # [3.0.0-alpha.4](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-typescript@3.0.0-alpha.3...@strv/eslint-config-typescript@3.0.0-alpha.4) (2020-10-11)
 
 
