@@ -129,6 +129,13 @@ module.exports = {
     // Warns if an explicitly specified type argument is the default for that type parameter.
     '@typescript-eslint/no-unnecessary-type-arguments': 'warn',
 
+    // Prefers a non-null assertion over explicit type cast when possible
+    '@typescript-eslint/non-nullable-type-assertion-style': 'warn',
+
+    // Enforce consistent spacing inside braces
+    '@typescript-eslint/object-curly-spacing': style.rules['object-curly-spacing'],
+    'object-curly-spacing': 'off',
+
     // Prefer usage of `as const` over literal type
     // This rule recommends usage of `const` assertion when type primitive value is equal to type.
     '@typescript-eslint/prefer-as-const': 'warn',
@@ -191,6 +198,10 @@ module.exports = {
     // Require or disallow a space before function parenthesis
     '@typescript-eslint/space-before-function-paren': style.rules['space-before-function-paren'],
     'space-before-function-paren': 'off',
+
+    // This rule is aimed at ensuring there are spaces around infix operators
+    '@typescript-eslint/space-infix-ops': style.rules['space-infix-ops'],
+    'space-infix-ops': 'off',
 
     // Require consistent spacing around type annotations
     // This rule aims to enforce specific spacing patterns around type annotations and function
