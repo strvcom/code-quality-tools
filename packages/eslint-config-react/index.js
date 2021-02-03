@@ -227,6 +227,10 @@ module.exports = {
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-comment-textnodes.md
     'react/jsx-no-comment-textnodes': 'warn',
 
+    // Prevent react contexts from taking non-stable values
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-constructed-context-values.md
+    'react/jsx-no-constructed-context-values': 'warn',
+
     // Creating JSX elements with duplicate props can cause unexpected behavior in your application
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-duplicate-props.md
     'react/jsx-no-duplicate-props': ['warn', { ignoreCase: true }],
