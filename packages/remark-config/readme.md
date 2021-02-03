@@ -19,6 +19,7 @@ module.exports = {
   ...config,
 }
 ```
+
 Remark's configuration does not support built-in extensibility/inheritance of configuration so if you'd like to change some configuration options you will have to resort to standard JavaScript's object mutation/extension patterns.
 
 ## License
