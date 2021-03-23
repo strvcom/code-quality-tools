@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0-alpha.4](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-react@4.0.0-alpha.3...@strv/eslint-config-react@4.0.0-alpha.4) (2021-03-23)
+
+
+### Features
+
+* **eslint-react:** update deps 💣 ([3d1c6d5](https://github.com/strvcom/code-quality-tools/commit/3d1c6d5010a187c694484fb068e511d395f3eaa1))
+* **eslint-react:** update rules ([37831f3](https://github.com/strvcom/code-quality-tools/commit/37831f307aebe86ea37ef0face775c8d876fb1ed))
+
+
+
+
+
 # [4.0.0-alpha.3](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-react@4.0.0-alpha.2...@strv/eslint-config-react@4.0.0-alpha.3) (2021-02-03)
 
 
