@@ -37,10 +37,7 @@ module.exports = {
 
     'import/resolver': {
       node: {
-        extensions: [
-          '.jsx',
-          ...base.settings['import/resolver'].node.extensions,
-        ],
+        extensions: ['.jsx', ...base.settings['import/resolver'].node.extensions],
       },
     },
   },
@@ -58,9 +55,17 @@ module.exports = {
       },
     ],
 
+    // Prevent usage of button elements without an explicit type attribute
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/button-has-type.md
+    'react/button-has-type': ['warn', { reset: false }],
+
     // Prevent extraneous defaultProps on components
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/default-props-match-prop-types.md
     'react/default-props-match-prop-types': 'warn',
+
+    // Enforce consistent usage of destructuring assignment of props, state, and context
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/destructuring-assignment.md
+    'react/destructuring-assignment': 'warn',
 
     // Forbid certain props on DOM Nodes
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/forbid-dom-props.md
@@ -82,6 +87,10 @@ module.exports = {
     // Prevent using Array index in key props
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-array-index-key.md
     'react/no-array-index-key': 'warn',
+
+    // Prevent passing of children as props
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-children-prop.md
+    'react/no-children-prop': 'error',
 
     // Prevent usage of dangerous JSX properties
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-danger.md
@@ -174,6 +183,18 @@ module.exports = {
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-will-update-set-state.md
     'react/no-will-update-set-state': ['error'],
 
+    // Enforce ES5 or ES6 class for React Components
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-es6-class.md
+    'react/prefer-es6-class': 'warn',
+
+    // Enforce that props are read-only
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-read-only-props.md
+    'react/prefer-read-only-props': 'warn',
+
+    // Enforce stateless React Components to be written as a pure function
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-stateless-function.md
+    'react/prefer-stateless-function': 'error',
+
     // PropTypes improve the reusability of your component by validating the received data
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prop-types.md
     'react/prop-types': ['warn'],
@@ -190,6 +211,10 @@ module.exports = {
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/require-render-return.md
     'react/require-render-return': 'error',
 
+    // Prevent extra closing tags for components without children
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/self-closing-comp.md
+    'react/self-closing-comp': 'error',
+
     // Enforce component methods order (fixable)
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/sort-comp.md
     'react/sort-comp': ['warn'],
@@ -205,6 +230,18 @@ module.exports = {
     // Prevent void DOM elements (e.g. <img />, <br />) from receiving children
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/void-dom-elements-no-children.md
     'react/void-dom-elements-no-children': 'error',
+
+    // Enforce boolean attributes notation in JSX
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-boolean-value.md
+    'react/jsx-boolean-value': ['warn', 'never'],
+
+    // Enforce or disallow spaces inside of curly braces in JSX attributes and expressions.
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-child-element-spacing.md
+    'react/jsx-child-element-spacing': 'error',
+
+    // Restrict file extensions that may contain JSX
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md
+    'react/jsx-filename-extension': [1, { extensions: ['.tsx', '.jsx'] }],
 
     // Ensures that any component or prop methods used to handle events are correctly prefixed
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-handler-names.md
@@ -233,7 +270,7 @@ module.exports = {
 
     // Creating JSX elements with duplicate props can cause unexpected behavior in your application
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-duplicate-props.md
-    'react/jsx-no-duplicate-props': ['warn', { ignoreCase: true }],
+    'react/jsx-no-duplicate-props': ['error', { ignoreCase: true }],
 
     // When creating a JSX element that has an a tag, it is often desired to have the link open
     // in a new tab using the target='_blank' attribute. Using this attribute unaccompanied by
@@ -251,8 +288,7 @@ module.exports = {
     // In React 16.9 any URLs starting with javascript: scheme log a warning. React considers the
     // pattern as a dangerous attack surface, see details. In a future major release, React will
     // throw an error if it encounters a javascript: URL.
-    // TODO(semver-major): upgrade to error
-    'react/jsx-no-script-url': 'warn',
+    'react/jsx-no-script-url': 'error',
 
     // This rule allows you to enforce curly braces or disallow unnecessary curly braces
     //  in JSX props and/or children
@@ -345,7 +381,25 @@ module.exports = {
     'jsx-a11y/click-events-have-key-events': 'warn',
 
     // Enforce that a control (an interactive element) has a text label
-    'jsx-a11y/control-has-associated-label': 'warn',
+    'jsx-a11y/control-has-associated-label': [
+      'off',
+      {
+        ignoreElements: ['audio', 'canvas', 'embed', 'input', 'textarea', 'tr', 'video'],
+        ignoreRoles: [
+          'grid',
+          'listbox',
+          'menu',
+          'menubar',
+          'radiogroup',
+          'row',
+          'tablist',
+          'toolbar',
+          'tree',
+          'treegrid',
+        ],
+        includeRoles: ['alert', 'dialog'],
+      },
+    ],
 
     // Enforce heading (h1, h2, etc) elements contain accessible content
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/heading-has-content.md
@@ -367,9 +421,19 @@ module.exports = {
     // focusable
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/interactive-supports-focus.md
     'jsx-a11y/interactive-supports-focus': [
-      'warn',
+      'error',
       {
-        tabbable: ['button', 'checkbox', 'link', 'searchbox', 'spinbutton', 'switch', 'textbox'],
+        tabbable: [
+          'button',
+          'checkbox',
+          'link',
+          'progressbar',
+          'searchbox',
+          'slider',
+          'spinbutton',
+          'switch',
+          'textbox',
+        ],
       },
     ],
 
