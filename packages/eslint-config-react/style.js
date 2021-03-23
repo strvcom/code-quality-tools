@@ -24,6 +24,9 @@ module.exports = {
       },
     ],
 
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-closing-tag-location.md
+    'react/jsx-closing-tag-location': 'warn',
+
     // Validate closing bracket location in JSX
     // This rule checks all JSX multiline elements and verifies the location of the closing bracket.
     'react/jsx-closing-bracket-location': ['warn', 'line-aligned'],
@@ -122,5 +125,21 @@ module.exports = {
     // will check for and warn about declaring any of the above properties outside of the class
     // body.
     'react/static-property-placement': 'warn',
+
+    // Enforce propTypes declarations alphabetical sorting
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/sort-prop-types.md
+    'react/sort-prop-types': 'warn',
+
+    // Prevent missing parentheses around multiline JSX
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-wrap-multilines.md
+    'react/jsx-wrap-multilines': ['warn', {
+      declaration: 'parens-new-line',
+      assignment: 'parens-new-line',
+      return: 'parens-new-line',
+      arrow: 'parens-new-line',
+      condition: 'parens-new-line',
+      logical: 'parens-new-line',
+      prop: 'parens-new-line',
+    }],
   },
 }

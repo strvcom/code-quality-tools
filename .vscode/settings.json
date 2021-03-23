@@ -19,11 +19,13 @@
   "javascript.format.enable": false,
   "typescript.format.enable": false,
   // Enable ESLint and its auto-fixer
-  "eslint.enable": true,
-  "eslint.autoFixOnSave": true,
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
   "eslint.lintTask.enable": true,
   "eslint.lintTask.options": "--report-unused-disable-directives .",
   "eslint.options": {
-    "reportUnusedDisableDirectives": true,
+    "reportUnusedDisableDirectives": true
   }
 }
