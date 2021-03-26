@@ -114,11 +114,6 @@ module.exports = {
     // Disallow extra non-null assertion
     '@typescript-eslint/no-extra-non-null-assertion': 'warn',
 
-    // Disallows explicit type declarations for builtin primitive values
-    // This rule disallows explicit type declarations on parameters, variables and properties where
-    // the type can be easily inferred from its value.
-    '@typescript-eslint/no-inferrable-types': 'warn',
-
     // Flags unnecessary equality comparisons against boolean literals
     // Comparing boolean values to boolean literals is unnecessary, those comparisons result in the
     // same booleans. Using the boolean values directly, or via a unary negation (`!value`), is more
@@ -145,32 +140,16 @@ module.exports = {
     // that is being iterated.
     '@typescript-eslint/prefer-for-of': 'warn',
 
-    // Use function types instead of interfaces with call signatures
-    // This rule suggests using a function type instead of an interface or object type literal with
-    // a single call signature.
-    '@typescript-eslint/prefer-function-type': 'warn',
-
     // Enforce includes method over indexOf method
     // This rule is aimed at suggesting includes method if indexOf method was used to check whether
     // an object contains an arbitrary value or not.
     '@typescript-eslint/prefer-includes': 'warn',
-
-    // Enforce the usage of the nullish coalescing operator instead of logical chaining
-    // TypeScript 3.7 added support for the nullish coalescing operator. This operator allows you to
-    // safely cascade a value when dealing with null or undefined.
-    '@typescript-eslint/prefer-nullish-coalescing': 'warn',
 
     // Prefer using concise optional chain expressions instead of chained logical ands
     // TypeScript 3.7 added support for the optional chain operator. This operator allows you to
     // safely access properties and methods on objects when they are potentially `null` or
     // `undefined`.
     '@typescript-eslint/prefer-optional-chain': 'warn',
-
-    // require never-modified private members be marked as readonly
-    // Member variables with the privacy private are never permitted to be modified outside of their
-    // declaring class. If that class never modifies their value, they may safely be marked as
-    // readonly.
-    '@typescript-eslint/prefer-readonly': 'warn',
 
     // Enforce to use RegExp#exec over String#match
     // This rule is aimed at enforcing the more performant way of applying regular expressions on
