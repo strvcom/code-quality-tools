@@ -1,7 +1,7 @@
 {
   "name": "@strv/eslint-config-node",
   "description": "STRV's ESLint config for Node.js projects",
-  "version": "3.0.0-alpha.3",
+  "version": "3.0.0-alpha.4",
   "author": "Pavel Prichodko <prichodko.p@gmail.com>",
   "bugs": {
     "url": "https://github.com/strvcom/code-quality-tools/issues"
@@ -11,7 +11,7 @@
     "Danny Kijkov <daniel.kijkov@strv.com>"
   ],
   "dependencies": {
-    "@strv/eslint-config-base": "^3.0.0-alpha.2",
+    "@strv/eslint-config-base": "^3.0.0-alpha.3",
     "eslint-plugin-node": "^11.1.0"
   },
   "engines": {

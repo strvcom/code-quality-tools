@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0-alpha.3](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-mocha@3.0.0-alpha.2...@strv/eslint-config-mocha@3.0.0-alpha.3) (2021-03-27)
+
+**Note:** Version bump only for package @strv/eslint-config-mocha
+
+
+
+
+
 # [3.0.0-alpha.2](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-mocha@3.0.0-alpha.1...@strv/eslint-config-mocha@3.0.0-alpha.2) (2020-10-09)
 
 **Note:** Version bump only for package @strv/eslint-config-mocha

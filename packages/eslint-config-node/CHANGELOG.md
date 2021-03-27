@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0-alpha.4](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-node@3.0.0-alpha.3...@strv/eslint-config-node@3.0.0-alpha.4) (2021-03-27)
+
+
+### Features
+
+* **eslint-node:** update deps 💣 ([a313c9f](https://github.com/strvcom/code-quality-tools/commit/a313c9f60ebfd3078379f00a9c3e2abf96251a82))
+
+
+
+
+
 # [3.0.0-alpha.3](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-node@3.0.0-alpha.2...@strv/eslint-config-node@3.0.0-alpha.3) (2020-10-12)
 
 

@@ -3,6 +3,32 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0-alpha.6](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-typescript@3.0.0-alpha.5...@strv/eslint-config-typescript@3.0.0-alpha.6) (2021-03-27)
+
+
+### Features
+
+* **eslint-typescript:** be more strict with some rules ([5c6b32f](https://github.com/strvcom/code-quality-tools/commit/5c6b32f31d479121374412ed311354a394f22267))
+
+
+### BREAKING CHANGES
+
+* **eslint-typescript:** Several rules' level has been raised to `error` after a long discussion with many team members. We feel that some code patterns are really dangerous and should be flagged appropriately, even if we recognise that there might be some small, valid use-cases for some of them. The rules include:
+
+- no-explicit-any: if you don't know the type then use `unknown` instead
+- no-dynamic-delete: if you need to dynamically remove properties from an object then perhaps you should use a different data store, like `Map` or `Set`
+- no-floating-promises: always, always! handle promises, at least add a `.catch(err => console.error(err)` to them
+- no-for-in-array: always prefer `for-of` loop or other iteration mechanism
+- no-inferrable-types: save your keyboard from all these unnecessary keystrokes required to add types to variables which are obvious
+- no-this-alias: don't assign `this` to a variable; use an arrow function instead
+- prefer-function-type: makes code more readable in some specific situations
+- prefer-nullish-coalescing: it is far superior to other logical operators
+- require-array-sort-compare: `Array.prototype.sort()` has a very basic default comparison logic so it's always preferred to provide explicit sorting rules.
+
+
+
+
+
 # [3.0.0-alpha.5](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-typescript@3.0.0-alpha.4...@strv/eslint-config-typescript@3.0.0-alpha.5) (2021-02-03)
 
 
