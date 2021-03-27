@@ -157,7 +157,7 @@ module.exports = {
     // Disallow the delete operator with computed key expressions
     // Using the `delete` operator on keys that aren't runtime constants could be a sign that you're
     // using the wrong data structures.
-    '@typescript-eslint/no-dynamic-delete': 'warn',
+    '@typescript-eslint/no-dynamic-delete': 'error',
 
     // Disallow the declaration of empty interfaces
     // An empty interface is equivalent to its supertype. If the interface does not implement a
@@ -169,7 +169,7 @@ module.exports = {
     // string, or boolean
     // This rule disallows explicit type declarations on parameters, variables and properties where
     // the type can be easily inferred from its value.
-    '@typescript-eslint/no-explicit-any': 'warn',
+    '@typescript-eslint/no-explicit-any': 'error',
 
     // Disallow unnecessary semicolons
     '@typescript-eslint/no-extra-semi': base.rules['no-extra-semi'],
@@ -184,23 +184,26 @@ module.exports = {
       allowWithDecorator: true,
     }],
 
-    // @TODO(semver-major): -> error
     // Requires Promise-like values to be handled appropriately
     // This rule forbids usage of Promise-like values in statements without handling their errors
     // appropriately. Unhandled promises can cause several issues, such as improperly sequenced
     // operations, ignored Promise rejections and more.
-    '@typescript-eslint/no-floating-promises': 'warn',
+    '@typescript-eslint/no-floating-promises': 'error',
 
-    // @TODO(semver-major): -> error. The indexes are treated as strings!
     // Disallow iterating over an array with a for-in loop
     // A for-in loop (for (var k in o)) iterates over the properties of an Object. While it is legal
     // to use for-in loops with array types, it is not common. for-in will iterate over the indices
     // of the array as strings, omitting any "holes" in the array.
-    '@typescript-eslint/no-for-in-array': 'warn',
+    '@typescript-eslint/no-for-in-array': 'error',
 
     // Disallow the use of `eval()`-like methods
     '@typescript-eslint/no-implied-eval': base.rules['no-implied-eval'],
     'no-implied-eval': 'off',
+
+    // Disallows explicit type declarations for builtin primitive values
+    // This rule disallows explicit type declarations on parameters, variables and properties where
+    // the type can be easily inferred from its value.
+    '@typescript-eslint/no-inferrable-types': 'error',
 
     // Disallow `this` keywords outside of classes or class-like objects
     '@typescript-eslint/no-invalid-this': 'error',
@@ -264,7 +267,7 @@ module.exports = {
     // Disallow aliasing this
     // Assigning a variable to this instead of properly using arrow lambdas may be a symptom of
     // pre-ES6 practices or not managing scope well.
-    '@typescript-eslint/no-this-alias': ['warn', {
+    '@typescript-eslint/no-this-alias': ['error', {
       allowDestructuring: true,
     }],
 
@@ -354,9 +357,19 @@ module.exports = {
     // Prefer usage of `as const` over literal type
     '@typescript-eslint/prefer-as-const': 'warn',
 
+    // Use function types instead of interfaces with call signatures
+    // This rule suggests using a function type instead of an interface or object type literal with
+    // a single call signature.
+    '@typescript-eslint/prefer-function-type': 'error',
+
     // Require that all enum members be literal values to prevent unintended enum member name shadow
     // issues
     '@typescript-eslint/prefer-literal-enum-member': 'warn',
+
+    // Enforce the usage of the nullish coalescing operator instead of logical chaining
+    // TypeScript 3.7 added support for the nullish coalescing operator. This operator allows you to
+    // safely cascade a value when dealing with null or undefined.
+    '@typescript-eslint/prefer-nullish-coalescing': 'error',
 
     // Require the use of the namespace keyword instead of the module keyword to declare custom
     // TypeScript modules
@@ -383,9 +396,7 @@ module.exports = {
     // Enforce giving compare argument to Array#sort
     // This rule is aimed at preventing the calls of Array#sort method. This rule ignores the sort
     // methods of user-defined types.
-    '@typescript-eslint/require-array-sort-compare': ['warn', {
-      ignoreStringArrays: true,
-    }],
+    '@typescript-eslint/require-array-sort-compare': 'error',
 
     // Disallow async functions which have no await expression
     '@typescript-eslint/require-await': base.rules['require-await'],

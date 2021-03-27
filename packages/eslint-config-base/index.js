@@ -129,6 +129,11 @@ module.exports = {
     // indicator that some refactoring is likely needed.
     'no-empty': 'error',
 
+    // Disallow empty functions
+    // This rule is aimed at eliminating empty functions. A function will not be considered a
+    // problem if it contains a comment.
+    'no-empty-function': 'warn',
+
     // Disallow eval()
     // This rule is aimed at preventing potentially dangerous, unnecessary, and slow code by
     // disallowing the use of the eval() function.
