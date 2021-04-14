@@ -521,5 +521,34 @@ module.exports = {
     // Enforce tabIndex value is not greater than zero
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/tabindex-no-positive.md
     'jsx-a11y/tabindex-no-positive': 'warn',
+
+    'absolute-import/no-relative-path': 'off',
+    'arrow-body-style': 'off',
+
+    'import/order': [
+      'error',
+      {
+        alphabetize: {
+          order: 'asc',
+          caseInsensitive: true,
+        },
+        groups: [['builtin', 'external'], 'internal', 'sibling', 'index'],
+        'newlines-between': 'always',
+        pathGroups: [
+          {
+            // This should be added both to @linters and @strv/code-quality-tools
+            pattern: '~/**',
+            group: 'internal',
+          },
+        ],
+      },
+    ],
+
+    'max-classes-per-file': 'off',
+    'no-undefined': 'off',
+
+    'import/group-exports': 'off',
+    'import/exports-last': 'off',
+    'import/no-default-export': 'error',
   },
 }
