@@ -436,4 +436,18 @@ module.exports = {
     // Disabled, too cumbersome to write `readonly` everywhere.
     '@typescript-eslint/prefer-readonly-parameter-types': 'off',
   },
+  overrides: [
+    {
+      files: ['*.d.ts'],
+      rules: {
+        'import/no-unused-modules': 'off',
+      },
+    },
+    {
+      files: ['*config.ts'],
+      rules: {
+        'node/no-process-env': 'off',
+      },
+    },
+  ],
 }
