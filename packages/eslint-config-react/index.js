@@ -199,10 +199,6 @@ module.exports = {
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prop-types.md
     'react/prop-types': ['warn'],
 
-    // Prevent missing props validation in a React component definition
-    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/react-in-jsx-scope.md
-    'react/react-in-jsx-scope': 'error',
-
     // Enforce a defaultProps definition for every prop that is not a required prop
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/require-default-props.md
     'react/require-default-props': ['warn', { forbidDefaultForRequired: true }],
