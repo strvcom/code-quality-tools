@@ -126,15 +126,6 @@ module.exports = {
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-is-mounted.md
     'react/no-is-mounted': 'error',
 
-    // Declaring only one component per file improves readability and reusability of components
-    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-multi-comp.md
-    'react/no-multi-comp': [
-      'warn',
-      {
-        ignoreStateless: true,
-      },
-    ],
-
     // Prevent usage of shouldComponentUpdate when extending React.PureComponent
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-redundant-should-component-update.md
     'react/no-redundant-should-component-update': 'warn',
@@ -509,9 +500,6 @@ module.exports = {
       },
     ],
 
-    // Enforce usage of onBlur over onChange on select menus for accessibility
-    // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-onchange.md
-    'jsx-a11y/no-onchange': 'warn',
 
     // Enforce explicit role property is not the same as implicit/default role property on element
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-redundant-roles.md
