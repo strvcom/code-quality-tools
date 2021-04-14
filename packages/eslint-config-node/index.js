@@ -178,5 +178,10 @@ module.exports = {
         unusedExports: true,
       }],
     },
+  }, {
+    files: ['*config.js'],
+    rules: {
+      'node/no-process-env': 'off',
+    },
   }],
 }
