@@ -33,7 +33,7 @@ module.exports = {
         selector: 'typeParameter',
         format: ['PascalCase'],
         custom: {
-          regex: 'T[A-Z][a-zA-Z]+$',
+          regex: '^T[A-Z][a-zA-Z]+',
           match: true,
         },
       },
