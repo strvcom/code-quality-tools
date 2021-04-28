@@ -1,0 +1,12 @@
+---
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    timezone: Europe/Prague
+  open-pull-requests-limit: 3
+  versioning-strategy: increase-if-necessary
+  commit-message:
+    prefix: chore
