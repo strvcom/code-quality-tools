@@ -25,6 +25,10 @@ In addition to using this ruleset, you should also choose one base ruleset depen
 - [`@strv/eslint-config-node`][eslint-config-node]
 - [`@strv/eslint-config-react`][eslint-config-react]
 
+### `@strv/eslint-config-typescript/react`
+
+React specific overrides.
+
 ## Optional configurations
 
 ### `@strv/eslint-config-typescript/optional`
@@ -52,6 +56,31 @@ module.exports = {
     '@strv/eslint-config-node/optional',
     '@strv/eslint-config-typescript',
     '@strv/eslint-config-typescript/style',
+  ],
+
+  parserOptions: {
+    // The project field is required in order for some TS-syntax-specific rules to function at all
+    // @see https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser#configuration
+    project: './tsconfig.json',
+  },
+}
+```
+
+A full configuration for a TypeScript on React project:
+
+```js
+// .eslintrc.js
+'use strict'
+
+module.exports = {
+
+  extends: [
+    '@strv/react',
+    '@strv/react/style',
+    '@strv/react/optional',
+    '@strv/typescript',
+    '@strv/typescript/style',
+    '@strv/typescript/react',
   ],
 
   parserOptions: {
