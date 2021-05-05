@@ -178,10 +178,5 @@ module.exports = {
         unusedExports: true,
       }],
     },
-  }, {
-    files: globs.configs,
-    rules: {
-      'node/no-process-env': 'off',
-    },
   }],
 }
