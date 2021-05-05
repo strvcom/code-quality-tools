@@ -13,7 +13,7 @@ const base = require('@strv/eslint-config-base')
 module.exports = {
   extends: require.resolve('@strv/eslint-config-base'),
 
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
 
   plugins: ['react', 'jsx-a11y', 'react-hooks'],
 
