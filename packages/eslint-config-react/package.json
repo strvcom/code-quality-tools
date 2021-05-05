@@ -11,8 +11,9 @@
     "Danny Kijkov <daniel.kijkov@strv.com>"
   ],
   "dependencies": {
+    "@babel/core": "^7.14.0",
+    "@babel/eslint-parser": "^7.13.14",
     "@strv/eslint-config-base": "^3.0.0-alpha.3",
-    "babel-eslint": "^10.1.0",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.23.0",
     "eslint-plugin-react-hooks": "^4.2.0"

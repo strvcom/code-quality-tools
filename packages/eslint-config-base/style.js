@@ -216,7 +216,8 @@ module.exports = {
     // Very long lines of code in any language can be difficult to read. In order to aid in
     // readability and maintainability many coders have developed a convention to limit lines of
     // code to a certain number of characters.
-    'max-len': ['warn', 100, 2],
+    'max-len': ['warn',
+      { code: 100, ignoreTrailingComments: true, ignoreUrls: true, ignorePattern: '^import\\W.*' }],
 
     // Limit Maximum Number of Parameters
     // Functions that take numerous parameters can be difficult to read and write because it
@@ -443,24 +444,21 @@ module.exports = {
     // Require or disallow padding lines between statements
     // This rule requires or disallows blank lines between the given 2 kinds of statements. Properly
     // blank lines help developers to understand the code.
-    'padding-line-between-statements': ['warn',
-      // Newline after directives ("use strict" etc.), but not between them
-      { blankLine: 'always', prev: 'directive', next: '*' },
+    'padding-line-between-statements': [
+      'warn',
+      {
+        blankLine: 'always',
+        next: '*',
+        prev: ['cjs-import', 'directive'],
+      },
+      {
+        blankLine: 'always',
+        prev: '*',
+        next: ['cjs-export', 'class', 'export', 'function'],
+      },
       { blankLine: 'never', prev: 'directive', next: 'directive' },
-      // Newline after CommonJS require statements, but not between them
-      { blankLine: 'always', prev: 'cjs-import', next: '*' },
       { blankLine: 'never', prev: 'cjs-import', next: 'cjs-import' },
-      // Newline after ES modules' import statements, but not between them
-      { blankLine: 'always', prev: 'import', next: '*' },
-      { blankLine: 'never', prev: 'import', next: 'import' },
-      // Newline before CommonJS export assignments
-      { blankLine: 'always', prev: '*', next: 'cjs-export' },
-      // Newline before ES modules export statements
-      { blankLine: 'always', prev: '*', next: 'export' },
-      // Newline before class declarations
-      { blankLine: 'always', prev: '*', next: 'class' },
-      // Newline before function declarations
-      { blankLine: 'always', prev: '*', next: 'function' }],
+    ],
 
     // Suggest using arrow functions as callbacks
     // This rule is aimed to flag usage of function expressions in an argument list.
@@ -603,7 +601,7 @@ module.exports = {
 
     // Ensure that there are no useless path segments in import statement path
     'import/no-useless-path-segments': ['warn', {
-      noUselessIndex: true,
+      noUselessIndex: false,
     }],
 
     // Enforce a convention in the order of require() / import statements

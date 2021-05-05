@@ -13,7 +13,7 @@ const base = require('@strv/eslint-config-base')
 module.exports = {
   extends: require.resolve('@strv/eslint-config-base'),
 
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
 
   plugins: ['react', 'jsx-a11y', 'react-hooks'],
 
@@ -126,15 +126,6 @@ module.exports = {
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-is-mounted.md
     'react/no-is-mounted': 'error',
 
-    // Declaring only one component per file improves readability and reusability of components
-    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-multi-comp.md
-    'react/no-multi-comp': [
-      'warn',
-      {
-        ignoreStateless: true,
-      },
-    ],
-
     // Prevent usage of shouldComponentUpdate when extending React.PureComponent
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-redundant-should-component-update.md
     'react/no-redundant-should-component-update': 'warn',
@@ -198,10 +189,6 @@ module.exports = {
     // PropTypes improve the reusability of your component by validating the received data
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prop-types.md
     'react/prop-types': ['warn'],
-
-    // Prevent missing props validation in a React component definition
-    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/react-in-jsx-scope.md
-    'react/react-in-jsx-scope': 'error',
 
     // Enforce a defaultProps definition for every prop that is not a required prop
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/require-default-props.md
@@ -513,9 +500,6 @@ module.exports = {
       },
     ],
 
-    // Enforce usage of onBlur over onChange on select menus for accessibility
-    // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-onchange.md
-    'jsx-a11y/no-onchange': 'warn',
 
     // Enforce explicit role property is not the same as implicit/default role property on element
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-redundant-roles.md
@@ -537,5 +521,34 @@ module.exports = {
     // Enforce tabIndex value is not greater than zero
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/tabindex-no-positive.md
     'jsx-a11y/tabindex-no-positive': 'warn',
+
+    'absolute-import/no-relative-path': 'off',
+    'arrow-body-style': 'off',
+
+    'import/order': [
+      'error',
+      {
+        alphabetize: {
+          order: 'asc',
+          caseInsensitive: true,
+        },
+        groups: [['builtin', 'external'], 'internal', 'sibling', 'index'],
+        'newlines-between': 'always',
+        pathGroups: [
+          {
+            // This should be added both to @linters and @strv/code-quality-tools
+            pattern: '~/**',
+            group: 'internal',
+          },
+        ],
+      },
+    ],
+
+    'max-classes-per-file': 'off',
+    'no-undefined': 'off',
+
+    'import/group-exports': 'off',
+    'import/exports-last': 'off',
+    'import/no-default-export': 'error',
   },
 }

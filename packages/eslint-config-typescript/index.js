@@ -9,6 +9,7 @@
 'use strict'
 
 const base = require('@strv/eslint-config-base')
+const globs = require('@strv/eslint-config-base/globs')
 
 module.exports = {
 
@@ -436,4 +437,18 @@ module.exports = {
     // Disabled, too cumbersome to write `readonly` everywhere.
     '@typescript-eslint/prefer-readonly-parameter-types': 'off',
   },
+  overrides: [
+    {
+      files: ['*.d.ts'],
+      rules: {
+        'import/no-unused-modules': 'off',
+      },
+    },
+    {
+      files: globs.configs,
+      rules: {
+        'node/no-process-env': 'off',
+      },
+    },
+  ],
 }

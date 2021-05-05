@@ -34,9 +34,6 @@ module.exports = {
     // Disallow unnecessary curly braces in JSX props and/or children
     'react/jsx-curly-brace-presence': ['warn', 'never'],
 
-    // Enforce linebreaks in curly braces in JSX attributes and expressions
-    // This rule enforces consistent linebreaks inside of curlies of jsx curly expressions.
-    'react/jsx-curly-newline': 'warn',
 
     // Disallow spaces inside of curly braces in JSX attributes
     'react/jsx-curly-spacing': [
@@ -89,15 +86,6 @@ module.exports = {
     // This rule checks the whitespace inside and surrounding the JSX syntactic elements.
     'react/jsx-tag-spacing': 'warn',
 
-    // Enforce one JSX element per line
-    // This option limits every line in JSX to one expression each.
-    'react/jsx-one-expression-per-line': [
-      'warn',
-      {
-        allow: 'single-child',
-      },
-    ],
-
     // Prevent extra closing tags for components without children
     'react/self-closing-comp': 'warn',
 
@@ -129,17 +117,5 @@ module.exports = {
     // Enforce propTypes declarations alphabetical sorting
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/sort-prop-types.md
     'react/sort-prop-types': 'warn',
-
-    // Prevent missing parentheses around multiline JSX
-    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-wrap-multilines.md
-    'react/jsx-wrap-multilines': ['warn', {
-      declaration: 'parens-new-line',
-      assignment: 'parens-new-line',
-      return: 'parens-new-line',
-      arrow: 'parens-new-line',
-      condition: 'parens-new-line',
-      logical: 'parens-new-line',
-      prop: 'parens-new-line',
-    }],
   },
 }
