@@ -216,7 +216,7 @@ module.exports = {
     // Very long lines of code in any language can be difficult to read. In order to aid in
     // readability and maintainability many coders have developed a convention to limit lines of
     // code to a certain number of characters.
-    'max-len': ['error',
+    'max-len': ['warn',
       { code: 100, ignoreTrailingComments: true, ignoreUrls: true, ignorePattern: '^import\\W.*' }],
 
     // Limit Maximum Number of Parameters
