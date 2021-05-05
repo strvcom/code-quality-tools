@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0-alpha.6](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-react-native@3.0.0-alpha.5...@strv/eslint-config-react-native@3.0.0-alpha.6) (2021-05-05)
+
+**Note:** Version bump only for package @strv/eslint-config-react-native
+
+
+
+
+
 # [3.0.0-alpha.5](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-react-native@3.0.0-alpha.4...@strv/eslint-config-react-native@3.0.0-alpha.5) (2021-03-27)
 
 **Note:** Version bump only for package @strv/eslint-config-react-native

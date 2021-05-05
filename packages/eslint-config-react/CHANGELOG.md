@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0-alpha.6](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-react@4.0.0-alpha.5...@strv/eslint-config-react@4.0.0-alpha.6) (2021-05-05)
+
+
+### Features
+
+* **eslint-react:** upgrade to @babel/eslint-parser ([3de8997](https://github.com/strvcom/code-quality-tools/commit/3de89973221ee44bb9193d56775b1dbd9502cdfd))
+
+
+
+
+
 # [4.0.0-alpha.5](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-react@4.0.0-alpha.4...@strv/eslint-config-react@4.0.0-alpha.5) (2021-03-27)
 
 **Note:** Version bump only for package @strv/eslint-config-react
