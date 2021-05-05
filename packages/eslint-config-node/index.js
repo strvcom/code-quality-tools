@@ -179,7 +179,7 @@ module.exports = {
       }],
     },
   }, {
-    files: ['*config.js'],
+    files: globs.configs,
     rules: {
       'node/no-process-env': 'off',
     },

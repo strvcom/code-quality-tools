@@ -8,6 +8,8 @@
 
 'use strict'
 
+const globs = require('@strv/eslint-config-base/globs')
+
 module.exports = {
 
   rules: {
@@ -73,7 +75,7 @@ module.exports = {
   overrides: [
     // Storybook
     {
-      files: ['*.stories.{ts,tsx}'],
+      files: globs.storybook,
       rules: {
         '@typescript-eslint/consistent-type-assertions': 'off',
         'import/group-exports': 'off',
@@ -83,14 +85,14 @@ module.exports = {
     },
     // Next.js
     {
-      files: ['pages/**/*.{ts,tsx}', '*/pages/**/*.{ts,tsx}'],
+      files: globs.nextJs,
       rules: {
         'import/no-default-export': 'off',
       },
     },
     // Tests
     {
-      files: ['*.test.{ts,tsx}'],
+      files: globs.tests,
       rules: {
         'import/no-unused-modules': 'off',
         'jest/expect-expect': 'off',

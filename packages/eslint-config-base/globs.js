@@ -18,6 +18,7 @@ module.exports = {
 
   // Configuration files patterns
   configs: [
+    '*config.*',
     '**/config/**',
     '**/configuration/**',
   ],
@@ -39,5 +40,13 @@ module.exports = {
     '.*.ts',
     '*.tsx',
     '.*.tsx',
+  ],
+
+  storybook: [
+    '*.stories.{js,jsx,ts,tsx}',
+  ],
+
+  nextJs: [
+    'pages/**/*.{js,jsx,ts,tsx}', '*/pages/**/*.{js,jsx,ts,tsx}',
   ],
 }

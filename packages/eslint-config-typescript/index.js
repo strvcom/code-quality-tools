@@ -9,6 +9,7 @@
 'use strict'
 
 const base = require('@strv/eslint-config-base')
+const globs = require('@strv/eslint-config-base/globs')
 
 module.exports = {
 
@@ -444,7 +445,7 @@ module.exports = {
       },
     },
     {
-      files: ['*config.ts'],
+      files: globs.configs,
       rules: {
         'node/no-process-env': 'off',
       },
