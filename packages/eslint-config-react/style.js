@@ -62,7 +62,7 @@ module.exports = {
     'react/jsx-max-depth': [
       'warn',
       {
-        max: 4,
+        max: 9,
       },
     ],
 
