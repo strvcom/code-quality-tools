@@ -6,6 +6,9 @@
     "packages/*"
   ],
   "command": {
+    "bootstrap": {
+      "npmClientArgs": ["--legacy-peer-deps"]
+    },
     "version": {
       "allowBranch": [
         "release"

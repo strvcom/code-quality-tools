@@ -12,19 +12,19 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "@commitlint/cli": "^11.0.0",
-    "eslint": "^7.19.0",
+    "@commitlint/cli": "^13.0.0",
+    "eslint": "^7",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
-    "lerna": "^3.16.4",
-    "remark-cli": "^9.0.0",
-    "remark-preset-lint-consistent": "^4.0.0",
-    "remark-preset-lint-markdown-style-guide": "^4.0.0",
-    "remark-preset-lint-recommended": "^5.0.0"
+    "lerna": "^4",
+    "remark-cli": "^10",
+    "remark-preset-lint-consistent": "^5",
+    "remark-preset-lint-markdown-style-guide": "^5",
+    "remark-preset-lint-recommended": "^6"
   },
   "engines": {
-    "node": "^12 || ^14 || ^16",
-    "npm": "^6.0.0"
+    "node": "^16",
+    "npm": "^7"
   },
   "homepage": "https://github.com/strvcom/code-quality-tools",
   "keywords": [],
