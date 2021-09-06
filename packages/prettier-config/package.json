@@ -10,6 +10,9 @@
     "Robert Rossmann <rr.rossmann@me.com>",
     "Danny Kijkov <daniel.kijkov@strv.com>"
   ],
+  "engines": {
+    "node": "^14 | >=16"
+  },
   "keywords": [
     "config",
     "prettier",

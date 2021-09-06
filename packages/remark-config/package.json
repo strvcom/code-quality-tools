@@ -13,7 +13,7 @@
     "remark-preset-lint-recommended": "^6.0.0"
   },
   "engines": {
-    "node": ">=10"
+    "node": "^14 | >=16"
   },
   "keywords": [
     "config",
