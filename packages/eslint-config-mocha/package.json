@@ -12,10 +12,10 @@
   ],
   "dependencies": {
     "@strv/eslint-config-base": "^3.0.0-alpha.4",
-    "eslint-plugin-mocha": "^8.0.0"
+    "eslint-plugin-mocha": "^9.0.0"
   },
   "engines": {
-    "node": ">=10"
+    "node": ">=12"
   },
   "keywords": [
     "config",
