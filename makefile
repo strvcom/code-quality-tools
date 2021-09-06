@@ -65,7 +65,7 @@ node_modules: package.json
 .PHONY: force
 .ONESHELL: prerelease
 
-	# If this file exists, load it and add it to this makefile.
-	# Useful for defining per-developer variables or make targets. This file should not be under
-	# version control. ⚠️
+# If this file exists, load it and add it to this makefile.
+# Useful for defining per-developer variables or make targets. This file should not be under
+# version control. ⚠️
 -include local.mk
