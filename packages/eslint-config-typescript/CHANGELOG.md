@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0-alpha.9](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-typescript@3.0.0-alpha.8...@strv/eslint-config-typescript@3.0.0-alpha.9) (2021-09-07)
+
+
+### Bug Fixes
+
+* **rule:** use correct semver ranges for engines.node 🤦‍♂️ ([5f1737f](https://github.com/strvcom/code-quality-tools/commit/5f1737fb43dce5a7099cfc448cd98ee3cbf9879b))
+
+
+### chore
+
+* **deps:** upgrade all deps 💣 ([3a827aa](https://github.com/strvcom/code-quality-tools/commit/3a827aa2fe0f62a055de69323665ba03cd7eaf08))
+* **repo:** bump minimum Node.js version ([a8125c2](https://github.com/strvcom/code-quality-tools/commit/a8125c2772a67a4565786667fb95f4b32b9b468c))
+
+
+### BREAKING CHANGES
+
+* **repo:** All packages must now be used with a minimum of Node.js 14 or 16.
+* **deps:** Most dependencies have been upgraded to a newer major version. Most of the time these upgrades dropped support for old Node.js versions.
+
+
+
+
+
 # [3.0.0-alpha.8](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-typescript@3.0.0-alpha.7...@strv/eslint-config-typescript@3.0.0-alpha.8) (2021-06-30)
 
 
