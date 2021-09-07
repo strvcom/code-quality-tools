@@ -27,7 +27,7 @@ githooks: $(GITFILES)
 install: node_modules $(GITFILES)
 
 lint: force install
-	eslint --cache --report-unused-disable-directives $(ESLINT_FLAGS) .
+	eslint --cache $(ESLINT_FLAGS) .
 	remark --quiet $(REMARK_FLAGS) .
 
 outdated:
