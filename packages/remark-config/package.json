@@ -1,7 +1,7 @@
 {
   "name": "@strv/remark-config",
   "description": "STRV's config for Remark",
-  "version": "2.0.0-alpha.2",
+  "version": "2.0.0",
   "author": "Robert Rossmann <rr.rossmann@me.com>",
   "bugs": {
     "url": "https://github.com/strvcom/code-quality-tools/issues"

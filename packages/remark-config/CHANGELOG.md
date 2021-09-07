@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/strvcom/code-quality-tools/compare/@strv/remark-config@2.0.0-alpha.2...@strv/remark-config@2.0.0) (2021-09-07)
+
+**Note:** Version bump only for package @strv/remark-config
+
+
+
+
+
 # [2.0.0-alpha.2](https://github.com/strvcom/code-quality-tools/compare/@strv/remark-config@2.0.0-alpha.1...@strv/remark-config@2.0.0-alpha.2) (2021-09-07)
 
 

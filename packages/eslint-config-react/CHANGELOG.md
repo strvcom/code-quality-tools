@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-react@4.0.0-alpha.7...@strv/eslint-config-react@4.0.0) (2021-09-07)
+
+**Note:** Version bump only for package @strv/eslint-config-react
+
+
+
+
+
 # [4.0.0-alpha.7](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-react@4.0.0-alpha.6...@strv/eslint-config-react@4.0.0-alpha.7) (2021-09-07)
 
 
