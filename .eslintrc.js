@@ -3,7 +3,7 @@
 module.exports = {
 
   extends: [
-    './packages/eslint-config-node/v10.js',
+    './packages/eslint-config-node/v16.js',
     './packages/eslint-config-node/optional.js',
     './packages/eslint-config-node/style.js',
   ],
