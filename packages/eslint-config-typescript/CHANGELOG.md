@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0-alpha.8](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-typescript@3.0.0-alpha.7...@strv/eslint-config-typescript@3.0.0-alpha.8) (2021-06-30)
+
+
+### Bug Fixes
+
+* disable eslint for tsreact ([8ab1a69](https://github.com/strvcom/code-quality-tools/commit/8ab1a6982a51352715593880482a57f861bc2edc))
+
+
+
+
+
 # [3.0.0-alpha.7](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-typescript@3.0.0-alpha.6...@strv/eslint-config-typescript@3.0.0-alpha.7) (2021-05-05)
 
 **Note:** Version bump only for package @strv/eslint-config-typescript
