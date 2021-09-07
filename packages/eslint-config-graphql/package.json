@@ -10,7 +10,7 @@
     "eslint-plugin-graphql": "^4"
   },
   "engines": {
-    "node": "^14 | >=16"
+    "node": "^14 || >=16"
   },
   "keywords": [
     "config",

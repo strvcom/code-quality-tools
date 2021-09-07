@@ -15,7 +15,7 @@
     "eslint-plugin-react-native-a11y": "^2.0.3"
   },
   "engines": {
-    "node": "^14 | >=16"
+    "node": "^14 || >=16"
   },
   "keywords": [
     "config",
