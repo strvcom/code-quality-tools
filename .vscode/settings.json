@@ -24,8 +24,5 @@
     "source.fixAll.eslint": true
   },
   "eslint.lintTask.enable": true,
-  "eslint.lintTask.options": "--report-unused-disable-directives .",
-  "eslint.options": {
-    "reportUnusedDisableDirectives": true
-  }
+  "eslint.lintTask.options": ".",
 }
