@@ -15,7 +15,5 @@ module.exports = {
       // dependencies etc.
       'repo',
     ]],
-
-    'footer-max-line-length': [0],
   },
 }
