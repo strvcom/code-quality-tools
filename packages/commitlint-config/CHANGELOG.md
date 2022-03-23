@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/strvcom/code-quality-tools/compare/@strv/commitlint-config@2.0.0...@strv/commitlint-config@2.0.1) (2022-03-23)
+
+
+### Bug Fixes
+
+* **rule:** do not enforce max line length on commit body ([eb03d1f](https://github.com/strvcom/code-quality-tools/commit/eb03d1ff1d19c564d61e9b7b09d468adb97ba12e))
+
+
+
+
+
 # [2.0.0](https://github.com/strvcom/code-quality-tools/compare/@strv/commitlint-config@2.0.0-alpha.1...@strv/commitlint-config@2.0.0) (2021-09-07)
 
 **Note:** Version bump only for package @strv/commitlint-config
