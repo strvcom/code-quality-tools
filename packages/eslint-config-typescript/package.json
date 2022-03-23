@@ -12,9 +12,9 @@
   ],
   "dependencies": {
     "@strv/eslint-config-base": "^3.0.0",
-    "@typescript-eslint/eslint-plugin": "^4.14.0",
-    "@typescript-eslint/parser": "^4.14.0",
-    "eslint-import-resolver-typescript": "^2.3.0"
+    "@typescript-eslint/eslint-plugin": "^5.16.0",
+    "@typescript-eslint/parser": "^5.16.0",
+    "eslint-import-resolver-typescript": "^2.7.0"
   },
   "engines": {
     "node": "^14 || >=16"
@@ -28,7 +28,7 @@
   "license": "BSD-3-Clause",
   "main": "index.js",
   "peerDependencies": {
-    "eslint": "^7"
+    "eslint": "^7 || ^8"
   },
   "publishConfig": {
     "access": "public"

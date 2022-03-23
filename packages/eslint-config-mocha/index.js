@@ -51,6 +51,10 @@ module.exports = {
       // in before or beforeEach.
       'mocha/no-async-describe': 'warn',
 
+      // Disallow empty test descriptions
+      // This rule enforces you to specify the suite/test descriptions for each test.
+      'mocha/no-empty-description': 'warn',
+
       // Disallow exclusive tests
       // This rule reminds you to remove .only from your tests by raising a warning whenever you are
       // using the exclusivity feature.

@@ -31,7 +31,7 @@
   "license": "BSD-3-Clause",
   "main": "index.js",
   "peerDependencies": {
-    "eslint": "^7"
+    "eslint": "^7 || ^8"
   },
   "publishConfig": {
     "access": "public"

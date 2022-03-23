@@ -11,7 +11,7 @@
     "Danny Kijkov <daniel.kijkov@strv.com>"
   ],
   "dependencies": {
-    "eslint-plugin-import": "^2.22.1"
+    "eslint-plugin-import": "^2.25.0"
   },
   "engines": {
     "node": "^14 || >=16"
@@ -24,7 +24,7 @@
   "license": "BSD-3-Clause",
   "main": "index.js",
   "peerDependencies": {
-    "eslint": "^7.1"
+    "eslint": "^7 || ^8"
   },
   "publishConfig": {
     "access": "public"

@@ -114,6 +114,9 @@ module.exports = {
     // Disallow extra non-null assertion
     '@typescript-eslint/no-extra-non-null-assertion': 'warn',
 
+    // Disallow the `void` operator except when used to discard a value
+    '@typescript-eslint/no-meaningless-void-operator': 'warn',
+
     // Flags unnecessary equality comparisons against boolean literals
     // Comparing boolean values to boolean literals is unnecessary, those comparisons result in the
     // same booleans. Using the boolean values directly, or via a unary negation (`!value`), is more
@@ -173,6 +176,10 @@ module.exports = {
     // This rule is aimed at ensuring consistent use of semicolons.
     '@typescript-eslint/semi': style.rules.semi,
     semi: 'off',
+
+    // Enforces consistent spacing before blocks
+    '@typescript-eslint/space-before-blocks': 'warn',
+    'space-before-blocks': 'off',
 
     // Require or disallow a space before function parenthesis
     '@typescript-eslint/space-before-function-paren': style.rules['space-before-function-paren'],

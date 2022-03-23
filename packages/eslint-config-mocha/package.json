@@ -12,7 +12,7 @@
   ],
   "dependencies": {
     "@strv/eslint-config-base": "^3.0.0",
-    "eslint-plugin-mocha": "^9.0.0"
+    "eslint-plugin-mocha": "^10.0.0"
   },
   "engines": {
     "node": "^14 || >=16"
@@ -26,7 +26,7 @@
   "license": "BSD-3-Clause",
   "main": "index.js",
   "peerDependencies": {
-    "eslint": "^7"
+    "eslint": "^7 || ^8"
   },
   "publishConfig": {
     "access": "public"

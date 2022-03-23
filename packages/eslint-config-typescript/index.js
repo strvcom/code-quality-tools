@@ -237,6 +237,11 @@ module.exports = {
     // (import/export).
     '@typescript-eslint/no-namespace': 'error',
 
+    // Disallows using a non-null assertion in the left operand of the nullish coalescing operator
+    // The nullish coalescing operator is designed to provide a default value when dealing with `null` or `undefined`.
+    // Using non-null assertions in the left operand of the nullish coalescing operator is redundant.
+    '@typescript-eslint/no-non-null-asserted-nullish-coalescing': 'warn',
+
     // Disallows using a non-null assertion after an optional chain expression
     // Optional chain expressions are designed to return `undefined` if the optional property is
     // nullish. Using non-null assertions after an optional chain expression is wrong, and
@@ -258,6 +263,12 @@ module.exports = {
     }],
     'no-redeclare': 'off',
 
+    // Disallow members of unions and intersections that do nothing or override type information
+    // Some types can override some other types ("constituents") in a union or intersection and/or be overridden by some
+    // other types. TypeScript's set theory of types includes cases where a constituent type might be useless in the
+    // parent union or intersection.
+    '@typescript-eslint/no-redundant-type-constituents': 'warn',
+
     // Disallows invocation of require()
     // Prefer the newer ES6-style imports over require().
     '@typescript-eslint/no-require-imports': 'warn',
@@ -277,7 +288,10 @@ module.exports = {
     // the `Error` object as base objects for user-defined exceptions. The fundamental benefit of
     // `Error` objects is that they automatically keep track of where they were built and
     // originated.
-    '@typescript-eslint/no-throw-literal': base.rules['no-throw-literal'],
+    '@typescript-eslint/no-throw-literal': [base.rules['no-throw-literal'], {
+      allowThrowingAny: false,
+      allowThrowingUnknown: false,
+    }],
     'no-throw-literal': 'off',
 
     // Condition expressions must be necessary
@@ -355,6 +369,9 @@ module.exports = {
     '@typescript-eslint/no-useless-constructor': base.rules['no-useless-constructor'],
     'no-useless-constructor': 'off',
 
+    // Disallow empty exports that don't change anything in a module file
+    '@typescript-eslint/no-useless-empty-export': 'warn',
+
     // Prefer usage of `as const` over literal type
     '@typescript-eslint/prefer-as-const': 'warn',
 
@@ -381,6 +398,9 @@ module.exports = {
 
     // Prefer using type parameter when calling `Array#reduce` instead of casting
     '@typescript-eslint/prefer-reduce-type-parameter': 'warn',
+
+    // Enforce that `this` is used when only `this` type is returned
+    '@typescript-eslint/prefer-return-this-type': 'warn',
 
     // Functions that return promises must be async
 
