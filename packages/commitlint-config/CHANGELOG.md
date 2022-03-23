@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/strvcom/code-quality-tools/compare/@strv/commitlint-config@2.0.1...@strv/commitlint-config@2.1.0) (2022-03-23)
+
+
+### Features
+
+* **rule:** support ESLint v8, many new rules 🎉 ([aaf5708](https://github.com/strvcom/code-quality-tools/commit/aaf57085da9498c1425b107d5f1d1e4f353dd000))
+
+
+
+
+
 ## [2.0.1](https://github.com/strvcom/code-quality-tools/compare/@strv/commitlint-config@2.0.0...@strv/commitlint-config@2.0.1) (2022-03-23)
 
 
