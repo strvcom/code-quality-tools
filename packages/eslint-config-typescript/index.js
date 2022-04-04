@@ -273,7 +273,11 @@ module.exports = {
     // Prefer the newer ES6-style imports over require().
     '@typescript-eslint/no-require-imports': 'warn',
 
-    '@typescript-eslint/no-shadow': base.rules['no-shadow'],
+    // For some reason we need to make a copy of the rule configuration object for ESLint v8.12.0 because it complains
+    // that the object must not have additional properties. I suspect that something is mutating our object along the
+    // way.
+    // TODO: remove this once this is fixed in ESLint
+    '@typescript-eslint/no-shadow': [base.rules['no-shadow'][0], { ...base.rules['no-shadow'][1] }],
     'no-shadow': 'off',
 
     // Disallow aliasing this
