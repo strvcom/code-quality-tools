@@ -143,14 +143,6 @@ module.exports = {
     // method.
     '@typescript-eslint/no-base-to-string': 'warn',
 
-    // Requires expressions of type void to appear in statement position
-
-    // Returning the results of an expression whose type is void can be misleading. Attempting to do
-    // so is likely a symptom of expecting a different return type from a function.
-    '@typescript-eslint/no-confusing-void-expression': ['warn', {
-      ignoreVoidOperator: true,
-    }],
-
     // Disallow duplicate class members
     '@typescript-eslint/no-dupe-class-members': base.rules['no-dupe-class-members'],
     'no-dupe-class-members': 'off',
@@ -460,6 +452,10 @@ module.exports = {
     // Require that function parameters are typed as readonly
     // Disabled, too cumbersome to write `readonly` everywhere.
     '@typescript-eslint/prefer-readonly-parameter-types': 'off',
+
+    // Requires expressions of type void to appear in statement position
+    // Disabled, conflicts with no-meaningless-void-operator
+    '@typescript-eslint/no-confusing-void-expression': 'off',
   },
   overrides: [
     {

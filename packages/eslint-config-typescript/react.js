@@ -77,7 +77,6 @@ module.exports = {
         minimumDescriptionLength: 3,
       },
     ],
-    '@typescript-eslint/no-confusing-void-expression': 'off',
     '@typescript-eslint/no-unnecessary-condition': 'off',
   },
   overrides: [
