@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.1](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-typescript@3.1.0...@strv/eslint-config-typescript@3.1.1) (2022-04-04)
+
+
+### Bug Fixes
+
+* **rule:** avoid crashes with ESLint v8.12 in no-shadow rule ([21bc0d3](https://github.com/strvcom/code-quality-tools/commit/21bc0d33f7563b3d528af4e1b9a622495d8186c1))
+* **rule:** disable no-confusing-void-expression rule ([91ae52e](https://github.com/strvcom/code-quality-tools/commit/91ae52e04050747ba7445ff98d76d5efd9d9866d))
+
+
+
+
+
 # [3.1.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-typescript@3.0.0...@strv/eslint-config-typescript@3.1.0) (2022-03-23)
 
 
