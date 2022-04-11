@@ -456,6 +456,11 @@ module.exports = {
     // Requires expressions of type void to appear in statement position
     // Disabled, conflicts with no-meaningless-void-operator
     '@typescript-eslint/no-confusing-void-expression': 'off',
+
+    // This rule does not work with types properly and causes some confusing issues when you do
+    // `return myfn()` where `myfn` returns `void` - ESLint treats that as a "value being
+    // returned" and complains that a value should be returned everywhere.
+    'consistent-return': 'off',
   },
   overrides: [
     {
