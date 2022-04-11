@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.2](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-typescript@3.1.1...@strv/eslint-config-typescript@3.1.2) (2022-04-11)
+
+
+### Bug Fixes
+
+* **rule:** disable consistent-return for TypeScript ([e81e3b1](https://github.com/strvcom/code-quality-tools/commit/e81e3b15faca2d8e01d337a2910d03439b33c00d))
+
+
+
+
+
 ## [3.1.1](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-typescript@3.1.0...@strv/eslint-config-typescript@3.1.1) (2022-04-04)
 
 
