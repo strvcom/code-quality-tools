@@ -78,6 +78,21 @@ module.exports = {
       },
     ],
     '@typescript-eslint/no-unnecessary-condition': 'off',
+
+    // Disallow the use of custom TypeScript modules and namespaces
+    // Custom TypeScript modules (module foo {}) and namespaces (namespace foo {}) are considered
+    // outdated ways to organize TypeScript code. ES2015 module syntax is now preferred
+    // (import/export).
+
+    // In React due to the nature on how state changes occur, many times async operations
+    // do not return values as once triggered they would dispatch state change events
+    // internally. This functions would be identify by having void returns. In this
+    // case, and only when passing from one component to another (thus, "attributes"),
+    // we can safely ignore unhandled promises.
+    '@typescript-eslint/no-misused-promises': [
+      "error",
+      { "checksVoidReturn": { "attributes": false } }
+    ],
   },
   overrides: [
     // Storybook
