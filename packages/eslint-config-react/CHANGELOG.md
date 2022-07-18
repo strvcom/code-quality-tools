@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.2.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-react@4.1.0...@strv/eslint-config-react@4.2.0) (2022-07-18)
+
+
+### Features
+
+* upgrade all deps 💣 ([cd77c39](https://github.com/strvcom/code-quality-tools/commit/cd77c39ae6806e7531396040a35908da51a8b12c))
+
+
+
+
+
 # [4.1.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-react@4.0.0...@strv/eslint-config-react@4.1.0) (2022-03-23)
 
 

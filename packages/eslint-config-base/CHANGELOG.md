@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.2.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-base@3.1.0...@strv/eslint-config-base@3.2.0) (2022-07-18)
+
+
+### Bug Fixes
+
+* **rule:** require no spaces between multiple export statements ([65a0bae](https://github.com/strvcom/code-quality-tools/commit/65a0bae4d4ec5e85a65d89a9b2f05ec95bfa16cb))
+
+
+### Features
+
+* upgrade all deps 💣 ([cd77c39](https://github.com/strvcom/code-quality-tools/commit/cd77c39ae6806e7531396040a35908da51a8b12c))
+
+
+
+
+
 # [3.1.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-base@3.0.0...@strv/eslint-config-base@3.1.0) (2022-03-23)
 
 
