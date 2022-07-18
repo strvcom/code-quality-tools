@@ -23,8 +23,8 @@
     "remark-preset-lint-recommended": "^6"
   },
   "engines": {
-    "node": "^16",
-    "npm": "^7"
+    "node": "^16 | ^18",
+    "npm": "^7 | ^8"
   },
   "homepage": "https://github.com/strvcom/code-quality-tools",
   "keywords": [],
