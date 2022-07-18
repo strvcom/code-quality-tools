@@ -446,18 +446,11 @@ module.exports = {
     // blank lines help developers to understand the code.
     'padding-line-between-statements': [
       'warn',
-      {
-        blankLine: 'always',
-        next: '*',
-        prev: ['cjs-import', 'directive'],
-      },
-      {
-        blankLine: 'always',
-        prev: '*',
-        next: ['cjs-export', 'class', 'export', 'function'],
-      },
+      { blankLine: 'always', next: '*', prev: ['cjs-import', 'directive'] },
+      { blankLine: 'always', prev: '*', next: ['cjs-export', 'class', 'export', 'function'] },
       { blankLine: 'never', prev: 'directive', next: 'directive' },
       { blankLine: 'never', prev: 'cjs-import', next: 'cjs-import' },
+      { blankLine: 'never', prev: 'export', next: 'export' },
     ],
 
     // Suggest using arrow functions as callbacks
