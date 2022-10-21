@@ -12,7 +12,7 @@
   "dependencies": {
     "@strv/eslint-config-react": "^4.2.0",
     "eslint-plugin-react-native": "^3.10.0",
-    "eslint-plugin-react-native-a11y": "^2.0.3"
+    "eslint-plugin-react-native-a11y": "^3.3.0"
   },
   "engines": {
     "node": "^14 || >=16"
