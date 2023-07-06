@@ -13,7 +13,7 @@ const globs = require('@strv/eslint-config-base/globs')
 // - we don't want to spam Node.js users with unwanted React config.
 // Also on the other hand we believe that React users will already have
 // @strv/eslint-config-react configuration installed.
-// eslint-disable-next-line import/no-unresolved
+// eslint-disable-next-line import/no-extraneous-dependencies
 const react = require('@strv/eslint-config-react')
 
 module.exports = {

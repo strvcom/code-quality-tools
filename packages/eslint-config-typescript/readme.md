@@ -68,7 +68,7 @@ module.exports = {
 
 A full configuration for a TypeScript on React project:
 
-> Please note, that you need to have [eslint-config-react] installed as well
+> Please note, that you need to have [eslint-config-react][] installed as well
 
 ```js
 // .eslintrc.js

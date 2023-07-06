@@ -230,8 +230,9 @@ module.exports = {
     '@typescript-eslint/no-namespace': 'error',
 
     // Disallows using a non-null assertion in the left operand of the nullish coalescing operator
-    // The nullish coalescing operator is designed to provide a default value when dealing with `null` or `undefined`.
-    // Using non-null assertions in the left operand of the nullish coalescing operator is redundant.
+    // The nullish coalescing operator is designed to provide a default value when dealing with
+    // `null` or `undefined`. Using non-null assertions in the left operand of the nullish
+    // coalescing operator is redundant.
     '@typescript-eslint/no-non-null-asserted-nullish-coalescing': 'warn',
 
     // Disallows using a non-null assertion after an optional chain expression
@@ -256,18 +257,18 @@ module.exports = {
     'no-redeclare': 'off',
 
     // Disallow members of unions and intersections that do nothing or override type information
-    // Some types can override some other types ("constituents") in a union or intersection and/or be overridden by some
-    // other types. TypeScript's set theory of types includes cases where a constituent type might be useless in the
-    // parent union or intersection.
+    // Some types can override some other types ("constituents") in a union or intersection and/or
+    // be overridden by some other types. TypeScript's set theory of types includes cases where a
+    // constituent type might be useless in the parent union or intersection.
     '@typescript-eslint/no-redundant-type-constituents': 'warn',
 
     // Disallows invocation of require()
     // Prefer the newer ES6-style imports over require().
     '@typescript-eslint/no-require-imports': 'warn',
 
-    // For some reason we need to make a copy of the rule configuration object for ESLint v8.12.0 because it complains
-    // that the object must not have additional properties. I suspect that something is mutating our object along the
-    // way.
+    // For some reason we need to make a copy of the rule configuration object for ESLint v8.12.0
+    // because it complains that the object must not have additional properties. I suspect that
+    // something is mutating our object along the way.
     // TODO: remove this once this is fixed in ESLint
     '@typescript-eslint/no-shadow': [base.rules['no-shadow'][0], { ...base.rules['no-shadow'][1] }],
     'no-shadow': 'off',

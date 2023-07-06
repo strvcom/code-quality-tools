@@ -9,7 +9,7 @@ NPM_I := $(if $(CI), ci, install)
 
 # Modify these variables in local.mk to add flags to the commands, ie.
 # NPM_FLAGS += --prefer-offline
-NPM_FLAGS :=
+NPM_FLAGS := --legacy-peer-deps
 ESLINT_FLAGS :=
 REMARK_FLAGS :=
 
@@ -30,12 +30,8 @@ lint: force install
 	eslint --cache $(ESLINT_FLAGS) .
 	remark --quiet $(REMARK_FLAGS) .
 
-outdated:
-	npm outdated || true
-	lerna exec "npm outdated || true"
-
 unlock: pristine
-	rm -f package-lock.json packages/*/package-lock.json
+	rm -f package-lock.json
 	touch package.json
 
 clean:
@@ -43,7 +39,7 @@ clean:
 	find . -name '*.log' -print -delete
 
 pristine: clean
-	rm -rf node_modules packages/*/node_modules
+	rm -rf node_modules
 
 release:
 	@utils/make/release.sh
@@ -54,7 +50,7 @@ prerelease: install lint
 # GENERIC TARGETS
 
 node_modules: package.json
-	npm $(NPM_I) $(NPM_FLAGS) && lerna bootstrap && touch node_modules
+	npm $(NPM_I) $(NPM_FLAGS) && touch node_modules
 
 # Default target for all possible git hooks
 .git/hooks/%: utils/githooks/%
