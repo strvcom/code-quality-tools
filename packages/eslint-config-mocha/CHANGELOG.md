@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.3.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-mocha@3.2.0...@strv/eslint-config-mocha@3.3.0) (2023-07-06)
+
+
+### Features
+
+* upgrade eslint-plugin-mocha to v10.1.0 ([016a1d8](https://github.com/strvcom/code-quality-tools/commit/016a1d86da5e336b50cea4e25468f2e5664df404))
+
+
+
+
+
 # [3.2.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-mocha@3.1.0...@strv/eslint-config-mocha@3.2.0) (2022-07-18)
 
 

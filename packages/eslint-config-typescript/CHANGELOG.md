@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-typescript@3.2.0...@strv/eslint-config-typescript@4.0.0) (2023-07-06)
+
+
+### Features
+
+* disable `@typescript-eslint/explicit-function-return-type` 🔥 ([c7b77ca](https://github.com/strvcom/code-quality-tools/commit/c7b77ca4e8d23efb68268eccfecac5146fd10a16))
+* disable `id-length` `max` property ([a5424d8](https://github.com/strvcom/code-quality-tools/commit/a5424d8da793c6698b993b99ebd47f0d569a92cd))
+* upgrade eslint-plugin-import to v2.27 ([c89f5e2](https://github.com/strvcom/code-quality-tools/commit/c89f5e25cb60fd9244251c22848e5037cdee97b6))
+* upgrade eslint-plugin-typescript & add new rules 💪 ([ac7d81b](https://github.com/strvcom/code-quality-tools/commit/ac7d81b0f9afa0ba8f85b5c14ad79ab8bebde8d5))
+
+
+### BREAKING CHANGES
+
+* the new rule [`@typescript-eslint/no-duplicate-enum-values`](https://typescript-eslint.io/rules/no-duplicate-enum-values) is set to `error`, potentially causing existing projects to fail on linting jobs.
+
+
+
+
+
 # [3.2.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-typescript@3.1.2...@strv/eslint-config-typescript@3.2.0) (2022-07-18)
 
 

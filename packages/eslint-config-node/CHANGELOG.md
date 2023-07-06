@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.3.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-node@3.2.0...@strv/eslint-config-node@3.3.0) (2023-07-06)
+
+
+### Features
+
+* add eslint-config-node/v20 ruleset 🎉 ([f5a99bc](https://github.com/strvcom/code-quality-tools/commit/f5a99bcd182a67988dcd42b1be79666a319ac123))
+
+
+
+
+
 # [3.2.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-node@3.1.0...@strv/eslint-config-node@3.2.0) (2022-07-18)
 
 

@@ -1,7 +1,7 @@
 {
   "name": "@strv/eslint-config-mocha",
   "description": "STRV's ESLint config for projects using Mocha as test runner",
-  "version": "3.2.0",
+  "version": "3.3.0",
   "author": "Robert Rossmann <rr.rossmann@me.com>",
   "bugs": {
     "url": "https://github.com/strvcom/code-quality-tools/issues"
@@ -11,7 +11,7 @@
     "Danny Kijkov <daniel.kijkov@strv.com>"
   ],
   "dependencies": {
-    "@strv/eslint-config-base": "^3.2.0",
+    "@strv/eslint-config-base": "^3.3.0",
     "eslint-plugin-mocha": "^10.1.0"
   },
   "engines": {

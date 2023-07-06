@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.3.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-react@4.2.0...@strv/eslint-config-react@4.3.0) (2023-07-06)
+
+
+### Features
+
+* set `max-len` to 120 👏 ([0d3d355](https://github.com/strvcom/code-quality-tools/commit/0d3d35522654c2aca7fba501b4bfaefaa75e715f))
+
+
+
+
+
 # [4.2.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-react@4.1.0...@strv/eslint-config-react@4.2.0) (2022-07-18)
 
 

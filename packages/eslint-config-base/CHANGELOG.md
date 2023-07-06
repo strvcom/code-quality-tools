@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.3.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-base@3.2.0...@strv/eslint-config-base@3.3.0) (2023-07-06)
+
+
+### Features
+
+* disable `id-length` `max` property ([a5424d8](https://github.com/strvcom/code-quality-tools/commit/a5424d8da793c6698b993b99ebd47f0d569a92cd))
+* set `max-len` to 120 👏 ([0d3d355](https://github.com/strvcom/code-quality-tools/commit/0d3d35522654c2aca7fba501b4bfaefaa75e715f))
+* upgrade eslint-plugin-import to v2.27 ([c89f5e2](https://github.com/strvcom/code-quality-tools/commit/c89f5e25cb60fd9244251c22848e5037cdee97b6))
+
+
+
+
+
 # [3.2.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-base@3.1.0...@strv/eslint-config-base@3.2.0) (2022-07-18)
 
 

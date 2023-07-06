@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/strvcom/code-quality-tools/compare/@strv/commitlint-config@2.1.0...@strv/commitlint-config@2.2.0) (2023-07-06)
+
+
+### Features
+
+* upgrade all deps 💣 ([cd77c39](https://github.com/strvcom/code-quality-tools/commit/cd77c39ae6806e7531396040a35908da51a8b12c))
+* upgrade commitlint plugins to v17 🚀 ([09e1ab0](https://github.com/strvcom/code-quality-tools/commit/09e1ab09c1ca2c5e90c39671ccbde4bfd7583b0f))
+
+
+
+
+
 # [2.1.0](https://github.com/strvcom/code-quality-tools/compare/@strv/commitlint-config@2.0.1...@strv/commitlint-config@2.1.0) (2022-03-23)
 
 
