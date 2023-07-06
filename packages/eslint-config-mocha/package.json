@@ -12,7 +12,7 @@
   ],
   "dependencies": {
     "@strv/eslint-config-base": "^3.2.0",
-    "eslint-plugin-mocha": "^10.0.0"
+    "eslint-plugin-mocha": "^10.1.0"
   },
   "engines": {
     "node": "^14 || >=16"
