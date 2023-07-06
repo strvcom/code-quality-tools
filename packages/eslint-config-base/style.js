@@ -579,6 +579,9 @@ module.exports = {
     // PLUGIN: eslint-plugin-import
 
 
+    // This rule either enforces or bans the use of inline type-only markers for named imports
+    'import/consistent-type-specifier-style': ['warn', 'prefer-inline'],
+
     // Enforce all exports to be declared at the bottom of the file
     // The exports-last rule is currently only working on ES6 exports.
     'import/exports-last': 'warn',
@@ -590,6 +593,10 @@ module.exports = {
     // requiring a single export declaration all your exports will remain at one place, making it
     // easier to see what exports a module provides.
     'import/group-exports': 'warn',
+
+    // Reports the use of empty named import blocks
+    // Example: `import {} from 'foo'`
+    'import/no-empty-named-blocks': 'warn',
 
     // Ensure that there are no useless path segments in import statement path
     'import/no-useless-path-segments': ['warn', {

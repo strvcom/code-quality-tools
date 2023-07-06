@@ -99,6 +99,9 @@ module.exports = {
     }, {
       selector: 'typeLike',
       format: ['PascalCase'],
+    }, {
+      selector: 'enumMember',
+      format: ['PascalCase', 'UPPER_CASE'],
     }],
 
     '@typescript-eslint/no-duplicate-imports': 'warn',

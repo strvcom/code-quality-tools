@@ -13,7 +13,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.6.6",
     "eslint": "^8",
-    "eslint-plugin-import": "^2.25.0",
+    "eslint-plugin-import": "^2.27.0",
     "eslint-plugin-node": "^11.1.0",
     "lerna": "^7.1.1",
     "remark-cli": "^11.0.0",
