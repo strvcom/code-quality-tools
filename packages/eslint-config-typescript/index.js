@@ -100,17 +100,6 @@ module.exports = {
       prefer: 'type-imports',
     }],
 
-    // Require explicit return types on functions and class methods
-    // Explicit types for function return values makes it clear to any calling code what type is
-    // returned. This ensures that the return value is assigned to a variable of the correct type;
-    // or in the case where there is no return value, that the calling code doesn't try to use the
-    // undefined value when it shouldn't.
-    '@typescript-eslint/explicit-function-return-type': ['warn', {
-      allowExpressions: true,
-      allowHigherOrderFunctions: true,
-      allowConciseArrowFunctionExpressionsStartingWithVoid: true,
-    }],
-
     // Require explicit accessibility modifiers on class properties and methods
     // This rule aims to make code more readable and explicit about who can use which properties.
     '@typescript-eslint/explicit-member-accessibility': ['warn', {
@@ -461,6 +450,12 @@ module.exports = {
     // `return myfn()` where `myfn` returns `void` - ESLint treats that as a "value being
     // returned" and complains that a value should be returned everywhere.
     'consistent-return': 'off',
+
+    // Require explicit return types on functions and class methods
+    // Disabled, we tried it for a while and it was too cumbersome to write return types everywhere. The idea would be
+    // nice for a library-like projects to clearly declare return types on public APIs but for general backend
+    // applications it's too much.
+    '@typescript-eslint/explicit-function-return-type': ['off', {}],
   },
   overrides: [
     {

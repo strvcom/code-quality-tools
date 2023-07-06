@@ -60,8 +60,6 @@ module.exports = {
     '@typescript-eslint/no-shadow': 'off',
     'no-shadow': 'off',
 
-    '@typescript-eslint/explicit-function-return-type': 'off',
-
     // Must be off, otherwise @typescript-eslint/member-ordering is triggered
     '@typescript-eslint/method-signature-style': 'off',
 
