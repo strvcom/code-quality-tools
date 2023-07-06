@@ -11,8 +11,8 @@
   ],
   "dependencies": {
     "@strv/eslint-config-react": "^4.2.0",
-    "eslint-plugin-react-native": "^3.10.0",
-    "eslint-plugin-react-native-a11y": "^2.0.3"
+    "eslint-plugin-react-native": "^4.0.0",
+    "eslint-plugin-react-native-a11y": "^3.3.0"
   },
   "engines": {
     "node": "^14 || >=16"
@@ -26,7 +26,7 @@
   "license": "BSD-3-Clause",
   "main": "index.js",
   "peerDependencies": {
-    "eslint": "^7"
+    "eslint": "^7 || ^8"
   },
   "publishConfig": {
     "access": "public"
