@@ -108,7 +108,6 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': ['warn', {
       allowExpressions: true,
       allowHigherOrderFunctions: true,
-      // eslint-disable-next-line id-length
       allowConciseArrowFunctionExpressionsStartingWithVoid: true,
     }],
 

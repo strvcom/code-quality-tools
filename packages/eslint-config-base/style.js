@@ -166,7 +166,6 @@ module.exports = {
     // identifier length convention.
     'id-length': ['warn', {
       min: 2,
-      max: 30,
       exceptions: [
         // index
         'i',
