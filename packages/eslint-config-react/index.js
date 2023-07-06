@@ -42,7 +42,6 @@ module.exports = {
     },
   },
 
-  /* eslint-disable max-len */
   rules: {
     // Enforces consistent naming for boolean props
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/boolean-prop-naming.md
@@ -436,7 +435,8 @@ module.exports = {
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/mouse-events-have-key-events.md
     'jsx-a11y/mouse-events-have-key-events': 'warn',
 
-    // Enforce that the accessKey prop is not used on any element to avoid complications with keyboard commands used by a screenreader
+    // Enforce that the accessKey prop is not used on any element to avoid complications with keyboard commands used by
+    // a screenreader
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-access-key.md
     'jsx-a11y/no-access-key': 'warn',
 
