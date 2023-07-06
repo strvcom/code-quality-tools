@@ -135,6 +135,16 @@ module.exports = {
     '@typescript-eslint/no-dupe-class-members': base.rules['no-dupe-class-members'],
     'no-dupe-class-members': 'off',
 
+    // Disallow duplicate enum member values
+    // This rule disallows defining an enum with multiple members initialized to the same value.
+    '@typescript-eslint/no-duplicate-enum-values': 'error',
+
+    // Disallow duplicate constituents of union or intersection types
+    // TypeScript supports types ("constituents") within union and intersection types being duplicates of each other.
+    // However, developers typically expect each constituent to be unique within its intersection or union. Duplicate
+    // values make the code overly verbose and generally reduce readability.
+    '@typescript-eslint/no-duplicate-type-constituents': 'warn',
+
     // Disallow the delete operator with computed key expressions
     // Using the `delete` operator on keys that aren't runtime constants could be a sign that you're
     // using the wrong data structures.
@@ -210,6 +220,10 @@ module.exports = {
     // are not handled properly. These situations can often arise due to a missing await keyword or
     // just a misunderstanding of the way async functions are handled/awaited.
     '@typescript-eslint/no-misused-promises': 'error',
+
+    // Disallow enums from having both number and string members
+    // Mixing enum member types is generally considered confusing and a bad practice.
+    '@typescript-eslint/no-mixed-enums': 'warn',
 
     // Disallow the use of custom TypeScript modules and namespaces
     // Custom TypeScript modules (module foo {}) and namespaces (namespace foo {}) are considered

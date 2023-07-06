@@ -52,7 +52,7 @@ A full configuration for a TypeScript on Node.js project:
 module.exports = {
 
   extends: [
-    '@strv/eslint-config-node/v10',
+    '@strv/eslint-config-node/v20',
     '@strv/eslint-config-node/optional',
     '@strv/eslint-config-typescript',
     '@strv/eslint-config-typescript/style',

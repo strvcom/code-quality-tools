@@ -10,7 +10,7 @@ module.exports = {
   ],
 
   extends: [
-    './packages/eslint-config-node/v16.js',
+    './packages/eslint-config-node/v20.js',
     './packages/eslint-config-node/optional.js',
     './packages/eslint-config-node/style.js',
   ],
@@ -21,7 +21,7 @@ module.exports = {
 
     // TODO: eslint-plugin-node does not correctly recognise `ecmaVersion: 2021`
     'node/no-unsupported-features/es-syntax': ['error', {
-      version: '>=16',
+      version: '>=20',
     }],
   },
 }
