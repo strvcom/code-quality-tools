@@ -256,7 +256,8 @@ module.exports = {
     // whenever it sees capitalized function called directly without new operator.
     'new-cap': ['warn', {
       newIsCap: true,
-      capIsNew: true,
+      // Decorators are usually written in PascalCase but are rarely called with `new` when used
+      capIsNew: false,
     }],
 
     // Require Parens for Constructors
