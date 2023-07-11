@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.2](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-typescript@4.1.1...@strv/eslint-config-typescript@4.1.2) (2023-07-11)
+
+
+### Bug Fixes
+
+* properly configure `@typescript-eslint/parameter-properties` ([2f7b4bf](https://github.com/strvcom/code-quality-tools/commit/2f7b4bf2efd8774213383a76ee14ae12c5293395))
+
+
+
+
+
 ## [4.1.1](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-typescript@4.1.0...@strv/eslint-config-typescript@4.1.1) (2023-07-11)
 
 
