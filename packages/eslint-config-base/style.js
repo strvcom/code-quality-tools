@@ -452,6 +452,8 @@ module.exports = {
       { blankLine: 'never', prev: 'directive', next: 'directive' },
       { blankLine: 'never', prev: 'cjs-import', next: 'cjs-import' },
       { blankLine: 'never', prev: 'export', next: 'export' },
+      { blankLine: 'never', prev: 'import', next: 'import' },
+      { blankLine: 'always', prev: '*', next: ['function', 'for', 'do', 'switch', 'if', 'try'] },
     ],
 
     // Suggest using arrow functions as callbacks
