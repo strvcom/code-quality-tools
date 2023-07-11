@@ -335,7 +335,8 @@ module.exports = {
     // more of the screen.
     'no-multiple-empty-lines': ['warn', {
       max: 2,
-      maxEOF: 1,
+      maxEOF: 0,
+      maxBOF: 0,
     }],
 
     // Disallow multiple spaces
