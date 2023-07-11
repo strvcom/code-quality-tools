@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.1.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-typescript@4.0.0...@strv/eslint-config-typescript@4.1.0) (2023-07-11)
+
+
+### Features
+
+* greatly improve `@typescript-eslint/naming-convention` definition ([859402b](https://github.com/strvcom/code-quality-tools/commit/859402b6fe3f57d4ea9412570deadf041c20766a))
+* upgrade typescript-eslint packages to v6 release ([3c2cf8c](https://github.com/strvcom/code-quality-tools/commit/3c2cf8ca4030e2748060e1c32f52f3941279e358))
+
+
+
+
+
 # [4.0.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-typescript@3.2.0...@strv/eslint-config-typescript@4.0.0) (2023-07-06)
 
 

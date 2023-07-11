@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.4.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-base@3.3.0...@strv/eslint-config-base@3.4.0) (2023-07-11)
+
+
+### Features
+
+* additional rules for code spacing 🎨 ([0350f6a](https://github.com/strvcom/code-quality-tools/commit/0350f6a0de3f39a6cc6c617b209be226fd3cd577))
+* do not allow empty lines at beginning & end of files ([9950f3e](https://github.com/strvcom/code-quality-tools/commit/9950f3e83b5d995e815e5ccf1ebb566e1c1b4ca4))
+* reconfigure `new-cap` to work with decorators ❤️ ([d5fb0cf](https://github.com/strvcom/code-quality-tools/commit/d5fb0cfdac19817a303e713eec019c8a5a928544))
+
+
+
+
+
 # [3.3.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-base@3.2.0...@strv/eslint-config-base@3.3.0) (2023-07-06)
 
 
