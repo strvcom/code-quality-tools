@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.1](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-typescript@4.1.0...@strv/eslint-config-typescript@4.1.1) (2023-07-11)
+
+
+### Bug Fixes
+
+* use correct options for `@typescript-eslint/restrict-plus-operands` ([6e74b20](https://github.com/strvcom/code-quality-tools/commit/6e74b20ffdb930b03799b1266436c4f62cdaad8f))
+
+
+
+
+
 # [4.1.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-typescript@4.0.0...@strv/eslint-config-typescript@4.1.0) (2023-07-11)
 
 
