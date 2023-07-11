@@ -424,7 +424,7 @@ module.exports = {
 
     // When adding two variables, operands must both be of type number or of type string
     '@typescript-eslint/restrict-plus-operands': ['error', {
-      checkCompoundAssignments: true,
+      skipCompoundAssignments: false,
     }],
 
     // Enforce template literal expressions to be of string type
