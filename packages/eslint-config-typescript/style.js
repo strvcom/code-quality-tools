@@ -84,24 +84,17 @@ module.exports = {
 
     // Enforces naming conventions for everything across a codebase
     '@typescript-eslint/naming-convention': ['warn', {
-      selector: 'default',
-      format: ['camelCase'],
+      selector: 'class',
+      format: ['PascalCase'],
     }, {
-      selector: 'variable',
-      format: ['camelCase', 'UPPER_CASE'],
-    }, {
-      selector: 'parameter',
-      format: ['camelCase'],
-    }, {
-      selector: 'memberLike',
-      modifiers: ['private'],
+      selector: 'classMethod',
       format: ['camelCase'],
     }, {
       selector: 'typeLike',
       format: ['PascalCase'],
     }, {
       selector: 'enumMember',
-      format: ['PascalCase', 'UPPER_CASE'],
+      format: ['UPPER_CASE', 'PascalCase'],
     }],
 
     // Reports if a resolved path is imported more than once
