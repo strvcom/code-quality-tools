@@ -250,7 +250,9 @@ module.exports = {
     // Disallow the use of parameter properties in class constructors
     // This rule disallows the use of parameter properties in constructors, forcing the user to
     // explicitly declare all properties in the class.
-    '@typescript-eslint/no-parameter-properties': 'warn',
+    '@typescript-eslint/parameter-properties': ['warn', {
+      prefer: 'class-property',
+    }],
 
     // Disallow variable redeclaration
     '@typescript-eslint/no-redeclare': ['error', {
