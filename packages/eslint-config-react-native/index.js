@@ -17,4 +17,4 @@ module.exports = {
     // https://github.com/expo/expo/pull/9130
     'react-hooks/exhaustive-deps': 'warn',
   },
-};
+}
