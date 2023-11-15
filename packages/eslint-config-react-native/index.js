@@ -1,8 +1,8 @@
 /**
  * strvcom/eslint-config-react-native
  *
- * @author      André Nanninga <andre.nanninga@strv.com>
- * @copyright   2019 STRV
+ * @author      Petr Konecny <petr.konecny@strv.com>
+ * @copyright   2016-present Expo, 2023-present STRV
  * @license     http://choosealicense.com/licenses/bsd-3-clause  BSD-3-Clause License
  */
 
