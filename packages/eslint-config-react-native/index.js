@@ -11,6 +11,10 @@
 module.exports = {
   extends: ['universe/native'],
   rules: {
-    'react-hooks/exhaustive-deps': 'error',
+    // enforces hooks have dependencies listed in the dependency arrays
+    // preventing issues with hooks not running correctly when dependency values change
+    // Original expo config disabled this because they felt it is returning too many false positives
+    // https://github.com/expo/expo/pull/9130
+    'react-hooks/exhaustive-deps': 'warn',
   },
 };
