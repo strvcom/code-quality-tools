@@ -6,11 +6,11 @@
  * @license     http://choosealicense.com/licenses/bsd-3-clause  BSD-3-Clause License
  */
 
-"use strict";
+'use strict'
 
 module.exports = {
-  extends: ["universe/native"],
+  extends: ['universe/native'],
   rules: {
-    "react-hooks/exhaustive-deps": "error",
+    'react-hooks/exhaustive-deps': 'error',
   },
 };
