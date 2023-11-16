@@ -117,5 +117,14 @@ module.exports = {
     // Enforce propTypes declarations alphabetical sorting
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/sort-prop-types.md
     'react/sort-prop-types': 'warn',
+
+    // These rules override the base style configs import rules
+    // in React it is not common or even viable to structure exports like this
+    'import/group-exports': 'off',
+    'import/exports-last': 'off',
+    //
+
+    // when trying to auto fix this rule it breaks React syntax
+    'arrow-body-style': 'off',
   },
 }

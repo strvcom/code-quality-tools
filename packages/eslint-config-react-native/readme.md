@@ -2,9 +2,12 @@
 
 > STRV's ESLint config for React-Native projects
 
-Suitable for linting React Native source files. This ruleset extends `@strv/eslint-config-react`.
+Suitable for linting React Native source files. This ruleset extends [`eslint-config-universe`](https://github.com/expo/expo/tree/master/packages/eslint-config-universe).
 
-This rulest includes accessibility rules, based on [eslint-plugin-react-native-a11y][a11y-repo].
+Note that this config also includes Typescript rules, as we feel strongly that Typescript should be used in all React Native projects.
+By including Typescript by default we can create more consistent rule sets.
+
+Also unlike other configs it directly includes react/styles config as we need to control the extend array order.
 
 ## Configurations
 
@@ -12,30 +15,26 @@ This rulest includes accessibility rules, based on [eslint-plugin-react-native-a
 
 Suitable for linting React Native projects.
 
-### `@strv/eslint-config-react-native/optional`
+To use this configuration, add this package as a dev dependency of your project:
 
-Use this ruleset in conjunction with the above base ruleset. Provides additional insights into potential inconsistencies in the project. Extends `@strv/eslint-config-react/optional`.
+`yarn add @strv/eslint-conig-react-native -D`
 
-> For new projects, it is recommended to enable this ruleset. For existing projects, it is only recommended for the brave.
-
-## Coding styles
-
-### `@strv/eslint-config-react-native/style`
-
-This ruleset includes rules which deal with how the code looks like and not how it works. It helps keeping the code clean and consistent. Extends `@strv/eslint-config-react/style`. 🎨
-
-A full configuration for a React Native project:
+Then extend the config in your ESLint configuration:
 
 ```js
 // .eslintrc.js
+
 'use strict'
 
 module.exports = {
   extends: [
-    '@strv/react-native',
-    '@strv/react-native/optional',
-    '@strv/react-native/style',
+    '@strv/eslint-config-react-native',
   ],
+  parserOptions: {
+    // The project field is required in order for some TS-syntax-specific rules to function at all
+    // @see https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser#configuration
+    project: './tsconfig.json',
+  },
 }
 ```
 
