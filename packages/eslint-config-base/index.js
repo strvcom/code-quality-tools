@@ -639,7 +639,7 @@ module.exports = {
     'import/export': 'error',
 
     // Ensure consistent use of file extension within the import path
-    'import/extensions': ['warn', 'never'],
+    'import/extensions': ['warn', { json: 'aways' }],
 
     // Reports if a module's default export is unnamed
     // Ensuring that default exports are named helps improve the grepability of the codebase by
