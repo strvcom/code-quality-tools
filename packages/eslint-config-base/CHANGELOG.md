@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.5.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-base@3.4.0...@strv/eslint-config-base@3.5.0) (2023-11-16)
+
+
+### Features
+
+* **eslint-base:** enforce json extension on imports ([a042e20](https://github.com/strvcom/code-quality-tools/commit/a042e20a984d788644f6b3cdae57f3f89e8aac42))
+
+
+
+
+
 # [3.4.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-base@3.3.0...@strv/eslint-config-base@3.4.0) (2023-07-11)
 
 
