@@ -11,7 +11,7 @@
   ],
   "dependencies": {
     "@strv/eslint-config-react": "^4.3.2",
-    "eslint-config-universe": "^10.0.0"
+    "eslint-config-universe": "^12.0.0"
   },
   "engines": {
     "node": "^14 || >=16"
