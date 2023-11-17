@@ -28,7 +28,8 @@ module.exports = {
     // coordinates are often used in React Native and it is not a good idea to rename them
     // also there is a common translation function 't' which is also not a good candidate for renaming
     // additionally, we allow single letter variables for loops
-    'id-length': ['warn', { properties: 'never', exceptions: ['x', 'y', 'z', 't', 'i', 'j', 'n', '_'] }],
+    // a, b are often used in sorting functions
+    'id-length': ['warn', { properties: 'never', exceptions: ['x', 'y', 'z', 't', 'i', 'j', 'n', 'a', 'b', '_'] }],
 
     // overrides the Expo Universe config, as we feel there is a value in having to specifically mark floating
     // promises as void
