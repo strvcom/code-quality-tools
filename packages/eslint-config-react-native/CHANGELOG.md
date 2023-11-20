@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.3.3](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-react-native@3.3.2...@strv/eslint-config-react-native@3.3.3) (2023-11-20)
+
+
+### Bug Fixes
+
+* added more exceptions to id length ([4d0f16f](https://github.com/strvcom/code-quality-tools/commit/4d0f16f899d4579e52b30808c6662fd5dc636596))
+* updated expo universe and added more id length exceptions ([e95b15e](https://github.com/strvcom/code-quality-tools/commit/e95b15e85ce666a5d13efe6f7d3a6a22db71e7e4))
+
+
+
+
+
 ## [3.3.2](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-react-native@3.3.1...@strv/eslint-config-react-native@3.3.2) (2023-11-16)
 
 **Note:** Version bump only for package @strv/eslint-config-react-native
