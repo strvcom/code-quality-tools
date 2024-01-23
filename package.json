@@ -11,7 +11,7 @@
     "Korneliusz Dubieniecki <lekterable@gmail.com>"
   ],
   "devDependencies": {
-    "@commitlint/cli": "^17.6.6",
+    "@commitlint/cli": "^18.5.0",
     "eslint": "^8",
     "eslint-plugin-import": "^2.27.0",
     "eslint-plugin-node": "^11.1.0",
