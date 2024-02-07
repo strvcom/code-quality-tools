@@ -2,11 +2,9 @@
 
 ## Shared rules
 
-These rules are meant to be shared across all ESLint rulesets.
+These rules are meant to be shared across all ESLint rulesets. Generally you should not need to install or extend from these files as they are automatically included in their respective environment-specific configurations.
 
-> Generally you should not need to install or extend from these files as they are automatically included in their respective environment-specific configurations.
->
-> See [@strv/code-quality-tools][cqt-home] for a full showdown of available rulesets.
+See [@strv/code-quality-tools][cqt-home] for a full showdown of available rulesets.
 
 ## License
 

@@ -2,6 +2,8 @@
 SHELL := sh
 export PATH := bin/:node_modules/.bin/:$(PATH)
 export NODE_OPTIONS := --trace-deprecation
+# Enable ESLint Flat Config support
+export ESLINT_USE_FLAT_CONFIG=true
 
 # On CI servers, use the `npm ci` installer to avoid introducing changes to the package-lock.json
 # On developer machines, prefer the generally more flexible `npm install`. 💪

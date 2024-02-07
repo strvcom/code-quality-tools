@@ -1,44 +1,106 @@
-# Migration from @strv/eslint-config-javascript
+# Migrating to flat config (ESLint v9 or >=8.56.0)
 
-This new initiative provides all the functionality which was included in the old ESLint config package, with the only exception being the **flow** ruleset which has been removed. The `v1.0.0` versions of all packages hosted here are 1:1 compatible with the latest version of `@strv/eslint-config-javascript` (`9.2.0`), therefore no new errors or warnings should be reported after the migration.
+🚨 As of now (February 2024) some plugins used in these rulesets are not yet compatible with ESLint v9. While it is recommended that you upgrade your projects to the flat config format it also means that if you do, you will need to stay on ESLint v8 until all plugins are updated.
 
-- Uninstall `@strv/eslint-config-javascript`
-- Open your _.eslintrc.js_ file and check which rulesets you use
-- Based on the table below, replace the rulesets in your config file with the new names
-- Install the missing rulesets from npm
+---
 
-| Old ruleset                                  | New ruleset          | package                                                                    |
-| -------------------------------------------- | -------------------- | -------------------------------------------------------------------------- |
-| `@strv/javascript/environments/nodejs/*`     | `@strv/node/*`       | [`@strv/eslint-config-node`][es-node-home]                                 |
-| `@strv/javascript/environments/react/*`      | `@strv/react/*`      | [`@strv/eslint-config-react`][es-react-home]                               |
-| `@strv/javascript/environments/mocha/*`      | `@strv/mocha/*`      | [`@strv/eslint-config-mocha`][es-mocha-home]                               |
-| `@strv/javascript/environments/typescript/*` | `@strv/typescript/*` | [`@strv/eslint-config-typescript`][es-ts-home]                             |
-| `@strv/javascript/environments/flow/*`       | 🔥                   | Removed without replacement 😱                                             |
-| `@strv/javascript/coding-styles/*`           | 🔥                   | Coding style rulesets are now part of the environment-specific packages ❤️ |
+As of ESLint v9 the way ESLint is configured is going to change dramatically. Support for this new "flat" config format has been introduced to ESLint v8.56 behind a feature flag (`ESLINT_USE_FLAT_CONFIG=true` env var). This guide will help you rewrite your config to the new format.
 
-The following rulesets have been removed as part of the migration:
+## Documentation
 
-- `@strv/javascript/environments/nodejs/v6`
-- `@strv/javascript/environments/nodejs/v8-3`
-- `@strv/javascript/environments/flow/*`
-- `@strv/javascript/coding-styles/*`
+ESLint: https://eslint.org/docs/latest/use/configure/configuration-files-new
 
-## Still confused?
+## Old way
 
-Open an issue over at [@strv/code-quality-tools][cqt-home] or ping @robertrossmann on STRV Slack. 💪
+The old system was designed to support YAML, JSON, and JavaScript configuration files. You would use a ruleset or a plugin by providing its name (a string) and ESLint would look it up and use it. Also, ESLint automatically checked known JavaScript files and you had to go the extra mile to add support for ie. TypeScript (`.ts`) or React (`.jsx`) files.
 
-## ...but why?
+```js
+// .eslintrc.js
 
-### More granular release cycle
+// Example config. Notice how it's not clear which files are going to be linted by default.
+// Also notice that the `extends` field is a string and ESLint needs to load that module.
+/** @type {import("eslint").Linter.Config} */
+module.exports = {
+  reportUnusedDisableDirectives: true,
+  extends: [
+    '@strv/node/v20',
+    '@strv/node/optional',
+    '@strv/node/style',
+  ],
+  rules: {
+    'no-warning-comments': 'off',
+  },
 
-Separating the environments into dedicated packages will reduce noise when a new version for a specific environment is released. Before, when a new rule has been added to the `nodejs` ruleset, everyone received an upgrade even if they only used the `react` ruleset and did not care about changes to the `nodejs` ruleset. With the new setup, each environment will follow its own semver release cycle.
+  overrides: [{
+    files: [
+      '**/*.ts',
+      '**/*.spec.ts',
+      '**/*.e2e-spec.ts',
+    ],
+    extends: [
+      '@strv/node/v20',
+      '@strv/node/optional',
+      '@strv/eslint-config-typescript',
+      '@strv/eslint-config-typescript/style',
+    ],
+    parserOptions: {
+      project: './tsconfig.json',
+    },
+```
 
-### Not just ESLint anymore
+## New way
 
-The new repository contains configurations for a bunch of other linting tools, not just ESLint. We wanted to keep all these configs under a single roof, so we decided to move the code over there.
+The new system has several advantages over the previous config format but it also requires a bit more effort to properly set up. Each configuration now encourages to specify the files to which it should apply and all rulesets and plugins are provided as regular imported types because the configuration now must be written in JavaScript.
 
-[cqt-home]: https://github.com/strvcom/code-quality-tools
-[es-node-home]: https://github.com/strvcom/code-quality-tools/tree/master/packages/eslint-config-node
-[es-react-home]: https://github.com/strvcom/code-quality-tools/tree/master/packages/eslint-config-react
-[es-mocha-home]: https://github.com/strvcom/code-quality-tools/tree/master/packages/eslint-config-mocha
-[es-ts-home]: https://github.com/strvcom/code-quality-tools/tree/master/packages/eslint-config-typescript
+```js
+// eslint.config.mjs
+
+// This is a sample configuration for a TypeScript Node.js project.
+
+// All plugins, parsers and rulesets must be imported as modules
+import nodev20 from '@strv/eslint-config-node/v20'
+import nodeopt from '@strv/eslint-config-node/optional'
+import nodestyle from '@strv/eslint-config-node/style'
+import ts from '@strv/eslint-config-typescript'
+import tsopt from '@strv/eslint-config-typescript/optional'
+import tsstyle from '@strv/eslint-config-typescript/style'
+// Just to help us re-use the same globs multiple times
+const files = {
+  ts: '**/*.ts',
+  mjs: '**/*.mjs',
+}
+
+// This will allow your IDE to provide autocomplete suggestions ✨
+/** @type {Array<import("eslint").Linter.FlatConfig>} */
+const config = [{
+  linterOptions: {
+    reportUnusedDisableDirectives: true,
+  },
+  ignores: ['**/*.js', '*.d.ts', '!.*.js', 'node_modules'],
+}, {
+  // First, we provide a configuration object that supplies the tsconfig path to all plugins that might need it.
+  files: [files.ts],
+  languageOptions: {
+    parserOptions: { project: './tsconfig.json' },
+  } },
+// Next, we apply all the rulesets, one by one, which we want to use for our TypeScript sources.
+// ⚠️ Do not apply more than one ruleset inside the same configuration object as they would not get merged correctly.
+{ files: [files.ts], ...nodev20 },
+{ files: [files.ts], ...nodeopt },
+{ files: [files.ts], ...ts },
+{ files: [files.ts], ...tsopt },
+{ files: [files.ts], ...tsstyle },
+
+{ files: [files.mjs], ...nodev20 },
+{ files: [files.mjs], ...nodeopt },
+{ files: [files.mjs], ...nodestyle },
+// Custom overrides
+{ files: [files.ts],
+  rules: {
+    'no-warning-comments': 0,
+    '@typescript-eslint/naming-convention': 'off',
+  } },
+]
+
+export default config
+```

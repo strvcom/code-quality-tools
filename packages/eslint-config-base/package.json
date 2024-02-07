@@ -23,7 +23,12 @@
     "strv"
   ],
   "license": "BSD-3-Clause",
-  "main": "index.js",
+  "type": "module",
+  "exports": {
+    ".": "./index.mjs",
+    "./optional": "./optional.mjs",
+    "./style": "./style.mjs"
+  },
   "peerDependencies": {
     "eslint": "^8"
   },

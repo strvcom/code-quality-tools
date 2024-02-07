@@ -1,21 +1,12 @@
-/**
- * strvcom/eslint-config-base
- *
- * @author      Robert Rossmann <rr.rossmann@me.com>
- * @copyright   2019 STRV
- * @license     http://choosealicense.com/licenses/bsd-3-clause  BSD-3-Clause License
- */
+import imports from 'eslint-plugin-import'
+import stylistic from '@stylistic/eslint-plugin'
 
-'use strict'
-
-// These rules are the baseline coding style that prevails in most JS projects in the wild. It's
-// main purpose is to serve as a baseline for all other coding style guidelines.
-module.exports = {
-
-  plugins: [
-    'import',
-  ],
-
+/** @type {import("eslint").Linter.FlatConfig} */
+const config = {
+  plugins: {
+    import: imports,
+    '@stylistic': stylistic,
+  },
   rules: {
     // enforce line breaks after opening and before closing array brackets
     // Requires consistent usage of linebreaks for each pair of brackets. It reports an error if one
@@ -614,3 +605,5 @@ module.exports = {
     'import/newline-after-import': 'warn',
   },
 }
+
+export default config

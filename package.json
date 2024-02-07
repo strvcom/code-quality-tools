@@ -12,7 +12,7 @@
   ],
   "devDependencies": {
     "@commitlint/cli": "^18.6.0",
-    "eslint": "^8",
+    "eslint": "^8.56.0",
     "lerna": "^8.1.2",
     "remark-cli": "^12.0.0",
     "remark-preset-lint-consistent": "^5",
@@ -23,6 +23,7 @@
     "node": ">=20",
     "npm": ">=10"
   },
+  "type": "module",
   "homepage": "https://github.com/strvcom/code-quality-tools",
   "keywords": [],
   "license": "BSD-3-Clause",

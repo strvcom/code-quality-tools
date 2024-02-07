@@ -23,7 +23,7 @@
     "strv"
   ],
   "license": "BSD-3-Clause",
-  "main": "index.js",
+  "main": "index.cjs",
   "publishConfig": {
     "access": "public"
   },

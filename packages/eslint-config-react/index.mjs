@@ -1,48 +1,27 @@
-/**
- * strvcom/eslint-config-react
- *
- * @author      Pavel Prichodko <pavel.prichodko@strv.com>
- * @copyright   2019 STRV
- * @license     http://choosealicense.com/licenses/bsd-3-clause  BSD-3-Clause License
- */
+import base from '@strv/eslint-config-base'
+import react from 'eslint-plugin-react'
+import a11y from 'eslint-plugin-jsx-a11y'
+import hooks from 'eslint-plugin-react-hooks'
 
-'use strict'
-
-const base = require('@strv/eslint-config-base')
-
-module.exports = {
-  extends: require.resolve('@strv/eslint-config-base'),
-
-  parser: '@babel/eslint-parser',
-
-  plugins: ['react', 'jsx-a11y', 'react-hooks'],
-
-  env: {
-    browser: true,
-    es2023: true,
+/** @type {import("eslint").Linter.FlatConfig} */
+const config = {
+  plugins: {
+    ...base.plugins,
+    react,
+    'jsx-a11y': a11y,
+    'react-hooks': hooks,
   },
-
-  parserOptions: {
-    ecmaVersion: 2023,
-    sourceType: 'module',
-    ecmaFeatures: {
-      jsx: true,
+  languageOptions: {
+    parserOptions: {
+      ecmaFeatures: { jsx: true },
     },
   },
-
   settings: {
-    react: {
-      version: 'detect',
-    },
-
-    'import/resolver': {
-      node: {
-        extensions: ['.jsx', ...base.settings['import/resolver'].node.extensions],
-      },
-    },
+    react: { version: 'detect' },
   },
-
   rules: {
+    ...base.rules,
+
     // Enforces consistent naming for boolean props
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/boolean-prop-naming.md
     'react/boolean-prop-naming': [
@@ -500,7 +479,6 @@ module.exports = {
       },
     ],
 
-
     // Enforce explicit role property is not the same as implicit/default role property on element
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-redundant-roles.md
     'jsx-a11y/no-redundant-roles': 'warn',
@@ -522,27 +500,21 @@ module.exports = {
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/tabindex-no-positive.md
     'jsx-a11y/tabindex-no-positive': 'warn',
 
-    'absolute-import/no-relative-path': 'off',
     'arrow-body-style': 'off',
 
-    'import/order': [
-      'error',
-      {
-        alphabetize: {
-          order: 'asc',
-          caseInsensitive: true,
-        },
-        groups: [['builtin', 'external'], 'internal', 'sibling', 'index'],
-        'newlines-between': 'always',
-        pathGroups: [
-          {
-            // This should be added both to @linters and @strv/code-quality-tools
-            pattern: '~/**',
-            group: 'internal',
-          },
-        ],
+    'import/order': ['error', {
+      alphabetize: {
+        order: 'asc',
+        caseInsensitive: true,
       },
-    ],
+      groups: [['builtin', 'external'], 'internal', 'sibling', 'index'],
+      'newlines-between': 'always',
+      pathGroups: [{
+        // This should be added both to @linters and @strv/code-quality-tools
+        pattern: '~/**',
+        group: 'internal',
+      }],
+    }],
 
     'max-classes-per-file': 'off',
     'no-undefined': 'off',
@@ -552,3 +524,5 @@ module.exports = {
     'import/no-default-export': 'error',
   },
 }
+
+export default config

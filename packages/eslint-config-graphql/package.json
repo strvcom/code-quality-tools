@@ -12,6 +12,10 @@
   "engines": {
     "node": ">=20"
   },
+  "type": "module",
+  "exports": {
+    ".": "./index.mjs"
+  },
   "keywords": [
     "config",
     "eslint",
@@ -20,7 +24,6 @@
     "graphql"
   ],
   "license": "BSD-3-Clause",
-  "main": "index.js",
   "peerDependencies": {
     "eslint": "^8"
   },

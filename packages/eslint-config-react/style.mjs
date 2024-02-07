@@ -1,20 +1,15 @@
-/**
- * strvcom/eslint-config-react
- *
- * @author      Robert Rossmann <rr.rossmann@me.com>
- * @copyright   2019 STRV
- * @license     http://choosealicense.com/licenses/bsd-3-clause  BSD-3-Clause License
- */
+import style from '@strv/eslint-config-base/style'
+import react from 'eslint-plugin-react'
 
-'use strict'
-
-// These rules represent coding style targeted for React components.
-module.exports = {
-  extends: require.resolve('@strv/eslint-config-base/style'),
-
-  plugins: ['react'],
-
+/** @type {import("eslint").Linter.FlatConfig} */
+const config = {
+  plugins: {
+    ...style.plugins,
+    react,
+  },
   rules: {
+    ...style.rules,
+
     // Enforce consistent usage of destructuring assignment of props, state, and context
     'react/destructuring-assignment': [
       'warn',
@@ -33,7 +28,6 @@ module.exports = {
 
     // Disallow unnecessary curly braces in JSX props and/or children
     '@stylistic/jsx-curly-brace-presence': ['warn', 'never'],
-
 
     // Disallow spaces inside of curly braces in JSX attributes
     '@stylistic/jsx-curly-spacing': [
@@ -122,9 +116,10 @@ module.exports = {
     // in React it is not common or even viable to structure exports like this
     'import/group-exports': 'off',
     'import/exports-last': 'off',
-    //
 
     // when trying to auto fix this rule it breaks React syntax
     'arrow-body-style': 'off',
   },
 }
+
+export default config

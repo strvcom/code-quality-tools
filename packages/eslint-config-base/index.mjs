@@ -1,36 +1,12 @@
-/**
- * strvcom/eslint-config-base
- *
- * @author      Robert Rossmann <rr.rossmann@me.com>
- * @copyright   2019 STRV
- * @license     http://choosealicense.com/licenses/bsd-3-clause  BSD-3-Clause License
- */
+import imports from 'eslint-plugin-import'
+import stylistic from '@stylistic/eslint-plugin'
 
-'use strict'
-
-const globs = require('./globs')
-
-module.exports = {
-
-  plugins: [
-    '@stylistic',
-    'import',
-  ],
-
-  settings: {
-    'import/resolver': {
-      node: {
-        extensions: [
-          '.mjs',
-          '.cjs',
-          '.js',
-          '.json',
-          '.node',
-        ],
-      },
-    },
+/** @type {import("eslint").Linter.FlatConfig} */
+const config = {
+  plugins: {
+    import: imports,
+    '@stylistic': stylistic,
   },
-
   rules: {
     // Enforce return statements in callbacks of array's methods
     // This rule enforces usage of return statement in callbacks of array's methods.
@@ -629,7 +605,8 @@ module.exports = {
     'import/first': 'error',
 
     // Enforces names exist at the time they are dereferenced, when imported as a full namespace
-    'import/namespace': 'error',
+    // TODO: Re-enable when eslint-plugin-import gets ESLint flat config support
+    // 'import/namespace': 'error',
 
     // Forbid import of modules using absolute paths
     // Node.js allows the import of modules using an absolute path such as */home/xyz/file.js*. That
@@ -638,9 +615,6 @@ module.exports = {
 
     // Reports funny business with exports, like repeated exports of names or defaults
     'import/export': 'error',
-
-    // Ensure consistent use of file extension within the import path
-    'import/extensions': ['warn', { json: 'aways' }],
 
     // Reports if a module's default export is unnamed
     // Ensuring that default exports are named helps improve the grepability of the codebase by
@@ -676,14 +650,11 @@ module.exports = {
     'import/no-cycle': ['error', {
       maxDepth: 8,
     }],
+
+    // Ensure consistent use of file extension within the import path
+    // Disabled because ES Modules require file extension to be supplied
+    // 'import/extensions': ['warn', { json: 'aways' }],
   },
-
-  overrides: [{
-    files: globs.configs,
-
-    rules: {
-      // Using process.env is encouraged in configuration files
-      'node/no-process-env': 'off',
-    },
-  }],
 }
+
+export default config

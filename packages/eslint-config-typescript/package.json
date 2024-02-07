@@ -12,12 +12,19 @@
   ],
   "dependencies": {
     "@strv/eslint-config-base": "^3.5.0",
-    "@typescript-eslint/eslint-plugin": "^6.0.0",
-    "@typescript-eslint/parser": "^6.0.0",
-    "eslint-import-resolver-typescript": "^3.5.5"
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint-import-resolver-typescript": "^3.6.1"
   },
   "engines": {
     "node": ">=20"
+  },
+  "type": "module",
+  "exports": {
+    ".": "./index.mjs",
+    "./optional": "./optional.mjs",
+    "./style": "./style.mjs",
+    "./react": "./react.mjs"
   },
   "keywords": [
     "config",
@@ -26,7 +33,6 @@
     "strv"
   ],
   "license": "BSD-3-Clause",
-  "main": "index.js",
   "peerDependencies": {
     "eslint": "^8"
   },

@@ -1,103 +1,43 @@
 # @strv/eslint-config-node
 
-> STRV's ESLint config for Node.js projects
+> Configuration for Node.js projects.
 
-These configuration files are suitable to lint code which will run on Node.js.
+## Installation
 
-## Configurations
+```sh
+npm install -D @strv/eslint-config-node
+```
 
-### `@strv/eslint-config-node/v20`
+## Rulesets
 
-Suitable for projects running on Node.js v20.
+- `'@strv/eslint-config-node'`: A generic ruleset that focuses on code correctness
+- `'@strv/eslint-config-node/optional'`: Addiitonal ruleset that might provide useful tips and hints how to improve your code
+- `'@strv/eslint-config-node/style'`: Ruleset that focuses solely on code style (indentation, spacing, naming, syntax preference etc.)
 
-## Optional configurations
-
-### `@strv/eslint-config-node/optional`
-
-Use this ruleset in conjunction with any of the above version-specific rulesets. Provides additional insights into potential inconsistencies in the project.
-
-> For new projects, it is recommended to enable this ruleset. For existing projects, it is only recommended for the brave.
-
-## Coding styles
-
-### `@strv/eslint-config-node/style`
-
-This ruleset includes rules which deal with how the code looks like and not how it works. It helps keeping the code clean and consistent. 🎨
-
-## Recommended ESLint config
+## Usage
 
 ```js
-// .eslintrc.js
-
-'use strict'
-
-module.exports = {
-  extends: [
-    '@strv/node/v20',
-    '@strv/node/optional',
-    '@strv/node/style',
-    '@strv/mocha',
-  ],
+// eslint.config.mjs
+import node from '@strv/eslint-config-node'
+import optional from '@strv/eslint-config-node/optional'
+import style from '@strv/eslint-config-node/style'
+// Just to help us re-use the same globs multiple times
+const globs = {
+  js: '**/*.js',
 }
-```
 
-<details>
-<summary><i>.eslintrc</i> or <i>.eslintrc.json</i></summary>
+/** @type {Array<import("eslint").Linter.FlatConfig>} */
+const config = [
+  { files: [globs.js], ...node },
+  { files: [globs.js], ...optional },
+  { files: [globs.js], ...style },
+  // Any custom settings to be applied
+  { files: [globs.js],
+    languageOptions: { ecmaVersion: 2023 },
+  },
+]
 
-```json
-{
-  "extends": [
-    "@strv/node/v20",
-    "@strv/node/optional",
-    "@strv/node/style",
-    "@strv/mocha"
-  ]
-}
-```
-
-</details>
-
-<details>
-<summary><i>package.json</i></summary>
-
-```json
-{
-  "eslintConfig": {
-    "extends": [
-      "@strv/node/v20",
-      "@strv/node/optional",
-      "@strv/node/style",
-      "@strv/mocha"
-    ]
-  }
-}
-```
-
-</details>
-
-It is also recommended that you lint the whole project folder (ie. `npx eslint .`) instead of just
-some folders (ie. `npx eslint src test`) and create an _.eslintignore_ file excluding any unwanted
-lint folders. Doing so will allow new directories to be created without worrying about having to update your
-tools to lint the new directory.
-
-```ini
-# .eslintignore
-
-node_modules
-
-# NOTE:
-# The following directives are only relevant when linting the whole
-# project directory, ie. running `eslint .` ⚠️
-
-# If you compile JavaScript into some output folder, exclude it here
-dist
-
-# Highly recommended to re-include JavaScript dotfiles to lint them
-# (This will cause .eslintrc.js to be linted by ESLint 🤘)
-!.*.js
-
-# Some tools use this pattern for their configuration files. Lint them!
-!*.config.js
+export default config
 ```
 
 ## License

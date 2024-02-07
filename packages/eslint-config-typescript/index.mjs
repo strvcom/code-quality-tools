@@ -1,52 +1,21 @@
-/**
- * strvcom/eslint-config-typescript
- *
- * @author      Robert Rossmann <rr.rossmann@me.com>
- * @copyright   2019 STRV
- * @license     http://choosealicense.com/licenses/bsd-3-clause  BSD-3-Clause License
- */
+import base from '@strv/eslint-config-base'
+import ts from '@typescript-eslint/eslint-plugin'
+import parser from '@typescript-eslint/parser'
 
-'use strict'
-
-const base = require('@strv/eslint-config-base')
-const globs = require('@strv/eslint-config-base/globs')
-
-module.exports = {
-
-  extends: require.resolve('@strv/eslint-config-base'),
-
+/** @type {import("eslint").Linter.FlatConfig} */
+const config = {
+  plugins: {
+    ...base.plugins,
+    '@typescript-eslint': ts,
+  },
+  languageOptions: {
+    parser,
+  },
   settings: {
-    // Correctly recognise .ts and .d.ts files when checking import paths against the filesystem
-    'import/resolver': {
-      node: {
-        extensions: [
-          '.ts',
-          '.tsx',
-          '.d.ts',
-          ...base.settings['import/resolver'].node.extensions,
-        ],
-      },
-      // Correctly recognise paths defined in tsconfig.json for package aliases
-      typescript: {},
-    },
+    'import/resolver': { typescript: {} },
   },
-
-  parser: '@typescript-eslint/parser',
-
-  parserOptions: {
-    ecmaVersion: 2023,
-    sourceType: 'module',
-  },
-
-  plugins: [
-    '@typescript-eslint',
-  ],
-
-  env: {
-    es2023: true,
-  },
-
   rules: {
+    ...base.rules,
     // Disabled because it generates false positives with interface declarations and TypeScript
     // blows up anyway during compilation when it encouters an undefined variable.
     'no-undef': 'off',
@@ -261,11 +230,9 @@ module.exports = {
     // Prefer the newer ES6-style imports over require().
     '@typescript-eslint/no-require-imports': 'warn',
 
-    // For some reason we need to make a copy of the rule configuration object for ESLint v8.12.0
-    // because it complains that the object must not have additional properties. I suspect that
-    // something is mutating our object along the way.
-    // TODO: remove this once this is fixed in ESLint
-    '@typescript-eslint/no-shadow': [base.rules['no-shadow'][0], { ...base.rules['no-shadow'][1] }],
+    // Disallow Shadowing
+    // This rule aims to eliminate shadowed variable declarations.
+    '@typescript-eslint/no-shadow': base.rules['no-shadow'],
     'no-shadow': 'off',
 
     // Disallow aliasing this
@@ -464,18 +431,6 @@ module.exports = {
     // applications it's too much.
     '@typescript-eslint/explicit-function-return-type': ['off', {}],
   },
-  overrides: [
-    {
-      files: ['*.d.ts'],
-      rules: {
-        'import/no-unused-modules': 'off',
-      },
-    },
-    {
-      files: globs.configs,
-      rules: {
-        'node/no-process-env': 'off',
-      },
-    },
-  ],
 }
+
+export default config

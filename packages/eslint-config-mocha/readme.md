@@ -1,16 +1,27 @@
 # @strv/eslint-config-mocha
 
-> STRV's ESLint config for projects using Mocha as test runner
+> Configuration for Mocha test files.
 
-These configuration files are suitable to lint Mocha test files.
+## Installation
 
-## Configurations
+```sh
+npm install -D @strv/eslint-config-mocha
+```
 
-### `@strv/eslint-config-mocha` (default config)
+## Usage
 
-Use this ruleset to configure ESLint to lint your Mocha test files. Mocha test files are by default identified by `*.test.*` or `*.spec.*` filenames or by being in the _test/_ directory in your project root.
+```js
+// eslint.config.mjs
+import mocha from '@strv/eslint-config-mocha'
 
-> ⚠️ You can use this environment ruleset in combination with any of the existing environment rulesets. Just make sure this one comes in as the last one.
+/** @type {Array<import("eslint").Linter.FlatConfig>} */
+const config = [{
+  // Perhaps also apply other configs?
+  { files: ['**/*.test.js'], ...mocha },
+}]
+
+export default config
+```
 
 ## License
 

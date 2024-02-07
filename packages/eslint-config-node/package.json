@@ -12,7 +12,7 @@
   ],
   "dependencies": {
     "@strv/eslint-config-base": "^3.5.0",
-    "eslint-plugin-node": "^11.1.0"
+    "eslint-plugin-n": "^16.6.2"
   },
   "engines": {
     "node": ">=20"
@@ -24,7 +24,13 @@
     "strv"
   ],
   "license": "BSD-3-Clause",
-  "main": "index.js",
+  "type": "module",
+  "exports": {
+    ".": "./index.mjs",
+    "./v20": "./v20.mjs",
+    "./optional": "./optional.mjs",
+    "./style": "./style.mjs"
+  },
   "peerDependencies": {
     "eslint": "^8"
   },

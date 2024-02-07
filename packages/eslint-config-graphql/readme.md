@@ -1,24 +1,25 @@
 # @strv/eslint-config-graphql
 
-## Install
+## Installation
 
-```bash
-npm install @strv/eslint-config-graphql -D
+```sh
+npm install -D @strv/eslint-config-graphql
 ```
 
 ## Usage
 
-Create a _.eslintrc.js_ file with the following contents:
-
 ```js
-module.exports = {
-  extends: [
-    // ... (base eslint config)
-    '@strv/eslint-config-graphql',
-  ],
-}
+// eslint.config.mjs
+import graphql from '@strv/eslint-config-graphql'
+
+/** @type {Array<import("eslint").Linter.FlatConfig>} */
+const config = [{
+  // Perhaps also apply other configs?
+  { files: ['**/*.js'], ...graphql },
+}]
+
+export default config
 ```
-The shareable config can be customized in your [**eslint** configuration file](https://eslint.org/docs/user-guide/configuring).
 
 Additionally don't forget to have `.graphqlconfig` file:
 
@@ -30,8 +31,6 @@ Additionally don't forget to have `.graphqlconfig` file:
 }
 ```
 
-## Plugins
+## License
 
-This configuration uses the following plugins:
-
-- [`eslint-plugin-graphql`](https://github.com/apollographql/eslint-plugin-graphql)
+See the [LICENSE](LICENSE) file for information.

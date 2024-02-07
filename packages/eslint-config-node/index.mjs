@@ -1,50 +1,20 @@
-/**
- * strvcom/eslint-config-node
- *
- * @author      Robert Rossmann <rr.rossmann@me.com>
- * @copyright   2019 STRV
- * @license     http://choosealicense.com/licenses/bsd-3-clause  BSD-3-Clause License
- */
+import node from 'eslint-plugin-n'
+import base from '@strv/eslint-config-base'
 
-'use strict'
-
-const base = require('@strv/eslint-config-base')
-const globs = require('@strv/eslint-config-base/globs')
-
-module.exports = {
-
-  extends: require.resolve('@strv/eslint-config-base'),
-
-  parserOptions: {
-    ecmaVersion: 2023,
+/** @type {import("eslint").Linter.FlatConfig} */
+const config = {
+  plugins: {
+    ...base.plugins,
+    node,
   },
-
-  env: {
-    es2023: true,
-    node: true,
-  },
-
-  plugins: [
-    'node',
-  ],
-
-  settings: {
-    'import/resolver': {
-      node: {
-        extensions: [
-          ...base.settings['import/resolver'].node.extensions,
-          '.node',
-        ],
-      },
-    },
-  },
-
   rules: {
+    ...base.rules,
+
     // Disallow use of the deprecated Buffer() constructor
     // In Node.js, the behavior of the Buffer constructor is different depending on the type of its
     // argument. Passing an argument from user input to Buffer() without validating its type can
     // lead to security vulnerabilities such as remote memory disclosure and denial of service.
-    'no-buffer-constructor': 2,
+    'no-buffer-constructor': 'error',
 
     // Enforce Return After Callback
     // This rule is aimed at ensuring that callbacks used outside of the main function block are
@@ -144,39 +114,6 @@ module.exports = {
     // so we should not use those.
     'node/no-deprecated-api': 'warn',
   },
-
-  overrides: [{
-    files: globs.javascripts,
-
-    parserOptions: {
-      sourceType: 'script',
-    },
-  }, {
-    files: [
-      ...globs.esmodules,
-      ...globs.typescripts,
-    ],
-
-    parserOptions: {
-      sourceType: 'module',
-    },
-
-    env: {
-      es6: true,
-    },
-
-    rules: {
-      // Allow ES Modules to be used in these source files
-      'node/no-unsupported-features/es-syntax': ['error', {
-        ignores: ['modules'],
-      }],
-
-      // Report modules without any exports & individual exports not being statically imported or
-      // required from other modules in the same project
-      'import/no-unused-modules': ['warn', {
-        missingExports: true,
-        unusedExports: true,
-      }],
-    },
-  }],
 }
+
+export default config

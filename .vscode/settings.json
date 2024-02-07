@@ -4,7 +4,6 @@
     "**/.git": true,
     "**/.DS_Store": true,
     "**/*.log": true,
-    "**/node_modules": true,
     ".eslintcache": true
   },
   // Custom Application window title ❤️
@@ -19,10 +18,10 @@
   "javascript.format.enable": false,
   "typescript.format.enable": false,
   // Enable ESLint and its auto-fixer
-  "editor.formatOnSave": false,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "always"
   },
   "eslint.lintTask.enable": true,
   "eslint.lintTask.options": ".",
+  "eslint.experimental.useFlatConfig": true,
 }
