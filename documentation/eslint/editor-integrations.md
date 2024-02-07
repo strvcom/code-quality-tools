@@ -36,24 +36,6 @@ To use autofix on save feature:
 1. Show console `never` (if you don't want to see the console when `--fix` command finds errors)
 1. Check `Trigger watcher regardless of syntax errors` and uncheck `Immediate file synchronization`
 
-## Atom
-
-Install the following packages:
-
-- [linter][atom-linter]
-- [linter-eslint][atom-linter-eslint]
-
-For the _linter_ package, these settings are recommended:
-
-- [x] Lint as you type
-- [x] Do not lint files ignored by VCS
-
-For the _linter-eslint_ package, these settings are recommended:
-
-- [x] Disable when no eslintrc file in PATH
-- [x] Fix errors on save
-- [x] Ignore fixable rules while typing
-
 ## Sublime Text
 
 For best results, make sure you have [Package Control][subl-packagecontrol] installed in your Sublime Text. Issue reports and autofix on save are handled by two different packages, so you will need to configure both for best developer experience.
@@ -85,8 +67,6 @@ Enable autofix on save (`Preferences` -> `Package Settings` -> `ESLint Formatter
 }
 ```
 
-[atom-linter]: https://atom.io/packages/linter
-[atom-linter-eslint]: https://atom.io/packages/linter-eslint
 [vscode-eslint]: https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
 [subl-packagecontrol]: https://packagecontrol.io
 [subl-linter]: https://packagecontrol.io/packages/SublimeLinter

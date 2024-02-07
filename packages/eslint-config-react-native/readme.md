@@ -41,5 +41,3 @@ module.exports = {
 ## License
 
 See the [LICENSE](LICENSE) file for information.
-
-[a11y-repo]: https://github.com/FormidableLabs/eslint-plugin-react-native-a11y
