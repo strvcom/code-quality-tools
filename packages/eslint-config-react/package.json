@@ -19,7 +19,7 @@
     "eslint-plugin-react-hooks": "^4.2.0"
   },
   "engines": {
-    "node": "^14 || >=16"
+    "node": ">=20"
   },
   "homepage": "https://github.com/strvcom/code-quality-tools/tree/master/packages/eslint-config-react",
   "keywords": [

@@ -34,7 +34,7 @@ module.exports = {
   parser: '@typescript-eslint/parser',
 
   parserOptions: {
-    ecmaVersion: 2018,
+    ecmaVersion: 2023,
     sourceType: 'module',
   },
 
@@ -43,7 +43,7 @@ module.exports = {
   ],
 
   env: {
-    es6: true,
+    es2023: true,
   },
 
   rules: {

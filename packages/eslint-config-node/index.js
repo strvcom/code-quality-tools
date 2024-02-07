@@ -16,11 +16,11 @@ module.exports = {
   extends: require.resolve('@strv/eslint-config-base'),
 
   parserOptions: {
-    ecmaVersion: 2017,
+    ecmaVersion: 2023,
   },
 
   env: {
-    es6: true,
+    es2023: true,
     node: true,
   },
 

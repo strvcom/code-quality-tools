@@ -15,7 +15,7 @@
     "eslint-plugin-mocha": "^10.1.0"
   },
   "engines": {
-    "node": "^14 || >=16"
+    "node": ">=20"
   },
   "keywords": [
     "config",

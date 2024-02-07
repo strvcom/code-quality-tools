@@ -15,7 +15,7 @@
     "@commitlint/config-lerna-scopes": "^18.4.0"
   },
   "engines": {
-    "node": "^14 || >=16"
+    "node": ">=20"
   },
   "keywords": [
     "commitlint",

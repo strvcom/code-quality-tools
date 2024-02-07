@@ -6,16 +6,6 @@ These configuration files are suitable to lint code which will run on Node.js.
 
 ## Configurations
 
-Suitable for projects running on Node.js v12.
-
-### `@strv/eslint-config-node/v14`
-
-Suitable for projects running on Node.js v14.
-
-### `@strv/eslint-config-node/v16`
-
-Suitable for projects running on Node.js v16.
-
 ### `@strv/eslint-config-node/v20`
 
 Suitable for projects running on Node.js v20.
@@ -43,7 +33,7 @@ This ruleset includes rules which deal with how the code looks like and not how 
 
 module.exports = {
   extends: [
-    '@strv/node/<v14 or v16 or v20>',
+    '@strv/node/v20',
     '@strv/node/optional',
     '@strv/node/style',
     '@strv/mocha',
@@ -57,7 +47,7 @@ module.exports = {
 ```json
 {
   "extends": [
-    "@strv/node/<v14 or v16 or v20>",
+    "@strv/node/v20",
     "@strv/node/optional",
     "@strv/node/style",
     "@strv/mocha"
@@ -74,7 +64,7 @@ module.exports = {
 {
   "eslintConfig": {
     "extends": [
-      "@strv/node/<v14 or v16 or v20>",
+      "@strv/node/v20",
       "@strv/node/optional",
       "@strv/node/style",
       "@strv/mocha"
