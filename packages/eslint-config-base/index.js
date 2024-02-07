@@ -13,6 +13,7 @@ const globs = require('./globs')
 module.exports = {
 
   plugins: [
+    '@stylistic',
     'import',
   ],
 
@@ -162,7 +163,7 @@ module.exports = {
     // JavaScript will more or less let you put semicolons after any statement without complaining.
     // Typos and misunderstandings about where semicolons are required can lead to extra semicolons
     // that are unnecessary.
-    'no-extra-semi': 'error',
+    '@stylistic/no-extra-semi': 'error',
 
     // Disallow Function Assignment
     // JavaScript functions can be written as a FunctionDeclaration `function foo() { ... }` or as a

@@ -223,7 +223,7 @@ module.exports = {
 
     // Enforce or disallow spaces inside of curly braces in JSX attributes and expressions.
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-child-element-spacing.md
-    'react/jsx-child-element-spacing': 'error',
+    '@stylistic/jsx-child-element-spacing': 'error',
 
     // Restrict file extensions that may contain JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md
@@ -279,7 +279,7 @@ module.exports = {
     // This rule allows you to enforce curly braces or disallow unnecessary curly braces
     //  in JSX props and/or children
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-curly-brace-presence.md
-    'react/jsx-curly-brace-presence': ['warn', 'never'],
+    '@stylistic/jsx-curly-brace-presence': ['warn', 'never'],
     // Enforce shorthand or standard form for React fragments
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-fragments.md
     'react/jsx-fragments': 'warn',
@@ -292,7 +292,7 @@ module.exports = {
     // Enforces coding style that user-defined JSX components are defined andreferenced in
     // PascalCase
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-pascal-case.md
-    'react/jsx-pascal-case': [
+    '@stylistic/jsx-pascal-case': [
       'error',
       {
         allowAllCaps: true,

@@ -25,18 +25,18 @@ module.exports = {
     ],
 
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-closing-tag-location.md
-    'react/jsx-closing-tag-location': 'warn',
+    '@stylistic/jsx-closing-tag-location': 'warn',
 
     // Validate closing bracket location in JSX
     // This rule checks all JSX multiline elements and verifies the location of the closing bracket.
-    'react/jsx-closing-bracket-location': ['warn', 'line-aligned'],
+    '@stylistic/jsx-closing-bracket-location': ['warn', 'line-aligned'],
 
     // Disallow unnecessary curly braces in JSX props and/or children
-    'react/jsx-curly-brace-presence': ['warn', 'never'],
+    '@stylistic/jsx-curly-brace-presence': ['warn', 'never'],
 
 
     // Disallow spaces inside of curly braces in JSX attributes
-    'react/jsx-curly-spacing': [
+    '@stylistic/jsx-curly-spacing': [
       'warn',
       {
         when: 'never',
@@ -47,16 +47,16 @@ module.exports = {
     // Enforce or disallow spaces around equal signs in JSX attributes
     // This rule will enforce consistency of spacing around equal signs in JSX attributes, by
     // requiring or one or more spaces before and after =.
-    'react/jsx-equals-spacing': ['warn', 'never'],
+    '@stylistic/jsx-equals-spacing': ['warn', 'never'],
 
     // Configure the position of the first property
-    'react/jsx-first-prop-new-line': ['warn', 'multiline'],
+    '@stylistic/jsx-first-prop-new-line': ['warn', 'multiline'],
 
     // Validate JSX indentation
-    'react/jsx-indent': ['warn', 2],
+    '@stylistic/jsx-indent': ['warn', 2],
 
     // Validate props indentation in JSX
-    'react/jsx-indent-props': ['warn', 2],
+    '@stylistic/jsx-indent-props': ['warn', 2],
 
     // Validate JSX maximum depth
     'react/jsx-max-depth': [
@@ -69,7 +69,7 @@ module.exports = {
     // Enforce PascalCase for user-defined JSX components
     // Enforces coding style that user-defined JSX components are defined and referenced in
     // PascalCase.
-    'react/jsx-pascal-case': [
+    '@stylistic/jsx-pascal-case': [
       'warn',
       {
         allowAllCaps: true,
@@ -80,11 +80,11 @@ module.exports = {
     // Disallow multiple spaces between inline JSX props
     // Enforces that there is exactly one space between all attributes and after tag name and the
     // first attribute in the same line.
-    'react/jsx-props-no-multi-spaces': 'warn',
+    '@stylistic/jsx-props-no-multi-spaces': 'warn',
 
     // Validate whitespace in and around the JSX opening and closing brackets
     // This rule checks the whitespace inside and surrounding the JSX syntactic elements.
-    'react/jsx-tag-spacing': 'warn',
+    '@stylistic/jsx-tag-spacing': 'warn',
 
     // Prevent extra closing tags for components without children
     'react/self-closing-comp': 'warn',

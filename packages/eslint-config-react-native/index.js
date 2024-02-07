@@ -22,7 +22,7 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'warn',
 
     // overrides the base config, creates issues with import rules setup in the Expo universe config
-    'padding-line-between-statements': 'off',
+    '@stylistic/padding-line-between-statements': 'off',
 
     // overrides base config, adds exceptions to the id-length rule from base config
     // coordinates are often used in React Native and it is not a good idea to rename them

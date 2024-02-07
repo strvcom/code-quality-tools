@@ -157,10 +157,6 @@ module.exports = {
     // the type can be easily inferred from its value.
     '@typescript-eslint/no-explicit-any': 'error',
 
-    // Disallow unnecessary semicolons
-    '@typescript-eslint/no-extra-semi': base.rules['no-extra-semi'],
-    'no-extra-semi': 'off',
-
     // Forbids the use of classes as namespaces
     // This rule warns when a class is accidentally used as a namespace.
     '@typescript-eslint/no-extraneous-class': ['warn', {
