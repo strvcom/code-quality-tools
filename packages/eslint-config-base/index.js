@@ -270,7 +270,7 @@ module.exports = {
 
     // Disallow Symbol Constructor
     // This rule is aimed at preventing the accidental calling of Symbol with the `new` operator.
-    'no-new-symbol': 'error',
+    'no-new-native-nonconstructor': 'error',
 
     // Disallow Primitive Wrapper Instances
     // Primitive wrapper objects are, in fact, objects. That means typeof will return "object"
