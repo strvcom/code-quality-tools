@@ -21,7 +21,7 @@
   // Enable ESLint and its auto-fixer
   "editor.formatOnSave": false,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "always"
   },
   "eslint.lintTask.enable": true,
   "eslint.lintTask.options": ".",
