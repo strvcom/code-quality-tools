@@ -24,14 +24,6 @@ module.exports = {
       treatUndefinedAsUnspecified: true,
     }],
 
-    // Validates JSDoc comments are syntactically correct
-    // This rule aims to prevent invalid and incomplete JSDoc comments.
-    'valid-jsdoc': ['warn', {
-      requireReturn: true,
-      requireParamType: true,
-      requireReturnDescription: false,
-    }],
-
     // Limit Maximum Depth
     // This rule aims to reduce the complexity of your code by allowing you to configure the maximum
     // depth blocks can be nested in a function.

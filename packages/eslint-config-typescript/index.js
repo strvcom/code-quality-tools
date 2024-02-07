@@ -47,11 +47,6 @@ module.exports = {
   },
 
   rules: {
-
-    // TS code is mostly self-documented and having JSDoc directives for everything is redundant
-    // when you can easily infer return values and argument types from the code itself.
-    'valid-jsdoc': 'off',
-
     // Disabled because it generates false positives with interface declarations and TypeScript
     // blows up anyway during compilation when it encouters an undefined variable.
     'no-undef': 'off',
