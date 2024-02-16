@@ -1,3 +1,4 @@
+import parser from '@babel/eslint-parser'
 import base from '@strv/eslint-config-base'
 import react from 'eslint-plugin-react'
 import a11y from 'eslint-plugin-jsx-a11y'
@@ -12,6 +13,7 @@ const config = {
     'react-hooks': hooks,
   },
   languageOptions: {
+    parser,
     parserOptions: {
       ecmaFeatures: { jsx: true },
     },
