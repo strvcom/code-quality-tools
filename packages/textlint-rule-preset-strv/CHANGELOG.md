@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/strvcom/code-quality-tools/compare/@strv/textlint-rule-preset-strv@2.0.0...@strv/textlint-rule-preset-strv@3.0.0) (2024-02-16)
+
+
+### Features
+
+* **rule:** support ESLint v8, many new rules 🎉 ([aaf5708](https://github.com/strvcom/code-quality-tools/commit/aaf57085da9498c1425b107d5f1d1e4f353dd000))
+* the road to ESLint v9 🚀  ([#247](https://github.com/strvcom/code-quality-tools/issues/247)) ([c3d3ece](https://github.com/strvcom/code-quality-tools/commit/c3d3ecea02aca9f6293aa7b3ee18282ea2ab9048))
+* upgrade all deps 💣 ([cd77c39](https://github.com/strvcom/code-quality-tools/commit/cd77c39ae6806e7531396040a35908da51a8b12c))
+
+
+
+
+
 # [2.0.0](https://github.com/strvcom/code-quality-tools/compare/@strv/textlint-rule-preset-strv@2.0.0-alpha.1...@strv/textlint-rule-preset-strv@2.0.0) (2021-09-07)
 
 **Note:** Version bump only for package @strv/textlint-rule-preset-strv

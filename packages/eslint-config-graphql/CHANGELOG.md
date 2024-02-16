@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-graphql@1.1.0...@strv/eslint-config-graphql@2.0.0) (2024-02-16)
+
+
+### Features
+
+* the road to ESLint v9 🚀  ([#247](https://github.com/strvcom/code-quality-tools/issues/247)) ([c3d3ece](https://github.com/strvcom/code-quality-tools/commit/c3d3ecea02aca9f6293aa7b3ee18282ea2ab9048))
+* upgrade all deps 💣 ([cd77c39](https://github.com/strvcom/code-quality-tools/commit/cd77c39ae6806e7531396040a35908da51a8b12c))
+
+
+
+
+
 # [1.1.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-graphql@1.0.0...@strv/eslint-config-graphql@1.1.0) (2022-03-23)
 
 

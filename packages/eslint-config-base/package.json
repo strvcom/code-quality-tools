@@ -1,7 +1,7 @@
 {
   "name": "@strv/eslint-config-base",
   "description": "STRV's ESLint configuration preset",
-  "version": "3.5.0",
+  "version": "4.0.0",
   "author": "Pavel Prichodko <prichodko.p@gmail.com>",
   "bugs": {
     "url": "https://github.com/strvcom/code-quality-tools/issues"
@@ -11,8 +11,8 @@
     "Danny Kijkov <daniel.kijkov@strv.com>"
   ],
   "dependencies": {
-    "eslint-plugin-import": "^2.27.0",
-    "@stylistic/eslint-plugin": "^1.6.0"
+    "@stylistic/eslint-plugin": "^1.6.0",
+    "eslint-plugin-import": "^2.27.0"
   },
   "engines": {
     "node": ">=20"

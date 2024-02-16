@@ -1,7 +1,7 @@
 {
   "name": "@strv/prettier-config",
   "description": "STRV's ESLint config for Prettier",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "author": "Pavel Prichodko <prichodko.p@gmail.com>",
   "bugs": {
     "url": "https://github.com/strvcom/code-quality-tools/issues"

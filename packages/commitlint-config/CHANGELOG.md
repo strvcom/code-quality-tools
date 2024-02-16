@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/strvcom/code-quality-tools/compare/@strv/commitlint-config@2.2.0...@strv/commitlint-config@3.0.0) (2024-02-16)
+
+
+### Features
+
+* the road to ESLint v9 🚀  ([#247](https://github.com/strvcom/code-quality-tools/issues/247)) ([c3d3ece](https://github.com/strvcom/code-quality-tools/commit/c3d3ecea02aca9f6293aa7b3ee18282ea2ab9048))
+
+
+
+
+
 # [2.2.0](https://github.com/strvcom/code-quality-tools/compare/@strv/commitlint-config@2.1.0...@strv/commitlint-config@2.2.0) (2023-07-06)
 
 
