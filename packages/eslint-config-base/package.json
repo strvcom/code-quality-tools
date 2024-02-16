@@ -11,10 +11,11 @@
     "Danny Kijkov <daniel.kijkov@strv.com>"
   ],
   "dependencies": {
-    "eslint-plugin-import": "^2.27.0"
+    "eslint-plugin-import": "^2.27.0",
+    "@stylistic/eslint-plugin": "^1.6.0"
   },
   "engines": {
-    "node": "^14 || >=16"
+    "node": ">=20"
   },
   "keywords": [
     "config",
@@ -22,9 +23,14 @@
     "strv"
   ],
   "license": "BSD-3-Clause",
-  "main": "index.js",
+  "type": "module",
+  "exports": {
+    ".": "./index.mjs",
+    "./optional": "./optional.mjs",
+    "./style": "./style.mjs"
+  },
   "peerDependencies": {
-    "eslint": "^7 || ^8"
+    "eslint": "^8"
   },
   "publishConfig": {
     "access": "public"

@@ -1,35 +1,26 @@
-/**
- * strvcom/eslint-config-base
- *
- * @author      Robert Rossmann <rr.rossmann@me.com>
- * @copyright   2019 STRV
- * @license     http://choosealicense.com/licenses/bsd-3-clause  BSD-3-Clause License
- */
+import imports from 'eslint-plugin-import'
+import stylistic from '@stylistic/eslint-plugin'
 
-'use strict'
-
-// These rules are the baseline coding style that prevails in most JS projects in the wild. It's
-// main purpose is to serve as a baseline for all other coding style guidelines.
-module.exports = {
-
-  plugins: [
-    'import',
-  ],
-
+/** @type {import("eslint").Linter.FlatConfig} */
+const config = {
+  plugins: {
+    import: imports,
+    '@stylistic': stylistic,
+  },
   rules: {
     // enforce line breaks after opening and before closing array brackets
     // Requires consistent usage of linebreaks for each pair of brackets. It reports an error if one
     // bracket in the pair has a linebreak inside it and the other bracket does not.
-    'array-bracket-newline': ['warn', 'consistent'],
+    '@stylistic/array-bracket-newline': ['warn', 'consistent'],
 
     // Disallow or enforce spaces inside of brackets
     // Disallow
-    'array-bracket-spacing': ['warn', 'never'],
+    '@stylistic/array-bracket-spacing': ['warn', 'never'],
 
     // enforce line breaks between array elements
     // A number of style guides require or disallow line breaks between array elements. This ruleset
     // requires consistent usage of linebreaks between array elements.
-    'array-element-newline': ['warn', 'consistent'],
+    '@stylistic/array-element-newline': ['warn', 'consistent'],
 
     // Require braces in arrow function body
     // This rule can enforce the use of braces around arrow function body.
@@ -39,23 +30,23 @@ module.exports = {
     // Arrow functions can omit parentheses when they have exactly one parameter. Since their main
     // strength lies in being short and concise, parens around arguments should be omitted when they
     // are not needed.
-    'arrow-parens': ['warn', 'as-needed'],
+    '@stylistic/arrow-parens': ['warn', 'as-needed'],
 
     // Require space before/after arrow function's arrow
-    'arrow-spacing': ['warn', {
+    '@stylistic/arrow-spacing': ['warn', {
       before: true,
       after: true,
     }],
 
     // Disallow or enforce spaces inside of single line blocks
     // Enforce
-    'block-spacing': ['warn', 'always'],
+    '@stylistic/block-spacing': ['warn', 'always'],
 
     // Require Brace Style
     // The one true brace style is one of the most common brace styles in JavaScript, in which the
     // opening curly brace of a block is placed on the same line as its corresponding statement or
     // declaration.
-    'brace-style': ['warn', '1tbs', {
+    '@stylistic/brace-style': ['warn', '1tbs', {
       allowSingleLine: true,
     }],
 
@@ -68,12 +59,12 @@ module.exports = {
     // This rule enforces consistent use of trailing commas in object and array literals
     // Allow trailing commas for func parameters, array and object literals spread across
     // multiple lines
-    'comma-dangle': ['warn', 'always-multiline'],
+    '@stylistic/comma-dangle': ['warn', 'always-multiline'],
 
     // Enforces spacing around commas
     // This rule aims to enforce spacing around a comma.
     // A space must be only after comma, i.e. `var a, b`
-    'comma-spacing': ['warn', {
+    '@stylistic/comma-spacing': ['warn', {
       before: false,
       after: true,
     }],
@@ -81,12 +72,12 @@ module.exports = {
     // Comma style
     // This rule is aimed at enforcing a particular comma style in JavaScript.
     // Commas should be placed at the end of line, not at the beginning
-    'comma-style': ['warn', 'last'],
+    '@stylistic/comma-style': ['warn', 'last'],
 
     // Disallow or enforce spaces inside of computed properties
     // This rule aims to maintain consistency around the spacing inside of computed properties.
     // No spaces allowed
-    'computed-property-spacing': ['warn', 'never'],
+    '@stylistic/computed-property-spacing': ['warn', 'never'],
 
     // Require Consistent This
     // This rule designates a variable as the chosen alias for `this`.
@@ -109,7 +100,7 @@ module.exports = {
     // This rule aims to enforce newline consistency in member expressions. This rule prevents the
     // use of mixed newlines around the dot in a member expression.
     // Require the dot to be placed together with the property identifier
-    'dot-location': ['warn', 'property'],
+    '@stylistic/dot-location': ['warn', 'property'],
 
     // Require Dot Notation
     // This rule is aimed at maintaining code consistency and improving code readability by
@@ -119,17 +110,17 @@ module.exports = {
     // Require file to end with single newline
     // Benefits of trailing newlines include the ability to concatenate or append to files as well
     // as output files to the terminal without interfering with shell prompts.
-    'eol-last': ['warn', 'unix'],
+    '@stylistic/eol-last': ['warn', 'unix'],
 
     // Enforce consistent line breaks inside function parentheses
     // Requires linebreaks inside function parentheses if any of the parameters/arguments have a
     // line break between them. Otherwise, it disallows linebreaks.
-    'function-paren-newline': ['warn', 'multiline'],
+    '@stylistic/function-paren-newline': ['warn', 'multiline'],
 
     // Require or disallow spacing between function identifiers and their invocations
     // This rule disallows spaces between the function name and the opening parenthesis that calls
     // it.
-    'func-call-spacing': 'warn',
+    '@stylistic/func-call-spacing': 'warn',
 
     // Enforce Function Style
     // Due to these different behaviors, it is common to have guidelines as to which style of
@@ -149,7 +140,7 @@ module.exports = {
     // is that a generator function is a special type of function, therefore it should come together
     // with the `function` keyword. In contrast, it has nothing to do with the function's name,
     // which may be missing completely.
-    'generator-star-spacing': ['warn', {
+    '@stylistic/generator-star-spacing': ['warn', {
       before: false,
       after: true,
       // For class/object methods, the * should come together with the name
@@ -180,34 +171,34 @@ module.exports = {
 
     // Validate Indentation
     // This rule is aimed to enforce consistent indentation style.
-    indent: ['warn', 2, {
+    '@stylistic/indent': ['warn', 2, {
       SwitchCase: 1,
     }],
 
     // Enforce Property Spacing
     // This rule will warn when spacing in properties does not match the specified options. In the
     // case of long lines, it is acceptable to add a new line wherever whitespace is allowed.
-    'key-spacing': ['warn', {
+    '@stylistic/key-spacing': ['warn', {
       beforeColon: false,
       afterColon: true,
       mode: 'strict',
     }],
 
     // This rule will enforce consistency of spacing around keywords and keyword-like tokens
-    'keyword-spacing': ['warn', {
+    '@stylistic/keyword-spacing': ['warn', {
       before: true,
       after: true,
     }],
 
     // Disallow mixing CRLF and LF linebreaks
     // This rule aims to ensure having consistent line endings independent of operating system.
-    'linebreak-style': ['error', 'unix'],
+    '@stylistic/linebreak-style': ['error', 'unix'],
 
     // Require an empty line between class members
     // This rule improves readability by enforcing lines between class members. It will not check
     // empty lines before the first member and after the last member, since that is already taken
     // care of by padded-blocks.
-    'lines-between-class-members': ['warn', 'always', {
+    '@stylistic/lines-between-class-members': ['warn', 'always', {
       exceptAfterSingleLine: true,
     }],
 
@@ -215,7 +206,7 @@ module.exports = {
     // Very long lines of code in any language can be difficult to read. In order to aid in
     // readability and maintainability many coders have developed a convention to limit lines of
     // code to a certain number of characters.
-    'max-len': ['warn',
+    '@stylistic/max-len': ['warn',
       { code: 120, ignoreTrailingComments: true, ignoreUrls: true, ignorePattern: '^import\\W.*' }],
 
     // Limit Maximum Number of Parameters
@@ -232,7 +223,7 @@ module.exports = {
     // A line of code containing too many statements can be difficult to read. Code is generally
     // read from the top down, especially when scanning, so limiting the number of statements
     // allowed on a single line can be very beneficial for readability and maintainability.
-    'max-statements-per-line': 'warn',
+    '@stylistic/max-statements-per-line': 'warn',
 
     // Enforce a particular style for multiline comments
     // Prefer consecutive line comments for multiline comment block
@@ -241,12 +232,12 @@ module.exports = {
     // Enforce newlines between operands of ternary expressions
     // Enforce either the whole ternary on a single line or each part of the ternary on its own line
     // if the expression contains a newline
-    'multiline-ternary': ['warn', 'always-multiline'],
+    '@stylistic/multiline-ternary': ['warn', 'always-multiline'],
 
     // Newline Per Chained Method Call
     // This rule checks and reports the chained calls if there are no new lines after each call or
     // deep member access.
-    'newline-per-chained-call': ['warn', {
+    '@stylistic/newline-per-chained-call': ['warn', {
       ignoreChainWithDepth: 3,
     }],
 
@@ -263,13 +254,13 @@ module.exports = {
     // Require Parens for Constructors
     // This rule is aimed at highlighting a lack of convention and increasing code clarity by
     // requiring the use of parentheses when invoking a constructor via the new keyword.
-    'new-parens': 'warn',
+    '@stylistic/new-parens': 'warn',
 
     // Enforce the location of single-line statements
     // When writing if, else, while, do-while, and for statements, the body can be a single
     // statement instead of a block. It can be useful to enforce a consistent location for these
     // single statements.
-    'nonblock-statement-body-position': ['warn', 'below', {
+    '@stylistic/nonblock-statement-body-position': ['warn', 'below', {
       overrides: {
         if: 'beside',
         else: 'beside',
@@ -289,7 +280,7 @@ module.exports = {
     // Disallow unnecessary parentheses
     // This rule restricts the use of parentheses to only where they are necessary.
     // developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
-    'no-extra-parens': ['warn', 'all', {
+    '@stylistic/no-extra-parens': ['warn', 'all', {
       nestedBinaryExpressions: false,
       returnAssign: false,
       ignoreJSX: 'multi-line',
@@ -300,7 +291,7 @@ module.exports = {
     // decimal point be preceded or followed by a number. Although not a syntax error, this format
     // for numbers can make it difficult to distinguish between true decimal numbers and the dot
     // operator.
-    'no-floating-decimal': 'warn',
+    '@stylistic/no-floating-decimal': 'warn',
 
     // Disallow the type conversion with shorter notations
     // This rule is aimed to flag shorter notations for the type conversion, then suggest a more
@@ -319,12 +310,12 @@ module.exports = {
     // Enclosing complex expressions by parentheses clarifies the developer’s intention, which makes
     // the code more readable. This rule warns when different operators are used consecutively
     // without parentheses in an expression.
-    'no-mixed-operators': 'warn',
+    '@stylistic/no-mixed-operators': 'warn',
 
     // Disallow mixed spaces and tabs for indentation
     // The no-mixed-spaces-and-tabs rule is aimed at flagging any lines of code that are indented
     // with a mixture of tabs and spaces.
-    'no-mixed-spaces-and-tabs': 'warn',
+    '@stylistic/no-mixed-spaces-and-tabs': 'warn',
 
     // Disallow Use of Chained Assignment Expressions
     // This rule disallows using multiple assignments within a single statement.
@@ -333,7 +324,7 @@ module.exports = {
     // Disallows multiple blank lines
     // Whitespace is useful for separating logical sections of code, but excess whitespace takes up
     // more of the screen.
-    'no-multiple-empty-lines': ['warn', {
+    '@stylistic/no-multiple-empty-lines': ['warn', {
       max: 2,
       maxEOF: 0,
       maxBOF: 0,
@@ -343,13 +334,13 @@ module.exports = {
     // This rule aims to disallow multiple whitespace around logical expressions, conditional
     // expressions, declarations, array elements, object properties, sequences and function
     // parameters.
-    'no-multi-spaces': 'warn',
+    '@stylistic/no-multi-spaces': 'warn',
 
     // Disallow tabs
     // Use of tabs is discouraged in favour of spaces because there is no "standard" width for a tab
     // character and many viewers/editors use their own tab width, which could cause code to be
     // misaligned and not formatted as intended/indented.
-    'no-tabs': 'warn',
+    '@stylistic/no-tabs': 'warn',
 
     // Disallow Nested Ternaries
     // The no-nested-ternary rule aims to increase the clarity and readability of code by
@@ -361,7 +352,7 @@ module.exports = {
     // lines. These whitespace differences can be picked up by source control systems and flagged as
     // diffs, causing frustration for developers. While this extra whitespace causes no functional
     // issues, many code conventions require that trailing spaces be removed before checkin.
-    'no-trailing-spaces': 'warn',
+    '@stylistic/no-trailing-spaces': 'warn',
 
     // Disallow Dangling Underscores in Identifiers
     'no-underscore-dangle': 'warn',
@@ -388,22 +379,22 @@ module.exports = {
     // This rule alerts for whitespace around the dot or brackets before properties of objects if
     // they are on the same line. It does not alert for whitespace when the object and property are
     // on separate lines.
-    'no-whitespace-before-property': 'warn',
+    '@stylistic/no-whitespace-before-property': 'warn',
 
     // Enforce consistent line breaks inside braces
-    'object-curly-newline': ['warn', {
+    '@stylistic/object-curly-newline': ['warn', {
       consistent: true,
     }],
 
     // Enforce spaces inside of curly braces in objects
     // This rule aims to maintain consistency around the spacing inside of object literals. It also
     // applies to EcmaScript 6 destructured assignment and import/export specifiers.
-    'object-curly-spacing': ['warn', 'always'],
+    '@stylistic/object-curly-spacing': ['warn', 'always'],
 
     // Enforce placing object properties on separate lines
     // This rule makes it possible to ensure, as some style guides require, that property
     // specifications appear on separate lines or on the same line for better readability.
-    'object-property-newline': ['warn', {
+    '@stylistic/object-property-newline': ['warn', {
       allowAllPropertiesOnSameLine: true,
     }],
 
@@ -425,7 +416,7 @@ module.exports = {
     // This rule enforces a consistent coding style where newlines are required after each var
     // declaration or just when there is a variable initialization. It ignores var declarations
     // inside for loop conditionals.
-    'one-var-declaration-per-line': 'warn',
+    '@stylistic/one-var-declaration-per-line': 'warn',
 
     // Operator Assignment Shorthand
     // This rule enforces use of the shorthand assignment operators by requiring them where
@@ -436,16 +427,16 @@ module.exports = {
     // When a statement is too long to fit on a single line, line breaks are generally inserted next
     // to the operators separating expressions. This rule is aimed at enforcing a particular
     // operator line break style.
-    'operator-linebreak': ['warn', 'before'],
+    '@stylistic/operator-linebreak': ['warn', 'before'],
 
     // Enforce padding within blocks
     // This rule enforces consistent padding within blocks.
-    'padded-blocks': ['warn', 'never'],
+    '@stylistic/padded-blocks': ['warn', 'never'],
 
     // Require or disallow padding lines between statements
     // This rule requires or disallows blank lines between the given 2 kinds of statements. Properly
     // blank lines help developers to understand the code.
-    'padding-line-between-statements': [
+    '@stylistic/padding-line-between-statements': [
       'warn',
       { blankLine: 'always', next: '*', prev: ['cjs-import', 'directive'] },
       { blankLine: 'always', prev: '*', next: ['cjs-export', 'class', 'export', 'function'] },
@@ -491,19 +482,19 @@ module.exports = {
     // Quoting Style for Property Names
     // This rule aims to enforce use of quotes in property names.
     // Require quotes where necessary, disallow where unnecessary
-    'quote-props': ['warn', 'as-needed'],
+    '@stylistic/quote-props': ['warn', 'as-needed'],
 
     // Enforce Quote Style
     // This rule is aimed at ensuring consistency of string quotes.
-    quotes: ['warn', 'single', 'avoid-escape'],
+    '@stylistic/quotes': ['warn', 'single', 'avoid-escape'],
 
     // Enforce spacing between rest and spread operators and their expressions
     // This rule aims to enforce consistent spacing between rest and spread operators and their
     // expressions.
-    'rest-spread-spacing': ['warn', 'never'],
+    '@stylistic/rest-spread-spacing': ['warn', 'never'],
 
     // Enforce spacing before and after semicolons
-    'semi-spacing': ['warn', {
+    '@stylistic/semi-spacing': ['warn', {
       before: false,
       after: true,
     }],
@@ -512,18 +503,18 @@ module.exports = {
     // Generally, semicolons are at the end of lines. However, in semicolon-less style, semicolons
     // are at the beginning of lines. This rule enforces that semicolons are at the configured
     // location.
-    'semi-style': ['warn', 'first'],
+    '@stylistic/semi-style': ['warn', 'first'],
 
     // Enforce or Disallow Semicolons
     // This rule is aimed at ensuring consistent use of semicolons.
-    semi: ['warn', 'never'],
+    '@stylistic/semi': ['warn', 'never'],
 
     // Require Or Disallow Space Before Blocks
     // This rule will enforce consistency of spacing before blocks.
-    'space-before-blocks': ['warn', 'always'],
+    '@stylistic/space-before-blocks': ['warn', 'always'],
 
     // Require or disallow a space before function parenthesis
-    'space-before-function-paren': ['warn', {
+    '@stylistic/space-before-function-paren': ['warn', {
       anonymous: 'never',
       named: 'never',
       asyncArrow: 'always',
@@ -533,23 +524,23 @@ module.exports = {
     // This rule will enforce consistency of spacing directly inside of parentheses, by disallowing
     // or requiring one or more spaces to the right of ( and to the left of ). In either case, ()
     // will still be allowed.
-    'space-in-parens': ['warn', 'never'],
+    '@stylistic/space-in-parens': ['warn', 'never'],
 
     // Require Spaces Around Infix Operators
     // This rule is aimed at ensuring there are spaces around infix operators.
-    'space-infix-ops': 'warn',
+    '@stylistic/space-infix-ops': 'warn',
 
     // Require or disallow spaces before/after unary operators
     // This rule enforces consistency regarding the spaces after words unary operators and
     // after/before nonwords unary operators.
-    'space-unary-ops': ['warn', {
+    '@stylistic/space-unary-ops': ['warn', {
       words: true,
       nonwords: false,
     }],
 
     // Require or disallow a whitespace beginning a comment
     // This rule will enforce consistency of spacing after the start of a comment // or /*.
-    'spaced-comment': ['warn', 'always', {
+    '@stylistic/spaced-comment': ['warn', 'always', {
       // Allow TypeScript's `/// <reference />` stanzas
       markers: ['/'],
     }],
@@ -557,22 +548,22 @@ module.exports = {
     // Enforce spacing around colons of switch statements
     // This rule controls spacing around colons of case and default clauses in switch statements.
     // Spacing around colons improves readability of case/default clauses.
-    'switch-colon-spacing': 'warn',
+    '@stylistic/switch-colon-spacing': 'warn',
 
     // Enforce Usage of Spacing in Template Strings
     // This rule aims to maintain consistency around the spacing inside of template literals.
-    'template-curly-spacing': 'warn',
+    '@stylistic/template-curly-spacing': 'warn',
 
     // Require or disallow spacing between template tags and their literals
     // This rule aims to maintain consistency around the spacing between template tag functions and
     // their template literals.
-    'template-tag-spacing': ['warn', 'never'],
+    '@stylistic/template-tag-spacing': ['warn', 'never'],
 
     // Require IIFEs to be Wrapped
-    'wrap-iife': ['warn', 'inside'],
+    '@stylistic/wrap-iife': ['warn', 'inside'],
 
     // Enforce spacing around the * in `yield*` expressions
-    'yield-star-spacing': ['warn', 'after'],
+    '@stylistic/yield-star-spacing': ['warn', 'after'],
 
     // Require or disallow Yoda Conditions
     // Yoda conditions are so named because the literal value of the condition comes first while the
@@ -614,3 +605,5 @@ module.exports = {
     'import/newline-after-import': 'warn',
   },
 }
+
+export default config

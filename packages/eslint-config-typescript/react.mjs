@@ -1,23 +1,25 @@
-/**
- * strvcom/eslint-config-typescript
- *
- * @author      Danny Kijkov <dankijkov@gmail.com>
- * @copyright   2021 STRV
- * @license     http://choosealicense.com/licenses/bsd-3-clause  BSD-3-Clause License
- */
-
-'use strict'
-
-const globs = require('@strv/eslint-config-base/globs')
 // We are not listing '@strv/eslint-config-react' in dependencies on purpose -
 // - we don't want to spam Node.js users with unwanted React config.
 // Also on the other hand we believe that React users will already have
 // @strv/eslint-config-react configuration installed.
 // eslint-disable-next-line import/no-extraneous-dependencies
-const react = require('@strv/eslint-config-react')
+import react from '@strv/eslint-config-react'
+import ts from '@typescript-eslint/eslint-plugin'
+import parser from '@typescript-eslint/parser'
 
-module.exports = {
-
+/** @type {import("eslint").Linter.FlatConfig} */
+const config = {
+  plugins: {
+    ...react.plugins,
+    '@typescript-eslint': ts,
+  },
+  settings: {
+    ...react.settings,
+  },
+  languageOptions: {
+    ...react.languageOptions,
+    parser,
+  },
   rules: {
     ...react.rules,
 
@@ -77,31 +79,6 @@ module.exports = {
     ],
     '@typescript-eslint/no-unnecessary-condition': 'off',
   },
-  overrides: [
-    // Storybook
-    {
-      files: globs.storybook,
-      rules: {
-        '@typescript-eslint/consistent-type-assertions': 'off',
-        'import/group-exports': 'off',
-        'import/exports-last': 'off',
-        'import/no-default-export': 'off',
-      },
-    },
-    // Next.js
-    {
-      files: globs.nextJs,
-      rules: {
-        'import/no-default-export': 'off',
-      },
-    },
-    // Tests
-    {
-      files: globs.tests,
-      rules: {
-        'import/no-unused-modules': 'off',
-        'jest/expect-expect': 'off',
-      },
-    },
-  ],
 }
+
+export default config

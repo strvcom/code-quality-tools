@@ -9,7 +9,5 @@
 /packages/eslint-config-node/                   @robertrossmann
 /packages/eslint-config-mocha/                  @robertrossmann
 /packages/eslint-config-graphql/                @developer239
-/packages/eslint-config-react-native/           @matejpolak
-/packages/eslint-config-react/                  @dannytce @prichodko
-/packages/prettier-config/                      @dannytce @prichodko
-/packages/stylelint-config-styled-components/   @dannytce @prichodko
+/packages/eslint-config-react/                  @robertrossmann @matejpolak
+/packages/prettier-config/                      @robertrossmann @matejpolak

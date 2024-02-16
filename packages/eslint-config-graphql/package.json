@@ -10,7 +10,11 @@
     "eslint-plugin-graphql": "^4"
   },
   "engines": {
-    "node": "^14 || >=16"
+    "node": ">=20"
+  },
+  "type": "module",
+  "exports": {
+    ".": "./index.mjs"
   },
   "keywords": [
     "config",
@@ -20,9 +24,8 @@
     "graphql"
   ],
   "license": "BSD-3-Clause",
-  "main": "index.js",
   "peerDependencies": {
-    "eslint": "^7 || ^8"
+    "eslint": "^8"
   },
   "publishConfig": {
     "access": "public"

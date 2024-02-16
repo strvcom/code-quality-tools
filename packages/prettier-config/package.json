@@ -11,7 +11,7 @@
     "Danny Kijkov <daniel.kijkov@strv.com>"
   ],
   "engines": {
-    "node": "^14 || >=16"
+    "node": ">=20"
   },
   "keywords": [
     "config",
@@ -19,6 +19,7 @@
     "strv"
   ],
   "license": "BSD-3-Clause",
+  "main": "index.cjs",
   "publishConfig": {
     "access": "public"
   },

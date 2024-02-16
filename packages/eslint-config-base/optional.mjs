@@ -1,35 +1,16 @@
-/**
- * strvcom/eslint-config-base
- *
- * @author      Robert Rossmann <rr.rossmann@me.com>
- * @copyright   2019 STRV
- * @license     http://choosealicense.com/licenses/bsd-3-clause  BSD-3-Clause License
- */
+import imports from 'eslint-plugin-import'
 
-'use strict'
-
-const globs = require('./globs')
-
-module.exports = {
-
-  plugins: [
-    'import',
-  ],
-
+/** @type {import("eslint").Linter.FlatConfig} */
+const config = {
+  plugins: {
+    import: imports,
+  },
   rules: {
     // Require Consistent Returns
     // This rule is aimed at ensuring all return statements either specify a value or don't specify
     // a value.
     'consistent-return': ['warn', {
       treatUndefinedAsUnspecified: true,
-    }],
-
-    // Validates JSDoc comments are syntactically correct
-    // This rule aims to prevent invalid and incomplete JSDoc comments.
-    'valid-jsdoc': ['warn', {
-      requireReturn: true,
-      requireParamType: true,
-      requireReturnDescription: false,
     }],
 
     // Limit Maximum Depth
@@ -70,13 +51,6 @@ module.exports = {
     // Reports if a resolved path is imported more than once
     'import/no-duplicates': 'warn',
   },
-
-  overrides: [{
-    files: globs.tests,
-
-    rules: {
-      // Do not require function names in test files
-      'func-names': 'off',
-    },
-  }],
 }
+
+export default config
