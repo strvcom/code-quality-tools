@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/strvcom/code-quality-tools/compare/@strv/commitlint-config@3.0.0...@strv/commitlint-config@4.0.0) (2025-01-13)
+
+
+### Features
+
+* upgrade commitlint-config plugins ([3673daf](https://github.com/strvcom/code-quality-tools/commit/3673daf7e6ca3ae01a460696bf1b03ffbc13ac22))
+
+
+### BREAKING CHANGES
+
+* The rulesets' version change is semver-major.
+
+
+
+
+
 # [3.0.0](https://github.com/strvcom/code-quality-tools/compare/@strv/commitlint-config@2.2.0...@strv/commitlint-config@3.0.0) (2024-02-16)
 
 
