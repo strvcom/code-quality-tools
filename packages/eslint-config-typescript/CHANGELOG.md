@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.0.0-alpha.2](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-typescript@6.0.0-alpha.1...@strv/eslint-config-typescript@6.0.0-alpha.2) (2025-01-24)
+
+
+### Features
+
+* enable typescript project service 👏 ([72b29bf](https://github.com/strvcom/code-quality-tools/commit/72b29bff9a1473d49fd644b5cc93fae0905e4353))
+
+
+
+
+
 # [6.0.0-alpha.1](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-typescript@6.0.0-alpha.0...@strv/eslint-config-typescript@6.0.0-alpha.1) (2025-01-24)
 
 
