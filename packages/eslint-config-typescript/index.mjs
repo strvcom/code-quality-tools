@@ -247,7 +247,7 @@ const config = {
     // the `Error` object as base objects for user-defined exceptions. The fundamental benefit of
     // `Error` objects is that they automatically keep track of where they were built and
     // originated.
-    '@typescript-eslint/no-throw-literal': [base.rules['no-throw-literal'], {
+    '@typescript-eslint/only-throw-error': [base.rules['no-throw-literal'], {
       allowThrowingAny: false,
       allowThrowingUnknown: false,
     }],
