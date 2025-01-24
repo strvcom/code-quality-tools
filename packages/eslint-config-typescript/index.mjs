@@ -10,6 +10,9 @@ const config = {
   },
   languageOptions: {
     parser,
+    parserOptions: {
+      projectService: true,
+    },
   },
   settings: {
     'import/resolver': { typescript: {} },
