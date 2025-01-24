@@ -16,7 +16,7 @@
     "@strv/eslint-config-base": "^4.0.0",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.23.0",
-    "eslint-plugin-react-hooks": "^4.2.0"
+    "eslint-plugin-react-hooks": "^5.0.0"
   },
   "engines": {
     "node": ">=20"
@@ -35,7 +35,7 @@
   ],
   "license": "BSD-3-Clause",
   "peerDependencies": {
-    "eslint": "^8"
+    "eslint": "^9"
   },
   "publishConfig": {
     "access": "public"

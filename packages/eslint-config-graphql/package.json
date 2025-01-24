@@ -25,7 +25,7 @@
   ],
   "license": "BSD-3-Clause",
   "peerDependencies": {
-    "eslint": "^8"
+    "eslint": "^9"
   },
   "publishConfig": {
     "access": "public"

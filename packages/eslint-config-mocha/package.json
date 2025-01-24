@@ -12,7 +12,7 @@
   ],
   "dependencies": {
     "@strv/eslint-config-base": "^4.0.0",
-    "eslint-plugin-import": "^2.27.0",
+    "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-mocha": "^10.1.0"
   },
   "engines": {
@@ -30,7 +30,7 @@
   ],
   "license": "BSD-3-Clause",
   "peerDependencies": {
-    "eslint": "^8"
+    "eslint": "^9"
   },
   "publishConfig": {
     "access": "public"

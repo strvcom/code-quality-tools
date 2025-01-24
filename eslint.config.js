@@ -15,8 +15,6 @@ const configs = [{
 node,
 optional,
 style,
-{ files: ['**/*.js', '**/*.mjs'], languageOptions: { sourceType: 'module' } },
-{ files: ['**/*.cjs'], languageOptions: { sourceType: 'commonjs' } },
 { rules: {
   // TODO: Figure out why ESLint cannot resolve the @typescript-eslint packages
   'import/no-unresolved': 'off',

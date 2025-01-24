@@ -12,8 +12,8 @@
   ],
   "dependencies": {
     "@strv/eslint-config-base": "^4.0.0",
-    "@typescript-eslint/eslint-plugin": "^7.0.0",
-    "@typescript-eslint/parser": "^7.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
     "eslint-import-resolver-typescript": "^3.6.1"
   },
   "engines": {
@@ -34,7 +34,7 @@
   ],
   "license": "BSD-3-Clause",
   "peerDependencies": {
-    "eslint": "^8"
+    "eslint": "^9"
   },
   "publishConfig": {
     "access": "public"

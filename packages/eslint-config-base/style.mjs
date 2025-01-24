@@ -227,7 +227,7 @@ const config = {
 
     // Enforce a particular style for multiline comments
     // Prefer consecutive line comments for multiline comment block
-    'multiline-comment-style': ['warn', 'separate-lines'],
+    '@stylistic/multiline-comment-style': ['warn', 'separate-lines'],
 
     // Enforce newlines between operands of ternary expressions
     // Enforce either the whole ternary on a single line or each part of the ternary on its own line

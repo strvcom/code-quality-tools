@@ -590,9 +590,7 @@ const config = {
     'vars-on-top': 'warn',
 
     // Ensure an imported module can be resolved to a module on the local filesystem
-    'import/no-unresolved': ['error', {
-      commonjs: true,
-    }],
+    'import/no-unresolved': ['error'],
 
     // Verifies that all named imports are part of the set of named exports in the referenced module
     'import/named': 'error',
@@ -605,8 +603,7 @@ const config = {
     'import/first': 'error',
 
     // Enforces names exist at the time they are dereferenced, when imported as a full namespace
-    // TODO: Re-enable when eslint-plugin-import gets ESLint flat config support
-    // 'import/namespace': 'error',
+    'import/namespace': 'error',
 
     // Forbid import of modules using absolute paths
     // Node.js allows the import of modules using an absolute path such as */home/xyz/file.js*. That
