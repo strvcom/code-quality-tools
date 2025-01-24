@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0-alpha.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-mocha@4.0.0...@strv/eslint-config-mocha@5.0.0-alpha.0) (2025-01-24)
+
+
+### Features
+
+* move to ESLint v9 👏 ([4de1c1f](https://github.com/strvcom/code-quality-tools/commit/4de1c1f7543898cddc4178afc7222e369b6ea018))
+
+
+### BREAKING CHANGES
+
+* Projects must now use ESLint v9 in order to use these rulesets.
+
+
+
+
+
 # [4.0.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-mocha@3.3.2...@strv/eslint-config-mocha@4.0.0) (2024-02-16)
 
 
