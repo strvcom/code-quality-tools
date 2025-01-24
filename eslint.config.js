@@ -2,7 +2,7 @@ import node from './packages/eslint-config-node/index.mjs'
 import optional from './packages/eslint-config-node/optional.mjs'
 import style from './packages/eslint-config-node/style.mjs'
 
-/** @type {Array<import("eslint").Linter.FlatConfig>} */
+/** @type {Array<import("eslint").Linter.Config>} */
 const configs = [{
   linterOptions: {
     reportUnusedDisableDirectives: true,

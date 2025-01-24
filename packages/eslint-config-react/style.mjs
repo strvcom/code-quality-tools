@@ -1,7 +1,7 @@
 import style from '@strv/eslint-config-base/style'
 import react from 'eslint-plugin-react'
 
-/** @type {import("eslint").Linter.FlatConfig} */
+/** @type {import("eslint").Linter.Config} */
 const config = {
   plugins: {
     ...style.plugins,

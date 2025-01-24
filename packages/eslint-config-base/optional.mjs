@@ -1,6 +1,6 @@
 import imports from 'eslint-plugin-import'
 
-/** @type {import("eslint").Linter.FlatConfig} */
+/** @type {import("eslint").Linter.Config} */
 const config = {
   plugins: {
     import: imports,

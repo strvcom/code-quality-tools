@@ -4,7 +4,7 @@ import react from 'eslint-plugin-react'
 import a11y from 'eslint-plugin-jsx-a11y'
 import hooks from 'eslint-plugin-react-hooks'
 
-/** @type {import("eslint").Linter.FlatConfig} */
+/** @type {import("eslint").Linter.Config} */
 const config = {
   plugins: {
     ...base.plugins,
