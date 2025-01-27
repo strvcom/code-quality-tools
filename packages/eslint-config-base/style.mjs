@@ -166,6 +166,8 @@ const config = {
         'R',
         // jQuery 🤮
         '$',
+        // vitest in-test context: `it('works', t => { t.expect(1).toBe(1) })`
+        't',
       ],
     }],
 
