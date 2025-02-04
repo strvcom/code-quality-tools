@@ -12,7 +12,7 @@
   ],
   "dependencies": {
     "@strv/eslint-config-base": "^4.0.0",
-    "eslint-plugin-n": "^16.6.2"
+    "eslint-plugin-n": "^17.15.1"
   },
   "engines": {
     "node": ">=20"
