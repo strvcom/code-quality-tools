@@ -3,7 +3,7 @@ import optional from './packages/eslint-config-node/optional.mjs'
 import style from './packages/eslint-config-node/style.mjs'
 
 /** @type {Array<import("eslint").Linter.Config>} */
-const configs = [{
+const config = [{
   linterOptions: {
     reportUnusedDisableDirectives: true,
   },
@@ -11,13 +11,15 @@ const configs = [{
     'node_modules',
     '!.*.js',
   ],
+  settings: {
+    'import/resolver': { typescript: {} },
+  },
 },
 node,
 optional,
 style,
-{ rules: {
-  // TODO: Figure out why ESLint cannot resolve the @typescript-eslint packages
-  'import/no-unresolved': 'off',
-} }]
+{
+  rules: {},
+}]
 
-export default configs
+export default config
