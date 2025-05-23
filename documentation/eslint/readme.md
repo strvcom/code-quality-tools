@@ -71,6 +71,10 @@ When configuring ESLint, please keep the following in mind:
 
 - @strv/mocha
 
+### For [Web][web-docs]
+
+- @strv/web
+
 ## Migration Guide
 
 If you were using `@strv/eslint-config-javascript` and now you are willing to upgrade, please follow the [Migration Guide](migration.md).
@@ -80,3 +84,4 @@ If you were using `@strv/eslint-config-javascript` and now you are willing to up
 [react-native-docs]: ../../packages/eslint-config-react-native
 [typescript-docs]: ../../packages/eslint-config-typescript
 [mocha-docs]: ../../packages/eslint-config-mocha
+[web-docs]: ../../packages/eslint-config-web

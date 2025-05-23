@@ -1,0 +1,44 @@
+{
+  "name": "@strv/eslint-config-web",
+  "description": "STRV's ESLint config for Web projects",
+  "version": "0.1.0",
+  "author": "Lukas Hudec <hudec.luke@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/strvcom/code-quality-tools/issues"
+  },
+  "contributors": [],
+  "dependencies": {
+    "@antfu/eslint-config": "^4.13.2",
+    "@typescript-eslint/parser": "^8.32.1",
+    "eslint-plugin-check-file": "^3.2.0",
+    "eslint-plugin-format": "^1.0.1",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "exports": {
+    ".": "./index.mjs"
+  },
+  "homepage": "https://github.com/strvcom/code-quality-tools/tree/master/packages/eslint-config-web",
+  "keywords": [
+    "config",
+    "eslint",
+    "web",
+    "typescript",
+    "react",
+    "strv"
+  ],
+  "license": "BSD-3-Clause",
+  "peerDependencies": {
+    "eslint": "^9"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/strvcom/code-quality-tools.git"
+  }
+}
