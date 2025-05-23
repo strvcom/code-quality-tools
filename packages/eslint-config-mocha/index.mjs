@@ -33,7 +33,7 @@ const config = {
     // This rule disallows the use of an async function with describe. It usually indicates a
     // copy/paste error or that you're trying to use describe for setup code, which should happen
     // in before or beforeEach.
-    'mocha/no-async-describe': 'warn',
+    'mocha/no-async-suite': 'warn',
 
     // Disallow empty test descriptions
     // This rule enforces you to specify the suite/test descriptions for each test.

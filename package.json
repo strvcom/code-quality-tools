@@ -15,13 +15,13 @@
     "eslint": "^9",
     "lerna": "^8.1.2",
     "remark-cli": "^12.0.0",
-    "remark-preset-lint-consistent": "^5",
-    "remark-preset-lint-markdown-style-guide": "^5",
-    "remark-preset-lint-recommended": "^6"
+    "remark-preset-lint-consistent": "^6",
+    "remark-preset-lint-markdown-style-guide": "^6",
+    "remark-preset-lint-recommended": "^7"
   },
   "engines": {
-    "node": ">=20",
-    "npm": ">=10"
+    "node": ">=24",
+    "npm": ">=11"
   },
   "type": "module",
   "homepage": "https://github.com/strvcom/code-quality-tools",

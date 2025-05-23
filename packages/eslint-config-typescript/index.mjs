@@ -1,12 +1,14 @@
 import base from '@strv/eslint-config-base'
 import ts from '@typescript-eslint/eslint-plugin'
 import parser from '@typescript-eslint/parser'
+import stylisticts from '@stylistic/eslint-plugin-ts'
 
 /** @type {import("eslint").Linter.Config} */
 const config = {
   plugins: {
     ...base.plugins,
     '@typescript-eslint': ts,
+    '@stylistic/ts': stylisticts,
   },
   languageOptions: {
     parser,
@@ -170,10 +172,6 @@ const config = {
     '@typescript-eslint/no-loop-func': base.rules['no-loop-func'],
     'no-loop-func': 'off',
 
-    // Disallow literal numbers that lose precision
-    '@typescript-eslint/no-loss-of-precision': base.rules['no-loss-of-precision'],
-    'no-loss-of-precision': 'off',
-
     // Enforce valid definition of new and constructor
     // Warns on apparent attempts to define constructors for interfaces or new for classes.
     '@typescript-eslint/no-misused-new': 'error',
@@ -231,7 +229,7 @@ const config = {
 
     // Disallows invocation of require()
     // Prefer the newer ES6-style imports over require().
-    '@typescript-eslint/no-require-imports': 'warn',
+    '@typescript-eslint/no-require-imports': 'error',
 
     // Disallow Shadowing
     // This rule aims to eliminate shadowed variable declarations.
@@ -319,11 +317,6 @@ const config = {
       typedefs: false,
     }],
     'no-use-before-define': 'off',
-
-    // Disallows the use of require statements except in import statements
-    // In other words, the use of forms such as var foo = require("foo") are banned. Instead use ES6
-    // style imports or import foo = require("foo") imports.
-    '@typescript-eslint/no-var-requires': 'error',
 
     // Disallow unnecessary constructors
     // This rule flags class constructors that can be safely removed without changing how the class

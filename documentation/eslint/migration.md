@@ -71,7 +71,7 @@ const files = {
 }
 
 // This will allow your IDE to provide autocomplete suggestions ✨
-/** @type {Array<import("eslint").Linter.FlatConfig>} */
+/** @type {Array<import("eslint").Linter.Config>} */
 const config = [{
   linterOptions: {
     reportUnusedDisableDirectives: true,

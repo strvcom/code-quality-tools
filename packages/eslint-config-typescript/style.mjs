@@ -114,7 +114,13 @@ const config = {
     // with a specific string.
     '@typescript-eslint/prefer-string-starts-ends-with': 'warn',
 
-    '@typescript-eslint/prefer-ts-expect-error': 'warn',
+    '@typescript-eslint/ban-ts-comment': ['warn', {
+      'ts-check': false,
+      'ts-expect-error': 'allow-with-description',
+      'ts-ignore': true,
+      'ts-nocheck': true,
+      minimumDescriptionLength: 3,
+    }],
 
     // Require consistent spacing around type annotations
     // This rule aims to enforce specific spacing patterns around type annotations and function

@@ -26,7 +26,7 @@ const globs = {
   js: '**/*.js',
 }
 
-/** @type {Array<import("eslint").Linter.FlatConfig>} */
+/** @type {Array<import("eslint").Linter.Config>} */
 const config = [
   { files: [globs.js], ...node },
   { files: [globs.js], ...optional },

@@ -103,11 +103,11 @@ const config = {
     // analysis.
     'node/process-exit-as-throw': 'error',
 
-    // Suggest correct usage of shebang
+    // Suggest correct usage of hashbang
     // This rule checks bin field of package.json, then if a target file matches one of bin files,
-    // it checks whether or not there is a correct shebang. Otherwise it checks whether or not there
-    // is not a shebang.
-    'node/shebang': 'warn',
+    // it checks whether or not there is a correct hashbang. Otherwise it checks whether or not there
+    // is not a hashbang.
+    'node/hashbang': 'warn',
 
     // Disallow deprecated API
     // Node has many deprecated API. The community is going to remove those API from Node in future,

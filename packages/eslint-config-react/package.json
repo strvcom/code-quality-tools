@@ -19,7 +19,7 @@
     "eslint-plugin-react-hooks": "^5.0.0"
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=22"
   },
   "exports": {
     ".": "./index.mjs",

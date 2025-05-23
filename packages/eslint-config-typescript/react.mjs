@@ -64,9 +64,6 @@ const config = {
 
     // Must be off, otherwise @typescript-eslint/member-ordering is triggered
     '@typescript-eslint/method-signature-style': 'off',
-
-    // Autofixable, but breakes Next.js build
-    '@typescript-eslint/prefer-ts-expect-error': 'off',
     '@typescript-eslint/ban-ts-comment': [
       'warn',
       {
