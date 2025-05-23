@@ -1,7 +1,7 @@
 import mocha from 'eslint-plugin-mocha'
 import imports from 'eslint-plugin-import'
 
-/** @type {import("eslint").Linter.FlatConfig} */
+/** @type {import("eslint").Linter.Config} */
 const config = {
   plugins: {
     mocha,

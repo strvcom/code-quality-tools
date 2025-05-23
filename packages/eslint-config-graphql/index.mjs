@@ -1,7 +1,7 @@
 // TODO: Deprecated. Move to https://github.com/dimaMachina/graphql-eslint
 import graphql from 'eslint-plugin-graphql'
 
-/** @type {import("eslint").Linter.FlatConfig} */
+/** @type {import("eslint").Linter.Config} */
 const config = {
   plugins: {
     graphql,

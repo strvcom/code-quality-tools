@@ -1,7 +1,7 @@
 {
   "name": "@strv/eslint-config-typescript",
   "description": "STRV's ESLint config for TypeScript projects",
-  "version": "5.0.0",
+  "version": "6.0.0-alpha.2",
   "author": "Robert Rossmann <rr.rossmann@me.com>",
   "bugs": {
     "url": "https://github.com/strvcom/code-quality-tools/issues"
@@ -11,9 +11,9 @@
     "Danny Kijkov <daniel.kijkov@strv.com>"
   ],
   "dependencies": {
-    "@strv/eslint-config-base": "^4.0.0",
-    "@typescript-eslint/eslint-plugin": "^7.0.0",
-    "@typescript-eslint/parser": "^7.0.0",
+    "@strv/eslint-config-base": "^5.0.0-alpha.1",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
     "eslint-import-resolver-typescript": "^3.6.1"
   },
   "engines": {
@@ -34,7 +34,7 @@
   ],
   "license": "BSD-3-Clause",
   "peerDependencies": {
-    "eslint": "^8"
+    "eslint": "^9"
   },
   "publishConfig": {
     "access": "public"
