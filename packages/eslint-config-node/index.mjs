@@ -1,15 +1,17 @@
+import { defineConfig } from 'eslint/config'
 import node from 'eslint-plugin-n'
 import base from '@strv/eslint-config-base'
 
-/** @type {import("eslint").Linter.Config} */
-const config = {
+/** @returns {ReturnType<typeof defineConfig>} */
+export default defineConfig({
+  name: '@strv/eslint-config-node',
+  extends: [
+    base,
+  ],
   plugins: {
-    ...base.plugins,
     node,
   },
   rules: {
-    ...base.rules,
-
     // Disallow use of the deprecated Buffer() constructor
     // In Node.js, the behavior of the Buffer constructor is different depending on the type of its
     // argument. Passing an argument from user input to Buffer() without validating its type can
@@ -114,6 +116,4 @@ const config = {
     // so we should not use those.
     'node/no-deprecated-api': 'warn',
   },
-}
-
-export default config
+})

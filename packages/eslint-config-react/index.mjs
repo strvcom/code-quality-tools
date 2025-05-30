@@ -1,13 +1,17 @@
+import { defineConfig } from 'eslint/config'
 import parser from '@babel/eslint-parser'
 import base from '@strv/eslint-config-base'
 import react from 'eslint-plugin-react'
 import a11y from 'eslint-plugin-jsx-a11y'
 import hooks from 'eslint-plugin-react-hooks'
 
-/** @type {import("eslint").Linter.Config} */
-const config = {
+/** @returns {ReturnType<typeof defineConfig>} */
+export default defineConfig({
+  name: '@strv/eslint-config-react',
+  extends: [
+    base,
+  ],
   plugins: {
-    ...base.plugins,
     react,
     'jsx-a11y': a11y,
     'react-hooks': hooks,
@@ -22,8 +26,6 @@ const config = {
     react: { version: 'detect' },
   },
   rules: {
-    ...base.rules,
-
     // Enforces consistent naming for boolean props
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/boolean-prop-naming.md
     'react/boolean-prop-naming': [
@@ -525,6 +527,4 @@ const config = {
     'import/exports-last': 'off',
     'import/no-default-export': 'error',
   },
-}
-
-export default config
+})

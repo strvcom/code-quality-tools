@@ -1,7 +1,7 @@
 import { defineConfig } from 'eslint/config'
-import node from './packages/eslint-config-node/index.mjs'
-import optional from './packages/eslint-config-node/optional.mjs'
-import style from './packages/eslint-config-node/style.mjs'
+import node from '@strv/eslint-config-node'
+import optional from '@strv/eslint-config-node/optional'
+import style from '@strv/eslint-config-node/style'
 
 export default defineConfig([{
   files: ['**/*.js', '**/*.cjs', '**/*.mjs'],

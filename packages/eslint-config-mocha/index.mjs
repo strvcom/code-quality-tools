@@ -1,8 +1,10 @@
+import { defineConfig } from 'eslint/config'
 import mocha from 'eslint-plugin-mocha'
 import imports from 'eslint-plugin-import'
 
-/** @type {import("eslint").Linter.Config} */
-const config = {
+/** @returns {ReturnType<typeof defineConfig>} */
+export default defineConfig({
+  name: '@strv/eslint-config-mocha',
   plugins: {
     mocha,
     import: imports,
@@ -81,6 +83,4 @@ const config = {
     // project. Test files are usually sourced by Mocha directly.
     'import/no-unused-modules': 'off',
   },
-}
-
-export default config
+})

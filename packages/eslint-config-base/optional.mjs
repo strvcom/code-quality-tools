@@ -1,10 +1,8 @@
-import imports from 'eslint-plugin-import'
+import { defineConfig } from 'eslint/config'
 
-/** @type {import("eslint").Linter.Config} */
-const config = {
-  plugins: {
-    import: imports,
-  },
+/** @returns {ReturnType<typeof defineConfig>} */
+export default defineConfig({
+  name: '@strv/eslint-config-base/optional',
   rules: {
     // Require Consistent Returns
     // This rule is aimed at ensuring all return statements either specify a value or don't specify
@@ -51,6 +49,4 @@ const config = {
     // Reports if a resolved path is imported more than once
     'import/no-duplicates': 'warn',
   },
-}
-
-export default config
+})

@@ -1,8 +1,10 @@
+import { defineConfig } from 'eslint/config'
 import imports from 'eslint-plugin-import'
 import stylistic from '@stylistic/eslint-plugin'
 
-/** @type {import("eslint").Linter.Config} */
-const config = {
+/** @returns {ReturnType<typeof defineConfig>} */
+export default defineConfig({
+  name: '@strv/eslint-config-base',
   plugins: {
     import: imports,
     '@stylistic': stylistic,
@@ -652,6 +654,4 @@ const config = {
     // Disabled because ES Modules require file extension to be supplied
     // 'import/extensions': ['warn', { json: 'aways' }],
   },
-}
-
-export default config
+})
