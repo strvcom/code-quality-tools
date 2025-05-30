@@ -1,7 +1,7 @@
 {
   "name": "@strv/eslint-config-react",
   "description": "STRV's ESLint config for React projects",
-  "version": "6.0.0-alpha.1",
+  "version": "6.0.0-alpha.2",
   "author": "Pavel Prichodko <prichodko.p@gmail.com>",
   "bugs": {
     "url": "https://github.com/strvcom/code-quality-tools/issues"
@@ -13,7 +13,7 @@
   "dependencies": {
     "@babel/core": "^7.23.9",
     "@babel/eslint-parser": "^7.23.10",
-    "@strv/eslint-config-base": "^5.0.0-alpha.1",
+    "@strv/eslint-config-base": "^5.0.0-alpha.2",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.23.0",
     "eslint-plugin-react-hooks": "^5.0.0"

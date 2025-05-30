@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0-alpha.2](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-base@5.0.0-alpha.1...@strv/eslint-config-base@5.0.0-alpha.2) (2025-05-30)
+
+
+### Features
+
+* allow `t` as identifier (`id-length`) ([149e21c](https://github.com/strvcom/code-quality-tools/commit/149e21cedf4d1e6346127e1bc4f9897453a28dad))
+* upgrade to ESLint v9 & all related dependencies 🔥 ([bc8948a](https://github.com/strvcom/code-quality-tools/commit/bc8948ab0e08c59d1e32269bec246152b5644be5))
+
+
+### BREAKING CHANGES
+
+* Many rules have been changed, if you have a lot of overrides expect some work to move to a different rule.
+
+
+
+
+
 # [5.0.0-alpha.1](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-base@5.0.0-alpha.0...@strv/eslint-config-base@5.0.0-alpha.1) (2025-01-24)
 
 **Note:** Version bump only for package @strv/eslint-config-base

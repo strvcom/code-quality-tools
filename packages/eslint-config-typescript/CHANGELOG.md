@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.0.0-alpha.3](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-typescript@6.0.0-alpha.2...@strv/eslint-config-typescript@6.0.0-alpha.3) (2025-05-30)
+
+
+### Features
+
+* upgrade to ESLint v9 & all related dependencies 🔥 ([bc8948a](https://github.com/strvcom/code-quality-tools/commit/bc8948ab0e08c59d1e32269bec246152b5644be5))
+
+
+### BREAKING CHANGES
+
+* Many rules have been changed, if you have a lot of overrides expect some work to move to a different rule.
+
+
+
+
+
 # [6.0.0-alpha.2](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-typescript@6.0.0-alpha.1...@strv/eslint-config-typescript@6.0.0-alpha.2) (2025-01-24)
 
 
