@@ -1,15 +1,17 @@
+import { defineConfig } from 'eslint/config'
 import node from 'eslint-plugin-n'
 import base from '@strv/eslint-config-base'
 
-/** @type {import("eslint").Linter.Config} */
-const config = {
+/** @returns {ReturnType<typeof defineConfig>} */
+export default defineConfig({
+  name: '@strv/eslint-config-node',
+  extends: [
+    base,
+  ],
   plugins: {
-    ...base.plugins,
     node,
   },
   rules: {
-    ...base.rules,
-
     // Disallow use of the deprecated Buffer() constructor
     // In Node.js, the behavior of the Buffer constructor is different depending on the type of its
     // argument. Passing an argument from user input to Buffer() without validating its type can
@@ -103,17 +105,15 @@ const config = {
     // analysis.
     'node/process-exit-as-throw': 'error',
 
-    // Suggest correct usage of shebang
+    // Suggest correct usage of hashbang
     // This rule checks bin field of package.json, then if a target file matches one of bin files,
-    // it checks whether or not there is a correct shebang. Otherwise it checks whether or not there
-    // is not a shebang.
-    'node/shebang': 'warn',
+    // it checks whether or not there is a correct hashbang. Otherwise it checks whether or not there
+    // is not a hashbang.
+    'node/hashbang': 'warn',
 
     // Disallow deprecated API
     // Node has many deprecated API. The community is going to remove those API from Node in future,
     // so we should not use those.
     'node/no-deprecated-api': 'warn',
   },
-}
-
-export default config
+})

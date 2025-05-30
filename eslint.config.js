@@ -1,25 +1,19 @@
-import node from './packages/eslint-config-node/index.mjs'
-import optional from './packages/eslint-config-node/optional.mjs'
-import style from './packages/eslint-config-node/style.mjs'
+import { defineConfig } from 'eslint/config'
+import node from '@strv/eslint-config-node'
+import optional from '@strv/eslint-config-node/optional'
+import style from '@strv/eslint-config-node/style'
 
-/** @type {Array<import("eslint").Linter.Config>} */
-const config = [{
-  linterOptions: {
-    reportUnusedDisableDirectives: true,
-  },
-  ignores: [
-    'node_modules',
-    '!.*.js',
+export default defineConfig([{
+  files: ['**/*.js', '**/*.cjs', '**/*.mjs'],
+  extends: [
+    node,
+    optional,
+    style,
   ],
+  linterOptions: {
+    reportUnusedDisableDirectives: 'warn',
+  },
   settings: {
     'import/resolver': { typescript: {} },
   },
-},
-node,
-optional,
-style,
-{
-  rules: {},
-}]
-
-export default config
+}])

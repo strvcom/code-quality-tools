@@ -1,10 +1,10 @@
-import imports from 'eslint-plugin-import'
+import { defineConfig } from 'eslint/config'
 import stylistic from '@stylistic/eslint-plugin'
 
-/** @type {import("eslint").Linter.Config} */
-const config = {
+/** @returns {ReturnType<typeof defineConfig>} */
+export default defineConfig({
+  name: '@strv/eslint-config-base/style',
   plugins: {
-    import: imports,
     '@stylistic': stylistic,
   },
   rules: {
@@ -606,6 +606,4 @@ const config = {
     // Enforces having an empty line after the last top-level import statement or require call
     'import/newline-after-import': 'warn',
   },
-}
-
-export default config
+})

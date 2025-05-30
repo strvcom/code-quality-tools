@@ -12,7 +12,7 @@ npm install -D @strv/eslint-config-graphql
 // eslint.config.mjs
 import graphql from '@strv/eslint-config-graphql'
 
-/** @type {Array<import("eslint").Linter.FlatConfig>} */
+/** @type {Array<import("eslint").Linter.Config>} */
 const config = [{
   // Perhaps also apply other configs?
   { files: ['**/*.js'], ...graphql },

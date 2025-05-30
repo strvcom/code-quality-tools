@@ -1,15 +1,17 @@
+import { defineConfig } from 'eslint/config'
 import style from '@strv/eslint-config-base/style'
 import react from 'eslint-plugin-react'
 
-/** @type {import("eslint").Linter.Config} */
-const config = {
+/** @returns {ReturnType<typeof defineConfig>} */
+export default defineConfig({
+  name: '@strv/eslint-config-react/style',
+  extends: [
+    style,
+  ],
   plugins: {
-    ...style.plugins,
     react,
   },
   rules: {
-    ...style.rules,
-
     // Enforce consistent usage of destructuring assignment of props, state, and context
     'react/destructuring-assignment': [
       'warn',
@@ -120,6 +122,4 @@ const config = {
     // when trying to auto fix this rule it breaks React syntax
     'arrow-body-style': 'off',
   },
-}
-
-export default config
+})

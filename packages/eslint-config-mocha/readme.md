@@ -14,7 +14,7 @@ npm install -D @strv/eslint-config-mocha
 // eslint.config.mjs
 import mocha from '@strv/eslint-config-mocha'
 
-/** @type {Array<import("eslint").Linter.FlatConfig>} */
+/** @type {Array<import("eslint").Linter.Config>} */
 const config = [{
   // Perhaps also apply other configs?
   { files: ['**/*.test.js'], ...mocha },

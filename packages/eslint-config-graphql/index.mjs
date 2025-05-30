@@ -1,8 +1,10 @@
+import { defineConfig } from 'eslint/config'
 // TODO: Deprecated. Move to https://github.com/dimaMachina/graphql-eslint
 import graphql from 'eslint-plugin-graphql'
 
-/** @type {import("eslint").Linter.Config} */
-const config = {
+/** @returns {ReturnType<typeof defineConfig>} */
+export default defineConfig({
+  name: '@strv/eslint-config-graphql',
   plugins: {
     graphql,
   },
@@ -11,6 +13,4 @@ const config = {
       env: 'apollo',
     }],
   },
-}
-
-export default config
+})

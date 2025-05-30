@@ -1,12 +1,15 @@
+import { defineConfig } from 'eslint/config'
 import base from '@strv/eslint-config-base'
 import ts from '@typescript-eslint/eslint-plugin'
 import parser from '@typescript-eslint/parser'
+import stylisticts from '@stylistic/eslint-plugin-ts'
 
-/** @type {import("eslint").Linter.Config} */
-const config = {
+/** @returns {ReturnType<typeof defineConfig>} */
+export default defineConfig({
+  name: '@strv/eslint-config-typescript',
   plugins: {
-    ...base.plugins,
     '@typescript-eslint': ts,
+    '@stylistic/ts': stylisticts,
   },
   languageOptions: {
     parser,
@@ -18,7 +21,6 @@ const config = {
     'import/resolver': { typescript: {} },
   },
   rules: {
-    ...base.rules,
     // Disabled because it generates false positives with interface declarations and TypeScript
     // blows up anyway during compilation when it encouters an undefined variable.
     'no-undef': 'off',
@@ -88,7 +90,7 @@ const config = {
     // Use of the Array constructor to construct a new array is generally discouraged in favor of
     // array literal notation because of the single-argument pitfall and because the Array global
     // may be redefined.
-    '@typescript-eslint/no-array-constructor': base.rules['no-array-constructor'],
+    '@typescript-eslint/no-array-constructor': base[0].rules['no-array-constructor'],
     'no-array-constructor': 'off',
 
     // Require that .toString() is only called on objects which provide useful information
@@ -99,7 +101,7 @@ const config = {
     '@typescript-eslint/no-base-to-string': 'warn',
 
     // Disallow duplicate class members
-    '@typescript-eslint/no-dupe-class-members': base.rules['no-dupe-class-members'],
+    '@typescript-eslint/no-dupe-class-members': base[0].rules['no-dupe-class-members'],
     'no-dupe-class-members': 'off',
 
     // Disallow duplicate enum member values
@@ -151,7 +153,7 @@ const config = {
     '@typescript-eslint/no-for-in-array': 'error',
 
     // Disallow the use of `eval()`-like methods
-    '@typescript-eslint/no-implied-eval': base.rules['no-implied-eval'],
+    '@typescript-eslint/no-implied-eval': base[0].rules['no-implied-eval'],
     'no-implied-eval': 'off',
 
     // Disallows explicit type declarations for builtin primitive values
@@ -167,12 +169,8 @@ const config = {
     '@typescript-eslint/no-invalid-void-type': 'warn',
 
     // Disallow function declarations that contain unsafe references inside loop statements
-    '@typescript-eslint/no-loop-func': base.rules['no-loop-func'],
+    '@typescript-eslint/no-loop-func': base[0].rules['no-loop-func'],
     'no-loop-func': 'off',
-
-    // Disallow literal numbers that lose precision
-    '@typescript-eslint/no-loss-of-precision': base.rules['no-loss-of-precision'],
-    'no-loss-of-precision': 'off',
 
     // Enforce valid definition of new and constructor
     // Warns on apparent attempts to define constructors for interfaces or new for classes.
@@ -231,11 +229,11 @@ const config = {
 
     // Disallows invocation of require()
     // Prefer the newer ES6-style imports over require().
-    '@typescript-eslint/no-require-imports': 'warn',
+    '@typescript-eslint/no-require-imports': 'error',
 
     // Disallow Shadowing
     // This rule aims to eliminate shadowed variable declarations.
-    '@typescript-eslint/no-shadow': base.rules['no-shadow'],
+    '@typescript-eslint/no-shadow': base[0].rules['no-shadow'],
     'no-shadow': 'off',
 
     // Disallow aliasing this
@@ -250,7 +248,7 @@ const config = {
     // the `Error` object as base objects for user-defined exceptions. The fundamental benefit of
     // `Error` objects is that they automatically keep track of where they were built and
     // originated.
-    '@typescript-eslint/only-throw-error': [base.rules['no-throw-literal'], {
+    '@typescript-eslint/only-throw-error': [base[0].rules['no-throw-literal'], {
       allowThrowingAny: false,
       allowThrowingUnknown: false,
     }],
@@ -301,13 +299,13 @@ const config = {
     // Disallow Unused Expressions
     // This rule aims to eliminate unused expressions which have no effect on the state of the
     // program.
-    '@typescript-eslint/no-unused-expressions': base.rules['no-unused-expressions'],
+    '@typescript-eslint/no-unused-expressions': base[0].rules['no-unused-expressions'],
     'no-unused-expressions': 'off',
 
     // Variables that are declared and not used anywhere in the code are most likely an error due
     // to incomplete refactoring. Such variables take up space in the code and can lead to
     // confusion by readers.
-    '@typescript-eslint/no-unused-vars': base.rules['no-unused-vars'],
+    '@typescript-eslint/no-unused-vars': base[0].rules['no-unused-vars'],
     'no-unused-vars': 'off',
 
     // Disallow the use of variables before they are defined
@@ -320,15 +318,10 @@ const config = {
     }],
     'no-use-before-define': 'off',
 
-    // Disallows the use of require statements except in import statements
-    // In other words, the use of forms such as var foo = require("foo") are banned. Instead use ES6
-    // style imports or import foo = require("foo") imports.
-    '@typescript-eslint/no-var-requires': 'error',
-
     // Disallow unnecessary constructors
     // This rule flags class constructors that can be safely removed without changing how the class
     // works.
-    '@typescript-eslint/no-useless-constructor': base.rules['no-useless-constructor'],
+    '@typescript-eslint/no-useless-constructor': base[0].rules['no-useless-constructor'],
     'no-useless-constructor': 'off',
 
     // Disallow empty exports that don't change anything in a module file
@@ -382,7 +375,7 @@ const config = {
     '@typescript-eslint/require-array-sort-compare': 'error',
 
     // Disallow async functions which have no await expression
-    '@typescript-eslint/require-await': base.rules['require-await'],
+    '@typescript-eslint/require-await': base[0].rules['require-await'],
     'require-await': 'off',
 
     // When adding two variables, operands must both be of type number or of type string
@@ -434,6 +427,4 @@ const config = {
     // applications it's too much.
     '@typescript-eslint/explicit-function-return-type': ['off', {}],
   },
-}
-
-export default config
+})

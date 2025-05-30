@@ -1,3 +1,4 @@
+import { defineConfig } from 'eslint/config'
 // We are not listing '@strv/eslint-config-react' in dependencies on purpose -
 // - we don't want to spam Node.js users with unwanted React config.
 // Also on the other hand we believe that React users will already have
@@ -7,22 +8,19 @@ import react from '@strv/eslint-config-react'
 import ts from '@typescript-eslint/eslint-plugin'
 import parser from '@typescript-eslint/parser'
 
-/** @type {import("eslint").Linter.Config} */
-const config = {
+/** @returns {ReturnType<typeof defineConfig>} */
+export default defineConfig({
+  name: '@strv/eslint-config-typescript/react',
+  extends: [
+    react,
+  ],
   plugins: {
-    ...react.plugins,
     '@typescript-eslint': ts,
   },
-  settings: {
-    ...react.settings,
-  },
   languageOptions: {
-    ...react.languageOptions,
     parser,
   },
   rules: {
-    ...react.rules,
-
     'react/prop-types': 'off',
 
     '@typescript-eslint/consistent-type-definitions': 'off',
@@ -64,9 +62,6 @@ const config = {
 
     // Must be off, otherwise @typescript-eslint/member-ordering is triggered
     '@typescript-eslint/method-signature-style': 'off',
-
-    // Autofixable, but breakes Next.js build
-    '@typescript-eslint/prefer-ts-expect-error': 'off',
     '@typescript-eslint/ban-ts-comment': [
       'warn',
       {
@@ -79,6 +74,4 @@ const config = {
     ],
     '@typescript-eslint/no-unnecessary-condition': 'off',
   },
-}
-
-export default config
+})

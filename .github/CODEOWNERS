@@ -8,6 +8,7 @@
 /packages/eslint-config-base/                   @robertrossmann
 /packages/eslint-config-node/                   @robertrossmann
 /packages/eslint-config-mocha/                  @robertrossmann
+/packages/eslint-config-typescript/             @robertrossmann
 /packages/eslint-config-graphql/                @developer239
 /packages/eslint-config-react/                  @robertrossmann @matejpolak
 /packages/prettier-config/                      @robertrossmann @matejpolak

@@ -1,15 +1,13 @@
+import { defineConfig } from 'eslint/config'
 import style from '@strv/eslint-config-base/style'
 import ts from '@typescript-eslint/eslint-plugin'
 
-/** @type {import("eslint").Linter.Config} */
-const config = {
+/** @returns {ReturnType<typeof defineConfig>} */
+export default defineConfig({
   plugins: {
-    ...style.plugins,
     '@typescript-eslint': ts,
   },
   rules: {
-    ...style.rules,
-
     // Conflicts with typescript
     camelcase: 'off',
 
@@ -27,10 +25,10 @@ const config = {
 
     // Enforce default parameters to be last
     // This rule enforces default or optional parameters to be the last of parameters.
-    '@typescript-eslint/default-param-last': style.rules['default-param-last'],
+    '@typescript-eslint/default-param-last': style[0].rules['default-param-last'],
     'default-param-last': 'off',
 
-    '@typescript-eslint/dot-notation': style.rules['dot-notation'],
+    '@typescript-eslint/dot-notation': style[0].rules['dot-notation'],
     'dot-notation': 'off',
 
     // Require a specific member delimiter style for interfaces and type literals
@@ -114,7 +112,13 @@ const config = {
     // with a specific string.
     '@typescript-eslint/prefer-string-starts-ends-with': 'warn',
 
-    '@typescript-eslint/prefer-ts-expect-error': 'warn',
+    '@typescript-eslint/ban-ts-comment': ['warn', {
+      'ts-check': false,
+      'ts-expect-error': 'allow-with-description',
+      'ts-ignore': true,
+      'ts-nocheck': true,
+      minimumDescriptionLength: 3,
+    }],
 
     // Require consistent spacing around type annotations
     // This rule aims to enforce specific spacing patterns around type annotations and function
@@ -127,6 +131,4 @@ const config = {
     // reducing the amount of overloads.
     '@typescript-eslint/unified-signatures': 'warn',
   },
-}
-
-export default config
+})
