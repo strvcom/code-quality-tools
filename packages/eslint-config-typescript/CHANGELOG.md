@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.0.0](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-typescript@6.0.0-alpha.4...@strv/eslint-config-typescript@6.0.0) (2025-06-03)
+
+**Note:** Version bump only for package @strv/eslint-config-typescript
+
+
+
+
+
 # [6.0.0-alpha.4](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-typescript@6.0.0-alpha.3...@strv/eslint-config-typescript@6.0.0-alpha.4) (2025-06-03)
 
 
