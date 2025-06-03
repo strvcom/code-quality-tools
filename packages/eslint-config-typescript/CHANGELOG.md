@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.0.0-alpha.4](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-typescript@6.0.0-alpha.3...@strv/eslint-config-typescript@6.0.0-alpha.4) (2025-06-03)
+
+
+### Bug Fixes
+
+* `@stylistic/eslint-plugin-ts` is deprecated ([588075f](https://github.com/strvcom/code-quality-tools/commit/588075f416c85988060d399928d8898daf020375))
+* **typescript:** disable some eslint-plugin-import rules ([781afd6](https://github.com/strvcom/code-quality-tools/commit/781afd60736957beb1990bb309df25508f444516))
+
+
+
+
+
 # [6.0.0-alpha.3](https://github.com/strvcom/code-quality-tools/compare/@strv/eslint-config-typescript@6.0.0-alpha.2...@strv/eslint-config-typescript@6.0.0-alpha.3) (2025-05-30)
 
 
