@@ -2,14 +2,12 @@ import { defineConfig } from 'eslint/config'
 import base from '@strv/eslint-config-base'
 import ts from '@typescript-eslint/eslint-plugin'
 import parser from '@typescript-eslint/parser'
-import stylisticts from '@stylistic/eslint-plugin-ts'
 
 /** @returns {ReturnType<typeof defineConfig>} */
 export default defineConfig({
   name: '@strv/eslint-config-typescript',
   plugins: {
     '@typescript-eslint': ts,
-    '@stylistic/ts': stylisticts,
   },
   languageOptions: {
     parser,
