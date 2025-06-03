@@ -426,5 +426,11 @@ export default defineConfig({
     // nice for a library-like projects to clearly declare return types on public APIs but for general backend
     // applications it's too much.
     '@typescript-eslint/explicit-function-return-type': ['off', {}],
+
+    // TypeScript already checks for problems reported by this rule, and this rule seems to fail when checking imports
+    // from a "collector" file that contains an `export * from './module'` statement, like an `index.ts` file.
+    'import/named': 'off',
+    // TypeScript already checks for problems reported by this rule.
+    'import/no-unresolved': 'off',
   },
 })
