@@ -1,0 +1,26 @@
+{
+  "name": "@strv/react-native",
+  "description": "STRV's ESLint config for React Native projects",
+  "version": "1.0.0",
+  "author": "Petr Chalupa <petr.chalupa@strv.com>",
+  "keywords": ["eslint", "react-native", "config", "strv"],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/strvcom/code-quality-tools.git"
+  },
+  "bugs": {
+    "url": "https://github.com/strvcom/code-quality-tools/issues"
+  },
+  "license": "BSD-3-Clause",
+  "main": "index.mjs",
+  "type": "module",
+  "dependencies": {
+    "eslint-config-expo": "~10.0.0"
+  },
+  "peerDependencies": {
+    "eslint": "^9"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

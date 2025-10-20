@@ -23,6 +23,7 @@
     "node": ">=24",
     "npm": ">=11"
   },
+  "packageManager": "npm@11.6.2",
   "type": "module",
   "homepage": "https://github.com/strvcom/code-quality-tools",
   "keywords": [],
