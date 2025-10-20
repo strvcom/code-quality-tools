@@ -11,6 +11,7 @@
   "bugs": {
     "url": "https://github.com/strvcom/code-quality-tools/issues"
   },
+  "homepage": "https://github.com/strvcom/code-quality-tools/tree/master/packages/eslint-config-react-native#readme",
   "license": "BSD-3-Clause",
   "main": "index.mjs",
   "type": "module",
