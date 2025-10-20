@@ -1,5 +1,5 @@
 {
-  "name": "@strv/react-native",
+  "name": "@strv/eslint-config-react-native",
   "description": "STRV's ESLint config for React Native projects",
   "version": "1.0.0",
   "author": "Petr Chalupa <petr.chalupa@strv.com>",
