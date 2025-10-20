@@ -17,6 +17,9 @@ import reactNative from '@strv/eslint-config-react-native'
 export default reactNative
 ```
 
+### Tips
+1. Use caching, see https://eslint.org/docs/latest/use/command-line-interface#caching
+
 ## License
 
 See the [LICENSE](LICENSE) file for information.

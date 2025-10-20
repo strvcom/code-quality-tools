@@ -1,7 +1,7 @@
 {
   "name": "@strv/eslint-config-react-native",
   "description": "STRV's ESLint config for React Native projects",
-  "version": "1.0.0",
+  "version": "4.0.0",
   "author": "Petr Chalupa <petr.chalupa@strv.com>",
   "keywords": ["eslint", "react-native", "config", "strv"],
   "repository": {
@@ -16,7 +16,8 @@
   "main": "index.mjs",
   "type": "module",
   "dependencies": {
-    "eslint-config-expo": "~10.0.0"
+    "@strv/eslint-config-typescript": "^6.0.0",
+    "eslint-config-expo": "^10.0.0"
   },
   "peerDependencies": {
     "eslint": "^9"
