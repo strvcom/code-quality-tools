@@ -1,9 +1,14 @@
 {
   "name": "@strv/eslint-config-react-native",
   "description": "STRV's ESLint config for React Native projects",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "author": "Petr Chalupa <petr.chalupa@strv.com>",
-  "keywords": ["eslint", "react-native", "config", "strv"],
+  "keywords": [
+    "eslint",
+    "react-native",
+    "config",
+    "strv"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/strvcom/code-quality-tools.git"
