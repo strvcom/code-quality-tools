@@ -7,6 +7,7 @@ const ignores = globalIgnores(['.expo/', 'expo-env.d.ts'])
 
 /** @type {import("eslint").Linter.Config} */
 const common = {
+  name: '@strv/eslint-config-react-native',
   rules: {
     // Very expensive check, see https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/namespace.md
     'import/namespace': 'off',
@@ -44,45 +45,44 @@ const react = {
 }
 
 /** @type {import("eslint").Linter.Config} */
-const typescript = defineConfig([typeScriptConfig, {
-  files: ['**/*.ts', '**/*.tsx'],
-  rules: {
-    // Handled by TypeScript. Enable noUnusedLocals in your tsconfig.json, see https://www.typescriptlang.org/tsconfig/#noUnusedLocals
-    // https://typescript-eslint.io/rules/no-unused-vars/
-    '@typescript-eslint/no-unused-vars': 'off',
-    // Its common in React Native to import types using require syntax, see https://reactnative.dev/docs/images#static-image-resources
-    // https://typescript-eslint.io/rules/no-require-imports/
-    '@typescript-eslint/no-require-imports': 'off',
-    // Very expensive check, see https://typescript-eslint.io/rules/promise-function-async/
-    '@typescript-eslint/promise-function-async': 'off',
+const typescript = defineConfig([
+  typeScriptConfig,
+  {
+    files: ['**/*.ts', '**/*.tsx'],
+    rules: {
+      // Handled by TypeScript. Enable noUnusedLocals in your tsconfig.json, see https://www.typescriptlang.org/tsconfig/#noUnusedLocals
+      // https://typescript-eslint.io/rules/no-unused-vars/
+      '@typescript-eslint/no-unused-vars': 'off',
+      // Its common in React Native to import types using require syntax, see https://reactnative.dev/docs/images#static-image-resources
+      // https://typescript-eslint.io/rules/no-require-imports/
+      '@typescript-eslint/no-require-imports': 'off',
+      // Very expensive check, see https://typescript-eslint.io/rules/promise-function-async/
+      '@typescript-eslint/promise-function-async': 'off',
 
-    // Allows variable shadowing in TypeScript contexts, see https://typescript-eslint.io/rules/no-shadow/
-    '@typescript-eslint/no-shadow': 'off',
-    // Allows both interface and type definitions, see https://typescript-eslint.io/rules/consistent-type-definitions/
-    '@typescript-eslint/consistent-type-definitions': 'off',
-    // Allows Promises in places where they might not be handled properly, see https://typescript-eslint.io/rules/no-misused-promises/
-    '@typescript-eslint/no-misused-promises': 'off',
-    // Allows assignments of any typed values, see https://typescript-eslint.io/rules/no-unsafe-assignment/
-    '@typescript-eslint/no-unsafe-assignment': 'off',
-    // Allows returning any typed values from functions, see https://typescript-eslint.io/rules/no-unsafe-return/
-    '@typescript-eslint/no-unsafe-return': 'off',
-    // Allows unbound method references that may lose 'this' context, see https://typescript-eslint.io/rules/unbound-method/
-    '@typescript-eslint/unbound-method': 'off',
-    // Allows member access on any typed values, see https://typescript-eslint.io/rules/no-unsafe-member-access/
-    '@typescript-eslint/no-unsafe-member-access': 'off',
+      // Allows variable shadowing in TypeScript contexts, see https://typescript-eslint.io/rules/no-shadow/
+      '@typescript-eslint/no-shadow': 'off',
+      // Allows both interface and type definitions, see https://typescript-eslint.io/rules/consistent-type-definitions/
+      '@typescript-eslint/consistent-type-definitions': 'off',
+      // Allows Promises in places where they might not be handled properly, see https://typescript-eslint.io/rules/no-misused-promises/
+      '@typescript-eslint/no-misused-promises': 'off',
+      // Allows assignments of any typed values, see https://typescript-eslint.io/rules/no-unsafe-assignment/
+      '@typescript-eslint/no-unsafe-assignment': 'off',
+      // Allows returning any typed values from functions, see https://typescript-eslint.io/rules/no-unsafe-return/
+      '@typescript-eslint/no-unsafe-return': 'off',
+      // Allows unbound method references that may lose 'this' context, see https://typescript-eslint.io/rules/unbound-method/
+      '@typescript-eslint/unbound-method': 'off',
+      // Allows member access on any typed values, see https://typescript-eslint.io/rules/no-unsafe-member-access/
+      '@typescript-eslint/no-unsafe-member-access': 'off',
 
-    // Enforce consistent type imports with inline style, see https://typescript-eslint.io/rules/consistent-type-imports/
-    '@typescript-eslint/consistent-type-imports': [
-      'error',
-      { prefer: 'type-imports', fixStyle: 'inline-type-imports' },
-    ],
+      // Enforce consistent type imports with inline style, see https://typescript-eslint.io/rules/consistent-type-imports/
+      '@typescript-eslint/consistent-type-imports': [
+        'error',
+        { prefer: 'type-imports', fixStyle: 'inline-type-imports' },
+      ],
+      // Allow throwing non-Error objects, but only Promises are allowed in React codebases, see https://typescript-eslint.io/rules/only-throw-error/
+      '@typescript-eslint/only-throw-error': ['error', { allow: ['Promise'] }],
+    },
   },
-}])
-
-export default defineConfig([
-  expoConfig,
-  ignores,
-  common,
-  typescript,
-  react,
 ])
+
+export default defineConfig([expoConfig, ignores, common, typescript, react])
