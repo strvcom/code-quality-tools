@@ -9,6 +9,9 @@ const ignores = globalIgnores(['.expo/', 'expo-env.d.ts'])
 const common = {
   name: '@strv/eslint-config-react-native',
   rules: {
+    // Enforce minimum identifier length to improve code readability, see https://eslint.org/docs/latest/rules/id-length
+    'id-length': ['error', { min: 2, exceptions: ['i', 't', 'b', '_', 'x', 'y', 'z'] }],
+
     // Very expensive check, see https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/namespace.md
     'import/namespace': 'off',
     // Very expensive check, see https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-duplicates.md
@@ -19,6 +22,7 @@ const common = {
     'import/no-named-as-default': 'off',
     // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-named-as-default-member.md
     'import/no-named-as-default-member': 'off',
+
     // Handled by TypeScript. Enable noUnusedLocals in your tsconfig.json, see https://www.typescriptlang.org/tsconfig/#noUnusedLocals
     // https://eslint.org/docs/latest/rules/no-unused-vars
     'no-unused-vars': 'off',
@@ -39,6 +43,8 @@ const react = {
         shorthandLast: true,
       },
     ],
+    // Only relevant in class components, see https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-direct-mutation-state.md
+    'react/no-direct-mutation-state': 'off',
     // DisplayName is not required for React Native components, see https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/display-name.md
     'react/display-name': 'off',
   },
@@ -50,6 +56,14 @@ const typescript = defineConfig([
   {
     files: ['**/*.ts', '**/*.tsx'],
     rules: {
+      // Enforce consistent type imports with inline style, see https://typescript-eslint.io/rules/consistent-type-imports/
+      '@typescript-eslint/consistent-type-imports': [
+        'error',
+        { prefer: 'type-imports', fixStyle: 'inline-type-imports' },
+      ],
+      // Allow throwing non-Error objects, but only Promises are allowed in React codebases, see https://typescript-eslint.io/rules/only-throw-error/
+      '@typescript-eslint/only-throw-error': ['error', { allow: ['Promise'] }],
+
       // Handled by TypeScript. Enable noUnusedLocals in your tsconfig.json, see https://www.typescriptlang.org/tsconfig/#noUnusedLocals
       // https://typescript-eslint.io/rules/no-unused-vars/
       '@typescript-eslint/no-unused-vars': 'off',
@@ -73,14 +87,6 @@ const typescript = defineConfig([
       '@typescript-eslint/unbound-method': 'off',
       // Allows member access on any typed values, see https://typescript-eslint.io/rules/no-unsafe-member-access/
       '@typescript-eslint/no-unsafe-member-access': 'off',
-
-      // Enforce consistent type imports with inline style, see https://typescript-eslint.io/rules/consistent-type-imports/
-      '@typescript-eslint/consistent-type-imports': [
-        'error',
-        { prefer: 'type-imports', fixStyle: 'inline-type-imports' },
-      ],
-      // Allow throwing non-Error objects, but only Promises are allowed in React codebases, see https://typescript-eslint.io/rules/only-throw-error/
-      '@typescript-eslint/only-throw-error': ['error', { allow: ['Promise'] }],
     },
   },
 ])
