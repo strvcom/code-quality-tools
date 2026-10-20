@@ -1,5 +1,5 @@
 import { defineConfig } from 'eslint/config'
-import imports from 'eslint-plugin-import'
+import imports from 'eslint-plugin-import-x'
 import stylistic from '@stylistic/eslint-plugin'
 
 /** @returns {ReturnType<typeof defineConfig>} */

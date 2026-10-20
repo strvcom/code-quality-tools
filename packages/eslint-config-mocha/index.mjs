@@ -1,6 +1,6 @@
 import { defineConfig } from 'eslint/config'
 import mocha from 'eslint-plugin-mocha'
-import imports from 'eslint-plugin-import'
+import imports from 'eslint-plugin-import-x'
 
 /** @returns {ReturnType<typeof defineConfig>} */
 export default defineConfig({
@@ -37,10 +37,6 @@ export default defineConfig({
     // in before or beforeEach.
     'mocha/no-async-suite': 'warn',
 
-    // Disallow empty test descriptions
-    // This rule enforces you to specify the suite/test descriptions for each test.
-    'mocha/no-empty-description': 'warn',
-
     // Disallow exclusive tests
     // This rule reminds you to remove .only from your tests by raising a warning whenever you are
     // using the exclusivity feature.
@@ -48,7 +44,7 @@ export default defineConfig({
 
     // Disallow global tests
     // This rule checks each mocha test function to not be located directly in the global scope.
-    'mocha/no-global-tests': 'warn',
+    'mocha/no-top-level-tests': 'warn',
 
     // Disallow identical titles
     // This rule looks at the title of every test and test suites. It will report when two test
@@ -65,7 +61,7 @@ export default defineConfig({
     // specifying a callback parameter for the function. It can be confusing to have both methods
     // used in a test or hook, and from Mocha v3 on, causes the test to fail in order to force
     // developers to remove this source of confusion.
-    'mocha/no-return-and-callback': 'error',
+    'mocha/no-return-and-done': 'error',
 
     // Disallow returning from an async test or hook
     // Mocha's tests or hooks (like before) may be asynchronous by returning a Promise. When such
@@ -77,7 +73,7 @@ export default defineConfig({
     // Any setup directly in a describe is run before all tests execute. This rule reports all
     // function calls and use of the dot operator (due to getters and setters) directly in
     // describe blocks.
-    'mocha/no-setup-in-describe': 'warn',
+    'mocha/no-setup-in-suite': 'warn',
 
     // Do not require test files to have exports or to be imported from somewhere inside the
     // project. Test files are usually sourced by Mocha directly.

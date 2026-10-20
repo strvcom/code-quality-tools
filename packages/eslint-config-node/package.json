@@ -12,7 +12,7 @@
   ],
   "dependencies": {
     "@strv/eslint-config-base": "^5.0.0",
-    "eslint-plugin-n": "^17.18.0"
+    "eslint-plugin-n": "^18.5.0"
   },
   "engines": {
     "node": ">=22"
@@ -32,7 +32,7 @@
     "./style": "./style.mjs"
   },
   "peerDependencies": {
-    "eslint": "^9"
+    "eslint": "^9.0.0 || ^10.0.0"
   },
   "publishConfig": {
     "access": "public"

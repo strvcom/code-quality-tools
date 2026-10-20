@@ -12,7 +12,9 @@
   ],
   "devDependencies": {
     "@commitlint/cli": "^19",
-    "eslint": "^9",
+    "@strv/eslint-config-node": "^5.0.0",
+    "eslint": "^10.13.0",
+    "graphql": "^15.10.3",
     "lerna": "^8.1.2",
     "remark-cli": "^12.0.0",
     "remark-preset-lint-consistent": "^6",

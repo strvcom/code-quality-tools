@@ -11,8 +11,8 @@
     "Danny Kijkov <daniel.kijkov@strv.com>"
   ],
   "dependencies": {
-    "@stylistic/eslint-plugin": "^4.2.0",
-    "eslint-plugin-import": "^2.31.0"
+    "@stylistic/eslint-plugin": "^5.10.0",
+    "eslint-plugin-import-x": "^4.17.1"
   },
   "engines": {
     "node": ">=22"
@@ -30,7 +30,7 @@
     "./style": "./style.mjs"
   },
   "peerDependencies": {
-    "eslint": "^9"
+    "eslint": "^9.0.0 || ^10.0.0"
   },
   "publishConfig": {
     "access": "public"
