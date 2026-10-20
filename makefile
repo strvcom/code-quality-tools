@@ -11,7 +11,7 @@ NPM_I := $(if $(CI), ci, install)
 
 # Modify these variables in local.mk to add flags to the commands, ie.
 # NPM_FLAGS += --prefer-offline
-NPM_FLAGS :=
+NPM_FLAGS := --legacy-peer-deps
 ESLINT_FLAGS :=
 REMARK_FLAGS :=
 

@@ -1,5 +1,5 @@
 {
-  "lerna": "8.1.2",
+  "lerna": "10.1.1",
   "version": "independent",
   "loglevel": "success",
   "packages": [

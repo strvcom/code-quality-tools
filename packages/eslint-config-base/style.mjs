@@ -573,7 +573,7 @@ export default defineConfig({
     yoda: 'warn',
 
 
-    // PLUGIN: eslint-plugin-import
+    // PLUGIN: eslint-plugin-import-x
 
 
     // This rule either enforces or bans the use of inline type-only markers for named imports

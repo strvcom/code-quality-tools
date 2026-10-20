@@ -18,7 +18,7 @@ module.exports = {
     'preset-lint-consistent',
     'preset-lint-markdown-style-guide',
 
-    ['lint-list-item-indent', 'space'],
+    ['lint-list-item-indent', 'one'],
     ['lint-maximum-line-length', Infinity],
     ['lint-emphasis-marker', '_'],
     ['lint-table-pipe-alignment', false],
