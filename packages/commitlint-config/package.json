@@ -11,8 +11,8 @@
     "Danny Kijkov <daniel.kijkov@strv.com>"
   ],
   "dependencies": {
-    "@commitlint/config-conventional": "^19.6.0",
-    "@commitlint/config-lerna-scopes": "^19.7.0"
+    "@commitlint/config-conventional": "^21.2.4",
+    "@commitlint/config-lerna-scopes": "^21.2.0"
   },
   "engines": {
     "node": ">=22"

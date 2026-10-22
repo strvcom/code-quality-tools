@@ -110,7 +110,7 @@ export default defineConfig({
     // Require file to end with single newline
     // Benefits of trailing newlines include the ability to concatenate or append to files as well
     // as output files to the terminal without interfering with shell prompts.
-    '@stylistic/eol-last': ['warn', 'unix'],
+    '@stylistic/eol-last': ['warn', 'always'],
 
     // Enforce consistent line breaks inside function parentheses
     // Requires linebreaks inside function parentheses if any of the parameters/arguments have a
@@ -120,7 +120,7 @@ export default defineConfig({
     // Require or disallow spacing between function identifiers and their invocations
     // This rule disallows spaces between the function name and the opening parenthesis that calls
     // it.
-    '@stylistic/func-call-spacing': 'warn',
+    '@stylistic/function-call-spacing': 'warn',
 
     // Enforce Function Style
     // Due to these different behaviors, it is common to have guidelines as to which style of
@@ -488,7 +488,7 @@ export default defineConfig({
 
     // Enforce Quote Style
     // This rule is aimed at ensuring consistency of string quotes.
-    '@stylistic/quotes': ['warn', 'single', 'avoid-escape'],
+    '@stylistic/quotes': ['warn', 'single', { avoidEscape: true }],
 
     // Enforce spacing between rest and spread operators and their expressions
     // This rule aims to enforce consistent spacing between rest and spread operators and their
@@ -573,7 +573,7 @@ export default defineConfig({
     yoda: 'warn',
 
 
-    // PLUGIN: eslint-plugin-import
+    // PLUGIN: eslint-plugin-import-x
 
 
     // This rule either enforces or bans the use of inline type-only markers for named imports

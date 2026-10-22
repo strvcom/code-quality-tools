@@ -1,3 +1,4 @@
+import { fixupPluginRules } from '@eslint/compat'
 import { defineConfig } from 'eslint/config'
 import style from '@strv/eslint-config-base/style'
 import react from 'eslint-plugin-react'
@@ -9,7 +10,7 @@ export default defineConfig({
     style,
   ],
   plugins: {
-    react,
+    react: fixupPluginRules(react),
   },
   rules: {
     // Enforce consistent usage of destructuring assignment of props, state, and context

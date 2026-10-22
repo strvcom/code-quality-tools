@@ -1,6 +1,8 @@
 # Migrating to flat config (ESLint v9 or >=8.56.0)
 
-🚨 As of now (February 2024) some plugins used in these rulesets are not yet compatible with ESLint v9. While it is recommended that you upgrade your projects to the flat config format it also means that if you do, you will need to stay on ESLint v8 until all plugins are updated.
+These rulesets support ESLint v9 and v10 using flat config. ESLint v10 requires Node.js 20.19.0+, 22.13.0+, or 24+. The React ruleset requires Node.js 22.18.0+ because it uses Babel 8.
+
+ESLint v10 also starts config lookup from the directory of each linted file, rather than from the current working directory.
 
 ---
 
@@ -8,7 +10,7 @@ As of ESLint v9 the way ESLint is configured is going to change dramatically. Su
 
 ## Documentation
 
-ESLint: https://eslint.org/docs/latest/use/configure/configuration-files-new
+ESLint: https://eslint.org/docs/latest/use/configure/configuration-files
 
 ## Old way
 

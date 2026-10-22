@@ -1,6 +1,21 @@
 import typeScriptConfig from '@strv/eslint-config-typescript'
 import expoConfig from 'eslint-config-expo/flat.js'
+import { fixupPluginRules } from '@eslint/compat'
 import { defineConfig, globalIgnores } from 'eslint/config'
+
+const compatibleExpoConfig = expoConfig.map(config => {
+  if (!config.plugins?.react) {
+    return config
+  }
+
+  return {
+    ...config,
+    plugins: {
+      ...config.plugins,
+      react: fixupPluginRules(config.plugins.react),
+    },
+  }
+})
 
 /** Globally ignored */
 const ignores = globalIgnores(['.expo/', 'expo-env.d.ts'])
@@ -91,4 +106,4 @@ const typescript = defineConfig([
   },
 ])
 
-export default defineConfig([expoConfig, ignores, common, typescript, react])
+export default defineConfig([compatibleExpoConfig, ignores, common, typescript, react])

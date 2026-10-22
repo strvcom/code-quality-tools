@@ -14,8 +14,8 @@ import graphql from '@strv/eslint-config-graphql'
 
 /** @type {Array<import("eslint").Linter.Config>} */
 const config = [{
-  // Perhaps also apply other configs?
-  { files: ['**/*.js'], ...graphql },
+  files: ['**/*.js'],
+  extends: [graphql],
 }]
 
 export default config

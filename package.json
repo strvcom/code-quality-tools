@@ -11,9 +11,10 @@
     "Korneliusz Dubieniecki <lekterable@gmail.com>"
   ],
   "devDependencies": {
-    "@commitlint/cli": "^19",
-    "eslint": "^9",
-    "lerna": "^8.1.2",
+    "@commitlint/cli": "^21.2.4",
+    "@strv/eslint-config-node": "^5.0.0",
+    "eslint": "^10.13.0",
+    "lerna": "^10.1.1",
     "remark-cli": "^12.0.0",
     "remark-preset-lint-consistent": "^6",
     "remark-preset-lint-markdown-style-guide": "^6",

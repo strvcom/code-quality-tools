@@ -1,3 +1,4 @@
+import { fixupPluginRules } from '@eslint/compat'
 import { defineConfig } from 'eslint/config'
 import parser from '@babel/eslint-parser'
 import base from '@strv/eslint-config-base'
@@ -12,8 +13,8 @@ export default defineConfig({
     base,
   ],
   plugins: {
-    react,
-    'jsx-a11y': a11y,
+    react: fixupPluginRules(react),
+    'jsx-a11y': fixupPluginRules(a11y),
     'react-hooks': hooks,
   },
   languageOptions: {
